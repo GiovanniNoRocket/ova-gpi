@@ -1,0 +1,3643 @@
+{
+  "course": {
+    "title": "Fundamentos de Gestión de Proyectos e Inteligencia Artificial",
+    "slug": "ia-gestion-proyectos",
+    "description": "Nivel 1 de 3 · Comprensión del proyecto tecnológico, PMBOK®, enfoques predictivos, ágiles e híbridos, gobernanza y uso responsable de Inteligencia Artificial Generativa."
+  },
+  "modules": [
+    {
+      "title": "Orientación, Diagnóstico y Reto Integrador",
+      "order": 1,
+      "level": 1,
+      "levelTitle": "Nivel 1: Comprensión del Proyecto Tecnológico",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "¡Bienvenido(a) a Fundamentos de la Gestión de Proyectos e IA!",
+            "content": "Te damos la bienvenida al Objeto Virtual de Aprendizaje (OVA) Fundamentos de la Gestión de Proyectos e Inteligencia Artificial.\n\nA lo largo de este curso aprenderás a formular, planificar, ejecutar y cerrar proyectos tecnológicos utilizando las buenas prácticas del PMBOK® y herramientas de inteligencia artificial generativa como apoyo para mejorar la productividad, la calidad de los entregables y la toma de decisiones.\n\nNo necesitas experiencia previa. Cada tema se desarrollará mediante ejemplos, actividades interactivas, simulaciones y casos prácticos que te permitirán aprender haciendo.\n\nAl finalizar el curso habrás construido un proyecto tecnológico completo en tu Bitácora Personal que integrará todos los conocimientos adquiridos."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 2,
+          "blockData": {
+            "heading": "¿Qué aprenderás en este curso?",
+            "content": "Este OVA está diseñado para desarrollar competencias en gestión de proyectos e inteligencia artificial mediante una metodología basada en la práctica y la resolución de problemas.\n\nDurante el curso no solo estudiarás conceptos; también construirás un proyecto real mientras aprendes a:\n• Comprender problemas y necesidades organizacionales.\n• Formular soluciones tecnológicas pertinentes.\n• Planificar proyectos bajo marcos adaptados.\n• Gestionar recursos, tiempos y costos.\n• Analizar y mitigar riesgos tecnológicos.\n• Utilizar IA de manera responsable y ética.\n• Evaluar la creación real de valor.\n\nCada módulo aportará un nuevo componente a tu proyecto integrador."
+          }
+        },
+        {
+          "type": "SURVEY",
+          "order": 3,
+          "blockData": {
+            "title": "Actividad interactiva: Tus intereses de aprendizaje",
+            "question": "¿Qué temas te interesa más aprender durante este OVA? (Selecciona hasta tres opciones):",
+            "maxSelections": 3,
+            "options": [
+              {
+                "id": "gp",
+                "text": "Gestión de proyectos"
+              },
+              {
+                "id": "ia",
+                "text": "Inteligencia Artificial"
+              },
+              {
+                "id": "prompts",
+                "text": "Ingeniería de prompts"
+              },
+              {
+                "id": "liderazgo",
+                "text": "Liderazgo de equipos"
+              },
+              {
+                "id": "riesgos",
+                "text": "Gestión de riesgos"
+              },
+              {
+                "id": "software",
+                "text": "Desarrollo de software"
+              },
+              {
+                "id": "automatizacion",
+                "text": "Automatización de tareas"
+              },
+              {
+                "id": "analitica",
+                "text": "Analítica de datos"
+              }
+            ],
+            "feedback": "¡Excelente selección! Durante el curso trabajarás todos estos temas. Tus respuestas permitirán orientar y personalizar algunas recomendaciones en tu Bitácora.",
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
+            "heading": "¿Por qué aprender Gestión de Proyectos?",
+            "content": "La gestión de proyectos consiste en aplicar conocimientos, habilidades, herramientas y técnicas para alcanzar los objetivos de un proyecto y generar valor para la organización.\n\nUn proyecto tecnológico implica personas, recursos, tiempo, costos y riesgos. Gestionarlo adecuadamente permite:\n• Organizar el trabajo en fases lógicas.\n• Priorizar actividades críticas.\n• Controlar el avance y el presupuesto.\n• Mejorar la comunicación con los interesados.\n• Reducir la incertidumbre técnica y del negocio.\n• Aumentar significativamente la probabilidad de éxito.\n\nSegún el PMBOK®, la gestión de proyectos debe adaptarse al contexto específico y enfocarse en la generación sostenible de valor."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 5,
+          "blockData": {
+            "question": "¿Cuál es el principal beneficio de la gestión de proyectos?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Eliminar completamente los riesgos del entorno",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Organizar y controlar el trabajo para aumentar las probabilidades de éxito",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "Reducir el número de integrantes del equipo técnico",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Evitar cualquier tipo de cambio durante el proyecto",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Ninguna metodología elimina el riesgo por completo, pero la gestión de proyectos organiza, controla y adapta el trabajo para maximizar las probabilidades de éxito y entrega de valor.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 6,
+          "blockData": {
+            "title": "Actividad gamificada: Buenas vs Malas Prácticas",
+            "instruction": "Clasifica cada situación según corresponda a una Buena o Mala Práctica de gestión:",
+            "categories": [
+              "Buena práctica",
+              "Mala práctica"
+            ],
+            "items": [
+              {
+                "id": "1",
+                "text": "Definir actividades y entregables claramente",
+                "category": "Buena práctica"
+              },
+              {
+                "id": "2",
+                "text": "Asignar responsables específicos a cada tarea",
+                "category": "Buena práctica"
+              },
+              {
+                "id": "3",
+                "text": "Programar software sin planificar previamente",
+                "category": "Mala práctica"
+              },
+              {
+                "id": "4",
+                "text": "Elaborar y actualizar el cronograma del proyecto",
+                "category": "Buena práctica"
+              },
+              {
+                "id": "5",
+                "text": "Identificar y controlar riesgos tempranamente",
+                "category": "Buena práctica"
+              },
+              {
+                "id": "6",
+                "text": "Trabajar sin objetivos claros ni métricas de éxito",
+                "category": "Mala práctica"
+              }
+            ],
+            "explanation": "La improvisación y el trabajo sin objetivos conducen a sobrecostos y retrasos. Las buenas prácticas estructuran el esfuerzo y facilitan el control.",
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "VIDEO",
+          "order": 7,
+          "blockData": {
+            "title": "Video: Gestión de proyectos EXPLICADO",
+            "url": "https://www.youtube.com/watch?v=yqOLdGif4R0",
+            "durationSeconds": 420,
+            "transcript": "Explicación dinámica sobre los conceptos fundamentales de la dirección de proyectos y el PMBOK.",
+            "pointsAwarded": 10
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 8,
+          "blockData": {
+            "heading": "¿Por qué integrar Inteligencia Artificial en la gestión de proyectos?",
+            "content": "La Inteligencia Artificial (IA) es un conjunto de tecnologías capaces de realizar tareas que normalmente requieren inteligencia humana, como analizar información, reconocer patrones y apoyar la toma de decisiones.\n\nLa IA Generativa es un tipo de IA que crea texto, imágenes, código y documentos a partir de instrucciones (prompts).\n\n⚠️ Principio fundamental del curso: La IA NO reemplaza al director del proyecto ni al equipo humano. Su función es actuar como un copiloto inteligente para tareas repetitivas y análisis de datos, liberando tiempo para la creatividad, la negociación, la empatía y la toma de decisiones estratégicas."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 9,
+          "blockData": {
+            "question": "¿Cuál representa el mejor uso de la IA en un proyecto?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Delegar completamente la planificación y decisiones a la herramienta",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Utilizar la IA como apoyo inicial y validar críticamente todos sus resultados",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "Permitir que la IA apruebe contratos y presupuestos sin revisión",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Prohibir totalmente el uso de herramientas de IA en el equipo",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "La IA es un asistente. La responsabilidad final, ética, legal y operativa siempre permanece en el equipo humano.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "VIDEO",
+          "order": 10,
+          "blockData": {
+            "title": "Video: ¿Qué es la Inteligencia Artificial Generativa?",
+            "url": "https://www.youtube.com/watch?v=RtT3gJ3VQIk",
+            "durationSeconds": 380,
+            "transcript": "Introducción a modelos generativos, prompts y casos de uso en productividad.",
+            "followUpPrompt": "Escribe dos actividades del proyecto donde consideres que la IA podría ayudarte y explica por qué.",
+            "pointsAwarded": 10
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 11,
+          "blockData": {
+            "heading": "¿Cómo aprenderás en este OVA?",
+            "content": "Este OVA utiliza una metodología de aprendizaje activo. Cada concepto se desarrollará siguiendo esta secuencia:\n\nConcepto → Explicación → Ejemplo → Pregunta rápida → Actividad interactiva → Proyecto Integrador → IA Aplicada.\n\nAprenderás construyendo desde el primer día tu propio proyecto tecnológico."
+          }
+        },
+        {
+          "type": "AI_PROMPT_LAB",
+          "order": 12,
+          "blockData": {
+            "title": "IA Aplicada: Comprendiendo el concepto de proyecto tecnológico",
+            "role": "Actúa como consultor pedagógico en tecnología.",
+            "prompt": "Explícame qué es un proyecto tecnológico utilizando un ejemplo sencillo y cotidiano.",
+            "guidance": "Copia este prompt, pruébalo en una IA y reflexiona comparando su respuesta con la definición del OVA.",
+            "reflectionQuestions": [
+              "¿Qué similitudes encontraste entre la respuesta de la IA y el concepto del OVA?",
+              "¿Qué diferencias u omisiones observaste en la explicación de la IA?",
+              "¿Qué información agregarías o corregirías para tu contexto?"
+            ],
+            "pointsAwarded": 40
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 13,
+          "blockData": {
+            "heading": "Ruta de Aprendizaje del OVA",
+            "content": "El curso está organizado en tres niveles progresivos:\n\n• NIVEL 1: Comprensión del proyecto tecnológico (Fundamentos, PMBOK, tipos TIC, enfoques y fundamentos de IA).\n• NIVEL 2: Formulación y planeación (Alcance, cronograma, riesgos, presupuesto y prompts avanzados).\n• NIVEL 3: Ejecución, seguimiento, gobernanza y cierre (Monitoreo, control, ética y entrega del proyecto).\n\nCada nivel se desbloquea al completar y aprobar el nivel anterior."
+          }
+        },
+        {
+          "type": "VIDEO",
+          "order": 14,
+          "blockData": {
+            "title": "Video: ¿Qué hace un Director de Proyectos?",
+            "url": "https://www.youtube.com/watch?v=AfwF4JPsI0o",
+            "durationSeconds": 410,
+            "transcript": "Roles, habilidades blandas, liderazgo y responsabilidades del Project Manager.",
+            "pointsAwarded": 10
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 15,
+          "blockData": {
+            "heading": "Sistema de Gamificación: Niveles, XP e Insignias",
+            "content": "Durante este curso avanzarás mediante retos y recompensas:\n\n• XP (Experiencia): ganas puntos por completar lecturas, acertar quizzes, interactuar con IA y registrar tu Bitácora.\n• Niveles: tu nivel sube a medida que acumulas XP.\n• Insignias: obtendrás insignias por hitos como \"Explorador del OVA\", \"Arquitecto del Proyecto\", \"Detector de IA\" y \"Especialista Nivel 1\".\n\nNo compites contra otros: compites contigo mismo para mejorar continuamente."
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 16,
+          "blockData": {
+            "stepNumber": 0,
+            "title": "Selección del Proyecto Tecnológico Integrador",
+            "instruction": "Selecciona el proyecto tecnológico que estructurarás durante todo el curso. A partir de este momento se inicializa tu Bitácora Personal.",
+            "stepType": "SELECT_PROJECT",
+            "projectOptions": [
+              "Sistema Académico Universitario",
+              "Aplicación móvil de salud",
+              "Sistema de gestión hotelera",
+              "Plataforma de comercio electrónico",
+              "Sistema IoT para monitoreo inteligente",
+              "ERP Empresarial (Compras, Inventario, Finanzas)",
+              "Proyecto propio"
+            ],
+            "advice": "Elige un proyecto con el que te sientas cómodo o relacionado. Lo acompañarás a lo largo de los 17 pasos de caracterización y planificación.",
+            "pointsAwarded": 50
+          }
+        },
+        {
+          "type": "AI_PROMPT_LAB",
+          "order": 17,
+          "blockData": {
+            "title": "IA Aplicada: Descripción preliminar del proyecto",
+            "role": "Actúa como consultor senior en proyectos TIC.",
+            "prompt": "Propón una breve descripción para un proyecto de [escribe el nombre de tu proyecto seleccionado], indicando qué problema busca resolver y cuál es su objetivo principal.",
+            "guidance": "Revisa si la propuesta de la IA es realista y ajústala con tus propias palabras en tu Bitácora.",
+            "reflectionQuestions": [
+              "¿La propuesta de la IA identificó un problema real y concreto?",
+              "¿Qué ajustarías para que se adapte mejor a tus expectativas?"
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "SURVEY",
+          "order": 18,
+          "blockData": {
+            "title": "Evaluación Diagnóstica Inicial",
+            "question": "Responde honestamente para personalizar tu ruta de aprendizaje:",
+            "maxSelections": 1,
+            "options": [
+              {
+                "id": "1",
+                "text": "Nunca he gestionado proyectos ni utilizado herramientas de IA"
+              },
+              {
+                "id": "2",
+                "text": "Tengo nociones básicas de proyectos pero poco uso de IA"
+              },
+              {
+                "id": "3",
+                "text": "Utilizo IA frecuentemente pero quiero estructurar la gestión de proyectos"
+              },
+              {
+                "id": "4",
+                "text": "Tengo experiencia en ambas áreas y busco profesionalizar mis competencias"
+              }
+            ],
+            "feedback": "¡Diagnóstico registrado! El curso te guiará paso a paso desde conceptos básicos hasta aplicaciones avanzadas.",
+            "pointsAwarded": 20
+          }
+        },
+        {
+          "type": "SCENARIO",
+          "order": 19,
+          "blockData": {
+            "title": "Caso Introductorio: La Universidad Innovar",
+            "situation": "La Universidad Innovar desea modernizar sus procesos de matrícula: actualmente son presenciales, con largas filas, demoras y quejas constantes. El Rector inicia un proyecto de transformación digital y has sido designado como Director del Proyecto. ¿Cuál debe ser tu primera acción?",
+            "choices": [
+              {
+                "id": "a",
+                "text": "Comprar inmediatamente licencias de servidores y software",
+                "feedback": "Incorrecto. Comprar tecnología sin entender la necesidad real casi siempre genera sobrecostos.",
+                "isOptimal": false
+              },
+              {
+                "id": "b",
+                "text": "Comprender a fondo el problema y analizar las necesidades de los interesados antes de proponer soluciones",
+                "feedback": "¡Excelente decisión! Todo proyecto exitoso inicia comprendiendo el problema antes de saltar a la solución.",
+                "isOptimal": true
+              },
+              {
+                "id": "c",
+                "text": "Comenzar a programar una app móvil sin levantar requisitos",
+                "feedback": "Incorrecto. Programar a ciegas conduce a productos que los usuarios no adoptan.",
+                "isOptimal": false
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 20,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 1",
+            "description": "Has dado el primer paso para convertirte en un director de proyectos tecnológicos capaz de integrar PMBOK® con Inteligencia Artificial.\n\nLogros alcanzados:\n✔ Organización del curso y metodología activa comprendidas.\n✔ Uso responsable de la IA como copiloto.\n✔ Proyecto tecnológico seleccionado.\n✔ Bitácora inicial creada.",
+            "criteria": [
+              "Orientación del OVA completada",
+              "Proyecto integrador seleccionado",
+              "Diagnóstico inicial registrado"
+            ],
+            "badgeKey": "explorador-ova",
+            "pointsAwarded": 100
+          }
+        }
+      ]
+    },
+    {
+      "title": "Proyecto, Valor y Contexto Organizacional",
+      "order": 2,
+      "level": 1,
+      "levelTitle": "Nivel 1: Comprensión del Proyecto Tecnológico",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "¿Qué es un Proyecto?",
+            "content": "Un proyecto es un esfuerzo temporal que se realiza para crear un producto, servicio o resultado único que genere valor.\n\nCaracterísticas distintivas:\n• Temporal: tiene un inicio y un final definidos.\n• Único: produce un resultado diferenciado.\n• Orientado al valor: busca resolver una necesidad, aprovechar una oportunidad o habilitar un cambio organizacional."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 2,
+          "blockData": {
+            "question": "¿Cuál de las siguientes situaciones representa un proyecto?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Registrar diariamente la asistencia de los estudiantes",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Desarrollar una plataforma virtual para la gestión de matrículas",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "Atender llamadas continuas en el centro de soporte técnico",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Realizar copias de seguridad automáticas cada noche",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Desarrollar la plataforma es un esfuerzo temporal y único. Las demás son actividades operativas permanentes.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 3,
+          "blockData": {
+            "stepNumber": 1,
+            "title": "Nombre y Descripción del Proyecto TIC",
+            "instruction": "Define el nombre de tu proyecto y redacta una descripción clara de lo que pretende lograr (máximo 150 palabras).",
+            "fields": [
+              {
+                "key": "projectName",
+                "label": "Nombre definitivo del proyecto TIC",
+                "placeholder": "Ej. Sistema Inteligente de...",
+                "fieldType": "text"
+              },
+              {
+                "key": "projectDescription",
+                "label": "Descripción general del proyecto",
+                "maxWords": 150,
+                "placeholder": "Describe el problema que aborda y el objetivo principal...",
+                "fieldType": "textarea"
+              }
+            ],
+            "advice": "No entres aún en detalles técnicos de programación; enfócate en el qué y para qué del proyecto.",
+            "pointsAwarded": 50
+          }
+        },
+        {
+          "type": "AI_PROMPT_LAB",
+          "order": 4,
+          "blockData": {
+            "title": "IA Aplicada: Validación de las características de proyecto",
+            "role": "Actúa como director de proyectos certificado PMP®.",
+            "prompt": "Analiza la siguiente descripción de proyecto y determina si realmente corresponde a un proyecto según el PMBOK®. Explica por qué y sugiere dos mejoras de redacción: [Pega aquí tu descripción].",
+            "reflectionQuestions": [
+              "¿La IA confirmó que tu propuesta cumple con temporalidad y unicidad?",
+              "¿Qué ajustes hiciste en tu Bitácora tras la sugerencia?"
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 5,
+          "blockData": {
+            "heading": "Producto, Servicio y Resultado",
+            "content": "Es fundamental no confundir estos tres conceptos clave:\n\n1. Producto: elemento tangible o digital que se crea (ej. el software instalado, la app móvil).\n2. Servicio: la actividad o capacidad que permite realizar a los usuarios (ej. agendar citas médicas en línea 24/7).\n3. Resultado: el cambio o beneficio medible que produce su uso (ej. reducir el tiempo de espera de 48 a 12 horas)."
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 6,
+          "blockData": {
+            "title": "Actividad interactiva: Producto vs Servicio",
+            "instruction": "Clasifica cada elemento según corresponda a un Producto o a un Servicio:",
+            "categories": [
+              "Producto",
+              "Servicio"
+            ],
+            "items": [
+              {
+                "id": "1",
+                "text": "Aplicación móvil instalada en el smartphone",
+                "category": "Producto"
+              },
+              {
+                "id": "2",
+                "text": "Atención personalizada mediante chatbot 24/7",
+                "category": "Servicio"
+              },
+              {
+                "id": "3",
+                "text": "Plataforma web de e-learning configurada",
+                "category": "Producto"
+              },
+              {
+                "id": "4",
+                "text": "Consulta y descarga de certificados en línea",
+                "category": "Servicio"
+              }
+            ],
+            "explanation": "El producto es el artefacto construido; el servicio es la función que brinda a las personas.",
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 7,
+          "blockData": {
+            "stepNumber": 2,
+            "title": "Producto, Servicio y Resultado del Proyecto Integrador",
+            "instruction": "Identifica y diferencia claramente qué entregarás, qué servicio habilitarás y qué resultado esperarás.",
+            "fields": [
+              {
+                "key": "mainProduct",
+                "label": "Producto principal que se entregará",
+                "placeholder": "Ej. Software web de gestión...",
+                "fieldType": "text"
+              },
+              {
+                "key": "mainService",
+                "label": "Servicio que ofrecerá a los usuarios",
+                "placeholder": "Ej. Consulta y radicación en línea...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "expectedResult",
+                "label": "Resultado o cambio medible esperado",
+                "placeholder": "Ej. Reducción del tiempo de respuesta en un 60%...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "successIndicator",
+                "label": "Indicador de éxito inicial",
+                "placeholder": "Ej. % de adopción de usuarios en 3 meses...",
+                "fieldType": "text"
+              }
+            ],
+            "advice": "Recuerda: el producto es el medio; el resultado es el impacto que genera.",
+            "pointsAwarded": 50
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 8,
+          "blockData": {
+            "heading": "La Creación de Valor y el Contexto Organizacional",
+            "content": "El PMBOK® establece que el propósito de todo proyecto es crear valor (financiero, social, operativo o estratégico).\n\nUn proyecto puede cumplir tiempo, costo y alcance, pero si los usuarios no adoptan la solución, el proyecto habrá generado poco valor.\n\nAsimismo, el proyecto opera dentro de un contexto organizacional: normas, políticas, infraestructura existente y cultura institucional que condicionan su éxito."
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 9,
+          "blockData": {
+            "stepNumber": 3,
+            "title": "Matriz de Valor y Contexto Organizacional",
+            "instruction": "Analiza el valor generado y el entorno interno/externo en el que operará tu proyecto:",
+            "matrixColumns": [
+              "Aspecto",
+              "Respuesta"
+            ],
+            "matrixRows": [
+              "¿Qué valor concreto aporta el proyecto?",
+              "¿Quiénes son los beneficiarios directos?",
+              "¿Cómo se medirá el éxito del proyecto?",
+              "¿Qué ocurriría si el proyecto NO se realiza?",
+              "Restricciones y contexto institucional clave"
+            ],
+            "advice": "Esta matriz servirá como base para el Caso de Negocio (Business Case) de tu proyecto.",
+            "pointsAwarded": 60
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 10,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 2",
+            "description": "Has definido con rigor los cimientos de tu proyecto integrador:\n✔ Diferenciación de producto, servicio y resultado.\n✔ Enfoque en la generación de valor según PMBOK®.\n✔ Análisis del contexto organizacional.\n✔ Matriz de valor registrada en tu Bitácora.",
+            "criteria": [
+              "Concepto de proyecto y valor comprendidos",
+              "Pasos 1, 2 y 3 del proyecto integrador completados"
+            ],
+            "badgeKey": "arquitecto-proyecto",
+            "pointsAwarded": 250
+          }
+        }
+      ]
+    },
+    {
+      "title": "Proyectos, Programas, Portafolios y Operaciones",
+      "order": 3,
+      "level": 1,
+      "levelTitle": "Nivel 1: Comprensión del Proyecto Tecnológico",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Proyectos, Programas, Portafolios y Operaciones",
+            "content": "Para liderar iniciativas tecnológicas es clave comprender cómo se estructuran dentro de la organización:\n\n• Proyecto: esfuerzo temporal para crear un resultado único.\n• Programa: grupo de proyectos relacionados gestionados de forma coordinada para obtener beneficios que no se lograrían por separado.\n• Portafolio: conjunto de proyectos, programas y operaciones agrupados para cumplir objetivos estratégicos de la organización.\n• Operaciones: actividades permanentes y continuas que mantienen el negocio funcionando.\n• PMO (Oficina de Gestión de Proyectos): estructura que estandariza prácticas, asesora y supervisa proyectos."
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 2,
+          "blockData": {
+            "title": "Actividad interactiva: Proyecto vs Operación",
+            "instruction": "Clasifica cada actividad según corresponda a un Proyecto o a una Operación:",
+            "categories": [
+              "Proyecto",
+              "Operación"
+            ],
+            "items": [
+              {
+                "id": "1",
+                "text": "Desarrollo de un chatbot institucional con IA",
+                "category": "Proyecto"
+              },
+              {
+                "id": "2",
+                "text": "Atención diaria de incidentes en la mesa de ayuda",
+                "category": "Operación"
+              },
+              {
+                "id": "3",
+                "text": "Implementación y despliegue inicial de un ERP",
+                "category": "Proyecto"
+              },
+              {
+                "id": "4",
+                "text": "Copias de seguridad automáticas programadas cada noche",
+                "category": "Operación"
+              },
+              {
+                "id": "5",
+                "text": "Migración de servidores físicos hacia la nube",
+                "category": "Proyecto"
+              },
+              {
+                "id": "6",
+                "text": "Actualización mensual de parches de seguridad en producción",
+                "category": "Operación"
+              }
+            ],
+            "explanation": "Los proyectos transforman y crean nuevas capacidades; las operaciones las mantienen en funcionamiento.",
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Tipos de Proyectos TIC",
+            "content": "En las organizaciones encontramos diversas categorías de proyectos tecnológicos:\n\n1. Desarrollo de Software: aplicaciones a la medida, web y móviles.\n2. Infraestructura Tecnológica: redes, cableado, centros de datos.\n3. Cloud Computing: migraciones (IaaS, PaaS, SaaS) a AWS, Azure o GCP.\n4. Inteligencia Artificial: asistentes virtuales, analítica predictiva, visión por computador.\n5. IoT (Internet de las Cosas): sensores inteligentes y monitoreo en tiempo real.\n6. ERP / Sistemas Empresariales: integración de finanzas, compras, inventario (ej. SAP).\n7. Ciberseguridad: autenticación multifactor, gobierno de identidades, SOC."
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 4,
+          "blockData": {
+            "stepNumber": 4,
+            "title": "Clasificación del Proyecto TIC y Gobierno Organizacional",
+            "instruction": "Clasifica tu proyecto integrador y determina su encuadre estratégico:",
+            "fields": [
+              {
+                "key": "ticProjectType",
+                "label": "Tipo principal de proyecto TIC",
+                "fieldType": "select",
+                "options": [
+                  "Desarrollo de software",
+                  "Infraestructura tecnológica",
+                  "Cloud Computing",
+                  "Inteligencia Artificial",
+                  "Internet de las Cosas (IoT)",
+                  "ERP Empresarial",
+                  "Ciberseguridad",
+                  "Aplicación móvil"
+                ]
+              },
+              {
+                "key": "ticTechnologies",
+                "label": "Tecnologías clave previstas",
+                "placeholder": "Ej. React, Python, PostgreSQL, Azure...",
+                "fieldType": "text"
+              },
+              {
+                "key": "programAffiliation",
+                "label": "¿Podría formar parte de un programa mayor? ¿Cuál?",
+                "placeholder": "Ej. Programa de Transformación Digital...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "postProjectOperations",
+                "label": "Operaciones que surgirán cuando el proyecto finalice",
+                "placeholder": "Ej. Soporte técnico a usuarios, monitoreo de servidores...",
+                "fieldType": "textarea"
+              }
+            ],
+            "advice": "Pensar desde el inicio en la transición a operaciones evitará que tu proyecto quede abandonado.",
+            "pointsAwarded": 60
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 5,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 3",
+            "description": "Comprendes el mapa macro de los proyectos tecnológicos:\n✔ Diferenciación de proyectos, programas, portafolios y operaciones.\n✔ Rol de la PMO.\n✔ Taxonomía de proyectos TIC.\n✔ Clasificación formal de tu proyecto en la Bitácora.",
+            "criteria": [
+              "Estructura organizacional comprendida",
+              "Paso 4 del proyecto integrador completado"
+            ],
+            "badgeKey": "arquitecto-tic",
+            "pointsAwarded": 300
+          }
+        }
+      ]
+    },
+    {
+      "title": "Ciclo de Vida, Enfoques de Gestión y Dominios de Desempeño",
+      "order": 4,
+      "level": 1,
+      "levelTitle": "Nivel 1: Comprensión del Proyecto Tecnológico",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Ciclo de Vida vs Enfoque de Desarrollo",
+            "content": "Dos conceptos esenciales que todo gestor debe dominar:\n\n• Ciclo de Vida: la estructura temporal de fases por las que atraviesa un proyecto desde su inicio hasta su cierre (Inicio → Planificación → Ejecución → Monitoreo y Control → Cierre).\n\n• Enfoque de Desarrollo: la manera en que se produce y entrega el producto:\n  - Predictivo (Cascada): requisitos estables, planificación exhaustiva inicial.\n  - Ágil (Adaptativo): entregas incrementales y cortas, requisitos emergentes, retroalimentación continua (Scrum, Kanban, XP).\n  - Híbrido: combina predictivo para componentes estables (ej. infraestructura/contratos) y ágil para componentes inciertos (ej. interfaz de usuario)."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 2,
+          "blockData": {
+            "question": "¿Qué debería determinar principalmente la selección del enfoque de gestión?",
+            "options": [
+              {
+                "id": "a",
+                "text": "La moda tecnológica o la preferencia personal del director",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Que la organización siempre use la misma metodología para todo",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Las características, nivel de incertidumbre, requisitos y contexto del proyecto",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "La cantidad de documentos que exija la auditoría",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "El principio de adaptación (tailoring) del PMBOK® exige adaptar el enfoque al contexto real del proyecto.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 3,
+          "blockData": {
+            "title": "Actividad interactiva: Predictivo, Ágil o Híbrido",
+            "instruction": "Relaciona cada escenario de proyecto con el enfoque más conveniente:",
+            "categories": [
+              "Predictivo",
+              "Ágil",
+              "Híbrido"
+            ],
+            "items": [
+              {
+                "id": "1",
+                "text": "Instalación de fibra óptica y cableado estructurado con normas estrictas",
+                "category": "Predictivo"
+              },
+              {
+                "id": "2",
+                "text": "Nueva app móvil innovadora donde los usuarios aún no definen qué funciones prefieren",
+                "category": "Ágil"
+              },
+              {
+                "id": "3",
+                "text": "Implementación ERP con infraestructura fija y módulos que evolucionan con feedback",
+                "category": "Híbrido"
+              },
+              {
+                "id": "4",
+                "text": "Construcción de un centro de datos con especificaciones contractuales fijas",
+                "category": "Predictivo"
+              }
+            ],
+            "explanation": "Alta certeza → Predictivo. Alta incertidumbre → Ágil. Mixto → Híbrido.",
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
+            "heading": "Los 8 Dominios de Desempeño del PMBOK®",
+            "content": "Los dominios de desempeño son áreas de enfoque críticas para entregar resultados efectivos:\n\n1. Interesados (Stakeholders): expectativas y comunicación.\n2. Equipo: liderazgo, clima laboral y competencias.\n3. Enfoque de Desarrollo y Ciclo de Vida: cadencia de entrega y fases.\n4. Planificación: organización estructurada del trabajo.\n5. Trabajo del Proyecto: ejecución fluida y gestión de cambios.\n6. Entrega: cumplimiento de alcance, calidad y criterios de aceptación.\n7. Medición: métricas e indicadores de desempeño.\n8. Incertidumbre: gestión proactiva de riesgos y oportunidades."
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 5,
+          "blockData": {
+            "stepNumber": 5,
+            "title": "Selección y Justificación del Enfoque del Proyecto TIC",
+            "instruction": "Define y fundamenta el ciclo de vida, enfoque y framework de tu proyecto integrador:",
+            "fields": [
+              {
+                "key": "selectedApproach",
+                "label": "Enfoque de gestión seleccionado",
+                "fieldType": "select",
+                "options": [
+                  "Predictivo",
+                  "Ágil",
+                  "Híbrido"
+                ]
+              },
+              {
+                "key": "approachJustification",
+                "label": "Justificación del enfoque según tu nivel de incertidumbre",
+                "placeholder": "Explica por qué es conveniente para tu solución...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "complementaryFramework",
+                "label": "Framework o método complementario (ej. Scrum, Kanban, DevOps, XP)",
+                "placeholder": "Ej. Scrum para sprints de desarrollo y Kanban para soporte...",
+                "fieldType": "text"
+              },
+              {
+                "key": "priorityDomains",
+                "label": "¿Cuáles dominios de desempeño requerirán mayor atención y por qué?",
+                "placeholder": "Ej. Interesados y Entrega porque...",
+                "fieldType": "textarea"
+              }
+            ],
+            "advice": "No existen respuestas únicas: lo crucial es que tu justificación esté fundamentada en los requisitos del proyecto.",
+            "pointsAwarded": 70
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 6,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 4",
+            "description": "Dominas la estrategia metodológica de proyectos:\n✔ Ciclos de vida y adaptación.\n✔ Cuándo usar predictivo, ágil o híbrido.\n✔ Frameworks tecnológicos (Scrum, Kanban, DevOps).\n✔ Los 8 dominios de desempeño del PMBOK®.",
+            "criteria": [
+              "Enfoques de desarrollo comprendidos",
+              "Paso 5 del proyecto integrador completado"
+            ],
+            "badgeKey": "estratega-proyecto",
+            "pointsAwarded": 350
+          }
+        }
+      ]
+    },
+    {
+      "title": "Fundamentos de IA para la Gestión de Proyectos",
+      "order": 5,
+      "level": 1,
+      "levelTitle": "Nivel 1: Comprensión del Proyecto Tecnológico",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Modelos de Lenguaje (LLMs), Capacidades y Límites",
+            "content": "Un Large Language Model (LLM) es una red neuronal entrenada con enormes volúmenes de texto para predecir la secuencia de palabras más probable en función de un prompt.\n\n⚠️ Consecuencia crítica: Que una IA responda con total seguridad y elocuencia NO significa que la información sea verdadera.\n\nAlucinación de IA: fenómeno en el que el modelo inventa datos, normas, fechas o métricas con apariencia convincente pero sin respaldo en la realidad."
+          }
+        },
+        {
+          "type": "MINIGAME",
+          "order": 2,
+          "blockData": {
+            "gameType": "CONFIDENCE_ROUNDS",
+            "title": "Minijuego: ¿Lo sabe o lo está inventando?",
+            "description": "Tu asistente de IA ha generado afirmaciones sobre un proyecto. Tu misión es evaluar qué tan confiable es cada una clasificándola con el semáforo y justificando tu decisión.",
+            "badgeKey": "detector-ia",
+            "pointsAwarded": 200,
+            "rounds": [
+              {
+                "roundNumber": 1,
+                "context": "El presupuesto aprobado para el proyecto es de COP $50 millones.",
+                "aiResponse": "El proyecto cuenta con un presupuesto aprobado de COP $50 millones.",
+                "correctAnswer": "RESPALDADA",
+                "feedback": "Correcto. La afirmación coincide directamente con la información disponible.",
+                "justificationOptions": [
+                  {
+                    "id": "a",
+                    "text": "La información disponible coincide directamente con la afirmación.",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "b",
+                    "text": "La IA siempre proporciona información verdadera.",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "c",
+                    "text": "No es necesario revisar la información de IA.",
+                    "isCorrect": false
+                  }
+                ],
+                "xpAwarded": 30
+              },
+              {
+                "roundNumber": 2,
+                "context": "El proyecto contempla desarrollar una aplicación móvil para gestionar solicitudes de usuarios.",
+                "aiResponse": "La aplicación reducirá en un 30 % el tiempo necesario para realizar las solicitudes.",
+                "correctAnswer": "VERIFICAR",
+                "feedback": "Correcto. La cifra del 30% es un resultado cuantitativo que no ha sido medido ni comprobado aún.",
+                "justificationOptions": [
+                  {
+                    "id": "a",
+                    "text": "La cifra está comprobada porque la calculó la IA.",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "b",
+                    "text": "La cifra representa una estimación o meta que debe demostrarse con datos.",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "c",
+                    "text": "Las herramientas de IA nunca pueden dar números.",
+                    "isCorrect": false
+                  }
+                ],
+                "xpAwarded": 30
+              },
+              {
+                "roundNumber": 3,
+                "context": "La información indica únicamente: \"La plataforma será desarrollada utilizando tecnologías web.\"",
+                "aiResponse": "El sistema utilizará React, Node.js y PostgreSQL.",
+                "correctAnswer": "SIN_EVIDENCIA",
+                "feedback": "Correcto. Aunque sean tecnologías populares, la información no especificó esa arquitectura.",
+                "justificationOptions": [
+                  {
+                    "id": "a",
+                    "text": "Son tecnologías populares en la web.",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "b",
+                    "text": "La información disponible no especifica ni aprueba ese stack tecnológico.",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "c",
+                    "text": "Probablemente sean esas.",
+                    "isCorrect": false
+                  }
+                ],
+                "xpAwarded": 30
+              },
+              {
+                "roundNumber": 4,
+                "context": "La empresa está evaluando diferentes proveedores de tecnología.",
+                "aiResponse": "TechProvider S.A.S. es el proveedor más adecuado porque tiene mayor experiencia.",
+                "correctAnswer": "VERIFICAR",
+                "feedback": "Correcto. Es una valoración subjetiva que exige evaluar propuestas técnicas y contractuales.",
+                "justificationOptions": [
+                  {
+                    "id": "a",
+                    "text": "La IA sabe qué proveedor tiene mejor reputación.",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "b",
+                    "text": "La afirmación requiere evidencia demostrable para justificar la selección.",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ninguna IA puede opinar sobre empresas.",
+                    "isCorrect": false
+                  }
+                ],
+                "xpAwarded": 30
+              },
+              {
+                "roundNumber": 5,
+                "context": "La documentación indica: \"El sistema se encuentra actualmente en fase de pruebas.\"",
+                "aiResponse": "El sistema fue aprobado por el cliente el 10 de agosto de 2026.",
+                "correctAnswer": "SIN_EVIDENCIA",
+                "feedback": "¡Alucinación detectada! La documentación dice que está en pruebas; no existe aprobación ni fecha.",
+                "justificationOptions": [
+                  {
+                    "id": "a",
+                    "text": "La fecha es concreta y por ende real.",
+                    "isCorrect": false
+                  },
+                  {
+                    "id": "b",
+                    "text": "La información no respalda ni la fecha ni la aprobación del cliente.",
+                    "isCorrect": true
+                  },
+                  {
+                    "id": "c",
+                    "text": "La IA consultó el correo del cliente.",
+                    "isCorrect": false
+                  }
+                ],
+                "xpAwarded": 30
+              }
+            ]
+          }
+        },
+        {
+          "type": "MINIGAME",
+          "order": 3,
+          "blockData": {
+            "gameType": "ERROR_HUNTER",
+            "title": "Minijuego: Cazadores de Errores (Auditoría de Informe de IA)",
+            "description": "Un informe de avance generado por IA sobre un ERP contiene inconsistencias. Audítalo para encontrar: 2 datos inventados, 1 contradicción, 1 afirmación sin evidencia y 1 dato correcto.",
+            "badgeKey": "auditor-ia",
+            "pointsAwarded": 125,
+            "reportAudit": {
+              "reportTitle": "Informe de avance del proyecto: Implementación de ERP Empresarial",
+              "reportDate": "12 de agosto de 2026 · Estado: En ejecución",
+              "reportSections": [
+                {
+                  "title": "1. Resumen y Presupuesto",
+                  "content": "El presupuesto aprobado es de COP $80.000.000 y se han ejecutado COP $40.000.000.\nLa IA concluye: \"El proyecto ha utilizado el 50 % del presupuesto disponible.\""
+                },
+                {
+                  "title": "2. Cronograma y Migración de Datos",
+                  "content": "La migración de datos históricos presenta retrasos debido a inconsistencias encontradas.\nLa IA concluye: \"El proyecto finalizará dentro del plazo y no será necesario modificar el cronograma.\"\nAdemás, en la sección técnica la IA afirma: \"El 100 % de los datos históricos ya fueron validados y están listos para ser migrados.\""
+                },
+                {
+                  "title": "3. Equipo del Proyecto y Riesgos",
+                  "content": "El equipo real cuenta con 1 consultor ERP, 2 analistas y 2 especialistas técnicos.\nLa IA indica: \"El proyecto cuenta con cuatro consultores ERP certificados.\"\nEntre los riesgos se registran inconsistencias de datos y disponibilidad de usuarios, pero la IA concluye: \"El principal riesgo es que el sistema no tenga suficiente capacidad de almacenamiento.\""
+                }
+              ],
+              "targets": [
+                {
+                  "id": "t1",
+                  "type": "INVENTED",
+                  "typeLabel": "Dato Inventado 1",
+                  "location": "Equipo del proyecto",
+                  "targetText": "El proyecto cuenta con cuatro consultores ERP certificados.",
+                  "explanation": "La información indica 1 consultor, no cuatro, y no hay evidencia de certificación."
+                },
+                {
+                  "id": "t2",
+                  "type": "INVENTED",
+                  "typeLabel": "Dato Inventado 2",
+                  "location": "Riesgos",
+                  "targetText": "El principal riesgo es que el sistema no tenga suficiente capacidad de almacenamiento.",
+                  "explanation": "El almacenamiento no figuraba en la matriz de riesgos del proyecto."
+                },
+                {
+                  "id": "t3",
+                  "type": "CONTRADICTION",
+                  "typeLabel": "Contradicción Crítica",
+                  "location": "Cronograma vs Migración",
+                  "targetText": "El 100 % de los datos ya fueron validados vs La migración presenta retrasos por inconsistencias.",
+                  "explanation": "Si la migración está retrasada por inconsistencias, no puede estar el 100% validado."
+                },
+                {
+                  "id": "t4",
+                  "type": "NO_EVIDENCE",
+                  "typeLabel": "Afirmación sin Evidencia",
+                  "location": "Cronograma",
+                  "targetText": "El proyecto finalizará dentro del plazo establecido y no será necesario modificar el cronograma.",
+                  "explanation": "Es una predicción optimista de la IA sin datos para sustentarla."
+                },
+                {
+                  "id": "t5",
+                  "type": "CORRECT",
+                  "typeLabel": "Dato Correcto Verificado",
+                  "location": "Presupuesto",
+                  "targetText": "El proyecto ha utilizado el 50 % del presupuesto disponible.",
+                  "explanation": "Comprobación matemática: (40M ÷ 80M) x 100 = 50%. Afirmación 100% verídica."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 4,
+          "blockData": {
+            "stepNumber": 6,
+            "title": "Uso Responsable de IA en el Proyecto Integrador",
+            "instruction": "Define las políticas de gobernanza para el uso de IA en tu proyecto:",
+            "fields": [
+              {
+                "key": "aiActivities",
+                "label": "Actividades donde el equipo utilizará IA como apoyo",
+                "fieldType": "checkbox_group",
+                "options": [
+                  "Generación de ideas iniciales",
+                  "Borradores de documentación",
+                  "Identificación preliminar de riesgos",
+                  "Síntesis de actas y reuniones",
+                  "Análisis de datos de prueba"
+                ]
+              },
+              {
+                "key": "confidentialInfoPolicy",
+                "label": "Información sensible o confidencial que NUNCA se compartirá con IA pública",
+                "placeholder": "Ej. Datos personales de clientes, contraseñas, contratos...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "verificationMechanism",
+                "label": "Mecanismos obligatorios de verificación humana",
+                "placeholder": "Ej. Revisión técnica por el líder antes de incorporar código o textos...",
+                "fieldType": "textarea"
+              },
+              {
+                "key": "humanDecisions",
+                "label": "Decisiones críticas que permanecerán 100% bajo supervisión humana",
+                "placeholder": "Ej. Aprobación de presupuesto, contratación y entrega final...",
+                "fieldType": "textarea"
+              }
+            ],
+            "advice": "El uso ético de la IA protege a la organización y salvaguarda la privacidad de las personas.",
+            "pointsAwarded": 70
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 5,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 5",
+            "description": "Has adquirido pensamiento crítico y competencias de auditoría frente a la IA:\n✔ Comprensión de LLMs y modelos predictivos.\n✔ Detección de alucinaciones y datos no respaldados.\n✔ Protocolos de uso responsable y protección de datos.\n✔ Política de IA integrada en tu Bitácora.",
+            "criteria": [
+              "Minijuegos de auditoría superados",
+              "Paso 6 de política de IA completado"
+            ],
+            "badgeKey": "supervisor-ia",
+            "pointsAwarded": 400
+          }
+        },
+        {
+          "type": "EXAM",
+          "order": 6,
+          "blockData": {
+            "title": "Evaluación Final - Nivel 1: Comprensión del Proyecto Tecnológico",
+            "description": "Evaluación global de los 5 módulos (Módulos 1 al 5). Consta de 25 preguntas de opción múltiple (4 puntos c/u = 100 puntos en total). Mínimo aprobatorio: 70%. Al aprobar obtendrás la insignia \"Especialista Nivel 1\" y habilitarás el Nivel 2.",
+            "questionsCount": 25,
+            "pointsPerQuestion": 4,
+            "passingScore": 70,
+            "badgeKey": "graduado-nivel-1",
+            "pointsAwarded": 500,
+            "questions": [
+              {
+                "id": 1,
+                "question": "Una universidad registra las matrículas mediante varios sistemas independientes y decide desarrollar una nueva plataforma centralizada con equipo, presupuesto y fecha definida. ¿Cuál afirmación describe mejor esta iniciativa?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Es una operación porque la matrícula ocurre todos los semestres."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Es un proyecto porque representa un esfuerzo temporal orientado a generar un producto único."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es un servicio porque los estudiantes utilizarán la plataforma."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Es una actividad rutinaria porque utiliza tecnología existente."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Desarrollar la nueva plataforma es temporal y genera un producto único; la atención semestral posterior será la operación."
+              },
+              {
+                "id": 2,
+                "question": "Una empresa desarrolla un sistema de atención móvil: obtiene la app funcionando, permite solicitar servicios desde cualquier lugar y reduce el tiempo de atención de 48 a 12 horas. ¿Cuál identifica correctamente producto, servicio y resultado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Producto: reducción del tiempo; servicio: aplicación; resultado: solicitudes."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Producto: aplicación móvil; servicio: solicitud de servicios desde la app; resultado: reducción del tiempo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Producto: solicitudes; servicio: reducción del tiempo; resultado: aplicación móvil."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Producto: aplicación móvil; servicio: reducción del tiempo; resultado: sistema instalado."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Producto: el artefacto creado; Servicio: lo que permite hacer; Resultado: el impacto o mejora medible."
+              },
+              {
+                "id": 3,
+                "question": "Una empresa implementa un sistema de inventario en tiempo y costo. Sin embargo, los empleados siguen usando hojas de cálculo porque el sistema es difícil de usar. ¿Cuál es la mejor conclusión?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "El proyecto fue completamente exitoso porque cumplió cronograma y presupuesto."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El proyecto generó valor porque el software se desarrolló."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El proyecto cumplió objetivos de ejecución, pero generó poco valor al no producir los beneficios esperados."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El proyecto debe considerarse una operación."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El valor no está en la entrega del artefacto sino en la adopción efectiva y los beneficios que produce para el negocio."
+              },
+              {
+                "id": 4,
+                "question": "Antes de planificar una plataforma educativa, el equipo analiza calendario, políticas, infraestructura, presupuesto y necesidades de los usuarios. ¿Por qué es importante este análisis?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Para seleccionar únicamente el lenguaje de programación."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para comprender el contexto organizacional y adaptar la gestión a sus características."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para eliminar la necesidad de identificar riesgos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para garantizar que el proyecto termine antes de la fecha prevista."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "El PMBOK® indica que el éxito radica en comprender el contexto y adaptar los procesos a la realidad de la organización."
+              },
+              {
+                "id": 5,
+                "question": "Durante el desarrollo aparecen retrasos; el director reúne al equipo, redistribuye tareas, comunica la situación al sponsor y coordina una solución. ¿Qué competencia demuestra principalmente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Desarrollo de software."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Operación de sistemas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Dirección y coordinación del proyecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Administración de infraestructura física."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La dirección se enfoca en liderar personas, resolver impedimentos y negociar con los interesados clave."
+              },
+              {
+                "id": 6,
+                "question": "Una empresa implementa un software con fecha de inicio y fin. Una vez en producción, el personal atiende solicitudes diariamente usando el nuevo sistema. ¿Cuál clasificación es correcta?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Tanto la implementación como la atención diaria son proyectos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La implementación es un proyecto y la atención diaria corresponde a una operación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La implementación es una operación y la atención diaria es un proyecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ambas actividades son operaciones continuas."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "El desarrollo es temporal (proyecto); la atención repetitiva y continua posterior es operativa."
+              },
+              {
+                "id": 7,
+                "question": "Una organización tiene tres proyectos coordinados: Implementar un ERP, migrar datos corporativos y capacitar usuarios. Juntos logran un beneficio mayor que por separado. ¿Qué concepto describe mejor esta situación?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Portafolio."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Operación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Programa."
+                  },
+                  {
+                    "id": "d",
+                    "text": "PMO."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Un programa agrupa proyectos interrelacionados para lograr beneficios sinérgicos."
+              },
+              {
+                "id": 8,
+                "question": "Una empresa evalúa proyectos de ciberseguridad, apps móviles, cloud, IA e infraestructura que no están relacionados entre sí, para decidir la inversión según la estrategia. ¿A qué concepto corresponde?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Programa."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Portafolio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Operación."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Sprint."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "El portafolio agrupa proyectos y programas diversos alineados a la estrategia organizacional."
+              },
+              {
+                "id": 9,
+                "question": "Una organización crea una unidad encargada de definir metodologías, indicadores, plantillas y capacitación para directores de proyectos. ¿Cuál es su propósito principal?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Programar todas las aplicaciones de la empresa."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sustituir a los directores de proyectos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Apoyar y estandarizar prácticas de dirección y gestión de proyectos (PMO)."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Operar los sistemas una vez finalizados."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Esa es la función medular de una Oficina de Gestión de Proyectos (PMO)."
+              },
+              {
+                "id": 10,
+                "question": "Una empresa traslada sus servidores y aplicaciones a una plataforma de computación en la nube, diseñando arquitectura y migrando servicios. ¿Cómo clasificarías este proyecto?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Proyecto de aplicaciones móviles."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Proyecto de infraestructura / Cloud."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Proyecto exclusivamente de ciberseguridad."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Proyecto de IoT."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Pertenece a la categoría de proyectos de Infraestructura Tecnológica y Cloud Computing."
+              },
+              {
+                "id": 11,
+                "question": "Una solución recopila datos de sensores en máquinas industriales y los transmite a una plataforma para monitorear variables en tiempo real. ¿Qué tipo de proyecto TIC es?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Internet de las Cosas (IoT)."
+                  },
+                  {
+                    "id": "b",
+                    "text": "ERP Empresarial."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Aplicación móvil de usuario final."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Migración de correo."
+                  }
+                ],
+                "correctOptionId": "a",
+                "explanation": "IoT combina sensores físicos, conectividad y analítica para monitoreo en tiempo real."
+              },
+              {
+                "id": 12,
+                "question": "Una empresa desea implementar un sistema integrado para compras, inventario, ventas y finanzas que sustituya sistemas aislados. ¿Qué tipo de proyecto TIC corresponde mejor?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Proyecto de IA Generativa."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Proyecto IoT."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Proyecto ERP."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Proyecto exclusivamente de red."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Un Enterprise Resource Planning (ERP) integra las áreas centrales de negocio."
+              },
+              {
+                "id": 13,
+                "question": "¿Cuál secuencia representa el ciclo de vida estándar de un proyecto estudiado en el curso?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Ejecución → Inicio → Cierre → Planificación → Monitoreo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Inicio → Planificación → Ejecución → Monitoreo y Control → Cierre."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Planificación → Inicio → Monitoreo → Ejecución → Cierre."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Inicio → Ejecución → Planificación → Cierre → Monitoreo."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Secuencia clásica y coherente: Inicio, Planificación, Ejecución, Monitoreo y Control, y Cierre."
+              },
+              {
+                "id": 14,
+                "question": "Un sistema tecnológico altamente regulado posee requisitos claros desde el inicio, pocas posibilidades de cambio y auditorías estrictas. ¿Qué enfoque resulta más conveniente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Predictivo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ágil exclusivamente."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Kanban obligatorio."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Incremental libre."
+                  }
+                ],
+                "correctOptionId": "a",
+                "explanation": "Cuando la incertidumbre es baja y los requisitos son estables y regulados, el enfoque predictivo es ideal."
+              },
+              {
+                "id": 15,
+                "question": "Una startup desarrolla una app pero los usuarios no tienen claro qué funciones prefieren. El equipo busca entregar versiones funcionales cortas para recibir feedback. ¿Qué enfoque conviene?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Predictivo rígido."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ágil / Adaptativo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Operativo continuo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cierre anticipado."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La agilidad brilla ante alta incertidumbre y necesidad de validación frecuente con usuarios."
+              },
+              {
+                "id": 16,
+                "question": "En un ERP, la infraestructura tiene requisitos fijos y contratos rígidos, pero la interfaz y experiencia de usuario requiere iteraciones con empleados. ¿Qué enfoque es más adecuado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Predictivo para absolutamente todo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ágil para absolutamente todo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Híbrido, combinando predictivo para infraestructura y ágil para interfaz."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ningún enfoque."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El enfoque híbrido aprovecha lo mejor de ambos mundos adaptado a cada componente."
+              },
+              {
+                "id": 17,
+                "question": "Un equipo entrega primero el login; luego el catálogo; luego el carrito; y finalmente los pagos. ¿Qué característica representa principalmente este ejemplo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Desarrollo incremental."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Operación continua."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Desarrollo exclusivamente predictivo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cierre del proyecto."
+                  }
+                ],
+                "correctOptionId": "a",
+                "explanation": "El desarrollo incremental entrega valor funcional utilizable en bloques sucesivos."
+              },
+              {
+                "id": 18,
+                "question": "En un proyecto, los usuarios piden funciones, el sponsor busca ahorro económico y el equipo técnico estabilidad. ¿Qué dominio de desempeño requiere especial atención?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Interesados (Stakeholders)."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Medición."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Trabajo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Entrega."
+                  }
+                ],
+                "correctOptionId": "a",
+                "explanation": "El dominio de Interesados gestiona expectativas, acuerdos y relaciones entre distintos grupos."
+              },
+              {
+                "id": 19,
+                "question": "Un PM recibe grabaciones de 5 reuniones y usa IA Generativa para obtener un borrador de acuerdos y tareas pendientes, el cual revisa y valida personalmente. ¿Qué afirmación describe mejor la situación?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "La IA está sustituyendo la dirección del proyecto."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La IA está apoyando una tarea de transformación y síntesis de información."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La IA tomó una decisión contractual crítica."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La IA garantiza que no existan errores en el acta."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Representa el uso ideal: la IA asiste procesando información y el profesional valida."
+              },
+              {
+                "id": 20,
+                "question": "Una herramienta de IA cita normas legales y fechas de vigencia para un software médico. El director decide comprobar las leyes en fuentes oficiales antes de usarlas. ¿Por qué es acertado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Porque los LLMs nunca pueden responder preguntas de tecnología."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque una respuesta elocuente no garantiza que sea verdadera y puede contener alucinaciones."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque la IA solo sirve para generar imágenes."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque la IA no puede leer texto."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Los LLMs pueden alucinar citas jurídicas o técnicas con total apariencia de veracidad."
+              },
+              {
+                "id": 21,
+                "question": "Dos empresas desarrollan sistemas: una tiene equipo de 4 y requisitos estables; otra tiene 30 personas y requisitos cambiantes. ¿Qué principio del PMBOK® aplica?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Ambas empresas deben utilizar exactamente los mismos procesos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La segunda empresa está obligada a usar Scrum."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La gestión debe adaptarse al tamaño, complejidad, incertidumbre y contexto de cada proyecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El PMBOK® es un manual rígido de cumplimiento legal."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El principio de adaptación (tailoring) es la piedra angular del PMBOK® moderno."
+              },
+              {
+                "id": 22,
+                "question": "Un proyecto entrega una plataforma digital a tiempo, pero seis meses después los usuarios siguen haciendo los trámites en papel y no bajaron los tiempos. ¿Qué elemento está faltando principalmente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Un producto."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un entregable."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La generación efectiva de valor y adopción de beneficios esperados."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una operación técnica."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Tener el producto terminado no equivale a haber creado valor si los usuarios no lo usan."
+              },
+              {
+                "id": 23,
+                "question": "Un director pide a una IA analizar 3 alternativas de proveedores. La IA lista ventajas, desventajas y riesgos. ¿Cuál es el uso más apropiado de ese análisis?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Permitir que la IA seleccione y firme el contrato automáticamente."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Utilizar el análisis como insumo consultivo y tomar la decisión tras contrastar fuentes y contexto."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Elegir automáticamente al proveedor que la IA nombró primero."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ignorar el análisis por completo."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La IA asesora y estructura alternativas; el criterio humano evalúa el contexto y decide."
+              },
+              {
+                "id": 24,
+                "question": "Un integrante del equipo propone subir contratos con datos personales de clientes y contraseñas a una IA pública para \"analizar riesgos\". ¿Qué debe hacer el equipo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Subir todo porque los modelos necesitan contexto completo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Subir únicamente las credenciales de acceso."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Verificar políticas de seguridad y prohibir compartir datos sensibles o confidenciales sin autorización."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Subir los contratos pero quitar el logo de la empresa."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La confidencialidad y protección de datos (Habeas Data, GDPR) es un deber ineludible en proyectos."
+              },
+              {
+                "id": 25,
+                "question": "Una empresa desarrolla una solución de IA para atención al cliente con alta incertidumbre de usuarios. ¿Cuál alternativa integra mejor las buenas prácticas aprendidas?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Usar enfoque predictivo rígido, entregar todo al final y aceptar ciegamente las sugerencias de la IA."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Usar enfoque ágil iterativo e incremental, medir la respuesta de los usuarios y usar IA con supervisión humana."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Considerar el proyecto como una operación rutinaria."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Delegar todas las decisiones a la IA y eliminar las pruebas de usuario."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Sintetiza la visión completa: agilidad para incertidumbre, medición de valor real y supervisión ética de la IA."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Módulo 6. Problema, Oportunidad, Objetivos y Viabilidad",
+      "order": 6,
+      "level": 2,
+      "levelTitle": "Nivel 2: Formulación y planeación",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Pantalla 1: ¿De dónde surge un proyecto?",
+            "content": "Los proyectos surgen para generar un cambio. Ese cambio puede responder a un problema existente, una necesidad, una oportunidad, un requisito o una situación que requiere transformación.\n\nEn un proyecto TIC, identificar correctamente el punto de partida evita que el equipo seleccione una tecnología antes de comprender qué necesita resolver.\n\nCuando una organización dice \"necesitamos una aplicación\", todavía no tenemos suficiente información para formular el proyecto. La aplicación es una posible solución, pero primero debemos conocer la situación que origina la necesidad.\n\nEl análisis inicial debe permitir responder: ¿qué ocurre?, ¿a quién afecta?, ¿por qué importa? y ¿qué debería cambiar?\n\nEjemplo:\nLa universidad afirma: \"Necesitamos una plataforma con IA.\"\nEl equipo investiga y descubre que:\n• Las solicitudes llegan por diferentes canales sin seguimiento centralizado.\n• Los estudiantes realizan consultas repetitivas.\n• Ahora existe una situación real que puede analizarse."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 2,
+          "blockData": {
+            "question": "La dirección propone desarrollar inmediatamente una aplicación. ¿Qué debería hacer primero el equipo?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Seleccionar la tecnología",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Diseñar las pantallas",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Analizar la situación que origina la iniciativa",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Contratar desarrolladores",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "La tecnología debe responder a una necesidad o problema identificado. Comenzar por la solución puede provocar que el proyecto resuelva algo que no era prioritario.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 3,
+          "blockData": {
+            "stepNumber": 1,
+            "title": "Paso 1: Situación Inicial del Proyecto Nivel 2",
+            "instruction": "Abre tu Plan Inicial / Backlog Integral del Nivel 2 y completa la situación inicial que pretende transformar tu proyecto:",
+            "fields": [
+              {
+                "key": "situacion_transformar",
+                "label": "¿Qué situación pretende transformar mi proyecto?",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "afectados",
+                "label": "¿Quiénes están afectados?",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "por_que_importa",
+                "label": "¿Por qué esta situación merece atención?",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "advice": "Enfócate en los hechos y las personas afectadas, sin mencionar aún lenguajes de programación o tecnologías específicas.",
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "AI_PROMPT_LAB",
+          "order": 4,
+          "blockData": {
+            "title": "Laboratorio de IA: Identificación del Punto de Partida",
+            "guidance": "Copia el prompt guía, ejecútalo en ChatGPT u otro LLM con los datos de tu caso y reflexiona sobre el resultado.",
+            "role": "Actúa como analista de proyectos TIC.",
+            "prompt": "Actúa como analista de proyectos TIC. Analiza la siguiente situación y determina qué problema, necesidad u oportunidad podría estar originando la iniciativa. No propongas todavía una solución tecnológica y no inventes información que no esté presente:\n\nSituación: [Pega aquí la descripción de tu situación inicial]",
+            "toolUrl": "https://chatgpt.com",
+            "reflectionQuestions": [
+              "¿La IA identificó el mismo problema que tú o planteó una perspectiva diferente?",
+              "¿Qué información adicional identificaste que debería validarse en la realidad?"
+            ],
+            "pointsAwarded": 20
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 5,
+          "blockData": {
+            "heading": "Pantalla 2: ¿Qué es un problema?",
+            "content": "Un problema es una situación existente que representa una condición no deseada y que afecta a personas, procesos, organizaciones o resultados.\n\nEn proyectos TIC, formular correctamente el problema permite establecer posteriormente objetivos y alternativas de solución coherentes.\n\nUn problema debe describir lo que está ocurriendo, no la tecnología que queremos utilizar. Por eso, expresiones como \"necesitamos una aplicación\" o \"debemos implementar IA\" no constituyen por sí mismas una formulación del problema.\n\nUna buena formulación permite comprender la brecha entre la situación actual y la situación que se desea alcanzar.\n\n❌ Formulación incorrecta: \"La universidad necesita una aplicación para gestionar solicitudes.\"\n\n✅ Formulación adecuada: \"Los estudiantes tienen dificultades para consultar oportunamente el estado de sus solicitudes debido a que la información se encuentra distribuida entre diferentes canales de atención.\""
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 6,
+          "blockData": {
+            "question": "¿Cuál de las siguientes opciones representa mejor un problema?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Crear una aplicación móvil",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Implementar inteligencia artificial",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Los estudiantes tienen dificultades para conocer el estado de sus solicitudes",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Comprar una plataforma tecnológica",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Un problema describe una situación actual no deseada que debe transformarse. Las otras opciones representan soluciones tecnológicas o decisiones de implementación.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 7,
+          "blockData": {
+            "stepNumber": 2,
+            "title": "Paso 2: Problema Preliminar",
+            "instruction": "Formula el problema preliminar completando las tres secciones clave:",
+            "fields": [
+              {
+                "key": "problema_actualmente",
+                "label": "Actualmente, (describe la situación no deseada)...",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "problema_afecta",
+                "label": "Esto afecta principalmente a...",
+                "fieldType": "textarea",
+                "maxWords": 60
+              },
+              {
+                "key": "problema_genera",
+                "label": "La situación genera...",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "AI_PROMPT_LAB",
+          "order": 8,
+          "blockData": {
+            "title": "Laboratorio de IA: Diferenciación de Problema vs Solución",
+            "guidance": "Usa el prompt para verificar que tu problema no esté sesgado hacia una solución tecnológica:",
+            "role": "Auditor de formulación de proyectos TIC.",
+            "prompt": "Analiza la siguiente descripción de un proyecto TIC. Identifica el problema central y diferencia entre problema, síntoma, causa, consecuencia y posible solución. No inventes información:\n\n[Pega aquí tu problema preliminar]",
+            "reflectionQuestions": [
+              "¿Identificó la IA algún sesgo de solución tecnológica prematura en tu redacción?",
+              "¿Qué elementos requieren mayor validación con datos reales?"
+            ],
+            "pointsAwarded": 20
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 9,
+          "blockData": {
+            "heading": "Pantalla 3: Problema, síntoma, causa y consecuencia",
+            "content": "Diferenciar estos elementos permite evitar diagnósticos superficiales:\n\n• Síntoma: Manifestación observable del problema (ej. los estudiantes realizan consultas repetitivas).\n• Causa: Razón que explica por qué ocurre la situación (ej. la información está distribuida entre varios canales).\n• Problema Central: La situación no deseada que requiere transformación (ej. existe dificultad para realizar seguimiento de solicitudes).\n• Consecuencia: El efecto o impacto producido (ej. aumentan los tiempos de atención e inconformidad).\n\nPreguntas clave para analizar relaciones causales:\n- Causa: ¿Por qué ocurre?\n- Problema: ¿Qué situación necesita cambiar?\n- Consecuencia: ¿Qué ocurre como resultado?"
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 10,
+          "blockData": {
+            "title": "Actividad: Síntoma, Causa, Problema y Consecuencia",
+            "instruction": "Clasifica cada elemento del caso conductor según corresponda:",
+            "categories": [
+              "Causa",
+              "Síntoma observable",
+              "Problema central",
+              "Consecuencia"
+            ],
+            "items": [
+              {
+                "id": "c1",
+                "text": "Información distribuida entre varios canales",
+                "category": "Causa"
+              },
+              {
+                "id": "c2",
+                "text": "Aumento repetitivo de consultas de estudiantes",
+                "category": "Síntoma observable"
+              },
+              {
+                "id": "c3",
+                "text": "Dificultad para realizar seguimiento a las solicitudes",
+                "category": "Problema central"
+              },
+              {
+                "id": "c4",
+                "text": "Retrasos en los tiempos de respuesta y atención",
+                "category": "Consecuencia"
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 11,
+          "blockData": {
+            "stepNumber": 3,
+            "title": "Paso 3: Matriz Causal (Causas y Consecuencias)",
+            "instruction": "Desglosa las posibles causas y consecuencias de tu proyecto:",
+            "fields": [
+              {
+                "key": "problema_central_refinado",
+                "label": "Problema Central Refinado",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "causas_lista",
+                "label": "Posibles Causas (al menos 3):",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "consecuencias_lista",
+                "label": "Posibles Consecuencias (al menos 3):",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "info_pendiente_validar",
+                "label": "Información pendiente de validar en campo:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 12,
+          "blockData": {
+            "heading": "Pantalla 4: Evidencias y Necesidades",
+            "content": "La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar \"los usuarios están inconformes\"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como \"Pendiente de validación\" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran más de 450 consultas mensuales repetitivas.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 13,
+          "blockData": {
+            "question": "¿Cuál de las siguientes afirmaciones representa mejor una evidencia?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Creemos que los estudiantes están inconformes",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Los estudiantes necesitan una aplicación",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Los registros de atención muestran numerosas consultas sobre el estado de solicitudes",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "La IA debería solucionar el problema",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "La evidencia debe permitir comprobar objetivamente una afirmación mediante datos o registros observables. Las demás representan percepciones o propuestas de solución.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 14,
+          "blockData": {
+            "stepNumber": 4,
+            "title": "Paso 4: Registro de Evidencias y Necesidades",
+            "instruction": "Documenta las evidencias que respaldan el problema y las necesidades identificadas:",
+            "fields": [
+              {
+                "key": "evidencias_tabla",
+                "label": "Evidencias (Fuente y Estado: Por validar / Validada):",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "necesidades_usuarios",
+                "label": "Necesidades identificadas de los Usuarios:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "necesidades_organizacion",
+                "label": "Necesidades identificadas de la Organización:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 15,
+          "blockData": {
+            "heading": "Pantalla 5: Árbol de problemas",
+            "content": "El árbol de problemas es una herramienta visual que representa las relaciones lógicas entre las causas, el problema central y sus consecuencias:\n\n• Consecuencias (Hojas y Ramas): Efectos directos e indirectos.\n• Problema Central (Tronco): La situación focal que requiere ser transformada.\n• Causas (Raíces): Causas directas e indirectas que originan el problema.\n\nEsta estructura permite clarificar la lógica causal antes de diseñar objetivos o comprometer recursos técnicos."
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 16,
+          "blockData": {
+            "stepNumber": 5,
+            "title": "Paso 5: Árbol de Problemas Estructurado",
+            "instruction": "Construye el árbol de problemas para tu proyecto integrador:",
+            "fields": [
+              {
+                "key": "causas_indirectas",
+                "label": "Causas Indirectas (Raíces profundas):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "causas_directas",
+                "label": "Causas Directas (Raíces inmediatas):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "problema_central_arbol",
+                "label": "Problema Central (Tronco):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "consecuencias_directas",
+                "label": "Consecuencias Directas (Ramas):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "consecuencias_indirectas",
+                "label": "Consecuencias Indirectas (Efectos finales):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 17,
+          "blockData": {
+            "heading": "Pantalla 6: ¿Qué es una oportunidad?",
+            "content": "Una oportunidad es una situación favorable que puede aprovecharse para generar valor, mejorar el desempeño, innovar, desarrollar nuevas capacidades o responder a cambios del entorno.\n\nUn proyecto puede surgir para resolver un problema, pero también para aprovechar una oportunidad favorable (como la disponibilidad de nuevas herramientas de IA, nuevas regulaciones o capacidades de integración cloud).\n\nIdentificar una oportunidad no significa comprar tecnología a ciegas: primero debemos determinar si existe valor suficiente y si las condiciones organizacionales permiten aprovecharla."
+          }
+        },
+        {
+          "type": "SCENARIO",
+          "order": 18,
+          "blockData": {
+            "title": "Escenario: Detección de Oportunidad de Innovación",
+            "situation": "Una organización funciona adecuadamente en sus procesos de registro manual, pero una nueva tecnología de procesamiento de documentos con IA permitiría automatizar la extracción de datos.",
+            "choices": [
+              {
+                "id": "c1",
+                "text": "Comprar inmediatamente licencias empresariales de la herramienta de IA.",
+                "isOptimal": false,
+                "feedback": "Comprar software sin evaluar necesidades, viabilidad ni valor real genera gastos innecesarios y riesgo de no adopción."
+              },
+              {
+                "id": "c2",
+                "text": "Analizar la oportunidad en términos de valor, viabilidad, riesgos y alineación estratégica antes de comprometer recursos.",
+                "isOptimal": true,
+                "feedback": "¡Excelente decisión! Una oportunidad debe evaluarse según su valor neto y capacidad de la organización para adoptarla."
+              },
+              {
+                "id": "c3",
+                "text": "Rechazar la tecnología porque el proceso actual funciona y no debe cambiarse nunca.",
+                "isOptimal": false,
+                "feedback": "Cerrarse a la innovación impide mejorar la competitividad y la eficiencia operativa."
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 19,
+          "blockData": {
+            "stepNumber": 6,
+            "title": "Paso 6: Oportunidad y Valor Potencial",
+            "instruction": "Define la oportunidad que tu proyecto TIC puede aprovechar:",
+            "fields": [
+              {
+                "key": "oportunidad_identificada",
+                "label": "Oportunidad favorable identificada:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "valor_potencial",
+                "label": "Valor potencial esperado (eficiencia, satisfacción, impacto):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "info_pendiente_oportunidad",
+                "label": "Información pendiente de validar:",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 20,
+          "blockData": {
+            "heading": "Pantalla 7-10: De la Situación Actual a los Objetivos SMART",
+            "content": "Un objetivo expresa una condición futura que el proyecto pretende alcanzar.\n\n• Objetivo General: Expresa el propósito principal del proyecto y resume la transformación esperada. Debe estar orientado a resultados y alineado al problema o la oportunidad.\n\n• Objetivos Específicos: Descomponen el objetivo general en resultados concretos y verificables.\n\nFórmula de transformación:\nSituación problemática actual ➔ Situación deseada ➔ Objetivo general orientado a valor."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 21,
+          "blockData": {
+            "question": "¿Cuál de los siguientes objetivos está mejor formulado como Objetivo General?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Crear una aplicación móvil y programar un sistema",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Implementar inteligencia artificial porque está de moda",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Mejorar la trazabilidad y seguimiento de las solicitudes estudiantiles mediante una solución digital centralizada",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Comprar servidores en la nube para el departamento de TI",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "La opción C expresa claramente el resultado y la transformación esperada. Las demás se limitan a actividades o tecnologías.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 22,
+          "blockData": {
+            "question": "Al redactar objetivos específicos, ¿cuál de los siguientes NO está correctamente formulado?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Analizar el proceso actual de gestión de solicitudes",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Identificar los requisitos funcionales y no funcionales de los usuarios",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Hacer algo moderno con tecnología de punta",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Validar la solución digital con usuarios reales",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "\"Hacer algo moderno\" es ambiguo, subjetivo y no permite comprobar de manera objetiva qué resultado verificable se pretende alcanzar.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 23,
+          "blockData": {
+            "stepNumber": 7,
+            "title": "Paso 7: Objetivos General y Específicos del Proyecto",
+            "instruction": "Formula el objetivo general y al menos 4 objetivos específicos verificables:",
+            "fields": [
+              {
+                "key": "objetivo_general",
+                "label": "Objetivo General del Proyecto TIC:",
+                "fieldType": "textarea",
+                "maxWords": 70
+              },
+              {
+                "key": "objetivo_esp_1",
+                "label": "Objetivo Específico 1 (Diagnóstico/Análisis):",
+                "fieldType": "text"
+              },
+              {
+                "key": "objetivo_esp_2",
+                "label": "Objetivo Específico 2 (Diseño/Requisitos):",
+                "fieldType": "text"
+              },
+              {
+                "key": "objetivo_esp_3",
+                "label": "Objetivo Específico 3 (Desarrollo/Implementación):",
+                "fieldType": "text"
+              },
+              {
+                "key": "objetivo_esp_4",
+                "label": "Objetivo Específico 4 (Validación/Despliegue):",
+                "fieldType": "text"
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 24,
+          "blockData": {
+            "heading": "Pantalla 11-16: Justificación y Viabilidad 5D (Técnica, Económica, Operativa, Legal, Temporal)",
+            "content": "Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Cumple con protección de datos personales (Habeas Data), licencias y regulaciones?\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica"
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 25,
+          "blockData": {
+            "stepNumber": 8,
+            "title": "Paso 8: Matriz 5D de Viabilidad y Justificación",
+            "instruction": "Evalúa la situación actual y estado del semáforo para cada dimensión de viabilidad:",
+            "fields": [
+              {
+                "key": "justificacion_proyecto",
+                "label": "Justificación (¿Por qué es necesario y qué valor aportará?):",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "viabilidad_tecnica",
+                "label": "Viabilidad Técnica (Estado: Favorable / Condicionada / Crítica y situación):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "viabilidad_economica",
+                "label": "Viabilidad Económica (Presupuesto vs costos estimados):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "viabilidad_operativa",
+                "label": "Viabilidad Operativa (Capacidad de adopción y capacitación):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "viabilidad_legal",
+                "label": "Viabilidad Legal (Habeas Data, privacidad, términos):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "viabilidad_temporal",
+                "label": "Viabilidad Temporal (Fecha límite y tiempo estimado):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 40
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 26,
+          "blockData": {
+            "heading": "Pantallas 17-21: Supuestos, Restricciones y Reto de Decisión",
+            "content": "• Supuesto: Condición que se considera verdadera para efectos de planificación y que debe validarse.\n• Restricción: Condición que limita las opciones o posibilidades del proyecto (presupuesto tope, plazo fijo, regulaciones).\n\nReto de Decisión (¿Continuar o Reformular?):\nCuando un proyecto tiene viabilidad técnica favorable pero viabilidad económica o temporal condicionada, la decisión profesional recomendada es: Continuar con condiciones, resolviendo las principales incertidumbres antes de comprometer inversiones mayores."
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 27,
+          "blockData": {
+            "title": "Actividad: Clasificación de Supuestos vs Restricciones",
+            "instruction": "Clasifica cada enunciado según corresponda a un Supuesto o a una Restricción:",
+            "categories": [
+              "Supuesto",
+              "Restricción"
+            ],
+            "items": [
+              {
+                "id": "sr1",
+                "text": "Presupuesto máximo aprobado de $20 millones COP",
+                "category": "Restricción"
+              },
+              {
+                "id": "sr2",
+                "text": "Se espera que los usuarios tengan acceso continuo a Internet",
+                "category": "Supuesto"
+              },
+              {
+                "id": "sr3",
+                "text": "Fecha límite de entrega obligatoria en cuatro meses",
+                "category": "Restricción"
+              },
+              {
+                "id": "sr4",
+                "text": "Se asume que el proveedor mantendrá disponible el servicio de API",
+                "category": "Supuesto"
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 28,
+          "blockData": {
+            "stepNumber": 9,
+            "title": "Paso 9: Supuestos, Restricciones y Decisión de Viabilidad",
+            "instruction": "Registra los supuestos, restricciones y la decisión formal de viabilidad:",
+            "fields": [
+              {
+                "key": "supuestos_lista",
+                "label": "Supuestos iniciales (al menos 3):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "restricciones_lista",
+                "label": "Restricciones iniciales (al menos 3):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "decision_viabilidad",
+                "label": "Decisión preliminar (Continuar / Continuar con condiciones / Reformular / Detener) y justificación:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "registro_ia",
+                "label": "Registro de uso de IA (Prompt utilizado, cambios propios y validaciones realizadas):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "EXAM",
+          "order": 29,
+          "blockData": {
+            "title": "Microevaluación Módulo 6: Formulación, Objetivos y Viabilidad",
+            "description": "Demuestra tu comprensión de formulación de problemas TIC, árbol causal, objetivos SMART y viabilidad 5D.",
+            "questionsCount": 10,
+            "pointsPerQuestion": 10,
+            "passingScore": 70,
+            "badgeKey": "formulador-proyectos",
+            "pointsAwarded": 100,
+            "questions": [
+              {
+                "id": 1,
+                "question": "¿Cuál sería la formulación más adecuada del problema para la plataforma académica?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "La universidad no tiene una aplicación móvil moderna."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La universidad necesita implementar inteligencia artificial."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los estudiantes tienen dificultades para consultar oportunamente el estado de sus solicitudes debido a la dispersión de la información."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La universidad debe contratar desarrolladores para crear una aplicación."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El problema describe una situación real no deseada que debe transformarse, no una tecnología o actividad."
+              },
+              {
+                "id": 2,
+                "question": "¿Cuál de las siguientes relaciones causales representa mejor la lógica del problema?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Consultas repetitivas → múltiples canales → problema central."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Múltiples canales sin integración → dificultad de seguimiento → consultas repetitivas y mayores tiempos de atención."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Aplicación móvil → inteligencia artificial → reducción de consultas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Funcionarios → clientes → sistema tecnológico."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Establece la relación lógica directa entre la causa raíz, el problema central y las consecuencias observables."
+              },
+              {
+                "id": 3,
+                "question": "Un integrante afirma: \"Estoy seguro de que los estudiantes están inconformes porque todos se quejan\". ¿Qué debe hacer el equipo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Utilizar la afirmación como evidencia suficiente porque el equipo conoce el entorno."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pedir a la IA que invente estadísticas sobre la inconformidad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Recopilar información verificable y registros que permitan validar la existencia y magnitud del problema."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Iniciar inmediatamente el desarrollo de software."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Las percepciones deben contrastarse con datos e información verificable antes de asumirlas como evidencia."
+              },
+              {
+                "id": 4,
+                "question": "Una empresa tiene un proceso que funciona pero consume muchas horas manuales; una nueva tecnología permitiría automatizarlo. ¿Cómo debe interpretarse?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Como un problema crítico que obliga a cancelar el proceso actual."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Como una oportunidad potencial que debe analizarse en términos de valor y viabilidad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Como una obligación de comprar inmediatamente la nueva tecnología."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Como evidencia suficiente para aprobar el proyecto sin análisis."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Una oportunidad representa una opción favorable que debe evaluarse en función del valor neto, costos y viabilidad."
+              },
+              {
+                "id": 5,
+                "question": "¿Cuál representa mejor un Objetivo General?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Desarrollar una aplicación móvil en Flutter."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Programar una base de datos relacional."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mejorar la trazabilidad y seguimiento de las solicitudes mediante una solución digital centralizada."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Comprar servidores dedicados para el nuevo sistema."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Expresa el propósito y la transformación esperada, manteniendo trazabilidad directa con el problema."
+              },
+              {
+                "id": 6,
+                "question": "Sobre los objetivos específicos de un proyecto TIC, ¿cuál afirmación es correcta?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Todos los objetivos específicos deben comenzar con la palabra \"Crear\"."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Son coherentes cuando descomponen el propósito general en resultados concretos orientados a alcanzarlo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Solo debería existir un único objetivo específico por proyecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Deben limitarse a listar los nombres de las tecnologías utilizadas."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Los objetivos específicos descomponen el objetivo general en resultados verificables que guían las fases del proyecto."
+              },
+              {
+                "id": 7,
+                "question": "¿Cuál de las siguientes justificaciones es más sólida para un proyecto TIC?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "\"Debemos desarrollar la solución porque la inteligencia artificial es una tecnología moderna y popular.\""
+                  },
+                  {
+                    "id": "b",
+                    "text": "\"El proyecto busca atender dificultades en el seguimiento de solicitudes, mejorar la disponibilidad de información y optimizar la atención.\""
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ambas son igualmente sólidas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los proyectos tecnológicos no requieren justificación de negocio."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Conecta la iniciativa con una necesidad concreta, beneficiarios reales y el valor esperado que justifica la inversión."
+              },
+              {
+                "id": 8,
+                "question": "La nueva plataforma debe integrarse con un sistema legado sin documentación técnica ni APIs conocidas. ¿Qué debe hacerse primero?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Comprar inmediatamente la nueva plataforma."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Asumir que la integración será automática y transparente."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Investigar las capacidades, dependencias y restricciones técnicas del sistema existente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Eliminar el sistema legado sin realizar análisis de impacto."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La viabilidad técnica exige evaluar dependencias y restricciones antes de comprometer decisiones arquitectónicas."
+              },
+              {
+                "id": 9,
+                "question": "Un proyecto presenta beneficios potenciales pero todavía no ha estimado los costos de infraestructura, desarrollo ni operación. ¿Cuál debe ser la actuación?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Aprobar el proyecto porque los beneficios siempre superan los costos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cancelar el proyecto inmediatamente."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Realizar una estimación inicial de costos y contrastarla con los recursos y beneficios esperados."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pedir a la IA que invente un presupuesto ficticio."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La viabilidad económica relaciona los recursos requeridos con el retorno de valor esperado antes de comprometer presupuesto."
+              },
+              {
+                "id": 10,
+                "question": "El proyecto tiene problema claro, solución técnicamente posible, pero presupuesto no confirmado y plazo ajustado. ¿Cuál es la decisión más adecuada?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Ejecutar inmediatamente sin importar el presupuesto."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cancelar definitivamente el proyecto."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Continuar la formulación resolviendo las incertidumbres económicas, legales y temporales antes de comprometer la ejecución."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Dejar que la IA tome la decisión definitiva."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La incertidumbre controlada no exige cancelar, sino condicionar la ejecución a la mitigación de los riesgos críticos."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Módulo 7. Interesados (Stakeholders), Requisitos, Alcance y Entregables",
+      "order": 7,
+      "level": 2,
+      "levelTitle": "Nivel 2: Formulación y planeación",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Pantalla 1-2: Stakeholders Internos y Externos",
+            "content": "Los stakeholders o interesados son personas, grupos u organizaciones que pueden influir en el proyecto, verse afectados por sus decisiones o resultados, o percibir que sus intereses se ven impactados.\n\n• Internos: Patrocinador (Sponsor), equipo de TI, usuarios directos, directivos, área jurídica, seguridad informática.\n• Externos: Proveedores cloud, consultores, usuarios externos, entidades reguladoras y aliados.\n\nUn error frecuente es entrevistar únicamente al usuario final: seguridad informática puede imponer restricciones de protección de datos, y el área jurídica puede definir condiciones normativas ineludibles."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 2,
+          "blockData": {
+            "question": "La universidad afirma: \"Solo necesitamos entrevistar a los estudiantes porque ellos utilizarán la plataforma\". ¿Es correcta esta decisión?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Sí, porque son los únicos que interactúan con la interfaz",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "No, porque existen otros interesados (TI, seguridad, administración) que aportan requisitos y restricciones críticas",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "Sí, para evitar reuniones innecesarias",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "No, porque solo la dirección debe tomar decisiones",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Omitir a áreas como seguridad o soporte genera requisitos incompletos y reprocesos técnicos mayores.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 3,
+          "blockData": {
+            "stepNumber": 10,
+            "title": "Paso 10: Registro Inicial de Stakeholders (Internos y Externos)",
+            "instruction": "Identifica al menos 4 stakeholders clave para tu iniciativa TIC:",
+            "fields": [
+              {
+                "key": "sh1_datos",
+                "label": "Stakeholder 1 (Nombre/Grupo, Rol, Interno/Externo, Necesidad principal):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "sh2_datos",
+                "label": "Stakeholder 2 (Nombre/Grupo, Rol, Interno/Externo, Necesidad principal):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "sh3_datos",
+                "label": "Stakeholder 3 (Seguridad / Soporte / Jurídica):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "sh4_datos",
+                "label": "Stakeholder 4 (Patrocinador / Directivo):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 25
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
+            "heading": "Pantalla 3-5: Matriz Poder-Interés y Estrategia de Comunicación",
+            "content": "• Poder: Capacidad para influir en recursos, decisiones o resultados del proyecto.\n• Interés: Nivel de atención o preocupación frente al proyecto.\n\nCuadrantes de Gestión:\n- Alto Poder / Alto Interés: Gestionar atentamente (comunicación cercana y frecuente).\n- Alto Poder / Bajo Interés: Mantener satisfecho.\n- Bajo Poder / Alto Interés: Mantener informado.\n- Bajo Poder / Bajo Interés: Monitorear.\n\nLa actitud (favorable, neutral o resistente) determina además la estrategia de involucramiento para mitigar resistencias al cambio."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 5,
+          "blockData": {
+            "question": "Un patrocinador institucional que tiene autoridad para aprobar el presupuesto y participa activamente en el comité, ¿dónde debe ubicarse?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Bajo poder / Bajo interés",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Bajo poder / Alto interés",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Alto poder / Bajo interés",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Alto poder / Alto interés",
+                "isCorrect": true
+              }
+            ],
+            "explanation": "Tiene alta autoridad sobre los recursos y alto interés en los resultados; requiere gestión y comunicación cercana.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 6,
+          "blockData": {
+            "stepNumber": 11,
+            "title": "Paso 11: Matriz Poder-Interés y Plan de Comunicación",
+            "instruction": "Asigna prioridad y estrategia de comunicación a tus stakeholders:",
+            "fields": [
+              {
+                "key": "matriz_poder_interes",
+                "label": "Matriz Poder e Interés (Stakeholder, Poder A/M/B, Interés A/M/B, Cuadrante):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "estrategia_comunicacion",
+                "label": "Plan de Comunicación (Stakeholder, Información a transmitir, Canal, Frecuencia):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 7,
+          "blockData": {
+            "heading": "Pantallas 6-10: Requisitos Funcionales, No Funcionales y MoSCoW",
+            "content": "Secuencia fundamental: Necesidad ➔ Requisito ➔ Solución\n\n• Requisitos Funcionales (RF): Qué debe hacer el sistema (ej. permitir registro de solicitudes, enviar alertas por correo).\n• Requisitos No Funcionales (RNF): Criterios de calidad, seguridad, rendimiento y disponibilidad (ej. tiempo de respuesta < 2s, cifrado TLS 1.3, disponibilidad 99.5%).\n\nPriorización MoSCoW:\n- Must have: Indispensable para que la solución funcione y aporte valor mínimo.\n- Should have: Importante pero no crítico para el lanzamiento inicial.\n- Could have: Deseable si sobran recursos o tiempo.\n- Won’t have: Explícitamente fuera del alcance de la versión actual."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 8,
+          "blockData": {
+            "question": "¿Cuál de los siguientes corresponde a un Requisito No Funcional?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Permitir que los usuarios creen una cuenta con correo y contraseña",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Permitir que los administradores generen reportes mensuales",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Permitir consultar el estado de la solicitud ingresando el número de radicado",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Garantizar que la información sensible almacenada esté protegida mediante cifrado AES-256",
+                "isCorrect": true
+              }
+            ],
+            "explanation": "El cifrado AES-256 define una condición de seguridad y calidad técnica, mientras que las otras son funcionalidades del sistema.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 9,
+          "blockData": {
+            "question": "¿Cuál de los siguientes requisitos está mejor formulado por ser específico y objetivamente verificable?",
+            "options": [
+              {
+                "id": "a",
+                "text": "El sistema deberá ofrecer un nivel de seguridad muy alto para proteger a todos",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "El sistema deberá funcionar correctamente y brindar una buena experiencia",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "El sistema deberá bloquear la cuenta después de cinco intentos fallidos consecutivos de autenticación",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "El sistema deberá contar con una interfaz moderna y atractiva",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Establece una condición medible y comprobable mediante pruebas de software. Las demás opciones usan adjetivos subjetivos.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 10,
+          "blockData": {
+            "stepNumber": 12,
+            "title": "Paso 12: Catálogo de Requisitos y Priorización MoSCoW",
+            "instruction": "Registra los requisitos funcionales y no funcionales clasificados con MoSCoW:",
+            "fields": [
+              {
+                "key": "rf_must",
+                "label": "Requisitos Funcionales MUST (Indispensables):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "rf_should_could",
+                "label": "Requisitos Funcionales SHOULD y COULD:",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "rnf_calidad",
+                "label": "Requisitos No Funcionales (Seguridad, Rendimiento, Disponibilidad):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "wont_have",
+                "label": "Requisitos WON'T HAVE (Fuera del alcance de esta versión):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 11,
+          "blockData": {
+            "heading": "Pantallas 11-16: Alcance, Exclusiones, Entregables y EDT/WBS",
+            "content": "El alcance define las fronteras del proyecto: qué incluye y qué se excluye formalmente.\n\n• Entregable: Un resultado tangible, verificable y comprobable (ej. \"Módulo de radicación desplegado y validado\", NO \"programar pantallas\" que es una actividad).\n• Criterios de Aceptación: Condiciones medibles que determinan si el entregable satisface los requisitos.\n• EDT/WBS (Estructura de Desglose del Trabajo): Descomposición jerárquica orientada a entregables."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 12,
+          "blockData": {
+            "question": "¿Cuál de las siguientes opciones representa un entregable verificable (y no una actividad)?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Programar el módulo de usuarios",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Realizar reuniones de seguimiento semanal",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Sistema de autenticación funcional y validado con pruebas de seguridad",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Analizar los requisitos de la base de datos",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Un entregable es el producto final verificable. Las otras opciones son actividades (verbos en infinitivo que representan el esfuerzo).",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 13,
+          "blockData": {
+            "stepNumber": 13,
+            "title": "Paso 13: Alcance, Entregables y Criterios de Aceptación",
+            "instruction": "Define el alcance positivo, exclusiones y lista de entregables principales:",
+            "fields": [
+              {
+                "key": "alcance_inclusiones",
+                "label": "Inclusiones del Alcance (Qué abarca el proyecto):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "alcance_exclusiones",
+                "label": "Exclusiones formales (Qué NO incluye explícitamente):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "entregables_principales",
+                "label": "Entregables Principales (E01 a E04) y Criterios de Aceptación:",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "edt_jerarquia",
+                "label": "Estructura de Desglose del Trabajo (EDT/WBS jerárquica):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 14,
+          "blockData": {
+            "heading": "Pantallas 17-23: Cambios, Deuda Técnica, Enfoque y Seguridad",
+            "content": "• Gestión de Cambios: Ninguna solicitud se incorpora automáticamente. Primero se evalúa impacto en alcance, tiempo, costo, riesgo y valor.\n• Deuda Técnica: Decisión consciente de implementar una solución simplificada temporal para ganar velocidad, documentando la obligación de refactorizarla posteriormente.\n• Enfoque de Desarrollo: Predictivo (requisitos estables), Ágil (alta incertidumbre e iteración), Híbrido (combina infraestructura planificada con software iterativo)."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 15,
+          "blockData": {
+            "question": "Durante el desarrollo, un stakeholder solicita agregar un módulo de pagos en línea que no estaba en el alcance. ¿Qué debe hacer el equipo?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Incorporarlo de inmediato para complacer al stakeholder",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Rechazarlo automáticamente sin ningún análisis",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Analizar su impacto en valor, alcance, recursos, tiempo, costos y riesgos antes de someterlo al control de cambios",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Programarlo en secreto fuera de horario laboral",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Cualquier modificación al alcance debe someterse a evaluación integrada de cambios para evitar el desborde no controlado (scope creep).",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 16,
+          "blockData": {
+            "stepNumber": 14,
+            "title": "Paso 14: Gestión de Cambios, Deuda Técnica y Enfoque",
+            "instruction": "Consolida la estrategia de cambios, deuda técnica y enfoque:",
+            "fields": [
+              {
+                "key": "procedimiento_cambios",
+                "label": "Estrategia de Control de Cambios y Versiones:",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "deuda_tecnica_registro",
+                "label": "Registro de Deuda Técnica Consciente (Decisión, Riesgo y Plan de pago):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              },
+              {
+                "key": "enfoque_seleccionado",
+                "label": "Enfoque seleccionado (Predictivo / Ágil / Híbrido) y Justificación:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "EXAM",
+          "order": 17,
+          "blockData": {
+            "title": "Microevaluación Módulo 7: Interesados, Requisitos y Alcance",
+            "description": "Valida tus conocimientos en gestión de stakeholders, requisitos verificables, EDT y control del alcance.",
+            "questionsCount": 4,
+            "pointsPerQuestion": 25,
+            "passingScore": 75,
+            "badgeKey": "arquitecto-alcance",
+            "pointsAwarded": 100,
+            "questions": [
+              {
+                "id": 1,
+                "question": "Durante la identificación de interesados no se incluyó al área de seguridad informática, aunque establece políticas obligatorias. ¿Qué debería hacer el equipo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Mantener únicamente a los usuarios directos de la plataforma."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Incluir al área de seguridad como stakeholder y analizar sus requisitos e influencia."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Incluirla únicamente cuando comience la fase de pruebas finales."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Permitir que la inteligencia artificial decida si debe participar."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "Seguridad es un interesado clave porque impone restricciones obligatorias que deben considerarse desde el inicio."
+              },
+              {
+                "id": 2,
+                "question": "Un usuario afirma: \"Necesitamos una aplicación móvil porque es más moderna\". El equipo aún no conoce la necesidad real. ¿Qué debe hacer primero?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Incorporar inmediatamente la aplicación móvil al alcance."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Crear una tarea para programar la aplicación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Investigar la necesidad y el problema antes de definir la solución tecnológica."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Utilizar IA para determinar automáticamente cuál debe ser la solución."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La aplicación móvil es una solución potencial. Primero debe comprenderse qué necesidad o brecha se busca resolver."
+              },
+              {
+                "id": 3,
+                "question": "Entre los requisitos se encuentra: \"el sistema debe ser fácil de usar\", pero no existe ningún criterio de comprobación. ¿Qué debe hacerse?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Mantener el requisito porque todos entienden intuitivamente su significado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Eliminarlo porque los requisitos no funcionales no son necesarios."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Reformularlo para establecer condiciones objetivas y verificables (ej. tasa de éxito en tareas de usuario)."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pedir a la IA que determine si el requisito está cumplido."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Los requisitos deben ser verificables para evitar ambigüedades durante la aceptación y las pruebas."
+              },
+              {
+                "id": 4,
+                "question": "El cliente solicita un módulo de pagos que aportaría valor pero aumentaría tiempo, recursos y riesgos. ¿Cuál es la acción correcta?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Incorporarlo inmediatamente porque el cliente lo solicitó."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Rechazarlo automáticamente porque no estaba en el alcance."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Analizar su impacto en valor, alcance, recursos, tiempo, costos y riesgos antes de decidir."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Incorporarlo a la EDT y evaluar las consecuencias después de haberlo construido."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Todo cambio debe someterse a análisis de impacto multidimensional antes de ser aprobado o rechazado."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Módulo 8. Cronograma, Recursos y Costos",
+      "order": 8,
+      "level": 2,
+      "levelTitle": "Nivel 2: Formulación y planeación",
+      "blocks": [
+        {
+          "type": "TEXT",
+          "order": 1,
+          "blockData": {
+            "heading": "Pantalla 1-4: Del Alcance a la Descomposición de Actividades",
+            "content": "Planificar significa determinar qué trabajo debe realizarse, cuándo, con qué recursos y bajo qué condiciones.\n\nPara construir el cronograma, cada entregable de la EDT debe descomponerse en actividades manejables (ej. Diseñar interfaz, Desarrollar API, Configurar base de datos, Probar integración).\n\nUna actividad demasiado general (ej. \"hacer el sistema\") oculta trabajos dispares e impide un seguimiento real de los avances."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 2,
+          "blockData": {
+            "question": "¿Cuál de las siguientes opciones representa mejor un cronograma?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Una lista de funcionalidades deseadas por el usuario",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Una lista del personal contratado en el proyecto",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Actividades organizadas temporalmente con duración, dependencias, hitos y fechas",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Una matriz de riesgos del departamento de TI",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "El cronograma es un modelo dinámico que organiza el trabajo en el tiempo con dependencias y secuencias lógicas.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 3,
+          "blockData": {
+            "stepNumber": 15,
+            "title": "Paso 15: Descomposición de Entregables en Actividades",
+            "instruction": "Descompón los principales entregables en actividades específicas y estimables:",
+            "fields": [
+              {
+                "key": "actividades_diseno",
+                "label": "Actividades de Análisis y Diseño (A01 - A04):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "actividades_desarrollo",
+                "label": "Actividades de Desarrollo y Configuración (A05 - A08):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "actividades_pruebas",
+                "label": "Actividades de Pruebas y Despliegue (A09 - A12):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
+            "heading": "Pantalla 5-10: Duración, Esfuerzo, Dependencias y Hitos",
+            "content": "• Esfuerzo vs Duración: Esfuerzo es la cantidad de horas netas de trabajo (ej. 24 horas). Duración es el tiempo calendario necesario considerando la jornada disponible (ej. 24h ÷ 6h/día = 4 días calendario).\n\n• Relaciones de Dependencia: Fin-Inicio (FS, la más común: una actividad debe terminar para que inicie la siguiente), Inicio-Inicio (SS), Fin-Fin (FF).\n\n• Hito: Acontecimiento significativo de duración cero que marca un logro o aprobación (ej. \"Requisitos aprobados\", \"MVP disponible en staging\")."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 5,
+          "blockData": {
+            "question": "La actividad B (Pruebas de conexión) no puede comenzar hasta que la actividad A (Configurar base de datos) haya terminado. ¿Qué tipo de relación lógica existe?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Inicio – Inicio",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Fin – Inicio",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "Fin – Fin",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "Inicio – Fin",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "La relación Fin - Inicio (FS) indica que la sucesora solo puede comenzar cuando la predecesora haya concluido.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 6,
+          "blockData": {
+            "stepNumber": 16,
+            "title": "Paso 16: Secuencia Lógica, Dependencias e Hitos",
+            "instruction": "Establece las relaciones de precedencia y define los hitos clave:",
+            "fields": [
+              {
+                "key": "tabla_dependencias",
+                "label": "Tabla de Dependencias (Actividad, Predecesora, Tipo de relación):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "hitos_proyecto",
+                "label": "Hitos Principales (H01 a H04 con fecha estimada y criterio de cumplimiento):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "restricciones_temporales",
+                "label": "Restricciones de Calendario (Ventanas de mantenimiento, vacaciones, fechas límite):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 7,
+          "blockData": {
+            "heading": "Pantalla 11-15: Ruta Crítica, Holgura y Diagrama de Gantt",
+            "content": "• Ruta Crítica (CPM): La secuencia más larga de actividades dependientes que determina la duración mínima total del proyecto. Cualquier retraso en una actividad de la ruta crítica retrasará la fecha final del proyecto.\n\n• Holgura: Margen de tiempo que una actividad puede retrasarse sin afectar la fecha de finalización del proyecto. Las actividades sobre la ruta crítica tienen holgura cero (0).\n\n• Diagrama de Gantt: Representación visual que muestra la distribución temporal de actividades, dependencias, hitos y avances."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 8,
+          "blockData": {
+            "question": "En un proyecto, la Ruta A es la ruta crítica con 12 días. La actividad A2 (Diseño) sufre un retraso y aumenta su duración en 3 días. ¿Qué sucederá con la duración del proyecto?",
+            "options": [
+              {
+                "id": "a",
+                "text": "La duración del proyecto disminuirá 3 días",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "La duración del proyecto aumentará en 3 días si no se aplica una acción compensatoria",
+                "isCorrect": true
+              },
+              {
+                "id": "c",
+                "text": "La duración no cambiará porque las demás actividades mantienen su duración",
+                "isCorrect": false
+              },
+              {
+                "id": "d",
+                "text": "La ruta crítica desaparecerá automáticamente",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Al pertenecer a la ruta crítica (holgura cero), cualquier retraso desplaza directamente la fecha final del proyecto.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 9,
+          "blockData": {
+            "stepNumber": 17,
+            "title": "Paso 17: Ruta Crítica y Estructura del Diagrama de Gantt",
+            "instruction": "Identifica la ruta crítica preliminar y la representación temporal en Gantt:",
+            "fields": [
+              {
+                "key": "ruta_critica_calculo",
+                "label": "Cálculo de Ruta Crítica (Actividades críticas, duraciones y holgura):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "esquema_gantt",
+                "label": "Cronograma / Esquema Gantt (Semanas 1 a N con actividades solapadas):",
+                "fieldType": "textarea",
+                "maxWords": 150
+              },
+              {
+                "key": "monitoreo_desviaciones",
+                "label": "Estrategia de Seguimiento y Control ante Desviaciones:",
+                "fieldType": "textarea",
+                "maxWords": 80
+              }
+            ],
+            "pointsAwarded": 35
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 10,
+          "blockData": {
+            "heading": "Pantallas 16-22: Gestión Integral de Recursos y Capacidad",
+            "content": "Los recursos incluyen todo lo necesario para ejecutar el trabajo:\n\n• Humanos: Desarrolladores, UX/UI, ciberseguridad, testers, líderes de proyecto.\n• Tecnológicos: Servidores cloud, bases de datos, licencias IDE, APIs de terceros.\n• Materiales/Servicios: Equipos físicos, certificados SSL, conectividad.\n• Financieros: Presupuesto asignado y flujo de caja.\n\nSobreasignación y Cuellos de Botella:\nSi un recurso tiene 20 horas disponibles y se le asignan 30 horas, se genera sobreasignación. Si múltiples actividades críticas dependen de un único especialista, se crea un cuello de botella que debe resolverse equilibrando la carga."
+          }
+        },
+        {
+          "type": "CLASSIFICATION",
+          "order": 11,
+          "blockData": {
+            "title": "Actividad: Clasificación de Recursos del Proyecto TIC",
+            "instruction": "Clasifica cada recurso según su tipología:",
+            "categories": [
+              "Humano",
+              "Tecnológico",
+              "Material",
+              "Financiero"
+            ],
+            "items": [
+              {
+                "id": "r1",
+                "text": "Diseñador UX / UI",
+                "category": "Humano"
+              },
+              {
+                "id": "r2",
+                "text": "Servidor en la nube AWS / Azure",
+                "category": "Tecnológico"
+              },
+              {
+                "id": "r3",
+                "text": "Presupuesto asignado de $45 millones COP",
+                "category": "Financiero"
+              },
+              {
+                "id": "r4",
+                "text": "Dispositivo físico móvil para pruebas en sitio",
+                "category": "Material"
+              },
+              {
+                "id": "r5",
+                "text": "Especialista en Ciberseguridad",
+                "category": "Humano"
+              },
+              {
+                "id": "r6",
+                "text": "Licencia de base de datos Postgres gestionada",
+                "category": "Tecnológico"
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 12,
+          "blockData": {
+            "stepNumber": 18,
+            "title": "Paso 18: Matriz de Recursos y Nivelación de Carga",
+            "instruction": "Asigna los recursos requeridos y verifica que no existan cuellos de botella:",
+            "fields": [
+              {
+                "key": "recursos_humanos",
+                "label": "Recursos Humanos y Roles (Rol, Disponibilidad semanal, Tareas asignadas):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "recursos_tecnologicos",
+                "label": "Recursos Tecnológicos e Infraestructura Cloud:",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "analisis_cuellos_botella",
+                "label": "Análisis de Capacidad (¿Existen sobreasignaciones o cuellos de botella?):",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 30
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 13,
+          "blockData": {
+            "heading": "Pantallas 23-33: Costos, Presupuesto, Reservas e Incertidumbre",
+            "content": "• Costos Directos: Vinculados exclusivamente al proyecto (ej. horas de desarrollo del equipo, licencias específicas).\n• Costos Indirectos: Compartidos con la operación u otros proyectos (ej. infraestructura corporativa, conectividad general).\n\n• Presupuesto y Línea Base de Costos: Consolidación de costos planificados distribuidos en el tiempo. Si se ha gastado el 60% del presupuesto pero solo se ha completado el 40% del trabajo, existe una desviación desfavorable.\n\n• Reservas de Contingencia: Fondos reservados para riesgos identificados específicos (NO dinero libre para gastos no autorizados).\n\n• Adaptación: En proyectos con alta incertidumbre tecnológica, se deben utilizar rangos de estimación, planificación progresiva y validaciones tempranas."
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 14,
+          "blockData": {
+            "question": "El proyecto necesita una licencia especializada que cuesta $150.000 COP mensuales durante 6 meses. ¿Cuál es el costo total?",
+            "options": [
+              {
+                "id": "a",
+                "text": "$600.000 COP",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "$750.000 COP",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "$900.000 COP",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "$1.050.000 COP",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Multiplicación directa: $150.000 × 6 meses = $900.000 COP.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "QUIZ",
+          "order": 15,
+          "blockData": {
+            "question": "Una actividad utiliza una tecnología que el equipo nunca ha probado y no hay datos históricos. ¿Qué alternativa de planificación es más adecuada?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Mantener una duración fija exacta sin analizar la incertidumbre",
+                "isCorrect": false
+              },
+              {
+                "id": "b",
+                "text": "Eliminar la actividad del proyecto",
+                "isCorrect": false
+              },
+              {
+                "id": "c",
+                "text": "Utilizar una estimación razonable por rangos, documentar el supuesto y realizar una prueba técnica para reducir la incertidumbre",
+                "isCorrect": true
+              },
+              {
+                "id": "d",
+                "text": "Pedir a la IA que determine con certeza matemática cuántos días tardará",
+                "isCorrect": false
+              }
+            ],
+            "explanation": "Reconocer la incertidumbre mediante rangos y prototipos técnicos permite tomar decisiones fundamentadas sin asumir falsas certezas.",
+            "pointsAwarded": 15
+          }
+        },
+        {
+          "type": "PROJECT_STEP",
+          "order": 16,
+          "blockData": {
+            "stepNumber": 19,
+            "title": "Paso 19: Presupuesto Inicial, Reservas y Gestión de Incertidumbre",
+            "instruction": "Consolida el presupuesto inicial de tu Plan Inicial / Backlog Integral del Nivel 2:",
+            "fields": [
+              {
+                "key": "presupuesto_personal",
+                "label": "Costos de Personal / Equipo Humano (Horas, tarifas, total):",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "presupuesto_tecnologia",
+                "label": "Costos de Tecnología, Cloud, Licencias y Servicios:",
+                "fieldType": "textarea",
+                "maxWords": 120
+              },
+              {
+                "key": "reservas_contingencia",
+                "label": "Reservas de Contingencia (Monto y riesgos que cubren):",
+                "fieldType": "textarea",
+                "maxWords": 80
+              },
+              {
+                "key": "presupuesto_total_resumen",
+                "label": "Presupuesto Total Consolidado y Supuestos Económicos:",
+                "fieldType": "textarea",
+                "maxWords": 100
+              }
+            ],
+            "pointsAwarded": 40
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 17,
+          "blockData": {
+            "title": "¡Felicitaciones! Has completado el Módulo 8 (Cronograma, Recursos y Costos)",
+            "description": "Has dominado la estimación temporal, dependencias, ruta crítica, diagramas de Gantt, gestión de recursos humanos y tecnológicos, y estructuración de presupuestos con reservas.",
+            "criteria": [
+              "Actividades, duraciones y dependencias definidas",
+              "Diagrama de Gantt y Ruta Crítica identificada",
+              "Matriz de recursos y análisis de sobreasignación completada",
+              "Presupuesto consolidado con reservas de contingencia"
+            ],
+            "badgeKey": "planificador-costos",
+            "pointsAwarded": 100
+          }
+        }
+      ]
+    }
+  ]
+}
