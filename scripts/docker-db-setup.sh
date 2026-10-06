@@ -25,7 +25,6 @@ echo "==> [2/4] Prisma generate"
 npx prisma generate
 
 echo "==> [3/4] Payload schema sync (ova_cms)"
-mkdir -p media
 npx tsx scripts/sync-payload-db.ts
 
 echo "==> [4/4] Database seed"

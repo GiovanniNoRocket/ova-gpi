@@ -7,7 +7,6 @@ import sharp from 'sharp'
 
 import { Blocks } from './src/collections/Blocks'
 import { Courses } from './src/collections/Courses'
-import { Media } from './src/collections/Media'
 import { Modules } from './src/collections/Modules'
 import { Users } from './src/collections/Users'
 
@@ -24,7 +23,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Courses, Modules, Blocks],
+  collections: [Users, Courses, Modules, Blocks],
   db: postgresAdapter({
     pool: {
       connectionString:

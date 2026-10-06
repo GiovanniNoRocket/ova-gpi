@@ -24,10 +24,5 @@ export const Courses: CollectionConfig = {
       type: 'textarea',
       required: true,
     },
-    {
-      name: 'image',
-      type: 'upload',
-      relationTo: 'media',
-    },
   ],
 }
