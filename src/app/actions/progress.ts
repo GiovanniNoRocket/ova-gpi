@@ -297,7 +297,6 @@ export async function recordBlockProgressAction(
       data: { points: { increment: points } },
     })
 
-    // Check if block specifically awards a badge
     const badgeKey = typeof blockData?.badgeKey === 'string' ? blockData.badgeKey : null
     if (badgeKey) {
       const directAward = await awardAchievement(userId, badgeKey)

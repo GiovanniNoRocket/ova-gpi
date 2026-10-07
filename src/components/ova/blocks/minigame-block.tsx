@@ -29,26 +29,20 @@ export function MinigameBlock({
   pending: boolean
   onSubmit: (gameData: Record<string, unknown>) => void
 }) {
-  // Game 1: CONFIDENCE_ROUNDS ("¿Lo sabe o lo está inventando?")
   const [currentRoundIdx, setCurrentRoundIdx] = useState(0)
   const [roundAnswers, setRoundAnswers] = useState<Record<number, { choice: string; justId?: string }>>(
     (progress?.answers?.confidenceRounds as Record<number, { choice: string; justId?: string }>) ?? {},
   )
   const [revealedRounds, setRevealedRounds] = useState<Record<number, boolean>>({})
 
-  // Game 2: ERROR_HUNTER ("Cazadores de errores")
   const [foundTargetIds, setFoundTargetIds] = useState<string[]>(
     (progress?.answers?.foundTargets as string[]) ?? [],
   )
 
-  // Game 3: CARD_SORT ("¿IA sí o IA no?")
   const [cardPlacements, setCardPlacements] = useState<Record<string, string>>(
     (progress?.answers?.cardPlacements as Record<string, string>) ?? {},
   )
 
-  // ----------------------------------------------------
-  // CONFIDENCE ROUNDS LOGIC
-  // ----------------------------------------------------
   if (data.gameType === 'CONFIDENCE_ROUNDS' && data.rounds && data.rounds.length > 0) {
     const rounds = data.rounds
     const round = rounds[currentRoundIdx]
@@ -256,9 +250,6 @@ export function MinigameBlock({
     )
   }
 
-  // ----------------------------------------------------
-  // ERROR HUNTER LOGIC ("Cazadores de errores")
-  // ----------------------------------------------------
   if (data.gameType === 'ERROR_HUNTER' && data.reportAudit) {
     const audit = data.reportAudit
     const allFound = audit.targets.every((t) => foundTargetIds.includes(t.id))
@@ -404,9 +395,6 @@ export function MinigameBlock({
     )
   }
 
-  // ----------------------------------------------------
-  // CARD SORT LOGIC ("¿IA sí o IA no?")
-  // ----------------------------------------------------
   if (data.gameType === 'CARD_SORT' && data.cards && data.categories) {
     const cards = data.cards
     const categories = data.categories

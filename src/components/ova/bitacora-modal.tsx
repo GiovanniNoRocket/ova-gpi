@@ -36,7 +36,6 @@ export function BitacoraModal({
             : 'nivel1',
   )
 
-  // Extract all PROJECT_STEP blocks
   const stepBlocks = useMemo(
     () =>
       blocks
@@ -86,7 +85,6 @@ export function BitacoraModal({
     [stepBlocks, blockLevelMap],
   )
 
-  // Find project selection data from step 0
   const projectSelectionStep = stepBlocks.find(
     (b) => (b.blockData as ProjectStepBlockData).stepType === 'SELECT_PROJECT',
   )

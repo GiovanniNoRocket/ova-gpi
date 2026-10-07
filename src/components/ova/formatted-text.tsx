@@ -2,22 +2,13 @@
 
 import React from 'react'
 
-/**
- * Parses inline formatting:
- * - Bold: **text**
- * - Italic: *text*
- * - Image: ![alt](url)
- * - Link: [text](url)
- */
 export function renderInlineFormatted(text: string): React.ReactNode {
-  // Pattern matching: ![alt](url), [text](url), **bold**, *italic*
   const pattern = /(!?\[[^\]]*\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
   const parts = text.split(pattern)
 
   return parts.map((part, index) => {
     if (!part) return null
 
-    // Markdown Image: ![alt](url)
     if (part.startsWith('![') && part.includes('](') && part.endsWith(')')) {
       const match = part.match(/^!\[(.*?)\]\((.*?)\)$/)
       if (match) {
@@ -42,7 +33,6 @@ export function renderInlineFormatted(text: string): React.ReactNode {
       }
     }
 
-    // Markdown Link: [text](url)
     if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
       const match = part.match(/^\[(.*?)\]\((.*?)\)$/)
       if (match) {
@@ -62,7 +52,6 @@ export function renderInlineFormatted(text: string): React.ReactNode {
       }
     }
 
-    // Bold: **text**
     if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
       const content = part.slice(2, -2)
       return (
@@ -72,7 +61,6 @@ export function renderInlineFormatted(text: string): React.ReactNode {
       )
     }
 
-    // Italic: *text*
     if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
       const content = part.slice(1, -1)
       return (
@@ -82,7 +70,6 @@ export function renderInlineFormatted(text: string): React.ReactNode {
       )
     }
 
-    // Plain text
     return <React.Fragment key={index}>{part}</React.Fragment>
   })
 }
@@ -95,7 +82,6 @@ interface FormattedTextProps {
 export function FormattedText({ content, className = '' }: FormattedTextProps) {
   if (!content) return null
 
-  // Split into paragraphs by double newlines
   const paragraphs = content.split(/\n\n+/)
 
   return (
@@ -103,7 +89,6 @@ export function FormattedText({ content, className = '' }: FormattedTextProps) {
       {paragraphs.map((paragraph, pIdx) => {
         const lines = paragraph.split('\n')
 
-        // Check if paragraph is a bullet list (all or most lines start with • or - or *)
         const isList = lines.every((line) => {
           const trimmed = line.trim()
           return trimmed === '' || trimmed.startsWith('•') || trimmed.startsWith('- ') || /^\d+\.\s/.test(trimmed)

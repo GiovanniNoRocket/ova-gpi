@@ -37,10 +37,8 @@ export function TextBlock({
     (data.content.includes('→') && data.content.split('→').length >= 3) ||
     data.content.toLowerCase().includes('mapa del módulo')
 
-  // Clean duplicate heading in body if present
   const cleanedContent = cleanContentTitle(data.content, data.heading)
 
-  // For module maps, separate text before arrows and the arrow chain
   let mapIntro = ''
   let mapChain = ''
   if (isModuleMap) {

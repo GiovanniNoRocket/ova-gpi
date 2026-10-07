@@ -120,7 +120,6 @@ export default async function DashboardPage() {
       : Promise.resolve([]),
   ])
 
-  // Helper to count only completed blocks that actually exist in the current course
   const getCompletedCount = (progressList: { blockId: string }[]) =>
     progressList.filter((p) => validBlockIds.has(p.blockId)).length
 
