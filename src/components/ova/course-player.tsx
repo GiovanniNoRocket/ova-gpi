@@ -134,6 +134,10 @@ const LEVEL_METADATA: Record<
   },
 }
 
+function formatModuleTitle(title: string): string {
+  return title.replace(/^m[óo]dulo\s*\d+[\.\s\-:]*/i, '').trim()
+}
+
 function flashcardForBlock(block: CourseBlock, moduleTitle: string): Flashcard | null {
   switch (block.type) {
     case 'TEXT': {
@@ -905,7 +909,7 @@ export function CoursePlayer({
                     </div>
                   </div>
                   <p className="text-sm font-semibold leading-snug text-foreground/90">
-                    {courseModule.title}
+                    {formatModuleTitle(courseModule.title)}
                   </p>
 
                   <div className="mt-1 h-1 w-full overflow-hidden rounded-full bg-muted">

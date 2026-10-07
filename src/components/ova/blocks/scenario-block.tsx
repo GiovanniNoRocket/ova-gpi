@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import type { ScenarioBlockData } from '@/types/content-blocks'
+import { renderInlineFormatted } from '../formatted-text'
 
 export function ScenarioBlock({
   data,
@@ -33,7 +34,9 @@ export function ScenarioBlock({
         <h2 className="text-xl font-semibold">{data.title}</h2>
       </CardHeader>
       <CardContent className="space-y-4">
-      <p className="rounded-lg bg-muted p-3 text-sm text-foreground/90">{data.situation}</p>
+      <div className="rounded-lg bg-muted p-3 text-sm text-foreground/90 leading-relaxed">
+        {renderInlineFormatted(data.situation)}
+      </div>
 
       <div className="space-y-2">
         {data.choices.map((choice) => {
@@ -58,7 +61,7 @@ export function ScenarioBlock({
                   'border-amber-500 bg-amber-50 text-amber-950 dark:bg-amber-950/40 dark:text-amber-200',
               )}
             >
-              <span>{choice.text}</span>
+              <span>{renderInlineFormatted(choice.text)}</span>
               {answered && isSelected && choice.isOptimal && (
                 <Sparkles className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
               )}
@@ -68,9 +71,9 @@ export function ScenarioBlock({
       </div>
 
       {answered && selectedChoice && (
-        <p className="rounded-lg bg-muted p-3 text-sm text-muted-foreground">
-          {selectedChoice.feedback}
-        </p>
+        <div className="rounded-lg bg-muted p-3 text-sm text-muted-foreground leading-relaxed">
+          {renderInlineFormatted(selectedChoice.feedback)}
+        </div>
       )}
 
       {answered ? (

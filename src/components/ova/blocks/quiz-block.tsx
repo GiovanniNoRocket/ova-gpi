@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import type { QuizBlockData } from '@/types/content-blocks'
+import { renderInlineFormatted } from '../formatted-text'
 
 function cleanExplanation(text?: string): string {
   if (!text) return ''
@@ -47,7 +48,7 @@ export function QuizBlock({
           <HelpCircle className="h-4 w-4" />
           Pregunta de autoevaluación
         </div>
-        <h2 className="text-xl font-semibold">{data.question}</h2>
+        <h2 className="text-xl font-semibold leading-snug">{renderInlineFormatted(data.question)}</h2>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
@@ -73,7 +74,7 @@ export function QuizBlock({
                     'border-destructive bg-destructive/5 text-destructive font-medium dark:bg-destructive/20 dark:text-destructive',
                 )}
               >
-                <span>{option.text}</span>
+                <span>{renderInlineFormatted(option.text)}</span>
                 {isCorrectOption && (
                   <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
                 )}
@@ -92,7 +93,7 @@ export function QuizBlock({
             </div>
             {data.explanation && (
               <p className="text-muted-foreground leading-relaxed">
-                {cleanExplanation(data.explanation)}
+                {renderInlineFormatted(cleanExplanation(data.explanation))}
               </p>
             )}
           </div>
