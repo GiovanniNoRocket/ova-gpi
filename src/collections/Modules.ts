@@ -23,9 +23,9 @@ export const Modules: CollectionConfig = {
       type: 'number',
       defaultValue: 1,
       min: 1,
-      max: 3,
+      max: 5,
       admin: {
-        description: 'Nivel del curso (1, 2 o 3)',
+        description: 'Nivel del curso (1 al 5)',
       },
     },
     {

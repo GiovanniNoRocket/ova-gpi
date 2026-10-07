@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { BookMarked, CheckCircle2, Clock, FileText, Layers, Printer, X } from 'lucide-react'
+import { Activity, BookMarked, Bot, CheckCircle2, Clock, FileText, Layers, Printer, Shield, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -24,8 +24,16 @@ export function BitacoraModal({
   blocks: CourseBlock[]
   defaultLevel?: number
 }) {
-  const [activeTab, setActiveTab] = useState<'nivel1' | 'nivel2'>(
-    defaultLevel === 2 ? 'nivel2' : 'nivel1',
+  const [activeTab, setActiveTab] = useState<'nivel1' | 'nivel2' | 'nivel3' | 'nivel4' | 'nivel5'>(
+    defaultLevel === 5
+      ? 'nivel5'
+      : defaultLevel === 4
+        ? 'nivel4'
+        : defaultLevel === 3
+          ? 'nivel3'
+          : defaultLevel === 2
+            ? 'nivel2'
+            : 'nivel1',
   )
 
   // Extract all PROJECT_STEP blocks
@@ -63,6 +71,21 @@ export function BitacoraModal({
     [stepBlocks, blockLevelMap],
   )
 
+  const level3Steps = useMemo(
+    () => stepBlocks.filter((b) => blockLevelMap.get(b.id) === 3),
+    [stepBlocks, blockLevelMap],
+  )
+
+  const level4Steps = useMemo(
+    () => stepBlocks.filter((b) => blockLevelMap.get(b.id) === 4),
+    [stepBlocks, blockLevelMap],
+  )
+
+  const level5Steps = useMemo(
+    () => stepBlocks.filter((b) => blockLevelMap.get(b.id) === 5),
+    [stepBlocks, blockLevelMap],
+  )
+
   // Find project selection data from step 0
   const projectSelectionStep = stepBlocks.find(
     (b) => (b.blockData as ProjectStepBlockData).stepType === 'SELECT_PROJECT',
@@ -82,7 +105,16 @@ export function BitacoraModal({
 
   if (!open) return null
 
-  const currentSteps = activeTab === 'nivel1' ? level1Steps : level2Steps
+  const currentSteps =
+    activeTab === 'nivel1'
+      ? level1Steps
+      : activeTab === 'nivel2'
+        ? level2Steps
+        : activeTab === 'nivel3'
+          ? level3Steps
+          : activeTab === 'nivel4'
+            ? level4Steps
+            : level5Steps
   const completedCurrentSteps = currentSteps.filter((b) => b.progress?.status === 'COMPLETED')
   const completedAllSteps = stepBlocks.filter((b) => b.progress?.status === 'COMPLETED')
 
@@ -102,12 +134,24 @@ export function BitacoraModal({
               <h2 className="text-lg font-bold">
                 {activeTab === 'nivel1'
                   ? 'Bitácora del Proyecto TIC'
-                  : 'Plan Inicial / Backlog Integral'}
+                  : activeTab === 'nivel2'
+                    ? 'Plan Inicial / Backlog Integral'
+                    : activeTab === 'nivel3'
+                      ? 'Simulación de Ejecución (Producto 1)'
+                      : activeTab === 'nivel4'
+                        ? 'Portafolio de Aplicaciones de IA Validadas'
+                        : 'Proyecto TIC Integral con IA y Gobernanza'}
               </h2>
               <p className="text-xs text-muted-foreground">
                 {activeTab === 'nivel1'
                   ? `Documento 1 · Caracterización Inicial del Proyecto (${courseTitle})`
-                  : `Documento 2 · Formulación y Planeación del Proyecto (${courseTitle})`}
+                  : activeTab === 'nivel2'
+                    ? `Documento 2 · Formulación y Planeación del Proyecto (${courseTitle})`
+                    : activeTab === 'nivel3'
+                      ? `Documento 3 · Registro de Decisiones y Balance de Ejecución (${courseTitle})`
+                      : activeTab === 'nivel4'
+                        ? `Documento 4 · Ficha, Registro, Informe y Reto Integral SIGA-TI (${courseTitle})`
+                        : `Documento 5 · Proyecto Final, Ética, Regulación y Sustentación (${courseTitle})`}
               </p>
             </div>
           </div>
@@ -127,20 +171,20 @@ export function BitacoraModal({
           </div>
         </div>
 
-        {/* TABS SELECTOR (Nivel 1 vs Nivel 2) */}
-        <div className="flex border-b bg-muted/15 px-6 pt-2">
+        {/* TABS SELECTOR (Nivel 1 al Nivel 5) */}
+        <div className="flex border-b bg-muted/15 px-6 pt-2 overflow-x-auto">
           <button
             type="button"
             onClick={() => setActiveTab('nivel1')}
             className={cn(
-              'flex items-center gap-2 border-b-2 px-4 py-2 text-xs font-bold transition-all',
+              'flex items-center gap-2 border-b-2 px-3 py-2 text-xs font-bold transition-all shrink-0',
               activeTab === 'nivel1'
                 ? 'border-primary text-primary bg-background/80 rounded-t-lg'
                 : 'border-transparent text-muted-foreground hover:text-foreground',
             )}
           >
             <FileText className="h-3.5 w-3.5" />
-            <span>Nivel 1: Bitácora del Proyecto</span>
+            <span>N1: Bitácora del Proyecto</span>
             <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary">
               {level1Steps.filter((b) => b.progress?.status === 'COMPLETED').length}/{level1Steps.length}
             </span>
@@ -150,16 +194,67 @@ export function BitacoraModal({
             type="button"
             onClick={() => setActiveTab('nivel2')}
             className={cn(
-              'flex items-center gap-2 border-b-2 px-4 py-2 text-xs font-bold transition-all',
+              'flex items-center gap-2 border-b-2 px-3 py-2 text-xs font-bold transition-all shrink-0',
               activeTab === 'nivel2'
                 ? 'border-emerald-600 text-emerald-600 dark:border-emerald-400 dark:text-emerald-400 bg-background/80 rounded-t-lg'
                 : 'border-transparent text-muted-foreground hover:text-foreground',
             )}
           >
             <Layers className="h-3.5 w-3.5" />
-            <span>Nivel 2: Plan Inicial / Backlog</span>
+            <span>N2: Plan / Backlog</span>
             <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
               {level2Steps.filter((b) => b.progress?.status === 'COMPLETED').length}/{level2Steps.length}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('nivel3')}
+            className={cn(
+              'flex items-center gap-2 border-b-2 px-3 py-2 text-xs font-bold transition-all shrink-0',
+              activeTab === 'nivel3'
+                ? 'border-purple-600 text-purple-600 dark:border-purple-400 dark:text-purple-400 bg-background/80 rounded-t-lg'
+                : 'border-transparent text-muted-foreground hover:text-foreground',
+            )}
+          >
+            <Activity className="h-3.5 w-3.5" />
+            <span>N3: Simulación de Ejecución</span>
+            <span className="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold text-purple-600 dark:text-purple-400">
+              {level3Steps.filter((b) => b.progress?.status === 'COMPLETED').length}/{level3Steps.length}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('nivel4')}
+            className={cn(
+              'flex items-center gap-2 border-b-2 px-3 py-2 text-xs font-bold transition-all shrink-0',
+              activeTab === 'nivel4'
+                ? 'border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400 bg-background/80 rounded-t-lg'
+                : 'border-transparent text-muted-foreground hover:text-foreground',
+            )}
+          >
+            <Bot className="h-3.5 w-3.5" />
+            <span>N4: Portafolio de IA</span>
+            <span className="rounded-full bg-indigo-500/10 px-2 py-0.5 text-[10px] font-semibold text-indigo-600 dark:text-indigo-400">
+              {level4Steps.filter((b) => b.progress?.status === 'COMPLETED').length}/{level4Steps.length}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('nivel5')}
+            className={cn(
+              'flex items-center gap-2 border-b-2 px-3 py-2 text-xs font-bold transition-all shrink-0',
+              activeTab === 'nivel5'
+                ? 'border-amber-600 text-amber-600 dark:border-amber-400 dark:text-amber-400 bg-background/80 rounded-t-lg'
+                : 'border-transparent text-muted-foreground hover:text-foreground',
+            )}
+          >
+            <Shield className="h-3.5 w-3.5" />
+            <span>N5: Proyecto Integrador</span>
+            <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-[10px] font-semibold text-amber-600 dark:text-amber-400">
+              {level5Steps.filter((b) => b.progress?.status === 'COMPLETED').length}/{level5Steps.length}
             </span>
           </button>
         </div>
@@ -179,7 +274,15 @@ export function BitacoraModal({
           <div>
             <span className="text-muted-foreground">Documento Activo:</span>
             <p className="font-bold text-foreground">
-              {activeTab === 'nivel1' ? 'Doc 1: Caracterización TIC' : 'Doc 2: Plan y Backlog'}
+              {activeTab === 'nivel1'
+                ? 'Doc 1: Caracterización TIC'
+                : activeTab === 'nivel2'
+                  ? 'Doc 2: Plan y Backlog'
+                  : activeTab === 'nivel3'
+                    ? 'Doc 3: Simulación de Ejecución'
+                    : activeTab === 'nivel4'
+                      ? 'Doc 4: Portafolio de IA'
+                      : 'Doc 5: Proyecto Integrador Final'}
             </p>
           </div>
           <div>
@@ -208,6 +311,17 @@ export function BitacoraModal({
               </p>
               <p className="mt-1 text-muted-foreground leading-relaxed">
                 Este documento consolida la formulación del problema, árbol causal, objetivos, justificación, matriz de viabilidad 5D, registro y poder de stakeholders, requisitos MoSCoW, límites del alcance, entregables con criterios de aceptación, EDT/WBS, cronograma, recursos y presupuesto inicial.
+              </p>
+            </div>
+          )}
+
+          {activeTab === 'nivel3' && (
+            <div className="rounded-xl border border-purple-500/20 bg-purple-500/5 p-4 text-xs">
+              <p className="font-bold text-purple-800 dark:text-purple-300">
+                Estructura del Producto 1: Simulación de Ejecución (Nivel 3)
+              </p>
+              <p className="mt-1 text-muted-foreground leading-relaxed">
+                Este documento consolida la trazabilidad de las decisiones operativas del gestor durante la ejecución: preparación ante requisitos ambiguos, coordinación de incidentes multievento (ausencias, proveedores, conflictos y defectos de calidad), y balance consolidado de equipo, entregables y lecciones aprendidas.
               </p>
             </div>
           )}
