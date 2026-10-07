@@ -31,14 +31,13 @@ export const module13Blocks: BlockSeed[] = [
     order: 1,
     blockData: {
       heading: '¡Bienvenido al Módulo 13: Diseño, evaluación y mejora de instrucciones!',
-      content: `### NIVEL 4. IA GENERATIVA APLICADA
-**Módulo 13 (Módulo 1 del Nivel 4). Diseño, evaluación y mejora de instrucciones**
-*Duración estimada:* 150–180 minutos | *Nivel:* Avanzado
+      content: `Módulo 13 (Módulo 1 del Nivel 4). Diseño, evaluación y mejora de instrucciones
+Duración estimada: 150–180 minutos | Nivel: Avanzado
 
-#### Objetivo general
+Objetivo general:
 Desarrollar capacidades para diseñar, estructurar, evaluar y mejorar instrucciones dirigidas a herramientas de inteligencia artificial generativa, utilizando principios de ingeniería de prompts para obtener resultados pertinentes, estructurados y útiles en situaciones relacionadas con proyectos tecnológicos.
 
-#### Objetivos específicos
+Objetivos específicos:
 • Comprender los fundamentos de la ingeniería de prompts y sus componentes esenciales.
 • Diferenciar instrucciones simples de instrucciones estructuradas y delimitar contexto y propósito.
 • Incorporar roles y perspectivas pertinentes; formular tareas y objetivos verificables.
@@ -50,13 +49,13 @@ Desarrollar capacidades para diseñar, estructurar, evaluar y mejorar instruccio
 • Diseñar prompts especializados para proyectos TIC y utilizar la IA como apoyo socrático.
 • Documentar evidencias de diseño, evaluación y refinamiento para el portafolio.
 
-#### Producto del módulo
-**Producto 1: Instrucciones diseñadas y validadas**
+Producto del módulo:
+Producto 1: Instrucciones diseñadas y validadas
 Construirás y documentarás un conjunto de instrucciones aplicadas a proyectos TIC siguiendo el ciclo:
-**Tarea → Prompt inicial → Resultado → Evaluación → Problemas detectados → Refinamiento → Nuevo resultado → Comparación → Validación**
-Este producto alimentará tu *Portafolio de aplicaciones de IA validadas del Nivel 4*.
+Tarea → Prompt inicial → Resultado → Evaluación → Problemas detectados → Refinamiento → Nuevo resultado → Comparación → Validación
+Este producto alimentará tu Portafolio de aplicaciones de IA validadas del Nivel 4.
 
-#### Mapa del módulo
+Mapa del módulo:
 Ingeniería de prompts → Estructura y contexto → Diseño de instrucciones → Patrones y descomposición → Aplicación de prompts → Evaluación y refinamiento → Prompts para proyectos TIC → Laboratorio → Microevaluación → ¡Felicidades!`,
     },
   },
@@ -67,16 +66,14 @@ Ingeniería de prompts → Estructura y contexto → Diseño de instrucciones �
     order: 2,
     blockData: {
       heading: 'Pantalla 1: Introducción a la ingeniería de prompts',
-      content: `### Concepto
-La ingeniería de prompts consiste en diseñar instrucciones para orientar el comportamiento de un modelo de inteligencia artificial generativa hacia un resultado determinado. No se limita a escribir una pregunta, sino que implica establecer con claridad qué debe realizar el modelo y qué características debe tener la respuesta.
+      content: `La ingeniería de prompts consiste en diseñar instrucciones para orientar el comportamiento de un modelo de inteligencia artificial generativa hacia un resultado determinado. No se limita a escribir una pregunta, sino que implica establecer con claridad qué debe realizar el modelo y qué características debe tener la respuesta.
 
-### Explicación
-En un proyecto TIC, una petición como *"analiza los riesgos del proyecto"* deja demasiados elementos abiertos: el modelo no conoce qué proyecto está analizando, qué datos utilizar, qué criterios aplicar ni cómo presentar los riesgos identificados. La ingeniería de prompts convierte esa petición general en una instrucción controlada y verificable.
+En un proyecto TIC, una petición como "analiza los riesgos del proyecto" deja demasiados elementos abiertos: el modelo no conoce qué proyecto está analizando, qué datos utilizar, qué criterios aplicar ni cómo presentar los riesgos identificados. La ingeniería de prompts convierte esa petición general en una instrucción controlada y verificable.
 
-### Ejemplo
+Ejemplo:
 Un equipo necesita revisar los riesgos de una aplicación móvil de turismo:
-• **Petición inicial:** *"Identifica los riesgos del proyecto."*
-• **Instrucción mejorada:** *"Analiza los riesgos de una aplicación móvil de turismo cuya primera versión debe estar disponible en cuatro meses. Clasifica los riesgos por categoría y presenta causa, posible impacto y señal de alerta."*
+• Petición inicial: "Identifica los riesgos del proyecto."
+• Instrucción mejorada: "Analiza los riesgos de una aplicación móvil de turismo cuya primera versión debe estar disponible en cuatro meses. Clasifica los riesgos por categoría y presenta causa, posible impacto y señal de alerta."
 La segunda instrucción delimita la tarea y permite comprobar si la respuesta sirve para la toma de decisiones.`,
     },
   },
@@ -119,19 +116,17 @@ La segunda instrucción delimita la tarea y permite comprobar si la respuesta si
     order: 5,
     blockData: {
       heading: 'Pantalla 2: Anatomía de una instrucción',
-      content: `### Concepto
-Una instrucción puede estructurarse mediante diferentes componentes que ayudan al modelo a interpretar correctamente la tarea: **contexto, rol, tarea, criterios, restricciones y formato de salida**.
+      content: `Una instrucción puede estructurarse mediante diferentes componentes que ayudan al modelo a interpretar correctamente la tarea: contexto, rol, tarea, criterios, restricciones y formato de salida.
 
-### Explicación
 No todos los prompts requieren todos los componentes. La finalidad no es agregar texto decorativo, sino incorporar aquellos elementos que reduzcan la ambigüedad y hagan verificable el resultado.
 
-### Ejemplo
+Ejemplo:
 Situación: Un gestor solicita a la IA revisar una matriz de riesgos.
-• **Contexto:** Plataforma web de reservas turísticas en fase de pruebas.
-• **Rol:** Especialista en riesgos TIC.
-• **Tarea:** Revisar la matriz registrada.
-• **Criterio:** Consistencia entre probabilidad e impacto sobre cronograma y costo.
-• **Formato:** Tabla estructurada de hallazgos.`,
+• Contexto: Plataforma web de reservas turísticas en fase de pruebas.
+• Rol: Especialista en riesgos TIC.
+• Tarea: Revisar la matriz registrada.
+• Criterio: Consistencia entre probabilidad e impacto sobre cronograma y costo.
+• Formato: Tabla estructurada de hallazgos.`,
     },
   },
   {
@@ -173,10 +168,8 @@ Situación: Un gestor solicita a la IA revisar una matriz de riesgos.
     order: 8,
     blockData: {
       heading: 'Pantalla 3: Contexto y propósito',
-      content: `### Concepto
-El **contexto** proporciona la información necesaria para interpretar la tarea dentro de una situación determinada (características del proyecto, etapa, restricciones técnicas). El **propósito** establece para qué se necesita el resultado y a qué decisión o audiencia va dirigido.
+      content: `El contexto proporciona la información necesaria para interpretar la tarea dentro de una situación determinada (características del proyecto, etapa, restricciones técnicas). El propósito establece para qué se necesita el resultado y a qué decisión o audiencia va dirigido.
 
-### Explicación
 Sin contexto suficiente, el modelo completará vacíos con supuestos que no corresponden al proyecto. Un análisis para una reunión ejecutiva requiere un nivel de síntesis distinto al de una sesión técnica de depuración de código.`,
     },
   },
@@ -215,11 +208,9 @@ Sin contexto suficiente, el modelo completará vacíos con supuestos que no corr
     order: 11,
     blockData: {
       heading: 'Pantalla 4: Rol y perspectiva',
-      content: `### Concepto
-Un **rol** orienta la perspectiva disciplinar desde la cual la IA debe abordar la tarea (gestor de proyectos, analista de seguridad, arquitecto de software). 
+      content: `Un rol orienta la perspectiva disciplinar desde la cual la IA debe abordar la tarea (gestor de proyectos, analista de seguridad, arquitecto de software). 
 
-### Explicación
-El rol no sustituye la información ni los datos de entrada. Decir *"actúa como un genio de la informática"* no aporta criterios operativos; en cambio, *"actúa como gestor de proyectos TIC considerando dependencias, esfuerzo y cronograma"* delimita el enfoque de evaluación.`,
+El rol no sustituye la información ni los datos de entrada. Decir "actúa como un genio de la informática" no aporta criterios operativos; en cambio, "actúa como gestor de proyectos TIC considerando dependencias, esfuerzo y cronograma" delimita el enfoque de evaluación.`,
     },
   },
   {
@@ -259,11 +250,9 @@ El rol no sustituye la información ni los datos de entrada. Decir *"actúa como
     order: 14,
     blockData: {
       heading: 'Pantalla 5: Tarea y objetivo',
-      content: `### Concepto
-La **tarea** indica qué operación concreta debe realizar la IA (clasificar, comparar, transformar, analizar), mientras que el **objetivo** explica para qué se busca conseguir esa operación.
+      content: `La tarea indica qué operación concreta debe realizar la IA (clasificar, comparar, transformar, analizar), mientras que el objetivo explica para qué se busca conseguir esa operación.
 
-### Explicación
-Separar la acción del objeto y del propósito evita ambigüedades. *"Analiza este cronograma"* es incompleto frente a: *"Analiza las dependencias del cronograma e identifica secuencias críticas que generen retrasos, con el propósito de preparar la reunión de seguimiento."*`,
+Separar la acción del objeto y del propósito evita ambigüedades. "Analiza este cronograma" es incompleto frente a: "Analiza las dependencias del cronograma e identifica secuencias críticas que generen retrasos, con el propósito de preparar la reunión de seguimiento."`,
     },
   },
   {
@@ -301,10 +290,8 @@ Separar la acción del objeto y del propósito evita ambigüedades. *"Analiza es
     order: 17,
     blockData: {
       heading: 'Pantalla 6: Restricciones y criterios',
-      content: `### Concepto
-Las **restricciones** delimitan las condiciones inviolables que la respuesta debe respetar (presupuesto, plazos, tecnologías, exclusiones). Los **criterios** permiten determinar si el resultado cumple con los estándares de calidad exigidos.
+      content: `Las restricciones delimitan las condiciones inviolables que la respuesta debe respetar (presupuesto, plazos, tecnologías, exclusiones). Los criterios permiten determinar si el resultado cumple con los estándares de calidad exigidos.
 
-### Explicación
 En proyectos TIC, las restricciones evitan que la IA proponga soluciones técnicamente atractivas pero financieramente inviables o contractualmente prohibidas.`,
     },
   },
@@ -343,10 +330,8 @@ En proyectos TIC, las restricciones evitan que la IA proponga soluciones técnic
     order: 20,
     blockData: {
       heading: 'Pantalla 7: Formato y estructura de salida',
-      content: `### Concepto
-Definir el **formato de salida** indica cómo debe estructurarse la respuesta: tablas, listas ordenadas, matrices, esquemas JSON, fichas estandarizadas.
+      content: `Definir el formato de salida indica cómo debe estructurarse la respuesta: tablas, listas ordenadas, matrices, esquemas JSON, fichas estandarizadas.
 
-### Explicación
 El formato debe responder al uso posterior: si el resultado se integrará en una matriz de riesgos, pedir una tabla comparativa con columnas explícitas ahorra reprocesos y facilita auditorías de completitud.`,
     },
   },
@@ -387,10 +372,9 @@ El formato debe responder al uso posterior: si el resultado se integrará en una
     order: 23,
     blockData: {
       heading: 'Pantalla 8: Prompts simples vs estructurados',
-      content: `### Concepto
-Un **prompt simple** contiene una instrucción directa y es suficiente para operaciones de baja complejidad. Un **prompt estructurado** desglosa contexto, tarea, criterios y salida cuando intervienen múltiples variables.
+      content: `Un prompt simple contiene una instrucción directa y es suficiente para operaciones de baja complejidad. Un prompt estructurado desglosa contexto, tarea, criterios y salida cuando intervienen múltiples variables.
 
-### Regla de diseño
+Regla de diseño:
 La complejidad del prompt debe corresponder a la complejidad de la tarea. Sobrediseñar un prompt para traducir una frase añade fricción inútil; subdiseñar un prompt para conciliar desviaciones de alcance y costos genera respuestas ambiguas.`,
     },
   },
@@ -431,10 +415,9 @@ La complejidad del prompt debe corresponder a la complejidad de la tarea. Sobred
     order: 26,
     blockData: {
       heading: 'Pantalla 9: Patrones de prompting y few-shot',
-      content: `### Concepto
-Los **patrones de prompting** son esquemas recurrentes de diseño instruccional (ej. role prompting, few-shot prompting, chain-of-thought, templates de extracción).
+      content: `Los patrones de prompting son esquemas recurrentes de diseño instruccional (ej. role prompting, few-shot prompting, chain-of-thought, templates de extracción).
 
-### Few-shot prompting
+Few-shot prompting:
 Consiste en proporcionar ejemplos representativos de pares entrada-salida para que el modelo replique el criterio de clasificación, tono o formato exacto sin necesidad de largas explicaciones teóricas.`,
     },
   },
@@ -473,11 +456,9 @@ Consiste en proporcionar ejemplos representativos de pares entrada-salida para q
     order: 29,
     blockData: {
       heading: 'Pantalla 10: Descomposición de problemas complejos',
-      content: `### Concepto
-La **descomposición** consiste en fragmentar un problema amplio en operaciones secuenciales manejables (diagnóstico → análisis causal → alternativas → evaluación). 
+      content: `La descomposición consiste en fragmentar un problema amplio en operaciones secuenciales manejables (diagnóstico → análisis causal → alternativas → evaluación). 
 
-### Explicación
-Pedir *"analiza el proyecto y resuélvelo todo"* mezcla diagnóstico con decisión y suele producir alucinaciones. Separar en etapas permite controlar y auditar la evidencia antes de pasar a la siguiente fase.`,
+Pedir "analiza el proyecto y resuélvelo todo" mezcla diagnóstico con decisión y suele producir alucinaciones. Separar en etapas permite controlar y auditar la evidencia antes de pasar a la siguiente fase.`,
     },
   },
   {
@@ -515,13 +496,12 @@ Pedir *"analiza el proyecto y resuélvelo todo"* mezcla diagnóstico con decisi�
     order: 32,
     blockData: {
       heading: 'Pantalla 11: Prompts para análisis de datos',
-      content: `### Concepto
-Los **prompts de análisis** instruyen a la IA para examinar datos existentes y extraer patrones, inconsistencias o categorías sin inventar información no suministrada.
+      content: `Los prompts de análisis instruyen a la IA para examinar datos existentes y extraer patrones, inconsistencias o categorías sin inventar información no suministrada.
 
-### Hecho observable vs Inferencia causal
-• **Hecho sustentado:** Lo que los datos demuestran de forma directa.
-• **Hipótesis o aspecto por verificar:** Una relación posible que requiere investigación adicional.
-• **Atribución causal sin evidencia:** Afirmar que A causó B sin datos que demuestren el mecanismo causal.`,
+Hecho observable vs Inferencia causal:
+• Hecho sustentado: Lo que los datos demuestran de forma directa.
+• Hipótesis o aspecto por verificar: Una relación posible que requiere investigación adicional.
+• Atribución causal sin evidencia: Afirmar que A causó B sin datos que demuestren el mecanismo causal.`,
     },
   },
   {
@@ -561,10 +541,9 @@ Los **prompts de análisis** instruyen a la IA para examinar datos existentes y 
     order: 35,
     blockData: {
       heading: 'Pantalla 12: Prompts para generación de alternativas',
-      content: `### Concepto
-Los **prompts de generación** solicitan a la IA producir alternativas, borradores o escenarios dentro de un espacio delimitado de restricciones.
+      content: `Los prompts de generación solicitan a la IA producir alternativas, borradores o escenarios dentro de un espacio delimitado de restricciones.
 
-### Regla clave
+Regla clave:
 Generar no es aceptar acríticamente. El prompt debe fijar cantidad, condiciones de viabilidad y restricciones explícitas para evitar opciones inviables.`,
     },
   },
@@ -603,10 +582,9 @@ Generar no es aceptar acríticamente. El prompt debe fijar cantidad, condiciones
     order: 38,
     blockData: {
       heading: 'Pantalla 13: Prompts para transformación y síntesis',
-      content: `### Concepto
-La **transformación** adapta el formato o lenguaje de una información existente para una audiencia particular sin alterar el contenido esencial. La **síntesis** integra múltiples fuentes dispersas en un resumen estructurado.
+      content: `La transformación adapta el formato o lenguaje de una información existente para una audiencia particular sin alterar el contenido esencial. La síntesis integra múltiples fuentes dispersas en un resumen estructurado.
 
-### Distinción
+Distinción:
 Transformar no es embellecer texto: al traducir una especificación técnica para usuarios finales se debe conservar la regla funcional eliminando jerga de arquitectura interna.`,
     },
   },
@@ -648,10 +626,9 @@ Transformar no es embellecer texto: al traducir una especificación técnica par
     order: 41,
     blockData: {
       heading: 'Pantalla 14: Prompts para comparación y evaluación',
-      content: `### Concepto
-Los **prompts de comparación** contrastan alternativas bajo una base de análisis común y homogénea. Los **prompts de evaluación** miden el grado de cumplimiento de un objeto frente a criterios observables.
+      content: `Los prompts de comparación contrastan alternativas bajo una base de análisis común y homogénea. Los prompts de evaluación miden el grado de cumplimiento de un objeto frente a criterios observables.
 
-### Criterios homogéneos
+Criterios homogéneos:
 Comparar una herramienta por costo y otra por interfaz invalida metodológicamente el análisis. Las dimensiones deben evaluarse en todas las alternativas por igual.`,
     },
   },
@@ -694,8 +671,7 @@ Comparar una herramienta por costo y otra por interfaz invalida metodológicamen
     order: 44,
     blockData: {
       heading: 'Pantalla 15: Iteración de instrucciones',
-      content: `### Concepto
-La **iteración** es el proceso deliberado de modificar componentes de un prompt tras auditar las deficiencias de la respuesta inicial. El primer prompt es una hipótesis de trabajo sujeta a prueba empírica.`,
+      content: `La iteración es el proceso deliberado de modificar componentes de un prompt tras auditar las deficiencias de la respuesta inicial. El primer prompt es una hipótesis de trabajo sujeta a prueba empírica.`,
     },
   },
   {
@@ -733,8 +709,7 @@ La **iteración** es el proceso deliberado de modificar componentes de un prompt
     order: 47,
     blockData: {
       heading: 'Pantalla 16: Evaluación y auditoría de resultados',
-      content: `### Concepto
-Evaluar un resultado implica auditar su correspondencia con los datos, la precisión conceptual, el respeto a las restricciones y la completitud del formato. La elocuencia del lenguaje no es evidencia de veracidad técnica.`,
+      content: `Evaluar un resultado implica auditar su correspondencia con los datos, la precisión conceptual, el respeto a las restricciones y la completitud del formato. La elocuencia del lenguaje no es evidencia de veracidad técnica.`,
     },
   },
   {
@@ -772,8 +747,7 @@ Evaluar un resultado implica auditar su correspondencia con los datos, la precis
     order: 50,
     blockData: {
       heading: 'Pantalla 17: Detección de respuestas deficientes y alucinaciones',
-      content: `### Concepto
-Una respuesta deficiente puede contener inferencias no sustentadas, supuestos no solicitados o contradicciones directas con los datos suministrados.`,
+      content: `Una respuesta deficiente puede contener inferencias no sustentadas, supuestos no solicitados o contradicciones directas con los datos suministrados.`,
     },
   },
   {
@@ -811,8 +785,7 @@ Una respuesta deficiente puede contener inferencias no sustentadas, supuestos no
     order: 53,
     blockData: {
       heading: 'Pantalla 18: Refinamiento quirúrgico del prompt',
-      content: `### Concepto
-Refinar un prompt es intervenir específicamente el componente que causó la deficiencia (alcance, categorías, formato, restricciones de inferencia), manteniendo la trazabilidad del cambio.`,
+      content: `Refinar un prompt es intervenir específicamente el componente que causó la deficiencia (alcance, categorías, formato, restricciones de inferencia), manteniendo la trazabilidad del cambio.`,
     },
   },
   {
@@ -857,8 +830,7 @@ Refinar un prompt es intervenir específicamente el componente que causó la def
     order: 56,
     blockData: {
       heading: 'Pantalla 19: Comparación sistemática entre versiones',
-      content: `### Concepto
-Comparar versiones requiere mantener criterios estables (pertinencia, extensión, estructura, completitud) y contrastar evidencias. Una respuesta más corta no siempre es mejor si sacrificó información esencial.`,
+      content: `Comparar versiones requiere mantener criterios estables (pertinencia, extensión, estructura, completitud) y contrastar evidencias. Una respuesta más corta no siempre es mejor si sacrificó información esencial.`,
     },
   },
   {
@@ -896,11 +868,11 @@ Comparar versiones requiere mantener criterios estables (pertinencia, extensión
     order: 59,
     blockData: {
       heading: 'Pantalla 20: Prompts especializados para proyectos TIC (Tailoring)',
-      content: `### Concepto y Principio de Adaptación (PMBOK®)
+      content: `Concepto y Principio de Adaptación (PMBOK®):
 Un prompt especializado para proyectos TIC incorpora elementos propios del dominio (requisitos funcionales vs no funcionales, rutas críticas, matriz de riesgos, pruebas de integración).
 
-### Tailoring
-El *PMBOK® Guide* enfatiza que las prácticas y herramientas deben adaptarse al contexto específico del proyecto. Especializar no es saturar de tecnicismos, sino formular la tarea respetando el ciclo de vida y los criterios del proyecto.`,
+Tailoring:
+El PMBOK® Guide enfatiza que las prácticas y herramientas deben adaptarse al contexto específico del proyecto. Especializar no es saturar de tecnicismos, sino formular la tarea respetando el ciclo de vida y los criterios del proyecto.`,
     },
   },
   {
@@ -938,15 +910,15 @@ El *PMBOK® Guide* enfatiza que las prácticas y herramientas deben adaptarse al
     order: 62,
     blockData: {
       heading: 'Pantalla 21: Laboratorio de construcción de instrucciones',
-      content: `### Reto Práctico del Módulo
+      content: `Reto Práctico del Módulo:
 Integrarás los principios aprendidos para diseñar, probar, evaluar y refinar un prompt especializado en una de las siguientes situaciones:
-• **Situación A (Análisis de riesgos):** Analizar riesgos e identificar cuáles requieren mayor atención.
-• **Situación B (Revisión de requisitos):** Detectar ambigüedades, omisiones y separar funcionales de no funcionales.
-• **Situación C (Generación de alternativas):** Proponer alternativas para resolver un cuello de botella con restricciones de tiempo y presupuesto.
-• **Situación D (Transformación de información):** Traducir especificaciones técnicas complejas a lenguaje claro para usuarios de negocio.
+• Situación A (Análisis de riesgos): Analizar riesgos e identificar cuáles requieren mayor atención.
+• Situación B (Revisión de requisitos): Detectar ambigüedades, omisiones y separar funcionales de no funcionales.
+• Situación C (Generación de alternativas): Proponer alternativas para resolver un cuello de botella con restricciones de tiempo y presupuesto.
+• Situación D (Transformación de información): Traducir especificaciones técnicas complejas a lenguaje claro para usuarios de negocio.
 
 Sigue el ciclo de 5 pasos en tu Bitácora:
-**Paso 1: Define la tarea → Paso 2: Construye Versión 1 → Paso 3: Ejecuta y audita → Paso 4: Refina a Versión 2 → Paso 5: Justifica la mejora.**`,
+Paso 1: Define la tarea → Paso 2: Construye Versión 1 → Paso 3: Ejecuta y audita → Paso 4: Refina a Versión 2 → Paso 5: Justifica la mejora.`,
     },
   },
   {
@@ -1148,27 +1120,26 @@ export const module14Blocks: BlockSeed[] = [
     order: 1,
     blockData: {
       heading: '¡Bienvenido al Módulo 14: Laboratorio de IA para proyectos tecnológicos!',
-      content: `### NIVEL 4. IA GENERATIVA APLICADA
-**Módulo 14. Laboratorio de IA para proyectos tecnológicos**
-*Duración estimada:* 180–240 minutos | *Nivel:* Avanzado
+      content: `Módulo 14. Laboratorio de IA para proyectos tecnológicos
+Duración estimada: 180–240 minutos | Nivel: Avanzado
 
-#### Objetivo general
+Objetivo general:
 Aplicar instrucciones de IA generativa en situaciones contextualizadas de proyectos tecnológicos, evaluando los resultados obtenidos, realizando refinamientos fundamentados y validando su utilidad como apoyo a diferentes actividades de gestión del proyecto.
 
-#### Objetivos específicos
+Objetivos específicos:
 • Aplicar instrucciones previamente diseñadas a situaciones concretas del proyecto tecnológico SIGA-TI (TecnoGestión S.A.S.).
 • Seleccionar y preparar información contextualizada diferenciando datos observados de interpretaciones.
 • Auditar resultados generados identificando vacíos, afirmaciones no sustentadas e inconsistencias.
 • Refinar instrucciones a partir de la evidencia observada y comparar resultados antes y después del refinamiento.
 • Validar la utilidad de aplicaciones de IA mediante evidencias contrastadas con el equipo.
-• Construir y documentar el **Portafolio de aplicaciones de IA validadas**.
+• Construir y documentar el Portafolio de aplicaciones de IA validadas.
 
-#### Mapa de entregables del laboratorio
-1. **Laboratorio 1:** Ficha de aplicación de IA (Semana 8)
-2. **Laboratorio 2:** Registro de aplicación de IA (Semana 9)
-3. **Laboratorio 3:** Informe de evaluación y refinamiento (Semana 10)
-4. **Laboratorio 4:** Caso de aplicación integral de IA (Semana 11 - Reto integrador)
-5. **Portafolio de aplicaciones de IA validadas:** Consolidación final para la toma de decisiones.`,
+Mapa de entregables del laboratorio:
+1. Laboratorio 1: Ficha de aplicación de IA (Semana 8)
+2. Laboratorio 2: Registro de aplicación de IA (Semana 9)
+3. Laboratorio 3: Informe de evaluación y refinamiento (Semana 10)
+4. Laboratorio 4: Caso de aplicación integral de IA (Semana 11 - Reto integrador)
+5. Portafolio de aplicaciones de IA validadas: Consolidación final para la toma de decisiones.`,
     },
   },
 
@@ -1178,11 +1149,11 @@ Aplicar instrucciones de IA generativa en situaciones contextualizadas de proyec
     order: 2,
     blockData: {
       heading: 'Laboratorio 1: Identifica una oportunidad de aplicación de IA (Semana 8)',
-      content: `### Caso del Proyecto SIGA-TI (Semana 8)
-La empresa TecnoGestión S.A.S. desarrolla la plataforma web **SIGA-TI** (duración: 20 semanas, actualmente en **Semana 8**) para centralizar solicitudes de soporte tecnológico.
+      content: `Caso del Proyecto SIGA-TI (Semana 8):
+La empresa TecnoGestión S.A.S. desarrolla la plataforma web SIGA-TI (duración: 20 semanas, actualmente en Semana 8) para centralizar solicitudes de soporte tecnológico.
 
-#### Recursos disponibles del caso:
-• **Recurso 1. Requisitos:**
+Recursos disponibles del caso:
+• Recurso 1. Requisitos:
   - RQ-01: Registrar solicitudes indicando asunto, descripción y prioridad.
   - RQ-02: Consultar el estado de una solicitud.
   - RQ-03: Asignar solicitudes a responsables.
@@ -1191,8 +1162,8 @@ La empresa TecnoGestión S.A.S. desarrolla la plataforma web **SIGA-TI** (duraci
   - RQ-06: Dar tratamiento prioritario a solicitudes de seguridad.
   - RQ-07: Filtrar solicitudes por estado, responsable, prioridad y fecha.
   - RQ-08: Generar resumen mensual de solicitudes atendidas.
-• **Recurso 2. Historias de usuario:** HU-01 a HU-05 (registro, pendientes, reportes, seguridad, incidencias de pruebas).
-• **Recurso 3. Incidencias registradas:**
+• Recurso 2. Historias de usuario: HU-01 a HU-05 (registro, pendientes, reportes, seguridad, incidencias de pruebas).
+• Recurso 3. Incidencias registradas:
   - INC-01 (Alta, Abierta, Solicitudes): Botón de registro no responde tras completar formulario.
   - INC-02 (Media, Análisis, Notificaciones): Correo de notificación llega con retraso.
   - INC-03 (Alta, Abierta, Reportes): Filtro por responsable no devuelve todos los registros.
@@ -1201,8 +1172,8 @@ La empresa TecnoGestión S.A.S. desarrolla la plataforma web **SIGA-TI** (duraci
   - INC-06 (Alta, Análisis, Reportes): Reporte mensual presenta registros duplicados.
   - INC-07 (Media, Abierta, Solicitudes): Prioridad seleccionada no aparece correctamente.
   - INC-08 (Baja, Abierta, Solicitudes): Cambio de estado no actualiza inmediatamente la UI.
-• **Recurso 4. Registro de reunión:** El director pide hallar qué problemas se repiten más; el analista nota mezcla de necesidades con soluciones; el profesional de pruebas pide priorizar.
-• **Recurso 5. Condiciones:** La IA debe responder a una necesidad concreta, no inventar datos, señalar información insuficiente y permitir revisión humana.`,
+• Recurso 4. Registro de reunión: El director pide hallar qué problemas se repiten más; el analista nota mezcla de necesidades con soluciones; el profesional de pruebas pide priorizar.
+• Recurso 5. Condiciones: La IA debe responder a una necesidad concreta, no inventar datos, señalar información insuficiente y permitir revisión humana.`,
     },
   },
   {
@@ -1244,12 +1215,12 @@ La empresa TecnoGestión S.A.S. desarrolla la plataforma web **SIGA-TI** (duraci
     order: 5,
     blockData: {
       heading: 'Laboratorio 2: Aplica IA a una situación del proyecto (Semana 9)',
-      content: `### Contexto del Proyecto SIGA-TI (Semana 9)
-El proyecto avanza a la **Semana 9**. Han surgido nuevas solicitudes, incidencias y solicitudes de cambio que presionan el alcance y los módulos en desarrollo.
+      content: `Contexto del Proyecto SIGA-TI (Semana 9):
+El proyecto avanza a la Semana 9. Han surgido nuevas solicitudes, incidencias y solicitudes de cambio que presionan el alcance y los módulos en desarrollo.
 
-#### Nuevos Recursos disponibles:
-• **Recurso 1. Nuevas solicitudes:** SOL-01 a SOL-08 (historial completo, tickets estancados, reporte gerencial de fallas, clasificación de accesos por seguridad, preparación de reunión de seguimiento).
-• **Recurso 2. Nuevas incidencias:**
+Nuevos Recursos disponibles:
+• Recurso 1. Nuevas solicitudes: SOL-01 a SOL-08 (historial completo, tickets estancados, reporte gerencial de fallas, clasificación de accesos por seguridad, preparación de reunión de seguimiento).
+• Recurso 2. Nuevas incidencias:
   - INC-09 (Alta, Abierta, Seguimiento): Solicitudes sin actualización durante varios días.
   - INC-10 (Media, Análisis, Historial): Historial no muestra todos los cambios realizados.
   - INC-11 (Media, Abierta, Solicitudes): Descripciones demasiado generales en tickets.
@@ -1258,13 +1229,13 @@ El proyecto avanza a la **Semana 9**. Han surgido nuevas solicitudes, incidencia
   - INC-14 (Media, Abierta, Solicitudes): Solicitudes similares registradas con descripciones dispares.
   - INC-15 (Alta, Análisis, Pruebas): Problemas registrados en múltiples módulos en simultáneo.
   - INC-16 (Media, Abierta, Solicitudes): Información insuficiente para determinar tratamiento del ticket.
-• **Recurso 3. Solicitudes de cambio (En revisión/análisis):**
+• Recurso 3. Solicitudes de cambio (En revisión/análisis):
   - CAM-01: Categoría específica para solicitudes de seguridad.
   - CAM-02: Modificar contenido del reporte mensual.
   - CAM-03: Incorporar campos adicionales en el historial.
   - CAM-04: Ajustar filtros para consultar solicitudes.
-• **Recurso 4. Estado de actividades:** Desarrollo de solicitudes, reportes, pruebas funcionales y pruebas de seguridad en ejecución; notificaciones en revisión; pruebas con usuarios pendientes.
-• **Condición clave:** Diferenciar estrictamente datos observados de inferencias; no predecir impactos sin datos numéricos suficientes.`,
+• Recurso 4. Estado de actividades: Desarrollo de solicitudes, reportes, pruebas funcionales y pruebas de seguridad en ejecución; notificaciones en revisión; pruebas con usuarios pendientes.
+• Condición clave: Diferenciar estrictamente datos observados de inferencias; no predecir impactos sin datos numéricos suficientes.`,
     },
   },
   {
@@ -1306,24 +1277,24 @@ El proyecto avanza a la **Semana 9**. Han surgido nuevas solicitudes, incidencia
     order: 8,
     blockData: {
       heading: 'Laboratorio 3: Audita y mejora el resultado (Semana 10)',
-      content: `### Situación de Auditoría en la Semana 10
+      content: `Situación de Auditoría en la Semana 10:
 Durante la semana 10 se analizó la lista de incidencias INC-01 a INC-08. Se ejecutó una instrucción inicial que produjo un resultado con graves sesgos metodológicos.
 
-#### Instrucción inicial defectuosa utilizada:
-*“Analiza las incidencias del proyecto SIGA-TI y presenta un resumen organizado por módulo. Identifica cuáles son los problemas más importantes, explica qué está ocurriendo y señala qué debería hacer el equipo para solucionarlos.”*
+Instrucción inicial defectuosa utilizada:
+“Analiza las incidencias del proyecto SIGA-TI y presenta un resumen organizado por módulo. Identifica cuáles son los problemas más importantes, explica qué está ocurriendo y señala qué debería hacer el equipo para solucionarlos.”
 
-#### Resultado inicial generado por la IA (a auditar):
-> **Resumen de incidencias:** El análisis muestra que la mayoría de problemas están relacionados con el módulo de solicitudes. Los principales problemas parecen deberse a deficiencias en el desarrollo y a una falta de coordinación entre los desarrolladores.
-> Las incidencias de mayor importancia son INC-01, INC-03, INC-05 e INC-06. Estas deberían solucionarse inmediatamente porque afectan la operación.
-> Las incidencias de reportes son las más frecuentes. Esto indica que el módulo de reportes presenta problemas estructurales que requieren una revisión completa. Las de prioridad media son secundarias.
-> Se recomienda asignar más desarrolladores a estas áreas y hacer una revisión técnica completa.
-> **Conclusión:** El principal problema es la calidad del desarrollo. Hay alta probabilidad de problemas técnicos adicionales no detectados.
+Resultado inicial generado por la IA (a auditar):
+Resumen de incidencias: El análisis muestra que la mayoría de problemas están relacionados con el módulo de solicitudes. Los principales problemas parecen deberse a deficiencias en el desarrollo y a una falta de coordinación entre los desarrolladores.
+Las incidencias de mayor importancia son INC-01, INC-03, INC-05 e INC-06. Estas deberían solucionarse inmediatamente porque afectan la operación.
+Las incidencias de reportes son las más frecuentes. Esto indica que el módulo de reportes presenta problemas estructurales que requieren una revisión completa. Las de prioridad media son secundarias.
+Se recomienda asignar más desarrolladores a estas áreas y hacer una revisión técnica completa.
+Conclusión: El principal problema es la calidad del desarrollo. Hay alta probabilidad de problemas técnicos adicionales no detectados.
 
-#### Auditoría requerida:
-1. **Afirmación no sustentada:** Culpar a la "falta de coordinación de los desarrolladores" sin ningún dato sobre desempeño de equipo.
-2. **Error de conteo:** Decir que las incidencias de reportes son "las más frecuentes" cuando solicitudes tiene 3 (INC-01, 07, 08) y reportes tiene 2 (INC-03, 06).
-3. **Decisiones no autorizadas:** Recomendar "asignar más desarrolladores" sin conocer presupuesto ni capacidad.
-4. **Vulnerabilidad de seguridad subestimada:** Tratar INC-05 (acceso indebido a solicitudes ajenas) como una falla común sin destacar la violación de confidencialidad.`,
+Auditoría requerida:
+1. Afirmación no sustentada: Culpar a la "falta de coordinación de los desarrolladores" sin ningún dato sobre desempeño de equipo.
+2. Error de conteo: Decir que las incidencias de reportes son "las más frecuentes" cuando solicitudes tiene 3 (INC-01, 07, 08) y reportes tiene 2 (INC-03, 06).
+3. Decisiones no autorizadas: Recomendar "asignar más desarrolladores" sin conocer presupuesto ni capacidad.
+4. Vulnerabilidad de seguridad subestimada: Tratar INC-05 (acceso indebido a solicitudes ajenas) como una falla común sin destacar la violación de confidencialidad.`,
     },
   },
   {
@@ -1365,18 +1336,18 @@ Durante la semana 10 se analizó la lista de incidencias INC-01 a INC-08. Se eje
     order: 11,
     blockData: {
       heading: 'Laboratorio 4: Reto integrador TIC (Semana 11)',
-      content: `### Reto Integrador en la Semana 11
-En la **Semana 11**, el proyecto acumula:
-• **8 Requisitos formales (RQ-01 a RQ-08)**
-• **5 Historias de usuario (HU-01 a HU-05)**
-• **16 Incidencias acumuladas (INC-01 a INC-16)**
-• **4 Solicitudes de cambio (CAM-01 a CAM-04)**
-• **Actividades en desarrollo y pruebas con usuarios preparándose.**
+      content: `Reto Integrador en la Semana 11:
+En la Semana 11, el proyecto acumula:
+• 8 Requisitos formales (RQ-01 a RQ-08)
+• 5 Historias de usuario (HU-01 a HU-05)
+• 16 Incidencias acumuladas (INC-01 a INC-16)
+• 4 Solicitudes de cambio (CAM-01 a CAM-04)
+• Actividades en desarrollo y pruebas con usuarios preparándose.
 
-#### El desafío:
+El desafío:
 Debes asumir el ciclo completo de aplicación de IA generativa para apoyar una actividad estratégica de toma de decisiones (ej. priorización de defectos de cara a las pruebas con usuarios, conciliación de solicitudes de cambio vs estabilidad de módulos, o análisis cruzado de seguridad).
 
-#### Condiciones obligatorias:
+Condiciones obligatorias:
 1. Responder a una necesidad concreta del proyecto.
 2. Utilizar únicamente información pertinente sin inventar datos.
 3. Diferenciar datos de interpretaciones y señalar vacíos de información.
@@ -1408,12 +1379,12 @@ Debes asumir el ciclo completo de aplicación de IA generativa para apoyar una a
     order: 13,
     blockData: {
       heading: 'Consolidación del Portafolio de aplicaciones de IA validadas',
-      content: `### Portafolio de Aplicaciones de IA Validadas
+      content: `Portafolio de Aplicaciones de IA Validadas:
 Con los cuatro laboratorios concluidos, has conformado tu portafolio oficial:
-1. **Ficha de aplicación de IA (Lab 1):** Delimitación y pertinencia en fase de desarrollo.
-2. **Registro de aplicación de IA (Lab 2):** Análisis de cambios e incidencias con trazabilidad empírica.
-3. **Informe de evaluación y refinamiento (Lab 3):** Auditoría crítica, eliminación de sesgos y refinamiento instruccional.
-4. **Caso de aplicación integral de IA (Lab 4):** Gobernanza integral, ciclo de mejora y supervisión humana activa.
+1. Ficha de aplicación de IA (Lab 1): Delimitación y pertinencia en fase de desarrollo.
+2. Registro de aplicación de IA (Lab 2): Análisis de cambios e incidencias con trazabilidad empírica.
+3. Informe de evaluación y refinamiento (Lab 3): Auditoría crítica, eliminación de sesgos y refinamiento instruccional.
+4. Caso de aplicación integral de IA (Lab 4): Gobernanza integral, ciclo de mejora y supervisión humana activa.
 
 Este portafolio constituye la evidencia verificable de tu competencia como gestor tecnológico en la era de la inteligencia artificial.`,
     },

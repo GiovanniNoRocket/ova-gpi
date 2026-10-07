@@ -31,14 +31,13 @@ const module10Blocks: BlockSeed[] = [
     order: 1,
     blockData: {
       heading: '¡Bienvenido al Módulo 10: Liderazgo, equipo y ejecución!',
-      content: `### NIVEL 3. EJECUCIÓN, SEGUIMIENTO Y CIERRE
-**Módulo 10. Liderazgo, equipo y ejecución**
-*Duración estimada:* 120 – 150 minutos | *Nivel:* Intermedio
+      content: `Módulo 10. Liderazgo, equipo y ejecución
+Duración estimada: 120 – 150 minutos | Nivel: Intermedio
 
-#### Objetivo general
+Objetivo general:
 Desarrollar capacidades para liderar y coordinar la ejecución de un proyecto TIC, gestionando personas, actividades, recursos, entregables, situaciones problemáticas y relaciones con terceros, mediante una actuación organizada y el uso responsable de IA generativa.
 
-#### Objetivos específicos
+Objetivos específicos:
 Al finalizar este módulo, el estudiante podrá:
 • Comprender cómo se desarrolla la ejecución de un proyecto TIC a partir de la planificación realizada.
 • Reconocer las responsabilidades del gestor durante la ejecución.
@@ -55,7 +54,7 @@ Al finalizar este módulo, el estudiante podrá:
 • Tomar decisiones considerando las consecuencias sobre el proyecto.
 • Aplicar lo aprendido mediante una simulación de ejecución.
 
-#### Competencias a desarrollar
+Competencias a desarrollar:
 • Coordinar equipos de trabajo en proyectos TIC, considerando roles, responsabilidades y necesidades de colaboración.
 • Aplicar estrategias de liderazgo de acuerdo con las situaciones que se presentan durante la ejecución.
 • Gestionar la comunicación y colaboración entre los participantes del proyecto.
@@ -69,10 +68,10 @@ Al finalizar este módulo, el estudiante podrá:
 • Verificar los resultados generados por IA antes de utilizarlos.
 • Integrar las competencias desarrolladas en la Simulación de ejecución del proyecto TIC.
 
-#### Mapa del módulo
+Mapa del módulo:
 Plan → Liderazgo → Equipo → Organización → Desarrollo → Comunicación → Motivación → Conflictos → Trabajo y entregables → Recursos y conocimiento → Proveedores, calidad e IA → Simulación y decisiones → Felicidades.
 
-#### Producto del módulo: Producto 1. Simulación de ejecución
+Producto del módulo: Producto 1. Simulación de ejecución:
 El estudiante continuará trabajando sobre el proyecto TIC desarrollado durante los niveles anteriores. En la simulación asumirá el rol de gestor y deberá enfrentar situaciones relacionadas con el equipo, las actividades, los recursos, los entregables, los proveedores y la calidad.`,
     },
   },
@@ -83,18 +82,16 @@ El estudiante continuará trabajando sobre el proyecto TIC desarrollado durante 
     order: 2,
     blockData: {
       heading: 'Pantalla 1: La Ejecución del Proyecto TIC',
-      content: `### Concepto
-La ejecución es la etapa en la que el trabajo planificado comienza a realizarse y se generan los resultados del proyecto. En ella intervienen las personas, actividades, recursos, entregables, proveedores y demás elementos necesarios para transformar lo planificado en resultados concretos.
+      content: `La ejecución es la etapa en la que el trabajo planificado comienza a realizarse y se generan los resultados del proyecto. En ella intervienen las personas, actividades, recursos, entregables, proveedores y demás elementos necesarios para transformar lo planificado en resultados concretos.
 
 Ejecutar un proyecto no significa simplemente completar tareas. El gestor debe coordinar el trabajo, facilitar la colaboración, atender situaciones que aparecen durante el desarrollo y mantener la atención sobre los resultados que el proyecto debe producir.
 
-### Explicación
 Durante la ejecución pueden aparecer condiciones diferentes a las consideradas durante la planificación. Una actividad puede depender de información que aún no está disponible, un integrante puede tener demasiadas responsabilidades o un proveedor puede modificar una condición del servicio.
 
 Por esta razón, el gestor debe observar la relación entre personas, trabajo, recursos y resultados. Una dificultad en uno de estos elementos puede afectar a los demás y requerir una intervención.
 
-### Ejemplo
-**Proyecto: Plataforma de atención ciudadana**
+Ejemplo:
+Proyecto: Plataforma de atención ciudadana
 Una entidad está implementando una plataforma para que los ciudadanos registren solicitudes y consulten su estado.
 El equipo está preparado para comenzar el desarrollo de la funcionalidad de registro. Sin embargo, el desarrollador identifica que el requisito sobre documentos adjuntos no indica qué formatos serán permitidos.
 El gestor debe decidir cómo actuar antes de comprometer trabajo que podría tener que modificarse posteriormente. La situación demuestra que ejecutar requiere interpretar las condiciones reales del proyecto y no solamente seguir el cronograma.`,
@@ -137,18 +134,16 @@ El gestor debe decidir cómo actuar antes de comprometer trabajo que podría ten
     order: 5,
     blockData: {
       heading: 'Pantalla 2: Del plan a la ejecución',
-      content: `### Concepto
-La planificación establece lo que se pretende realizar y las condiciones consideradas necesarias para hacerlo. Durante la ejecución, estas definiciones se convierten en actividades concretas realizadas por el equipo.
+      content: `La planificación establece lo que se pretende realizar y las condiciones consideradas necesarias para hacerlo. Durante la ejecución, estas definiciones se convierten en actividades concretas realizadas por el equipo.
 
 Sin embargo, una actividad planificada no necesariamente está preparada para comenzar. El gestor debe verificar que exista información suficiente, que el responsable esté disponible, que las dependencias hayan sido atendidas y que los resultados esperados sean comprensibles.
 
-### Explicación
 Esta revisión permite detectar condiciones que pueden producir retrasos o reprocesos. No busca controlar cada detalle del trabajo, sino asegurar que el equipo pueda comenzar con una comprensión adecuada de lo que debe realizar.
 
 Cuando una condición importante no está disponible, el gestor puede resolverla, reorganizar el trabajo, buscar una alternativa o esperar, dependiendo del impacto que tenga sobre el proyecto.
 
-### Ejemplo
-**Proyecto: Aplicación para reservas**
+Ejemplo:
+Proyecto: Aplicación para reservas
 El cronograma establece que el desarrollo de la pantalla de reservas comenzará el lunes. El diseño está aprobado y el desarrollador está disponible.
 Durante una revisión se descubre que el requisito no explica qué ocurre cuando dos usuarios intentan reservar el último cupo disponible simultáneamente. El gestor decide aclarar primero la regla para evitar que el equipo implemente un comportamiento que posteriormente deba cambiarse.`,
     },
@@ -190,18 +185,16 @@ Durante una revisión se descubre que el requisito no explica qué ocurre cuando
     order: 8,
     blockData: {
       heading: 'Pantalla 3: Liderazgo en proyectos',
-      content: `### Concepto
-El liderazgo en proyectos consiste en orientar a las personas hacia los resultados esperados y crear condiciones para que puedan realizar su trabajo. No depende únicamente de la autoridad formal del gestor.
+      content: `El liderazgo en proyectos consiste en orientar a las personas hacia los resultados esperados y crear condiciones para que puedan realizar su trabajo. No depende únicamente de la autoridad formal del gestor.
 
 Liderar implica comunicar expectativas, facilitar decisiones, gestionar dificultades, delegar responsabilidades y actuar cuando una situación puede afectar al equipo o al proyecto.
 
-### Explicación
 El gestor debe equilibrar dirección y autonomía. Algunas situaciones requieren instrucciones claras y seguimiento cercano, mientras que otras pueden resolverse permitiendo que un integrante experimentado actúe con mayor independencia.
 
 También es necesario comprender la situación antes de intervenir. Una intervención excesiva puede limitar al equipo, mientras que una intervención insuficiente puede dejar problemas sin resolver.
 
-### Ejemplo
-**Proyecto: Sistema de gestión académica**
+Ejemplo:
+Proyecto: Sistema de gestión académica
 Una integrante nueva debe coordinar una actividad con usuarios y no conoce todavía el procedimiento utilizado por el proyecto.
 El gestor explica el resultado esperado, revisa con ella el primer contacto y establece un seguimiento inicial. Una vez que comprende el proceso, puede continuar con mayor autonomía.`,
     },
@@ -243,18 +236,16 @@ El gestor explica el resultado esperado, revisa con ella el primer contacto y es
     order: 11,
     blockData: {
       heading: 'Pantalla 4: Liderazgo adaptativo',
-      content: `### Concepto
-El liderazgo adaptativo consiste en ajustar la forma de dirigir según las características de la situación, las necesidades del equipo y el nivel de autonomía de sus integrantes.
+      content: `El liderazgo adaptativo consiste en ajustar la forma de dirigir según las características de la situación, las necesidades del equipo y el nivel de autonomía de sus integrantes.
 
 El gestor puede orientar, acompañar, facilitar o delegar. Estas alternativas permiten adaptar la intervención sin perder de vista los objetivos y resultados del proyecto.
 
-### Explicación
 Para elegir una estrategia pueden considerarse la experiencia de la persona, la claridad de la actividad, la complejidad, la urgencia y las consecuencias de una decisión equivocada.
 
 No existe una única forma correcta de liderar todas las situaciones. El gestor debe determinar cuándo aumentar la orientación y cuándo permitir mayor autonomía.
 
-### Ejemplo
-**Proyecto: Portal de servicios empresariales**
+Ejemplo:
+Proyecto: Portal de servicios empresariales
 El responsable de pruebas conoce ampliamente el proceso y ha participado en proyectos similares. El gestor acuerda los resultados esperados y los puntos de revisión, pero no controla cada paso.
 Una nueva integrante, en cambio, necesita acompañamiento durante sus primeras actividades para comprender la forma de trabajo del proyecto.`,
     },
@@ -298,18 +289,16 @@ Una nueva integrante, en cambio, necesita acompañamiento durante sus primeras a
     order: 14,
     blockData: {
       heading: 'Pantalla 5: Roles y responsabilidades del equipo',
-      content: `### Concepto
-Los roles permiten establecer qué función desempeña cada participante y qué responsabilidades tiene frente al trabajo. Esta claridad reduce duplicidades, actividades sin responsable y conflictos derivados de expectativas diferentes.
+      content: `Los roles permiten establecer qué función desempeña cada participante y qué responsabilidades tiene frente al trabajo. Esta claridad reduce duplicidades, actividades sin responsable y conflictos derivados de expectativas diferentes.
 
 Una actividad puede involucrar varias personas con funciones distintas. Una persona puede ejecutar el trabajo, otra coordinarlo, otra verificarlo y otra validar el resultado.
 
-### Explicación
 Durante la ejecución, el gestor necesita saber quién debe actuar, quién debe ser consultado y quién participa en la validación. Esto facilita la coordinación y evita que una situación quede sin atención porque todos suponían que otra persona debía actuar.
 
 Cuando una responsabilidad cambia, la nueva distribución debe comunicarse al equipo para evitar interpretaciones diferentes.
 
-### Ejemplo
-**Proyecto: Aplicación móvil de turismo**
+Ejemplo:
+Proyecto: Aplicación móvil de turismo
 El desarrollador implementa la funcionalidad de rutas. El responsable de pruebas verifica su funcionamiento y el usuario clave comprueba si responde a la necesidad definida.
 El desarrollador participa en la producción del resultado, pero no determina por sí solo si la funcionalidad satisface la necesidad del usuario.`,
     },
@@ -362,18 +351,16 @@ El desarrollador participa en la producción del resultado, pero no determina po
     order: 17,
     blockData: {
       heading: 'Pantalla 6: Organización y coordinación del equipo',
-      content: `### Concepto
-Coordinar un equipo implica organizar el trabajo para que las personas conozcan qué deben realizar, cuándo hacerlo y qué relación existe con otras actividades.
+      content: `Coordinar un equipo implica organizar el trabajo para que las personas conozcan qué deben realizar, cuándo hacerlo y qué relación existe con otras actividades.
 
 En los proyectos TIC, una actividad puede producir información o resultados necesarios para otra. Por ello, el gestor debe observar las dependencias que conectan el trabajo.
 
-### Explicación
 Cuando una actividad depende de otra que aún no está terminada, el gestor debe determinar cómo afecta esto al trabajo. Puede ser necesario esperar, cambiar la secuencia o buscar una alternativa.
 
 La coordinación también requiere mecanismos para conocer el estado del trabajo y facilitar que los integrantes comuniquen dificultades oportunamente.
 
-### Ejemplo
-**Proyecto: Plataforma de comercio electrónico**
+Ejemplo:
+Proyecto: Plataforma de comercio electrónico
 El desarrollo de la pantalla de pagos depende de una definición que debe proporcionar el analista. El desarrollador está disponible, pero la información todavía no ha sido entregada.
 Aunque el desarrollador pueda comenzar, hacerlo sin esa información puede producir una solución incorrecta y generar modificaciones posteriores.`,
     },
@@ -416,18 +403,16 @@ Aunque el desarrollador pueda comenzar, hacerlo sin esa información puede produ
     order: 20,
     blockData: {
       heading: 'Pantalla 7: Desarrollo y fortalecimiento del equipo',
-      content: `### Concepto
-El desempeño de un equipo se desarrolla durante el proyecto. Las personas necesitan comprender el propósito del trabajo, sus responsabilidades, las reglas de colaboración y la manera en que se comunicarán las decisiones.
+      content: `El desempeño de un equipo se desarrolla durante el proyecto. Las personas necesitan comprender el propósito del trabajo, sus responsabilidades, las reglas de colaboración y la manera en que se comunicarán las decisiones.
 
 El gestor puede contribuir mediante inducción, retroalimentación, capacitación, acompañamiento y acuerdos de trabajo.
 
-### Explicación
 Fortalecer un equipo no significa únicamente mejorar conocimientos técnicos. También implica desarrollar formas de colaboración que permitan comunicar problemas, coordinar responsabilidades y resolver diferencias.
 
 La intervención debe responder a la causa de la situación. Una persona que desconoce un procedimiento necesita una respuesta diferente de un equipo que presenta problemas de comunicación.
 
-### Ejemplo
-**Proyecto: Sistema de citas**
+Ejemplo:
+Proyecto: Sistema de citas
 Una integrante se incorpora cuando el proyecto ya está en ejecución. Tiene experiencia, pero desconoce cómo se registran las decisiones y cuáles son los canales oficiales de comunicación.
 El gestor realiza una inducción y explica los acuerdos de trabajo antes de asignarle responsabilidades independientes.`,
     },
@@ -471,18 +456,16 @@ El gestor realiza una inducción y explica los acuerdos de trabajo antes de asig
     order: 23,
     blockData: {
       heading: 'Pantalla 8: Comunicación y colaboración',
-      content: `### Concepto
-La comunicación durante la ejecución permite compartir información necesaria para coordinar el trabajo y tomar decisiones. Una comunicación deficiente puede generar interpretaciones diferentes, duplicidad de tareas, retrasos o decisiones basadas en información incompleta.
+      content: `La comunicación durante la ejecución permite compartir información necesaria para coordinar el trabajo y tomar decisiones. Una comunicación deficiente puede generar interpretaciones diferentes, duplicidad de tareas, retrasos o decisiones basadas en información incompleta.
 
 El gestor debe considerar qué información necesita cada participante, cuándo debe recibirla y qué canal resulta apropiado.
 
-### Explicación
 No toda comunicación tiene el mismo nivel de formalidad. Una solicitud de un usuario no necesariamente representa un cambio aprobado y una opinión de un integrante no constituye automáticamente una decisión del proyecto.
 
 Mantener claridad sobre el estado de la información permite que el equipo actúe sobre datos confirmados y no sobre interpretaciones.
 
-### Ejemplo
-**Proyecto: Plataforma de servicios ciudadanos**
+Ejemplo:
+Proyecto: Plataforma de servicios ciudadanos
 Un usuario escribe en un chat:
 "Sería bueno agregar una opción para descargar el comprobante."
 Un integrante interpreta el mensaje como aprobación y comienza a desarrollar la funcionalidad. El gestor revisa la situación y aclara que se trata de una solicitud que todavía debe analizarse.`,
@@ -525,18 +508,16 @@ Un integrante interpreta el mensaje como aprobación y comienza a desarrollar la
     order: 26,
     blockData: {
       heading: 'Pantalla 9: Motivación, confianza y compromiso',
-      content: `### Concepto
-La confianza influye en la disposición de las personas para comunicar dificultades, solicitar ayuda y asumir responsabilidades. Cuando los integrantes pueden informar problemas oportunamente, el gestor tiene mayores posibilidades de actuar antes de que sus consecuencias aumenten.
+      content: `La confianza influye en la disposición de las personas para comunicar dificultades, solicitar ayuda y asumir responsabilidades. Cuando los integrantes pueden informar problemas oportunamente, el gestor tiene mayores posibilidades de actuar antes de que sus consecuencias aumenten.
 
 La motivación también se relaciona con comprender el propósito del trabajo, reconocer las contribuciones y contar con condiciones razonables para cumplir las responsabilidades.
 
-### Explicación
 El gestor debe observar señales como disminución de participación, errores que no se comunican, conflictos frecuentes o sobrecargas que afectan el desempeño.
 
 Antes de intervenir debe comprender la causa. Una dificultad puede estar relacionada con carga de trabajo, falta de claridad, comunicación deficiente o necesidades de apoyo.
 
-### Ejemplo
-**Proyecto: Portal de inscripción educativa**
+Ejemplo:
+Proyecto: Portal de inscripción educativa
 Una integrante detecta un error en una funcionalidad, pero decide no comunicarlo porque anteriormente recibió una reacción negativa al informar otro problema.
 El error aparece durante una prueba. Además de corregirlo, el gestor debe revisar por qué el equipo no se sintió en condiciones de comunicarlo oportunamente.`,
     },
@@ -582,17 +563,15 @@ El error aparece durante una prueba. Además de corregirlo, el gestor debe revis
     order: 29,
     blockData: {
       heading: 'Pantalla 10: Gestión de conflictos durante la ejecución',
-      content: `### Concepto
-Durante la ejecución pueden surgir desacuerdos entre integrantes del equipo, usuarios, responsables técnicos o proveedores. El papel del gestor no consiste simplemente en elegir quién tiene la razón, sino en intervenir para evitar que el conflicto afecte el trabajo, las relaciones del equipo o los resultados esperados.
+      content: `Durante la ejecución pueden surgir desacuerdos entre integrantes del equipo, usuarios, responsables técnicos o proveedores. El papel del gestor no consiste simplemente en elegir quién tiene la razón, sino en intervenir para evitar que el conflicto afecte el trabajo, las relaciones del equipo o los resultados esperados.
 
 La gestión de conflictos implica comprender la situación, escuchar las posiciones involucradas, identificar el impacto sobre el proyecto y facilitar acuerdos que permitan continuar el trabajo. La intervención debe ser proporcional a la situación y orientada a mantener la colaboración.
 
-### Explicación
 Un conflicto puede aparecer por prioridades diferentes, interpretaciones distintas, distribución del trabajo, decisiones técnicas o presión por cumplir una fecha. Si no se atiende oportunamente, puede convertirse en retrasos, reprocesos o deterioro de la colaboración.
 
 Durante la ejecución, el gestor debe actuar como facilitador. Primero establece qué está ocurriendo y qué impacto tiene; después conduce la conversación hacia una solución viable y deja registro de las decisiones cuando estas afectan el proyecto.
 
-### Ejemplo
+Ejemplo:
 En un proyecto TIC para implementar una plataforma de atención al usuario, el usuario clave solicita que el equipo priorice una nueva funcionalidad para consultar el estado de las solicitudes.
 El desarrollador considera que primero debe corregirse un defecto que afecta una funcionalidad que ya está siendo probada. Ambos comienzan a discutir porque consideran que su actividad es la más importante.
 El gestor revisa el impacto de ambas situaciones, reúne a los involucrados y facilita una decisión basada en las prioridades del proyecto. Se acuerda corregir primero el defecto porque bloquea las pruebas y posteriormente programar la nueva funcionalidad.`,
@@ -635,17 +614,15 @@ El gestor revisa el impacto de ambas situaciones, reúne a los involucrados y fa
     order: 32,
     blockData: {
       heading: 'Pantalla 11: Gestión de problemas, impedimentos y bloqueos',
-      content: `### Concepto
-Durante la ejecución aparecen situaciones que ya están afectando el trabajo: una herramienta que no funciona, una información que no llega, una persona que no está disponible o una dependencia que impide continuar. Estas situaciones deben gestionarse como parte de la operación cotidiana del proyecto.
+      content: `Durante la ejecución aparecen situaciones que ya están afectando el trabajo: una herramienta que no funciona, una información que no llega, una persona que no está disponible o una dependencia que impide continuar. Estas situaciones deben gestionarse como parte de la operación cotidiana del proyecto.
 
 El gestor debe determinar qué está bloqueando el trabajo, evaluar su impacto, coordinar la acción correspondiente y comprobar que el flujo pueda continuar. La atención oportuna evita que un problema localizado termine afectando otras actividades.
 
-### Explicación
 Un problema representa una situación que ya ocurrió y requiere atención. Un impedimento dificulta la realización de una actividad, mientras que un bloqueo puede detener completamente su avance.
 
 Durante la ejecución, no basta con registrar estas situaciones. El gestor debe darles seguimiento hasta comprobar que la acción tomada realmente permitió recuperar el trabajo.
 
-### Ejemplo
+Ejemplo:
 En una plataforma de atención ciudadana, el equipo de pruebas debe comenzar la validación de una funcionalidad. Sin embargo, el ambiente de pruebas presenta una falla y el responsable de infraestructura informa que necesita varias horas para solucionarla.
 El gestor identifica que las pruebas dependen directamente de ese ambiente. Coordina con infraestructura, informa al equipo sobre la situación y reorganiza temporalmente una actividad que no depende del ambiente. Una vez solucionado el problema, verifica que las pruebas puedan continuar.`,
     },
@@ -692,17 +669,15 @@ El gestor identifica que las pruebas dependen directamente de ese ambiente. Coor
     order: 35,
     blockData: {
       heading: 'Pantalla 12: Gestión del trabajo y avance durante la ejecución',
-      content: `### Concepto
-Durante la ejecución, el gestor necesita conocer cómo está avanzando realmente el trabajo y no depender únicamente de lo que estaba previsto en el plan. El estado real permite identificar actividades terminadas, actividades en curso, trabajos detenidos y elementos que requieren atención.
+      content: `Durante la ejecución, el gestor necesita conocer cómo está avanzando realmente el trabajo y no depender únicamente de lo que estaba previsto en el plan. El estado real permite identificar actividades terminadas, actividades en curso, trabajos detenidos y elementos que requieren atención.
 
 Gestionar el avance implica observar el estado del trabajo, reconocer desviaciones y establecer prioridades para mantener el proyecto en movimiento. El avance no se determina únicamente contando cuántas actividades fueron terminadas.
 
-### Explicación
 Una actividad completada puede tener poco impacto mientras que una actividad bloqueada puede detener varias tareas posteriores. Por esta razón, el gestor debe considerar dependencias, prioridades, bloqueos y efectos sobre los entregables.
 
 La información del avance también permite comunicar un estado realista del proyecto y tomar decisiones oportunas antes de que una desviación se convierta en un problema mayor.
 
-### Ejemplo
+Ejemplo:
 En una aplicación móvil turística, el equipo presenta el siguiente estado:
 • 8 actividades completadas.
 • 3 actividades en ejecución.
@@ -747,17 +722,15 @@ La actividad bloqueada es necesaria para iniciar las pruebas de integración. Au
     order: 38,
     blockData: {
       heading: 'Pantalla 13: Coordinación del flujo de trabajo y entregables',
-      content: `### Concepto
-Durante la ejecución, el gestor debe procurar que el trabajo avance de manera continua entre las personas, actividades y etapas involucradas. Un trabajo terminado por un integrante no representa necesariamente un resultado utilizable si el siguiente responsable no puede continuar.
+      content: `Durante la ejecución, el gestor debe procurar que el trabajo avance de manera continua entre las personas, actividades y etapas involucradas. Un trabajo terminado por un integrante no representa necesariamente un resultado utilizable si el siguiente responsable no puede continuar.
 
 La coordinación del flujo consiste en identificar puntos donde el trabajo se acumula, espera o se detiene y actuar para recuperar la continuidad. Esto permite reducir tiempos de espera, reprocesos y entregas incompletas.
 
-### Explicación
 El flujo puede verse afectado por una dependencia no disponible, una revisión pendiente, información incompleta o una capacidad insuficiente en una etapa posterior. El gestor debe observar estas conexiones y coordinar las acciones necesarias.
 
 La atención debe centrarse en mantener la continuidad desde que comienza una actividad hasta que su resultado puede ser utilizado, revisado o validado por quien corresponda.
 
-### Ejemplo
+Ejemplo:
 En el desarrollo de una aplicación de reservas, el equipo de desarrollo finaliza una funcionalidad, pero el equipo de pruebas todavía no puede comenzar porque el ambiente requerido no está disponible.
 El gestor identifica el punto de espera, coordina con infraestructura la disponibilidad del ambiente y comunica al equipo de pruebas cuándo podrá comenzar. Mientras tanto, evita enviar nuevas funcionalidades a pruebas si estas generarían una acumulación adicional.`,
     },
@@ -799,17 +772,15 @@ El gestor identifica el punto de espera, coordina con infraestructura la disponi
     order: 41,
     blockData: {
       heading: 'Pantalla 14: Gestión de capacidad y disponibilidad del equipo',
-      content: `### Concepto
-Durante la ejecución, la capacidad real del equipo puede cambiar respecto a lo previsto. Una persona puede ausentarse, asumir una tarea urgente o quedar sobrecargada mientras otro integrante dispone de capacidad.
+      content: `Durante la ejecución, la capacidad real del equipo puede cambiar respecto a lo previsto. Una persona puede ausentarse, asumir una tarea urgente o quedar sobrecargada mientras otro integrante dispone de capacidad.
 
 El gestor debe observar estas situaciones y ajustar la distribución del trabajo cuando sea necesario. La finalidad no es mantener una asignación rígida, sino utilizar responsablemente la capacidad disponible para sostener el avance.
 
-### Explicación
 La capacidad depende de factores como disponibilidad, experiencia, carga actual y necesidad de coordinación. Redistribuir una actividad no significa simplemente trasladarla a cualquier persona; debe considerarse quién puede realizarla sin generar nuevos bloqueos o sobrecargas.
 
 La gestión de capacidad también permite anticipar situaciones en las que una persona se convierte en un punto de dependencia para demasiadas actividades.
 
-### Ejemplo
+Ejemplo:
 En un proyecto de plataforma educativa, la responsable de pruebas tiene tres actividades simultáneas. Una de ellas es necesaria para liberar una funcionalidad que ya está lista para validación.
 Otro integrante del equipo tiene experiencia en pruebas funcionales y dispone de capacidad. El gestor redistribuye una actividad secundaria hacia esa persona y mantiene con la responsable de pruebas la actividad directamente relacionada con la liberación.`,
     },
@@ -851,17 +822,15 @@ Otro integrante del equipo tiene experiencia en pruebas funcionales y dispone de
     order: 44,
     blockData: {
       heading: 'Pantalla 15: Gestión del conocimiento y aprendizaje durante la ejecución',
-      content: `### Concepto
-La ejecución genera conocimiento continuamente. El equipo descubre soluciones, toma decisiones, encuentra errores, modifica formas de trabajo y aprende de situaciones que no estaban previstas inicialmente.
+      content: `La ejecución genera conocimiento continuamente. El equipo descubre soluciones, toma decisiones, encuentra errores, modifica formas de trabajo y aprende de situaciones que no estaban previstas inicialmente.
 
 Gestionar este conocimiento significa capturar aquello que puede ser útil para continuar el proyecto y evitar que información importante quede únicamente en conversaciones personales o se pierda cuando cambia algún integrante del equipo.
 
-### Explicación
 No todo lo que ocurre durante la ejecución debe registrarse. El gestor debe identificar información que tenga valor para el proyecto, como decisiones relevantes, soluciones a problemas, aprendizajes, cambios aprobados y acciones pendientes.
 
 Este conocimiento permite mejorar la continuidad del trabajo y facilita que otros integrantes comprendan por qué se tomó una decisión o cómo se resolvió una situación.
 
-### Ejemplo
+Ejemplo:
 Durante la integración de una plataforma, un desarrollador encuentra una solución para un error que aparecía al conectar dos componentes. La solución queda registrada únicamente en una conversación privada.
 Días después, otro integrante encuentra el mismo problema. El gestor decide incorporar la solución y el aprendizaje relevante en el repositorio de conocimiento del proyecto para que pueda ser reutilizado.`,
     },
@@ -907,17 +876,15 @@ Días después, otro integrante encuentra el mismo problema. El gestor decide in
     order: 47,
     blockData: {
       heading: 'Pantalla 16: Coordinación de proveedores y dependencias externas',
-      content: `### Concepto
-Durante la ejecución, el proyecto puede depender de organizaciones, servicios, especialistas o proveedores externos. Estas dependencias pueden afectar directamente el trabajo cuando cambian sus condiciones, presentan retrasos o requieren coordinación adicional.
+      content: `Durante la ejecución, el proyecto puede depender de organizaciones, servicios, especialistas o proveedores externos. Estas dependencias pueden afectar directamente el trabajo cuando cambian sus condiciones, presentan retrasos o requieren coordinación adicional.
 
 El gestor debe mantener visibilidad sobre estas dependencias y actuar cuando una situación externa pueda afectar el avance. La gestión durante la ejecución se concentra en coordinar, comunicar, anticipar impactos y comprobar que el servicio o condición externa esté disponible cuando el proyecto lo necesita.
 
-### Explicación
 Una dependencia externa puede estar relacionada con infraestructura, servicios en la nube, plataformas de autenticación, licencias, soporte técnico o entrega de componentes. Aunque la actividad esté fuera del control directo del equipo, su impacto forma parte de la gestión del proyecto.
 
 Cuando aparece una situación con un proveedor, el gestor debe determinar qué trabajo puede verse afectado, establecer comunicación con el responsable correspondiente y coordinar alternativas cuando sea necesario.
 
-### Ejemplo
+Ejemplo:
 Una plataforma turística utiliza un servicio externo para autenticación de usuarios. El proveedor comunica que realizará una actualización durante el periodo en que el equipo tiene programadas pruebas de integración.
 El gestor revisa qué actividades dependen del servicio, coordina con el proveedor la ventana de intervención y comunica al equipo las restricciones. Si la actualización afecta las pruebas, reorganiza las actividades que puedan ejecutarse mientras el servicio vuelve a estar disponible.`,
     },
@@ -966,20 +933,18 @@ El gestor revisa qué actividades dependen del servicio, coordina con el proveed
     order: 50,
     blockData: {
       heading: 'Pantalla 17: Calidad durante la ejecución',
-      content: `### Concepto
-La calidad debe gestionarse durante el desarrollo del trabajo y no únicamente al final del proyecto. Las revisiones y verificaciones realizadas durante la ejecución permiten identificar problemas antes de que se acumulen.
+      content: `La calidad debe gestionarse durante el desarrollo del trabajo y no únicamente al final del proyecto. Las revisiones y verificaciones realizadas durante la ejecución permiten identificar problemas antes de que se acumulen.
 
 La calidad se relaciona con los criterios que deben cumplir los resultados y con la evidencia utilizada para comprobar que esos criterios se están cumpliendo.
 
-### Explicación
 Las actividades de calidad pueden incluir revisiones, pruebas, inspecciones y verificaciones. Cuando se encuentra una desviación, el gestor debe coordinar su tratamiento y posteriormente comprobar que la corrección haya sido efectiva.
 
 Esto permite reducir el riesgo de descubrir problemas importantes cuando el proyecto está próximo a entregar sus resultados.
 
-### Ejemplo
-**Proyecto: Plataforma de atención**
+Ejemplo:
+Proyecto: Plataforma de atención
 Durante una prueba de calidad se detecta que una solicitud registrada no aparece correctamente en el historial del usuario. El equipo corrige la funcionalidad y ejecuta nuevamente la prueba.
-*Criterio de aceptación:* cada solicitud registrada debe aparecer correctamente en el historial del usuario, mostrando como mínimo su identificador, fecha y estado. El entregable se considera conforme únicamente cuando la prueba confirma el cumplimiento de este criterio.`,
+Criterio de aceptación: cada solicitud registrada debe aparecer correctamente en el historial del usuario, mostrando como mínimo su identificador, fecha y estado. El entregable se considera conforme únicamente cuando la prueba confirma el cumplimiento de este criterio.`,
     },
   },
   {
@@ -1019,22 +984,20 @@ Durante una prueba de calidad se detecta que una solicitud registrada no aparece
     order: 53,
     blockData: {
       heading: 'Pantalla 18: IA generativa como apoyo a la ejecución',
-      content: `### Concepto
-La IA generativa puede apoyar al gestor durante la ejecución en tareas como organizar información, resumir reuniones, comparar alternativas, preparar comunicaciones, estructurar reportes e identificar situaciones que requieren atención.
+      content: `La IA generativa puede apoyar al gestor durante la ejecución en tareas como organizar información, resumir reuniones, comparar alternativas, preparar comunicaciones, estructurar reportes e identificar situaciones que requieren atención.
 
 Sin embargo, una respuesta generada por IA no constituye automáticamente información verdadera ni una decisión del proyecto. El gestor debe revisar el contexto, verificar los datos y decidir qué información puede utilizar.
 
-### Explicación
 Un uso responsable puede seguir cuatro momentos:
-1. **Contextualizar:** Proporcionar información suficiente y hechos verificados.
-2. **Solicitar:** Formular una instrucción precisa y acotada con restricciones.
-3. **Revisar:** Comparar la respuesta con la realidad y detectar posibles alucinaciones.
-4. **Utilizar:** Aplicar únicamente aquello que ha sido validado bajo responsabilidad humana.
+1. Contextualizar: Proporcionar información suficiente y hechos verificados.
+2. Solicitar: Formular una instrucción precisa y acotada con restricciones.
+3. Revisar: Comparar la respuesta con la realidad y detectar posibles alucinaciones.
+4. Utilizar: Aplicar únicamente aquello que ha sido validado bajo responsabilidad humana.
 
 La IA puede acelerar tareas de análisis y organización, pero no debe inventar datos faltantes ni asumir la responsabilidad de las decisiones del gestor.
 
-### Ejemplo
-**Proyecto: Sistema de atención**
+Ejemplo:
+Proyecto: Sistema de atención
 Después de una reunión, el gestor tiene notas desordenadas donde aparecen decisiones, problemas y acciones pendientes.
 Utiliza IA para estructurar la información, pero posteriormente compara el resultado con las notas originales. Encuentra que la herramienta interpretó una propuesta como una decisión aprobada y corrige el resultado antes de incorporarlo al registro del proyecto.`,
     },
@@ -1086,14 +1049,14 @@ Información del proyecto: [Pega aquí los datos de la situación operativa que 
     order: 56,
     blockData: {
       heading: 'Pantalla 19: Simulación de ejecución — Preparación y Escenario Inicial',
-      content: `### Misión del Producto 1
-Comienza el **Producto 1. Simulación de ejecución**. Continuarás gestionando el proyecto TIC trabajado durante los niveles anteriores (o el caso conductor de la Plataforma Digital de Atención al Usuario).
-Asumirás el rol de **gestor del proyecto** frente a la operación real.
+      content: `Misión del Producto 1:
+Comienza el Producto 1. Simulación de ejecución. Continuarás gestionando el proyecto TIC trabajado durante los niveles anteriores (o el caso conductor de la Plataforma Digital de Atención al Usuario).
+Asumirás el rol de gestor del proyecto frente a la operación real.
 
-### Caso Conductor: Plataforma Digital de Atención al Usuario
+Caso Conductor: Plataforma Digital de Atención al Usuario:
 La organización busca implementar una plataforma que permita registrar solicitudes, consultar su estado y facilitar la atención ciudadana.
 
-#### Equipo del Proyecto
+Equipo del Proyecto:
 • Gestor del proyecto (Tú)
 • Analista de requisitos
 • Diseñador UI/UX
@@ -1102,18 +1065,16 @@ La organización busca implementar una plataforma que permita registrar solicitu
 • Usuario clave
 • Proveedor de infraestructura cloud
 
-#### Estado Inicial
-| Elemento | Estado |
-|---|---|
-| Equipo | Disponible |
-| Diseño | Aprobado |
-| Desarrollo | Listo para iniciar |
-| Ambiente | Disponible |
-| Usuario clave | Disponible en la mañana (hasta las 11:00 a. m.) |
-| Proveedor | Activo |
-| Requisito sobre adjuntos | Requiere aclaración (no especifica formatos permitidos) |
+Estado Inicial:
+• Equipo: Disponible
+• Diseño: Aprobado
+• Desarrollo: Listo para iniciar
+• Ambiente: Disponible
+• Usuario clave: Disponible en la mañana (hasta las 11:00 a. m.)
+• Proveedor: Activo
+• Requisito sobre adjuntos: Requiere aclaración (no especifica formatos permitidos)
 
-### Situación Encontrada
+Situación Encontrada:
 El desarrollador está listo para comenzar a codificar la pantalla de registro de solicitudes, pero identifica una duda sobre qué formatos de documentos adjuntos se permitirán (PDF, imágenes, tamaño máximo). El usuario clave puede atender la situación durante la mañana.`,
     },
   },
@@ -1176,24 +1137,24 @@ El desarrollador está listo para comenzar a codificar la pantalla de registro d
     order: 59,
     blockData: {
       heading: 'Pantalla 20: Simulación de ejecución — Desarrollo y Situaciones',
-      content: `### Misión de Desarrollo
+      content: `Misión de Desarrollo:
 El proyecto ya está en plena ejecución. A lo largo de la semana aparecen cuatro eventos simultáneos que ponen a prueba tu capacidad de liderazgo y coordinación:
 
-#### Evento 1. Ausencia del analista
+Evento 1. Ausencia del analista:
 El analista informa que estará ausente durante dos días por motivos de salud. Una actividad de desarrollo depende de una especificación detallada que él debía entregar.
-*Acciones del gestor:* Buscar información disponible en los requisitos iniciales, coordinar con el usuario clave o reasignar temporalmente el trabajo a tareas que no dependan del analista.
+Acciones del gestor: Buscar información disponible en los requisitos iniciales, coordinar con el usuario clave o reasignar temporalmente el trabajo a tareas que no dependan del analista.
 
-#### Evento 2. Cambio del proveedor
+Evento 2. Cambio del proveedor:
 El proveedor de infraestructura anuncia una actualización que modificará los endpoints de una API externa utilizada para la integración.
-*Acciones del gestor:* Analizar la dependencia, coordinar una prueba de verificación preventiva y verificar si la ventana de mantenimiento choca con actividades críticas.
+Acciones del gestor: Analizar la dependencia, coordinar una prueba de verificación preventiva y verificar si la ventana de mantenimiento choca con actividades críticas.
 
-#### Evento 3. Conflicto de prioridades
+Evento 3. Conflicto de prioridades:
 El usuario clave exige que el equipo priorice una nueva pantalla para una demostración ante directivos. Al mismo tiempo, el desarrollador sostiene que debe corregirse primero un defecto que bloquea las pruebas del sistema.
-*Acciones del gestor:* Analizar el impacto de ambas solicitudes, revisar dependencias y facilitar un acuerdo sustentado en las prioridades del proyecto.
+Acciones del gestor: Analizar el impacto de ambas solicitudes, revisar dependencias y facilitar un acuerdo sustentado en las prioridades del proyecto.
 
-#### Evento 4. Problema de calidad
+Evento 4. Problema de calidad:
 Durante una prueba de integración se detecta que una funcionalidad marcada previamente como "terminada" falla al procesar solicitudes con acentos o caracteres especiales.
-*Acciones del gestor:* Registrar formalmente el defecto, coordinar la corrección técnica y programar la reverificación antes de dar conformidad.`,
+Acciones del gestor: Registrar formalmente el defecto, coordinar la corrección técnica y programar la reverificación antes de dar conformidad.`,
     },
   },
   {
@@ -1249,21 +1210,21 @@ Durante una prueba de integración se detecta que una funcionalidad marcada prev
     order: 62,
     blockData: {
       heading: 'Pantalla 21: Simulación de ejecución — Decisiones y Resultados',
-      content: `### Misión Final: Cierre de la Etapa de Ejecución
+      content: `Misión Final: Cierre de la Etapa de Ejecución:
 El proyecto se encuentra en una etapa avanzada de ejecución. Algunas actividades están completas, pero persisten condiciones que exigen una intervención final antes de dar paso al seguimiento formal:
 
-#### Estado Acumulado
-• **Equipo:** Estable; un integrante presenta sobrecarga acumulada; el conflicto de prioridades anterior fue resuelto con éxito.
-• **Trabajo:** Varias funcionalidades completadas; una actividad permanece bloqueada; la dependencia externa con el proveedor fue restablecida.
-• **Entregables:** Implementación base terminada; un defecto crítico pendiente de reverificación; validación formal del usuario pendiente.
+Estado Acumulado:
+• Equipo: Estable; un integrante presenta sobrecarga acumulada; el conflicto de prioridades anterior fue resuelto con éxito.
+• Trabajo: Varias funcionalidades completadas; una actividad permanece bloqueada; la dependencia externa con el proveedor fue restablecida.
+• Entregables: Implementación base terminada; un defecto crítico pendiente de reverificación; validación formal del usuario pendiente.
 
-#### Acciones Disponibles del Gestor
-1. *Redistribuir trabajo:* Aliviar la sobrecarga del integrante redistribuyendo tareas secundarias compatibles.
-2. *Coordinar corrección:* Pasar el defecto de pendiente a corregido con el desarrollador asignado.
-3. *Actualizar estado:* Reflejar las nuevas condiciones en el tablero Kanban y cronograma.
-4. *Solicitar validación:* Convocar al usuario clave para verificar la conformidad del entregable frente a criterios de aceptación.
-5. *Registrar decisión:* Mantener la trazabilidad en la bitácora de lecciones aprendidas.
-6. *Convocar al equipo:* Alinear al equipo sobre los próximos pasos hacia el módulo de seguimiento y métricas.`,
+Acciones Disponibles del Gestor:
+1. Redistribuir trabajo: Aliviar la sobrecarga del integrante redistribuyendo tareas secundarias compatibles.
+2. Coordinar corrección: Pasar el defecto de pendiente a corregido con el desarrollador asignado.
+3. Actualizar estado: Reflejar las nuevas condiciones en el tablero Kanban y cronograma.
+4. Solicitar validación: Convocar al usuario clave para verificar la conformidad del entregable frente a criterios de aceptación.
+5. Registrar decisión: Mantener la trazabilidad en la bitácora de lecciones aprendidas.
+6. Convocar al equipo: Alinear al equipo sobre los próximos pasos hacia el módulo de seguimiento y métricas.`,
     },
   },
   {

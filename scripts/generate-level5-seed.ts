@@ -31,18 +31,17 @@ export const module15Blocks: BlockSeed[] = [
     order: 1,
     blockData: {
       heading: '¡Bienvenido al Módulo 15: Uso responsable, gobernanza y proyecto final!',
-      content: `### NIVEL 5. GOBERNANZA Y PROYECTO INTEGRADOR
-**Módulo 15. Uso responsable, gobernanza y proyecto final**
-*Duración estimada:* 120 – 150 minutos | *Nivel:* Avanzado
-*Producto:* Proyecto completo, sustentación y reflexión crítica.
+      content: `Módulo 15. Uso responsable, gobernanza y proyecto final
+Duración estimada: 120 – 150 minutos | Nivel: Avanzado
+Producto: Proyecto completo, sustentación y reflexión crítica.
 
-#### Proyecto TIC Integral con IA Responsable y Gobernanza
+Proyecto TIC Integral con IA Responsable y Gobernanza:
 El estudiante desarrollará y sustentará un nuevo proyecto TIC, integrando los aprendizajes de los niveles anteriores: comprensión y caracterización del proyecto, formulación y planificación, ejecución, seguimiento y cierre. Sobre este nuevo proyecto deberá determinar cómo utilizar la IA de manera responsable, diseñar sus propias instrucciones para interactuar con herramientas de IA, identificar riesgos éticos y regulatorios y establecer mecanismos de gobernanza, supervisión, trazabilidad y control.
 
-#### Objetivo general
+Objetivo general:
 Diseñar y sustentar un proyecto TIC integral que incorpore inteligencia artificial mediante criterios éticos, regulatorios y de gobernanza, estableciendo mecanismos de uso responsable, gestión de riesgos, protección de datos, supervisión humana, trazabilidad y rendición de cuentas.
 
-#### Objetivos específicos
+Objetivos específicos:
 • Comprender los fundamentos éticos asociados al diseño y uso de sistemas de IA y su impacto en proyectos TIC.
 • Identificar valores, principios y criterios para evaluar aplicaciones de IA y reconocer riesgos éticos, sociales y técnicos.
 • Diferenciar ética, regulación, cumplimiento, estándares, políticas institucionales y gobernanza.
@@ -52,7 +51,7 @@ Diseñar y sustentar un proyecto TIC integral que incorpore inteligencia artific
 • Comprender la función de la gobernanza durante todo el ciclo de vida de un sistema de IA (autoridad, controles, supervisión, trazabilidad y rendición de cuentas).
 • Aplicar todos estos elementos al nuevo proyecto TIC integral y preparar la sustentación final.
 
-#### Mapa del módulo
+Mapa del módulo:
 Uso responsable de IA → Ética y principios → Riesgos e impactos → Privacidad y protección de datos → Regulación de IA → Normativas y marcos regulatorios → Gobernanza de IA → Roles y responsabilidades → Gestión del riesgo y controles → Trazabilidad y auditoría → Capacidades organizacionales → Proyecto final → Microevaluación → ¡Felicidades!`,
     },
   },
@@ -63,13 +62,11 @@ Uso responsable de IA → Ética y principios → Riesgos e impactos → Privaci
     order: 2,
     blockData: {
       heading: 'Pantalla 1: Ética en inteligencia artificial',
-      content: `### Concepto
-La ética en inteligencia artificial estudia los principios y criterios que permiten valorar si el diseño, desarrollo, implementación y uso de sistemas de IA respeta valores humanos y sociales. No se limita a determinar si una tecnología funciona, sino que analiza sus consecuencias sobre las personas, las organizaciones y la sociedad.
+      content: `La ética en inteligencia artificial estudia los principios y criterios que permiten valorar si el diseño, desarrollo, implementación y uso de sistemas de IA respeta valores humanos y sociales. No se limita a determinar si una tecnología funciona, sino que analiza sus consecuencias sobre las personas, las organizaciones y la sociedad.
 
-### Explicación
 Una solución puede ser legal o técnicamente eficiente y, al mismo tiempo, generar problemas graves de discriminación, exclusión o daño. La ética plantea preguntas críticas: ¿quién puede verse afectado?, ¿qué derechos podrían estar comprometidos?, ¿quién debe supervisar la decisión y qué riesgos son inaceptables?
 
-### Ejemplo
+Ejemplo:
 Una empresa desarrolla una herramienta para calificar automáticamente candidatos a programas de formación. El sistema asigna puntuaciones inferiores de forma sistemática a determinados perfiles demográficos. Aunque el algoritmo procesa miles de registros en segundos, el equipo debe intervenir para corregir el sesgo discriminatorio y exigir supervisión humana.`,
     },
   },
@@ -111,10 +108,9 @@ Una empresa desarrolla una herramienta para calificar automáticamente candidato
     order: 5,
     blockData: {
       heading: 'Pantalla 2: Importancia del uso responsable de IA',
-      content: `### Concepto
-El **uso responsable de IA** implica utilizar estas tecnologías considerando sus beneficios, riesgos, límites y efectos durante todo su ciclo de vida: selección, propósito, configuración, supervisión, documentación y gestión de incidentes.
+      content: `El uso responsable de IA implica utilizar estas tecnologías considerando sus beneficios, riesgos, límites y efectos durante todo su ciclo de vida: selección, propósito, configuración, supervisión, documentación y gestión de incidentes.
 
-### Pasar de principios a prácticas
+Pasar de principios a prácticas:
 No basta con publicar un código de principios en la página web; la responsabilidad se traduce en procedimientos operativos: definir quién autoriza una herramienta, qué datos están prohibidos ingresar en plataformas públicas y cómo se verifican los resultados antes de tomar decisiones de proyecto.`,
     },
   },
@@ -153,13 +149,12 @@ No basta con publicar un código de principios en la página web; la responsabil
     order: 8,
     blockData: {
       heading: 'Pantalla 3: Valores y principios de IA responsable',
-      content: `### Concepto
-Los **valores** representan lo que una organización protege (dignidad, equidad, bienestar); los **principios** traducen esos valores en directrices operativas:
-• **Justicia y no discriminación:** Trato equitativo e imparcial.
-• **Transparencia y explicabilidad:** Claridad en el funcionamiento y justificación comprensible de salidas.
-• **Privacidad y protección de datos:** Respeto a los derechos de los titulares y minimización.
-• **Seguridad y robustez:** Resistencia frente a ataques, errores y uso no intencionado.
-• **Responsabilidad y supervisión humana:** Obligación de responder y mantener el control humano.`,
+      content: `Los valores representan lo que una organización protege (dignidad, equidad, bienestar); los principios traducen esos valores en directrices operativas:
+• Justicia y no discriminación: Trato equitativo e imparcial.
+• Transparencia y explicabilidad: Claridad en el funcionamiento y justificación comprensible de salidas.
+• Privacidad y protección de datos: Respeto a los derechos de los titulares y minimización.
+• Seguridad y robustez: Resistencia frente a ataques, errores y uso no intencionado.
+• Responsabilidad y supervisión humana: Obligación de responder y mantener el control humano.`,
     },
   },
   {
@@ -200,10 +195,9 @@ Los **valores** representan lo que una organización protege (dignidad, equidad,
     order: 11,
     blockData: {
       heading: 'Pantalla 4: Dilemas éticos en proyectos tecnológicos',
-      content: `### Concepto
-Un **dilema ético** surge cuando objetivos legítimos entran en tensión: por ejemplo, aumentar la precisión del modelo o la velocidad del servicio a costa de recolectar masivamente datos personales o prescindir de la revisión humana.
+      content: `Un dilema ético surge cuando objetivos legítimos entran en tensión: por ejemplo, aumentar la precisión del modelo o la velocidad del servicio a costa de recolectar masivamente datos personales o prescindir de la revisión humana.
 
-### Toma de decisiones fundamentada
+Toma de decisiones fundamentada:
 El gestor responsable no elige la opción que simplemente maximiza una métrica a corto plazo. Debe evaluar qué se gana, qué se arriesga, quién asume las consecuencias y cómo mitigar los impactos negativos.`,
     },
   },
@@ -229,11 +223,11 @@ El gestor responsable no elige la opción que simplemente maximiza una métrica 
     order: 13,
     blockData: {
       heading: 'Pantalla 5: Transparencia, explicabilidad y trazabilidad',
-      content: `### Conceptos clave
-• **Transparencia:** Comunicar claramente a los usuarios que están interactuando con un sistema de IA o que un contenido fue generado por ella.
-• **Explicabilidad:** Capacidad de entender la lógica y los factores determinantes detrás de un resultado.
-• **Trazabilidad:** Capacidad de registrar y reconstruir las versiones de modelos, datos e instrucciones que originaron una salida.
-• **Supervisión humana:** Capacidad real de una persona autorizada de intervenir, modificar o revocar una decisión del sistema.`,
+      content: `Conceptos clave:
+• Transparencia: Comunicar claramente a los usuarios que están interactuando con un sistema de IA o que un contenido fue generado por ella.
+• Explicabilidad: Capacidad de entender la lógica y los factores determinantes detrás de un resultado.
+• Trazabilidad: Capacidad de registrar y reconstruir las versiones de modelos, datos e instrucciones que originaron una salida.
+• Supervisión humana: Capacidad real de una persona autorizada de intervenir, modificar o revocar una decisión del sistema.`,
     },
   },
   {
@@ -260,11 +254,10 @@ El gestor responsable no elige la opción que simplemente maximiza una métrica 
     order: 15,
     blockData: {
       heading: 'Pantalla 6: Responsabilidad y rendición de cuentas (Accountability)',
-      content: `### Concepto
-La **responsabilidad** asigna obligaciones; la **rendición de cuentas** exige demostrar con evidencias qué se decidió, quién intervino, con qué controles y qué ocurrió después.
+      content: `La responsabilidad asigna obligaciones; la rendición de cuentas exige demostrar con evidencias qué se decidió, quién intervino, con qué controles y qué ocurrió después.
 
-### Evitar el vacío de responsabilidad
-Nunca se debe aceptar la excusa de *"la IA fue quien decidió"*. Las herramientas de IA son instrumentos técnicos; la responsabilidad jurídica y organizativa es siempre de las personas y de la organización.`,
+Evitar el vacío de responsabilidad:
+Nunca se debe aceptar la excusa de "la IA fue quien decidió". Las herramientas de IA son instrumentos técnicos; la responsabilidad jurídica y organizativa es siempre de las personas y de la organización.`,
     },
   },
   {
@@ -292,10 +285,9 @@ Nunca se debe aceptar la excusa de *"la IA fue quien decidió"*. Las herramienta
     order: 17,
     blockData: {
       heading: 'Pantalla 7: ¿Por qué regular la inteligencia artificial?',
-      content: `### Concepto
-La regulación establece obligaciones, prohibiciones y derechos exigibles jurídicamente. La ética orienta lo que debería hacerse; la regulación determina lo que es obligatorio cumplir bajo sanción legal.
+      content: `La regulación establece obligaciones, prohibiciones y derechos exigibles jurídicamente. La ética orienta lo que debería hacerse; la regulación determina lo que es obligatorio cumplir bajo sanción legal.
 
-### Convivencia armónica
+Convivencia armónica:
 Un proyecto debe cumplir la ley y, al mismo tiempo, aplicar principios éticos organizacionales que pueden ser más estrictos que el mínimo legal vigente.`,
     },
   },
@@ -323,12 +315,12 @@ Un proyecto debe cumplir la ley y, al mismo tiempo, aplicar principios éticos o
     order: 19,
     blockData: {
       heading: 'Pantalla 8: Tipos de instrumentos normativos y de gestión',
-      content: `### Taxonomía de instrumentos
-• **Ley:** Norma jurídica de obligatorio cumplimiento aprobada por el legislador.
-• **Reglamento:** Disposición que desarrolla y detalla la aplicación de una ley.
-• **Norma o estándar internacional (ej. ISO/IEC 42001):** Requisitos técnicos para sistemas de gestión certificables.
-• **Marco de referencia voluntario (ej. NIST AI RMF):** Guía metodológica para estructurar la gestión de riesgos.
-• **Política interna:** Reglas corporativas adoptadas por una organización.`,
+      content: `Taxonomía de instrumentos:
+• Ley: Norma jurídica de obligatorio cumplimiento aprobada por el legislador.
+• Reglamento: Disposición que desarrolla y detalla la aplicación de una ley.
+• Norma o estándar internacional (ej. ISO/IEC 42001): Requisitos técnicos para sistemas de gestión certificables.
+• Marco de referencia voluntario (ej. NIST AI RMF): Guía metodológica para estructurar la gestión de riesgos.
+• Política interna: Reglas corporativas adoptadas por una organización.`,
     },
   },
   {
@@ -355,10 +347,9 @@ Un proyecto debe cumplir la ley y, al mismo tiempo, aplicar principios éticos o
     order: 21,
     blockData: {
       heading: 'Pantalla 9: Enfoque basado en riesgos',
-      content: `### Concepto
-El **enfoque basado en riesgos** modula la intensidad de los controles y requisitos según la magnitud del impacto potencial sobre los derechos, la seguridad y los intereses de las personas.
+      content: `El enfoque basado en riesgos modula la intensidad de los controles y requisitos según la magnitud del impacto potencial sobre los derechos, la seguridad y los intereses de las personas.
 
-### Proporcionalidad
+Proporcionalidad:
 No tiene sentido aplicar controles de auditoría forense a un generador de títulos para diapositivas, ni dejar sin supervisión humana a un modelo que evalúa el acceso a un subsidio o empleo.`,
     },
   },
@@ -387,14 +378,14 @@ No tiene sentido aplicar controles de auditoría forense a un generador de títu
     order: 23,
     blockData: {
       heading: 'Pantalla 10: Ley de IA de la Unión Europea (AI Act)',
-      content: `### Marco pionero mundial
+      content: `Marco pionero mundial:
 El Reglamento de IA de la UE (AI Act) clasifica los sistemas en cuatro niveles:
-1. **Riesgo inaceptable (Prohibidos):** Manipulación subliminal, puntuación social ciudadana, biometría en tiempo real en espacios públicos sin orden judicial.
-2. **Alto riesgo:** Empleo, educación, infraestructuras críticas, justicia, acceso a servicios esenciales (sujetos a rigurosas auditorías, gestión de riesgos y supervisión humana).
-3. **Riesgo específico de transparencia:** Chatbots, deepfakes, sistemas generativos (deben informar al usuario que interactúa con IA).
-4. **Riesgo mínimo:** Filtros de spam, videojuegos con IA (sin obligaciones adicionales).
+1. Riesgo inaceptable (Prohibidos): Manipulación subliminal, puntuación social ciudadana, biometría en tiempo real en espacios públicos sin orden judicial.
+2. Alto riesgo: Empleo, educación, infraestructuras críticas, justicia, acceso a servicios esenciales (sujetos a rigurosas auditorías, gestión de riesgos y supervisión humana).
+3. Riesgo específico de transparencia: Chatbots, deepfakes, sistemas generativos (deben informar al usuario que interactúa con IA).
+4. Riesgo mínimo: Filtros de spam, videojuegos con IA (sin obligaciones adicionales).
 
-### Aplicación progresiva
+Aplicación progresiva:
 Las prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza y modelos de uso general en agosto de 2025; y las obligaciones de alto riesgo en 2026-2027.`,
     },
   },
@@ -420,10 +411,10 @@ Las prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza 
     order: 25,
     blockData: {
       heading: 'Pantalla 11: Protección de datos en Colombia (Ley 1581 de 2012)',
-      content: `### Marco normativo colombiano
-La **Ley 1581 de 2012** regula el tratamiento de datos personales en Colombia, supervisada por la Superintendencia de Industria y Comercio (SIC).
+      content: `Marco normativo colombiano:
+La Ley 1581 de 2012 regula el tratamiento de datos personales en Colombia, supervisada por la Superintendencia de Industria y Comercio (SIC).
 
-### Principio de Minimización y Datos Sensibles
+Principio de Minimización y Datos Sensibles:
 Tener datos disponibles no autoriza su uso para entrenar o alimentar modelos de IA. Solo deben recolectarse los datos estrictamente necesarios y proporcionales a la finalidad informada y autorizada por el titular. Los datos sensibles (salud, biometría, convicciones) requieren protección reforzada y consentimiento explícito.`,
     },
   },
@@ -449,11 +440,11 @@ Tener datos disponibles no autoriza su uso para entrenar o alimentar modelos de 
     order: 27,
     blockData: {
       heading: 'Pantalla 12: Política Nacional de IA: CONPES 4144 de 2025',
-      content: `### Hoja de ruta de política pública
-El documento **CONPES 4144 de 2025** define la Política Nacional de Inteligencia Artificial de Colombia.
+      content: `Hoja de ruta de política pública:
+El documento CONPES 4144 de 2025 define la Política Nacional de Inteligencia Artificial de Colombia.
 
-### Diferencia crucial
-Un documento CONPES es un instrumento de **política pública y planeación estatal**, no una ley aprobada por el Congreso. Traza 6 ejes estratégicos: ética y gobernanza, infraestructura y datos, innovación, talento digital, mitigación de riesgos y adopción responsable. Sirve como brújula estratégica para proyectos del sector público y privado.`,
+Diferencia crucial:
+Un documento CONPES es un instrumento de política pública y planeación estatal, no una ley aprobada por el Congreso. Traza 6 ejes estratégicos: ética y gobernanza, infraestructura y datos, innovación, talento digital, mitigación de riesgos y adopción responsable. Sirve como brújula estratégica para proyectos del sector público y privado.`,
     },
   },
   {
@@ -481,10 +472,9 @@ Un documento CONPES es un instrumento de **política pública y planeación esta
     order: 29,
     blockData: {
       heading: 'Pantalla 13: ¿Qué es la gobernanza de IA?',
-      content: `### Concepto
-La **gobernanza de IA** es el conjunto de estructuras, reglas, autoridades, procesos y controles mediante los cuales una organización dirige, supervisa, audita y responde por el desarrollo y uso de sistemas de IA.
+      content: `La gobernanza de IA es el conjunto de estructuras, reglas, autoridades, procesos y controles mediante los cuales una organización dirige, supervisa, audita y responde por el desarrollo y uso de sistemas de IA.
 
-### Preguntas operativas
+Preguntas operativas:
 ¿Quién aprueba un nuevo caso de uso? ¿Quién tiene autoridad para detener un modelo en producción? ¿Qué registros se guardan? ¿Cómo se gestionan incidentes éticos o de seguridad?`,
     },
   },
@@ -515,10 +505,10 @@ La **gobernanza de IA** es el conjunto de estructuras, reglas, autoridades, proc
     order: 31,
     blockData: {
       heading: 'Pantalla 14: Gobernanza, gestión y cumplimiento',
-      content: `### Tres funciones indispensables
-• **Gobernanza:** Define la dirección, asigna autoridad y establece mecanismos de supervisión (¿Quién decide y controla?).
-• **Gestión:** Planifica, coordina y ejecuta las actividades para lograr los objetivos (¿Cómo se hace el trabajo?).
-• **Cumplimiento (Compliance):** Verifica que las actuaciones respeten las leyes, normas y políticas vigentes (¿Se acatan las reglas?).`,
+      content: `Tres funciones indispensables:
+• Gobernanza: Define la dirección, asigna autoridad y establece mecanismos de supervisión (¿Quién decide y controla?).
+• Gestión: Planifica, coordina y ejecuta las actividades para lograr los objetivos (¿Cómo se hace el trabajo?).
+• Cumplimiento (Compliance): Verifica que las actuaciones respeten las leyes, normas y políticas vigentes (¿Se acatan las reglas?).`,
     },
   },
   {
@@ -559,13 +549,13 @@ La **gobernanza de IA** es el conjunto de estructuras, reglas, autoridades, proc
     order: 34,
     blockData: {
       heading: 'Pantalla 15: Niveles de gobernanza de la IA',
-      content: `### Gobernanza multinivel
+      content: `Gobernanza multinivel:
 La gobernanza opera desde la base operativa hasta el marco global:
-1. **Equipo de desarrollo/proyecto:** Acuerdos técnicos, revisiones de código, prompts y pruebas.
-2. **Organización:** Políticas corporativas, comités de ética, seguridad de la información.
-3. **Sectorial/Industria:** Estándares bancarios, sanitarios o de telecomunicaciones.
-4. **Nacional:** Leyes de datos, ciberseguridad y políticas de Estado.
-5. **Internacional:** Tratados, acuerdos multilaterales y estándares globales (ISO, OCDE, UNESCO).`,
+1. Equipo de desarrollo/proyecto: Acuerdos técnicos, revisiones de código, prompts y pruebas.
+2. Organización: Políticas corporativas, comités de ética, seguridad de la información.
+3. Sectorial/Industria: Estándares bancarios, sanitarios o de telecomunicaciones.
+4. Nacional: Leyes de datos, ciberseguridad y políticas de Estado.
+5. Internacional: Tratados, acuerdos multilaterales y estándares globales (ISO, OCDE, UNESCO).`,
     },
   },
   {
@@ -590,7 +580,7 @@ La gobernanza opera desde la base operativa hasta el marco global:
     order: 36,
     blockData: {
       heading: 'Pantalla 16: Roles, autoridad y límites de decisión',
-      content: `### Autoridad efectiva
+      content: `Autoridad efectiva:
 Definir roles en una matriz RACI de IA garantiza que cada persona conozca sus facultades: quién puede ajustar un prompt, quién puede autorizar el uso de un nuevo dataset y quién tiene la potestad de ordenar el apagado de emergencia (kill switch) del sistema.`,
     },
   },
@@ -618,9 +608,9 @@ Definir roles en una matriz RACI de IA garantiza que cada persona conozca sus fa
     order: 38,
     blockData: {
       heading: 'Pantalla 17: Gobernanza durante todo el ciclo de vida',
-      content: `### Gobernanza de ciclo completo
+      content: `Gobernanza de ciclo completo:
 La gobernanza no es un sello estático antes del lanzamiento. Debe acompañar cada etapa:
-**Definir propósito → Identificar riesgos → Diseñar controles → Probar → Autorizar → Implementar → Monitorear → Revisar → Retirar o modificar.**`,
+Definir propósito → Identificar riesgos → Diseñar controles → Probar → Autorizar → Implementar → Monitorear → Revisar → Retirar o modificar.`,
     },
   },
   {
@@ -645,10 +635,10 @@ La gobernanza no es un sello estático antes del lanzamiento. Debe acompañar ca
     order: 40,
     blockData: {
       heading: 'Pantalla 18: ISO/IEC 42001 — Sistema de Gestión de IA (AIMS)',
-      content: `### La primera norma internacional certificable de IA
-Publicada en 2023, la norma **ISO/IEC 42001** proporciona requisitos para establecer, implementar, mantener y mejorar continuamente un **Sistema de Gestión de Inteligencia Artificial (AIMS)** en organizaciones.
+      content: `La primera norma internacional certificable de IA:
+Publicada en 2023, la norma ISO/IEC 42001 proporciona requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de Inteligencia Artificial (AIMS) en organizaciones.
 
-### Enfoque de gestión
+Enfoque de gestión:
 Sigue la estructura de alto nivel de ISO (Plan-Do-Check-Act), integrando liderazgo, evaluación de impacto, controles operacionales y mejora continua. No sustituye la ley, pero otorga un marco estructurado y auditable.`,
     },
   },
@@ -687,12 +677,12 @@ Sigue la estructura de alto nivel de ISO (Plan-Do-Check-Act), integrando lideraz
     order: 43,
     blockData: {
       heading: 'Pantalla 19: NIST AI Risk Management Framework y Generative Profile',
-      content: `### El marco de referencia voluntario
-El **NIST AI RMF 1.0** (junto con su perfil específico para IA Generativa, NIST AI 600-1) estructura la gestión de riesgos en cuatro funciones operativas:
-• **GOVERN (Gobernar):** Cultura organizacional, políticas y responsabilidades.
-• **MAP (Mapear):** Contexto, capacidades de la IA y mapeo de riesgos e impactos.
-• **MEASURE (Medir):** Métricas, evaluaciones cuantitativas/cualitativas y pruebas de confiabilidad.
-• **MANAGE (Gestionar):** Controles, tratamiento de riesgos, mitigación y monitoreo continuo.`,
+      content: `El marco de referencia voluntario:
+El NIST AI RMF 1.0 (junto con su perfil específico para IA Generativa, NIST AI 600-1) estructura la gestión de riesgos en cuatro funciones operativas:
+• GOVERN (Gobernar): Cultura organizacional, políticas y responsabilidades.
+• MAP (Mapear): Contexto, capacidades de la IA y mapeo de riesgos e impactos.
+• MEASURE (Medir): Métricas, evaluaciones cuantitativas/cualitativas y pruebas de confiabilidad.
+• MANAGE (Gestionar): Controles, tratamiento de riesgos, mitigación y monitoreo continuo.`,
     },
   },
   {
@@ -717,11 +707,11 @@ El **NIST AI RMF 1.0** (junto con su perfil específico para IA Generativa, NIST
     order: 20,
     blockData: {
       heading: 'Pantalla 20: Capacidades organizacionales para la IA responsable',
-      content: `### Personas, Procesos y Controles
+      content: `Personas, Procesos y Controles:
 Para gobernar la IA se requieren tres pilares articulados:
-1. **Personas capacitadas:** Alfabetización crítica en IA, ética y habilidades de supervisión.
-2. **Procesos estandarizados:** Flujos de aprobación, auditorías periódicas y protocolos de respuesta a incidentes.
-3. **Controles técnicos y humanos:** Registros de auditoría, filtros de datos y validaciones manuales.`,
+1. Personas capacitadas: Alfabetización crítica en IA, ética y habilidades de supervisión.
+2. Procesos estandarizados: Flujos de aprobación, auditorías periódicas y protocolos de respuesta a incidentes.
+3. Controles técnicos y humanos: Registros de auditoría, filtros de datos y validaciones manuales.`,
     },
   },
   {
@@ -746,10 +736,10 @@ Para gobernar la IA se requieren tres pilares articulados:
     order: 47,
     blockData: {
       heading: 'Pantalla 21: Controles para el uso responsable de IA',
-      content: `### Tipos de controles
-• **Preventivos:** Control de acceso, minimización de datos en el prompt, políticas de uso aceptable.
-• **Detectivos:** Monitoreo de salidas, auditoría de logs, detección de alucinaciones y sesgos.
-• **Correctivos:** Revocación de decisiones erróneas, ajuste de prompts, bloqueo de endpoints comprometidos.`,
+      content: `Tipos de controles:
+• Preventivos: Control de acceso, minimización de datos en el prompt, políticas de uso aceptable.
+• Detectivos: Monitoreo de salidas, auditoría de logs, detección de alucinaciones y sesgos.
+• Correctivos: Revocación de decisiones erróneas, ajuste de prompts, bloqueo de endpoints comprometidos.`,
     },
   },
   {
@@ -776,7 +766,7 @@ Para gobernar la IA se requieren tres pilares articulados:
     order: 49,
     blockData: {
       heading: 'Pantalla 22: Trazabilidad y documentación de evidencias',
-      content: `### Evidencia auditable
+      content: `Evidencia auditable:
 Para investigar un incidente o demostrar cumplimiento ante un regulador se requiere conservar:
 • Versión exacta del modelo y fecha/hora de la interacción.
 • Texto completo del prompt (instrucción y datos de entrada).
@@ -807,10 +797,10 @@ Para investigar un incidente o demostrar cumplimiento ante un regulador se requi
     order: 51,
     blockData: {
       heading: 'Pantalla 23: Auditoría y supervisión humana reforzada',
-      content: `### Supervisión proporcional al impacto
+      content: `Supervisión proporcional al impacto:
 No todas las salidas demandan el mismo nivel de revisión:
-• **Bajo impacto (supervisión ligera):** Generación de borradores, corrección estilística, lluvia de ideas.
-• **Alto impacto (supervisión reforzada obligatoria):** Exclusión de beneficiarios, denegación de servicios, sanciones, decisiones laborales o de seguridad crítica. La persona revisora debe tener competencia técnica y autoridad real para vetar la recomendación.`,
+• Bajo impacto (supervisión ligera): Generación de borradores, corrección estilística, lluvia de ideas.
+• Alto impacto (supervisión reforzada obligatoria): Exclusión de beneficiarios, denegación de servicios, sanciones, decisiones laborales o de seguridad crítica. La persona revisora debe tener competencia técnica y autoridad real para vetar la recomendación.`,
     },
   },
   {
@@ -835,14 +825,14 @@ No todas las salidas demandan el mismo nivel de revisión:
     order: 53,
     blockData: {
       heading: 'Pantalla 24: Proyecto Integrador Final — Guía de Desarrollo',
-      content: `### Reto Cúspide del OVA
-Desarrollarás de inicio a fin un **nuevo proyecto tecnológico integral**, aplicando y demostrando las competencias de los 5 niveles:
-1. **Inicio y Caracterización:** Problema, objetivos, justificación, valor esperado, viabilidad 5D, interesados y ciclo de vida (predictivo, ágil o híbrido).
-2. **Planificación Integral:** Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.
-3. **Ejecución y Seguimiento:** Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.
-4. **Uso Responsable e Ingeniería de Prompts:** Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.
-5. **Gobernanza, Ética y Regulación:** Cumplimiento de la Ley 1581 / AI Act, matriz RACI de gobernanza, controles, trazabilidad y supervisión humana.
-6. **Cierre y Lecciones Aprendidas:** Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA.`,
+      content: `Reto Cúspide del OVA:
+Desarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicando y demostrando las competencias de los 5 niveles:
+1. Inicio y Caracterización: Problema, objetivos, justificación, valor esperado, viabilidad 5D, interesados y ciclo de vida (predictivo, ágil o híbrido).
+2. Planificación Integral: Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.
+3. Ejecución y Seguimiento: Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.
+4. Uso Responsable e Ingeniería de Prompts: Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.
+5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, matriz RACI de gobernanza, controles, trazabilidad y supervisión humana.
+6. Cierre y Lecciones Aprendidas: Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA.`,
     },
   },
   {
