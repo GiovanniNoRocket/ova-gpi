@@ -21,11 +21,7 @@ type ModuleSeed = {
   blocks: BlockSeed[]
 }
 
-// =========================================================================
-// MÓDULO 6: Problema, Oportunidad, Objetivos y Viabilidad (Nivel 2)
-// =========================================================================
 const module6Blocks: BlockSeed[] = [
-  // Pantalla 1
   {
     type: 'TEXT',
     order: 1,
@@ -82,7 +78,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 2
   {
     type: 'TEXT',
     order: 5,
@@ -137,7 +132,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 3
   {
     type: 'TEXT',
     order: 9,
@@ -179,7 +173,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 4
   {
     type: 'TEXT',
     order: 12,
@@ -219,7 +212,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 5
   {
     type: 'TEXT',
     order: 15,
@@ -246,7 +238,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 6
   {
     type: 'TEXT',
     order: 17,
@@ -285,7 +276,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 7, 8, 9, 10
   {
     type: 'TEXT',
     order: 20,
@@ -342,7 +332,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 11-16: Justificación y Viabilidad 5D
   {
     type: 'TEXT',
     order: 24,
@@ -370,7 +359,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 17-21: Supuestos, Restricciones y Coherencia
   {
     type: 'TEXT',
     order: 26,
@@ -412,7 +400,6 @@ const module6Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 22: Microevaluación Módulo 6 (10 preguntas)
   {
     type: 'EXAM',
     order: 29,
@@ -550,11 +537,7 @@ const module6Blocks: BlockSeed[] = [
   },
 ]
 
-// =========================================================================
-// MÓDULO 7: Interesados, Requisitos, Alcance y Entregables (Nivel 2)
-// =========================================================================
 const module7Blocks: BlockSeed[] = [
-  // Pantalla 1-2
   {
     type: 'TEXT',
     order: 1,
@@ -595,7 +578,6 @@ const module7Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 3-5: Poder, Interés, Influencia y Comunicación
   {
     type: 'TEXT',
     order: 4,
@@ -634,7 +616,6 @@ const module7Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 6-10: De la Necesidad a los Requisitos MoSCoW
   {
     type: 'TEXT',
     order: 7,
@@ -690,7 +671,6 @@ const module7Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 11-16: Alcance, Exclusiones, Entregables y EDT
   {
     type: 'TEXT',
     order: 11,
@@ -731,7 +711,6 @@ const module7Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 17-23: Cambios, Deuda Técnica, Enfoque y Auditoría IA
   {
     type: 'TEXT',
     order: 14,
@@ -771,7 +750,6 @@ const module7Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 24: Microevaluación Módulo 7 (4 preguntas)
   {
     type: 'EXAM',
     order: 17,
@@ -837,11 +815,7 @@ const module7Blocks: BlockSeed[] = [
   },
 ]
 
-// =========================================================================
-// MÓDULO 8: Cronograma, Recursos y Costos (Nivel 2)
-// =========================================================================
 const module8Blocks: BlockSeed[] = [
-  // Pantalla 1-4: Del Alcance al Cronograma y Descomposición
   {
     type: 'TEXT',
     order: 1,
@@ -881,7 +855,6 @@ const module8Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 5-10: Duración, Dependencias, Hitos y Restricciones
   {
     type: 'TEXT',
     order: 4,
@@ -921,7 +894,6 @@ const module8Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantalla 11-15: Ruta Crítica, Holgura y Diagrama de Gantt
   {
     type: 'TEXT',
     order: 7,
@@ -961,7 +933,6 @@ const module8Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 16-22: Recursos Humanos, Tecnológicos y Financieros
   {
     type: 'TEXT',
     order: 10,
@@ -1004,7 +975,6 @@ const module8Blocks: BlockSeed[] = [
     },
   },
 
-  // Pantallas 23-33: Costos, Presupuesto, Reservas y Complejidad
   {
     type: 'TEXT',
     order: 13,
@@ -1082,7 +1052,6 @@ async function main() {
   const fileContent = await readFile(SEED_FILE_PATH, 'utf-8')
   const currentSeed = JSON.parse(fileContent)
 
-  // Filter modules to keep level 1 modules (1 to 5)
   const level1Modules = currentSeed.modules.filter((m: ModuleSeed) => (m.level ?? 1) === 1)
 
   const newModule6: ModuleSeed = {
@@ -1109,11 +1078,14 @@ async function main() {
     blocks: module8Blocks,
   }
 
+  const otherModules = currentSeed.modules.filter((m: ModuleSeed) => m.order > 8)
+
   const allModules: ModuleSeed[] = [
     ...level1Modules,
     newModule6,
     newModule7,
     newModule8,
+    ...otherModules,
   ]
 
   console.log(`Validating all blocks across ${allModules.length} modules...`)
