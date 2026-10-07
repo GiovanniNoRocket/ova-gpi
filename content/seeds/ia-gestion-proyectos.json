@@ -15,13 +15,37 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 20 - 30 minutos | **Nivel:** Básico\n\n**Objetivo general:**\nAl finalizar este módulo, el estudiante comprenderá la estructura del Objeto Virtual de Aprendizaje (OVA), la metodología de trabajo, la dinámica de gamificación y el papel de la inteligencia artificial como herramienta de apoyo en la gestión de proyectos. Además, realizará un diagnóstico inicial y seleccionará el proyecto tecnológico que desarrollará durante todo el curso.\n\n**Objetivos específicos:**\n• Comprender la finalidad y organización del curso.\n• Navegar correctamente por el OVA.\n• Identificar la ruta de aprendizaje y los productos que construirá.\n• Comprender el funcionamiento del sistema de gamificación.\n• Reconocer el uso responsable de la IA como apoyo en la gestión de proyectos.\n• Seleccionar el proyecto que desarrollará durante el curso.\n• Realizar una evaluación diagnóstica."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 2,
+          "blockData": {
+            "heading": "Competencias y Productos del Módulo",
+            "content": "**Competencias a desarrollar:**\n• Navegar de forma autónoma por el OVA.\n• Comprender la metodología de aprendizaje basada en retos.\n• Reconocer el papel del PMBOK® y la IA en la gestión de proyectos.\n• Iniciar la construcción de su proyecto integrador.\n• Utilizar herramientas digitales para apoyar su aprendizaje.\n\n**Producto del módulo:**\nAl finalizar este módulo el estudiante habrá construido:\n• **Diagnóstico inicial:** Identificación del punto de partida y expectativas.\n• **Bitácora del proyecto:** Registro personal de avances, reflexiones y decisiones.\n• **Selección del proyecto TIC:** Elección del reto tecnológico que desarrollará durante los cinco niveles.\n• **Portafolio digital del curso:** Consolidación de evidencias de aprendizaje."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nBienvenida → ¿Qué aprenderás? → ¿Por qué estudiar Gestión de Proyectos? → ¿Por qué integrar Inteligencia Artificial? → ¿Cómo aprenderás en este OVA? → Ruta de aprendizaje → Sistema de gamificación → Proyecto integrador → Diagnóstico inicial → Caso introductorio → IA aplicada → Microevaluación → ¡Felicitaciones!"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
             "heading": "¡Bienvenido(a) a Fundamentos de la Gestión de Proyectos e IA!",
             "content": "Te damos la bienvenida al Objeto Virtual de Aprendizaje (OVA) Fundamentos de la Gestión de Proyectos e Inteligencia Artificial.\n\nA lo largo de este curso aprenderás a formular, planificar, ejecutar y cerrar proyectos tecnológicos utilizando las buenas prácticas del PMBOK® y herramientas de inteligencia artificial generativa como apoyo para mejorar la productividad, la calidad de los entregables y la toma de decisiones.\n\nNo necesitas experiencia previa. Cada tema se desarrollará mediante ejemplos, actividades interactivas, simulaciones y casos prácticos que te permitirán aprender haciendo.\n\nAl finalizar el curso habrás construido un proyecto tecnológico completo en tu Bitácora Personal que integrará todos los conocimientos adquiridos."
           }
         },
         {
           "type": "TEXT",
-          "order": 2,
+          "order": 5,
           "blockData": {
             "heading": "¿Qué aprenderás en este curso?",
             "content": "Este OVA está diseñado para desarrollar competencias en gestión de proyectos e inteligencia artificial mediante una metodología basada en la práctica y la resolución de problemas.\n\nDurante el curso no solo estudiarás conceptos; también construirás un proyecto real mientras aprendes a:\n• Comprender problemas y necesidades organizacionales.\n• Formular soluciones tecnológicas pertinentes.\n• Planificar proyectos bajo marcos adaptados.\n• Gestionar recursos, tiempos y costos.\n• Analizar y mitigar riesgos tecnológicos.\n• Utilizar IA de manera responsable y ética.\n• Evaluar la creación real de valor.\n\nCada módulo aportará un nuevo componente a tu proyecto integrador."
@@ -29,7 +53,7 @@
         },
         {
           "type": "SURVEY",
-          "order": 3,
+          "order": 6,
           "blockData": {
             "title": "Actividad interactiva: Tus intereses de aprendizaje",
             "question": "¿Qué temas te interesa más aprender durante este OVA? (Selecciona hasta tres opciones):",
@@ -74,7 +98,7 @@
         },
         {
           "type": "TEXT",
-          "order": 4,
+          "order": 7,
           "blockData": {
             "heading": "¿Por qué aprender Gestión de Proyectos?",
             "content": "La gestión de proyectos consiste en aplicar conocimientos, habilidades, herramientas y técnicas para alcanzar los objetivos de un proyecto y generar valor para la organización.\n\nUn proyecto tecnológico implica personas, recursos, tiempo, costos y riesgos. Gestionarlo adecuadamente permite:\n• Organizar el trabajo en fases lógicas.\n• Priorizar actividades críticas.\n• Controlar el avance y el presupuesto.\n• Mejorar la comunicación con los interesados.\n• Reducir la incertidumbre técnica y del negocio.\n• Aumentar significativamente la probabilidad de éxito.\n\nSegún el PMBOK®, la gestión de proyectos debe adaptarse al contexto específico y enfocarse en la generación sostenible de valor."
@@ -82,7 +106,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 5,
+          "order": 8,
           "blockData": {
             "question": "¿Cuál es el principal beneficio de la gestión de proyectos?",
             "options": [
@@ -113,7 +137,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 6,
+          "order": 9,
           "blockData": {
             "title": "Actividad gamificada: Buenas vs Malas Prácticas",
             "instruction": "Clasifica cada situación según corresponda a una Buena o Mala Práctica de gestión:",
@@ -159,7 +183,7 @@
         },
         {
           "type": "VIDEO",
-          "order": 7,
+          "order": 10,
           "blockData": {
             "title": "Video: Gestión de proyectos EXPLICADO",
             "url": "https://www.youtube.com/watch?v=yqOLdGif4R0",
@@ -170,7 +194,7 @@
         },
         {
           "type": "TEXT",
-          "order": 8,
+          "order": 11,
           "blockData": {
             "heading": "¿Por qué integrar Inteligencia Artificial en la gestión de proyectos?",
             "content": "La Inteligencia Artificial (IA) es un conjunto de tecnologías capaces de realizar tareas que normalmente requieren inteligencia humana, como analizar información, reconocer patrones y apoyar la toma de decisiones.\n\nLa IA Generativa es un tipo de IA que crea texto, imágenes, código y documentos a partir de instrucciones (prompts).\n\n⚠️ Principio fundamental del curso: La IA NO reemplaza al director del proyecto ni al equipo humano. Su función es actuar como un copiloto inteligente para tareas repetitivas y análisis de datos, liberando tiempo para la creatividad, la negociación, la empatía y la toma de decisiones estratégicas."
@@ -178,7 +202,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 9,
+          "order": 12,
           "blockData": {
             "question": "¿Cuál representa el mejor uso de la IA en un proyecto?",
             "options": [
@@ -209,7 +233,7 @@
         },
         {
           "type": "VIDEO",
-          "order": 10,
+          "order": 13,
           "blockData": {
             "title": "Video: ¿Qué es la Inteligencia Artificial Generativa?",
             "url": "https://www.youtube.com/watch?v=RtT3gJ3VQIk",
@@ -221,7 +245,7 @@
         },
         {
           "type": "TEXT",
-          "order": 11,
+          "order": 14,
           "blockData": {
             "heading": "¿Cómo aprenderás en este OVA?",
             "content": "Este OVA utiliza una metodología de aprendizaje activo. Cada concepto se desarrollará siguiendo esta secuencia:\n\nConcepto → Explicación → Ejemplo → Pregunta rápida → Actividad interactiva → Proyecto Integrador → IA Aplicada.\n\nAprenderás construyendo desde el primer día tu propio proyecto tecnológico."
@@ -229,7 +253,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 12,
+          "order": 15,
           "blockData": {
             "title": "IA Aplicada: Comprendiendo el concepto de proyecto tecnológico",
             "role": "Actúa como consultor pedagógico en tecnología.",
@@ -245,7 +269,7 @@
         },
         {
           "type": "TEXT",
-          "order": 13,
+          "order": 16,
           "blockData": {
             "heading": "Ruta de Aprendizaje del OVA",
             "content": "El curso está organizado en tres niveles progresivos:\n\n• NIVEL 1: Comprensión del proyecto tecnológico (Fundamentos, PMBOK, tipos TIC, enfoques y fundamentos de IA).\n• NIVEL 2: Formulación y planeación (Alcance, cronograma, riesgos, presupuesto y prompts avanzados).\n• NIVEL 3: Ejecución, seguimiento, gobernanza y cierre (Monitoreo, control, ética y entrega del proyecto).\n\nCada nivel se desbloquea al completar y aprobar el nivel anterior."
@@ -253,7 +277,7 @@
         },
         {
           "type": "VIDEO",
-          "order": 14,
+          "order": 17,
           "blockData": {
             "title": "Video: ¿Qué hace un Director de Proyectos?",
             "url": "https://www.youtube.com/watch?v=AfwF4JPsI0o",
@@ -264,7 +288,7 @@
         },
         {
           "type": "TEXT",
-          "order": 15,
+          "order": 18,
           "blockData": {
             "heading": "Sistema de Gamificación: Niveles, XP e Insignias",
             "content": "Durante este curso avanzarás mediante retos y recompensas:\n\n• XP (Experiencia): ganas puntos por completar lecturas, acertar quizzes, interactuar con IA y registrar tu Bitácora.\n• Niveles: tu nivel sube a medida que acumulas XP.\n• Insignias: obtendrás insignias por hitos como \"Explorador del OVA\", \"Arquitecto del Proyecto\", \"Detector de IA\" y \"Especialista Nivel 1\".\n\nNo compites contra otros: compites contigo mismo para mejorar continuamente."
@@ -272,7 +296,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 16,
+          "order": 19,
           "blockData": {
             "stepNumber": 0,
             "title": "Selección del Proyecto Tecnológico Integrador",
@@ -293,7 +317,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 17,
+          "order": 20,
           "blockData": {
             "title": "IA Aplicada: Descripción preliminar del proyecto",
             "role": "Actúa como consultor senior en proyectos TIC.",
@@ -308,7 +332,7 @@
         },
         {
           "type": "SURVEY",
-          "order": 18,
+          "order": 21,
           "blockData": {
             "title": "Evaluación Diagnóstica Inicial",
             "question": "Responde honestamente para personalizar tu ruta de aprendizaje:",
@@ -337,7 +361,7 @@
         },
         {
           "type": "SCENARIO",
-          "order": 19,
+          "order": 22,
           "blockData": {
             "title": "Caso Introductorio: La Universidad Innovar",
             "situation": "La Universidad Innovar desea modernizar sus procesos de matrícula: actualmente son presenciales, con largas filas, demoras y quejas constantes. El Rector inicia un proyecto de transformación digital y has sido designado como Director del Proyecto. ¿Cuál debe ser tu primera acción?",
@@ -366,7 +390,7 @@
         },
         {
           "type": "CHECKPOINT",
-          "order": 20,
+          "order": 23,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el Módulo 1",
             "description": "Has dado el primer paso para convertirte en un director de proyectos tecnológicos capaz de integrar PMBOK® con Inteligencia Artificial.\n\nLogros alcanzados:\n✔ Organización del curso y metodología activa comprendidas.\n✔ Uso responsable de la IA como copiloto.\n✔ Proyecto tecnológico seleccionado.\n✔ Bitácora inicial creada.",
@@ -1768,7 +1792,7 @@
       ]
     },
     {
-      "title": "Módulo 6. Problema, Oportunidad, Objetivos y Viabilidad",
+      "title": "Problema, Oportunidad, Objetivos y Viabilidad",
       "order": 6,
       "level": 2,
       "levelTitle": "Nivel 2: Formulación y planeación",
@@ -1777,13 +1801,37 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 35–45 minutos | **Nivel:** Básico\n\n**Objetivo general:**\nAl finalizar este módulo el estudiante será capaz de formular el problema central y la oportunidad de un proyecto tecnológico, identificar causas y consecuencias mediante el árbol de problemas, formular el objetivo general y los objetivos específicos, y justificar la viabilidad inicial del proyecto incorporando herramientas de IA generativa de forma crítica y responsable.\n\n**Objetivos específicos:**\n• Identificar y caracterizar un problema o necesidad en un contexto organizacional.\n• Construir el árbol de problemas diferenciando causas raíces, problema central y consecuencias.\n• Identificar y justificar la oportunidad de intervención tecnológica.\n• Formular el objetivo general y los objetivos específicos aplicando criterios de calidad.\n• Evaluar la viabilidad inicial del proyecto en cinco dimensiones: técnica, económica, operativa, temporal y legal.\n• Utilizar IA generativa para enriquecer la formulación sin delegar el juicio crítico.\n• Integrar los elementos de formulación al Plan Inicial / Backlog Integral del Nivel 2."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 2,
+          "blockData": {
+            "heading": "Competencias y Producto del Módulo",
+            "content": "**Competencias a desarrollar:**\n• Diagnosticar situaciones problemáticas organizacionales susceptibles de solución mediante TIC.\n• Estructurar relaciones de causa-efecto utilizando árboles de problemas.\n• Redactar objetivos de proyecto orientados a resultados medibles y entrega de valor.\n• Evaluar integralmente la viabilidad de una iniciativa tecnológica en 5 dimensiones.\n• Aplicar IA generativa como asistente para la ideación, síntesis y contraste de formulaciones.\n\n**Producto del módulo:**\n**Plan Inicial / Backlog Integral del Nivel 2 (Fase de Formulación):**\nEstructuración del problema central, árbol de causas y consecuencias, objetivo general y específicos, y justificación de viabilidad multidimensional de tu proyecto TIC seleccionado."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nProblema → Necesidades → Causas → Árbol de problemas → Oportunidad → Objetivos → Justificación → Valor → Viabilidad técnica, económica, operativa, temporal y legal → Proyecto integrador → IA aplicada → Microevaluación → ¡Felicitaciones!"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
+          "blockData": {
             "heading": "Pantalla 1: ¿De dónde surge un proyecto?",
             "content": "Los proyectos surgen para generar un cambio. Ese cambio puede responder a un problema existente, una necesidad, una oportunidad, un requisito o una situación que requiere transformación.\n\nEn un proyecto TIC, identificar correctamente el punto de partida evita que el equipo seleccione una tecnología antes de comprender qué necesita resolver.\n\nCuando una organización dice \"necesitamos una aplicación\", todavía no tenemos suficiente información para formular el proyecto. La aplicación es una posible solución, pero primero debemos conocer la situación que origina la necesidad.\n\nEl análisis inicial debe permitir responder: ¿qué ocurre?, ¿a quién afecta?, ¿por qué importa? y ¿qué debería cambiar?\n\nEjemplo:\nLa universidad afirma: \"Necesitamos una plataforma con IA.\"\nEl equipo investiga y descubre que:\n• Las solicitudes llegan por diferentes canales sin seguimiento centralizado.\n• Los estudiantes realizan consultas repetitivas.\n• Ahora existe una situación real que puede analizarse."
           }
         },
         {
           "type": "QUIZ",
-          "order": 2,
+          "order": 5,
           "blockData": {
             "question": "La dirección propone desarrollar inmediatamente una aplicación. ¿Qué debería hacer primero el equipo?",
             "options": [
@@ -1814,7 +1862,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 3,
+          "order": 6,
           "blockData": {
             "stepNumber": 1,
             "title": "Paso 1: Situación Inicial del Proyecto Nivel 2",
@@ -1845,7 +1893,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 4,
+          "order": 7,
           "blockData": {
             "title": "Laboratorio de IA: Identificación del Punto de Partida",
             "guidance": "Copia el prompt guía, ejecútalo en ChatGPT u otro LLM con los datos de tu caso y reflexiona sobre el resultado.",
@@ -1861,7 +1909,7 @@
         },
         {
           "type": "TEXT",
-          "order": 5,
+          "order": 8,
           "blockData": {
             "heading": "Pantalla 2: ¿Qué es un problema?",
             "content": "Un problema es una situación existente que representa una condición no deseada y que afecta a personas, procesos, organizaciones o resultados.\n\nEn proyectos TIC, formular correctamente el problema permite establecer posteriormente objetivos y alternativas de solución coherentes.\n\nUn problema debe describir lo que está ocurriendo, no la tecnología que queremos utilizar. Por eso, expresiones como \"necesitamos una aplicación\" o \"debemos implementar IA\" no constituyen por sí mismas una formulación del problema.\n\nUna buena formulación permite comprender la brecha entre la situación actual y la situación que se desea alcanzar.\n\n❌ Formulación incorrecta: \"La universidad necesita una aplicación para gestionar solicitudes.\"\n\n✅ Formulación adecuada: \"Los estudiantes tienen dificultades para consultar oportunamente el estado de sus solicitudes debido a que la información se encuentra distribuida entre diferentes canales de atención.\""
@@ -1869,7 +1917,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 6,
+          "order": 9,
           "blockData": {
             "question": "¿Cuál de las siguientes opciones representa mejor un problema?",
             "options": [
@@ -1900,7 +1948,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 7,
+          "order": 10,
           "blockData": {
             "stepNumber": 2,
             "title": "Paso 2: Problema Preliminar",
@@ -1930,7 +1978,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 8,
+          "order": 11,
           "blockData": {
             "title": "Laboratorio de IA: Diferenciación de Problema vs Solución",
             "guidance": "Usa el prompt para verificar que tu problema no esté sesgado hacia una solución tecnológica:",
@@ -1945,7 +1993,7 @@
         },
         {
           "type": "TEXT",
-          "order": 9,
+          "order": 12,
           "blockData": {
             "heading": "Pantalla 3: Problema, síntoma, causa y consecuencia",
             "content": "Diferenciar estos elementos permite evitar diagnósticos superficiales:\n\n• Síntoma: Manifestación observable del problema (ej. los estudiantes realizan consultas repetitivas).\n• Causa: Razón que explica por qué ocurre la situación (ej. la información está distribuida entre varios canales).\n• Problema Central: La situación no deseada que requiere transformación (ej. existe dificultad para realizar seguimiento de solicitudes).\n• Consecuencia: El efecto o impacto producido (ej. aumentan los tiempos de atención e inconformidad).\n\nPreguntas clave para analizar relaciones causales:\n- Causa: ¿Por qué ocurre?\n- Problema: ¿Qué situación necesita cambiar?\n- Consecuencia: ¿Qué ocurre como resultado?"
@@ -1953,7 +2001,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 10,
+          "order": 13,
           "blockData": {
             "title": "Actividad: Síntoma, Causa, Problema y Consecuencia",
             "instruction": "Clasifica cada elemento del caso conductor según corresponda:",
@@ -1990,7 +2038,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 11,
+          "order": 14,
           "blockData": {
             "stepNumber": 3,
             "title": "Paso 3: Matriz Causal (Causas y Consecuencias)",
@@ -2026,7 +2074,7 @@
         },
         {
           "type": "TEXT",
-          "order": 12,
+          "order": 15,
           "blockData": {
             "heading": "Pantalla 4: Evidencias y Necesidades",
             "content": "La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar \"los usuarios están inconformes\"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como \"Pendiente de validación\" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran más de 450 consultas mensuales repetitivas.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes."
@@ -2034,7 +2082,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 13,
+          "order": 16,
           "blockData": {
             "question": "¿Cuál de las siguientes afirmaciones representa mejor una evidencia?",
             "options": [
@@ -2065,7 +2113,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 14,
+          "order": 17,
           "blockData": {
             "stepNumber": 4,
             "title": "Paso 4: Registro de Evidencias y Necesidades",
@@ -2095,7 +2143,7 @@
         },
         {
           "type": "TEXT",
-          "order": 15,
+          "order": 18,
           "blockData": {
             "heading": "Pantalla 5: Árbol de problemas",
             "content": "El árbol de problemas es una herramienta visual que representa las relaciones lógicas entre las causas, el problema central y sus consecuencias:\n\n• Consecuencias (Hojas y Ramas): Efectos directos e indirectos.\n• Problema Central (Tronco): La situación focal que requiere ser transformada.\n• Causas (Raíces): Causas directas e indirectas que originan el problema.\n\nEsta estructura permite clarificar la lógica causal antes de diseñar objetivos o comprometer recursos técnicos."
@@ -2103,7 +2151,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 16,
+          "order": 19,
           "blockData": {
             "stepNumber": 5,
             "title": "Paso 5: Árbol de Problemas Estructurado",
@@ -2145,7 +2193,7 @@
         },
         {
           "type": "TEXT",
-          "order": 17,
+          "order": 20,
           "blockData": {
             "heading": "Pantalla 6: ¿Qué es una oportunidad?",
             "content": "Una oportunidad es una situación favorable que puede aprovecharse para generar valor, mejorar el desempeño, innovar, desarrollar nuevas capacidades o responder a cambios del entorno.\n\nUn proyecto puede surgir para resolver un problema, pero también para aprovechar una oportunidad favorable (como la disponibilidad de nuevas herramientas de IA, nuevas regulaciones o capacidades de integración cloud).\n\nIdentificar una oportunidad no significa comprar tecnología a ciegas: primero debemos determinar si existe valor suficiente y si las condiciones organizacionales permiten aprovecharla."
@@ -2153,7 +2201,7 @@
         },
         {
           "type": "SCENARIO",
-          "order": 18,
+          "order": 21,
           "blockData": {
             "title": "Escenario: Detección de Oportunidad de Innovación",
             "situation": "Una organización funciona adecuadamente en sus procesos de registro manual, pero una nueva tecnología de procesamiento de documentos con IA permitiría automatizar la extracción de datos.",
@@ -2182,7 +2230,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 19,
+          "order": 22,
           "blockData": {
             "stepNumber": 6,
             "title": "Paso 6: Oportunidad y Valor Potencial",
@@ -2212,7 +2260,7 @@
         },
         {
           "type": "TEXT",
-          "order": 20,
+          "order": 23,
           "blockData": {
             "heading": "Pantalla 7-10: De la Situación Actual a los Objetivos SMART",
             "content": "Un objetivo expresa una condición futura que el proyecto pretende alcanzar.\n\n• Objetivo General: Expresa el propósito principal del proyecto y resume la transformación esperada. Debe estar orientado a resultados y alineado al problema o la oportunidad.\n\n• Objetivos Específicos: Descomponen el objetivo general en resultados concretos y verificables.\n\nFórmula de transformación:\nSituación problemática actual ➔ Situación deseada ➔ Objetivo general orientado a valor."
@@ -2220,7 +2268,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 21,
+          "order": 24,
           "blockData": {
             "question": "¿Cuál de los siguientes objetivos está mejor formulado como Objetivo General?",
             "options": [
@@ -2251,7 +2299,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 22,
+          "order": 25,
           "blockData": {
             "question": "Al redactar objetivos específicos, ¿cuál de los siguientes NO está correctamente formulado?",
             "options": [
@@ -2282,7 +2330,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 23,
+          "order": 26,
           "blockData": {
             "stepNumber": 7,
             "title": "Paso 7: Objetivos General y Específicos del Proyecto",
@@ -2320,7 +2368,7 @@
         },
         {
           "type": "TEXT",
-          "order": 24,
+          "order": 27,
           "blockData": {
             "heading": "Pantalla 11-16: Justificación y Viabilidad 5D (Técnica, Económica, Operativa, Legal, Temporal)",
             "content": "Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Cumple con protección de datos personales (Habeas Data), licencias y regulaciones?\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica"
@@ -2328,7 +2376,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 25,
+          "order": 28,
           "blockData": {
             "stepNumber": 8,
             "title": "Paso 8: Matriz 5D de Viabilidad y Justificación",
@@ -2376,7 +2424,7 @@
         },
         {
           "type": "TEXT",
-          "order": 26,
+          "order": 29,
           "blockData": {
             "heading": "Pantallas 17-21: Supuestos, Restricciones y Reto de Decisión",
             "content": "• Supuesto: Condición que se considera verdadera para efectos de planificación y que debe validarse.\n• Restricción: Condición que limita las opciones o posibilidades del proyecto (presupuesto tope, plazo fijo, regulaciones).\n\nReto de Decisión (¿Continuar o Reformular?):\nCuando un proyecto tiene viabilidad técnica favorable pero viabilidad económica o temporal condicionada, la decisión profesional recomendada es: Continuar con condiciones, resolviendo las principales incertidumbres antes de comprometer inversiones mayores."
@@ -2384,7 +2432,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 27,
+          "order": 30,
           "blockData": {
             "title": "Actividad: Clasificación de Supuestos vs Restricciones",
             "instruction": "Clasifica cada enunciado según corresponda a un Supuesto o a una Restricción:",
@@ -2419,7 +2467,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 28,
+          "order": 31,
           "blockData": {
             "stepNumber": 9,
             "title": "Paso 9: Supuestos, Restricciones y Decisión de Viabilidad",
@@ -2455,7 +2503,7 @@
         },
         {
           "type": "EXAM",
-          "order": 29,
+          "order": 32,
           "blockData": {
             "title": "Microevaluación Módulo 6: Formulación, Objetivos y Viabilidad",
             "description": "Demuestra tu comprensión de formulación de problemas TIC, árbol causal, objetivos SMART y viabilidad 5D.",
@@ -2711,7 +2759,7 @@
       ]
     },
     {
-      "title": "Módulo 7. Interesados (Stakeholders), Requisitos, Alcance y Entregables",
+      "title": "Interesados (Stakeholders), Requisitos, Alcance y Entregables",
       "order": 7,
       "level": 2,
       "levelTitle": "Nivel 2: Formulación y planeación",
@@ -3218,7 +3266,7 @@
       ]
     },
     {
-      "title": "Módulo 8. Cronograma, Recursos y Costos",
+      "title": "Cronograma, Recursos y Costos",
       "order": 8,
       "level": 2,
       "levelTitle": "Nivel 2: Formulación y planeación",
@@ -3366,14 +3414,14 @@
           "order": 7,
           "blockData": {
             "heading": "Pantalla 11-15: Ruta Crítica, Holgura y Diagrama de Gantt",
-            "content": "• Ruta Crítica (CPM): La secuencia más larga de actividades dependientes que determina la duración mínima total del proyecto. Cualquier retraso en una actividad de la ruta crítica retrasará la fecha final del proyecto.\n\n• Holgura: Margen de tiempo que una actividad puede retrasarse sin afectar la fecha de finalización del proyecto. Las actividades sobre la ruta crítica tienen holgura cero (0).\n\n• Diagrama de Gantt: Representación visual que muestra la distribución temporal de actividades, dependencias, hitos y avances."
+            "content": "• **Ruta Crítica (CPM):** La secuencia más larga de actividades dependientes que determina la duración mínima total del proyecto. Cualquier retraso en una actividad de la ruta crítica retrasará la fecha final del proyecto.\n\n• **Holgura:** Margen de tiempo que una actividad puede retrasarse sin afectar la fecha de finalización del proyecto. Las actividades sobre la ruta crítica tienen holgura cero (0).\n\n• **Diagrama de Red y Ruta Crítica:**\nRuta A: Análisis (3 días) → Diseño (5 días) → Desarrollo (4 días) = **12 días**\nRuta B: Configuración (2 días) → Pruebas (3 días) → Documentación (2 días) = **7 días**\nDuración mínima del proyecto = **12 días** (determinada por la Ruta A).\n\n![Diagrama de Red del Proyecto - Ruta Crítica](/images/ruta-critica-diagrama.png)"
           }
         },
         {
           "type": "QUIZ",
           "order": 8,
           "blockData": {
-            "question": "En un proyecto, la Ruta A es la ruta crítica con 12 días. La actividad A2 (Diseño) sufre un retraso y aumenta su duración en 3 días. ¿Qué sucederá con la duración del proyecto?",
+            "question": "En el diagrama de red del proyecto, la **Ruta A** es la ruta crítica y está compuesta por:\n\n![Detalle de la Ruta A](/images/ruta-critica-ruta-a.png)\n\nLa actividad **A2 – Diseño** aumenta su duración de 5 a 8 días debido a un retraso en la validación del diseño. ¿Qué podría suceder con la duración del proyecto?",
             "options": [
               {
                 "id": "a",
@@ -3640,7 +3688,7 @@
       ]
     },
     {
-      "title": "Módulo 10. Liderazgo, equipo y ejecución",
+      "title": "Liderazgo, equipo y ejecución",
       "order": 10,
       "level": 3,
       "levelTitle": "Nivel 3: Ejecución, seguimiento y cierre",
@@ -3649,13 +3697,29 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
-            "heading": "¡Bienvenido al Módulo 10: Liderazgo, equipo y ejecución!",
-            "content": "Módulo 10. Liderazgo, equipo y ejecución\nDuración estimada: 120 – 150 minutos | Nivel: Intermedio\n\nObjetivo general:\nDesarrollar capacidades para liderar y coordinar la ejecución de un proyecto TIC, gestionando personas, actividades, recursos, entregables, situaciones problemáticas y relaciones con terceros, mediante una actuación organizada y el uso responsable de IA generativa.\n\nObjetivos específicos:\nAl finalizar este módulo, el estudiante podrá:\n• Comprender cómo se desarrolla la ejecución de un proyecto TIC a partir de la planificación realizada.\n• Reconocer las responsabilidades del gestor durante la ejecución.\n• Aplicar estrategias de liderazgo según las situaciones del proyecto.\n• Coordinar roles, responsabilidades, actividades y recursos.\n• Gestionar la comunicación y colaboración del equipo.\n• Identificar y gestionar conflictos, problemas e impedimentos.\n• Coordinar actividades y entregables durante la ejecución.\n• Gestionar situaciones relacionadas con recursos, proveedores y terceros.\n• Integrar la calidad en el desarrollo del trabajo.\n• Gestionar el conocimiento generado durante la ejecución.\n• Utilizar IA generativa como apoyo a diferentes actividades de gestión.\n• Verificar la información generada por IA antes de utilizarla.\n• Tomar decisiones considerando las consecuencias sobre el proyecto.\n• Aplicar lo aprendido mediante una simulación de ejecución.\n\nCompetencias a desarrollar:\n• Coordinar equipos de trabajo en proyectos TIC, considerando roles, responsabilidades y necesidades de colaboración.\n• Aplicar estrategias de liderazgo de acuerdo con las situaciones que se presentan durante la ejecución.\n• Gestionar la comunicación y colaboración entre los participantes del proyecto.\n• Identificar y gestionar conflictos, problemas e impedimentos que afecten la ejecución.\n• Coordinar actividades, recursos y entregables de acuerdo con las necesidades del proyecto.\n• Gestionar situaciones relacionadas con proveedores y terceros durante la ejecución.\n• Integrar prácticas de calidad en el desarrollo y seguimiento de las actividades.\n• Registrar decisiones, experiencias y aprendizajes generados durante la ejecución.\n• Tomar decisiones frente a situaciones y cambios que se presenten en el proyecto.\n• Utilizar IA generativa para apoyar el análisis y organización de situaciones del proyecto.\n• Verificar los resultados generados por IA antes de utilizarlos.\n• Integrar las competencias desarrolladas en la Simulación de ejecución del proyecto TIC.\n\nMapa del módulo:\nPlan → Liderazgo → Equipo → Organización → Desarrollo → Comunicación → Motivación → Conflictos → Trabajo y entregables → Recursos y conocimiento → Proveedores, calidad e IA → Simulación y decisiones → Felicidades.\n\nProducto del módulo: Producto 1. Simulación de ejecución:\nEl estudiante continuará trabajando sobre el proyecto TIC desarrollado durante los niveles anteriores. En la simulación asumirá el rol de gestor y deberá enfrentar situaciones relacionadas con el equipo, las actividades, los recursos, los entregables, los proveedores y la calidad."
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 120 – 150 minutos | **Nivel:** Intermedio\n\n**Objetivo general:**\nDesarrollar capacidades para liderar y coordinar la ejecución de un proyecto TIC, gestionando personas, actividades, recursos, entregables, situaciones problemáticas y relaciones con terceros, mediante una actuación organizada y el uso responsable de IA generativa.\n\n**Objetivos específicos:**\n• Comprender cómo se desarrolla la ejecución de un proyecto TIC a partir de la planificación realizada.\n• Reconocer las responsabilidades del gestor durante la ejecución.\n• Aplicar estrategias de liderazgo según las situaciones del proyecto.\n• Coordinar roles, responsabilidades, actividades y recursos.\n• Gestionar la comunicación y colaboración del equipo.\n• Identificar y gestionar conflictos, problemas e impedimentos.\n• Coordinar actividades y entregables durante la ejecución.\n• Gestionar situaciones relacionadas con recursos, proveedores y terceros.\n• Integrar la calidad en el desarrollo del trabajo.\n• Gestionar el conocimiento generado durante la ejecución.\n• Utilizar IA generativa como apoyo a diferentes actividades de gestión.\n• Verificar la información generada por IA antes de utilizarla.\n• Tomar decisiones considerando las consecuencias sobre el proyecto.\n• Aplicar lo aprendido mediante una simulación de ejecución."
           }
         },
         {
           "type": "TEXT",
           "order": 2,
+          "blockData": {
+            "heading": "Competencias y Producto del Módulo",
+            "content": "**Competencias a desarrollar:**\n• Coordinar equipos de trabajo en proyectos TIC, considerando roles, responsabilidades y necesidades de colaboración.\n• Aplicar estrategias de liderazgo de acuerdo con las situaciones que se presentan durante la ejecución.\n• Gestionar la comunicación y colaboración entre los participantes del proyecto.\n• Identificar y gestionar conflictos, problemas e impedimentos que afecten la ejecución.\n• Coordinar actividades, recursos y entregables de acuerdo con las necesidades del proyecto.\n• Gestionar situaciones relacionadas con proveedores y terceros durante la ejecución.\n• Integrar prácticas de calidad en el desarrollo y seguimiento de las actividades.\n• Registrar decisiones, experiencias y aprendizajes generados durante la ejecución.\n• Tomar decisiones frente a situaciones y cambios que se presenten en el proyecto.\n• Utilizar IA generativa para apoyar el análisis y organización de situaciones del proyecto.\n• Verificar los resultados generados por IA antes de utilizarlos.\n• Integrar las competencias desarrolladas en la Simulación de ejecución del proyecto TIC.\n\n**Producto del módulo:**\n**Producto 1. Simulación de ejecución:**\nEl estudiante continuará trabajando sobre el proyecto TIC desarrollado durante los niveles anteriores. En la simulación asumirá el rol de gestor y deberá enfrentar situaciones relacionadas con el equipo, las actividades, los recursos, los entregables, los proveedores y la calidad."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nPlan → Liderazgo → Equipo → Organización → Desarrollo → Comunicación → Motivación → Conflictos → Trabajo y entregables → Recursos y conocimiento → Proveedores, calidad e IA → Simulación y decisiones → Felicidades"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
           "blockData": {
             "heading": "Pantalla 1: La Ejecución del Proyecto TIC",
             "content": "La ejecución es la etapa en la que el trabajo planificado comienza a realizarse y se generan los resultados del proyecto. En ella intervienen las personas, actividades, recursos, entregables, proveedores y demás elementos necesarios para transformar lo planificado en resultados concretos.\n\nEjecutar un proyecto no significa simplemente completar tareas. El gestor debe coordinar el trabajo, facilitar la colaboración, atender situaciones que aparecen durante el desarrollo y mantener la atención sobre los resultados que el proyecto debe producir.\n\nDurante la ejecución pueden aparecer condiciones diferentes a las consideradas durante la planificación. Una actividad puede depender de información que aún no está disponible, un integrante puede tener demasiadas responsabilidades o un proveedor puede modificar una condición del servicio.\n\nPor esta razón, el gestor debe observar la relación entre personas, trabajo, recursos y resultados. Una dificultad en uno de estos elementos puede afectar a los demás y requerir una intervención.\n\nEjemplo:\nProyecto: Plataforma de atención ciudadana\nUna entidad está implementando una plataforma para que los ciudadanos registren solicitudes y consulten su estado.\nEl equipo está preparado para comenzar el desarrollo de la funcionalidad de registro. Sin embargo, el desarrollador identifica que el requisito sobre documentos adjuntos no indica qué formatos serán permitidos.\nEl gestor debe decidir cómo actuar antes de comprometer trabajo que podría tener que modificarse posteriormente. La situación demuestra que ejecutar requiere interpretar las condiciones reales del proyecto y no solamente seguir el cronograma."
@@ -3663,7 +3727,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 3,
+          "order": 5,
           "blockData": {
             "question": "Actividad: Misión 1 – Activa la operación\nSon las 8:00 a. m. del primer día de ejecución. El desarrollador está disponible y el ambiente de trabajo funciona correctamente. El usuario clave estará disponible hasta las 11:00 a. m., pero existe una duda sobre un requisito de formatos de documentos adjuntos. ¿Cuál es el orden correcto de acciones para permitir que el trabajo avance?",
             "options": [
@@ -3694,7 +3758,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 4,
+          "order": 6,
           "blockData": {
             "title": "Laboratorio de IA: Diagnóstico de la Situación de Ejecución",
             "role": "Actúa como asistente de gestión de un proyecto TIC.",
@@ -3709,7 +3773,7 @@
         },
         {
           "type": "TEXT",
-          "order": 5,
+          "order": 7,
           "blockData": {
             "heading": "Pantalla 2: Del plan a la ejecución",
             "content": "La planificación establece lo que se pretende realizar y las condiciones consideradas necesarias para hacerlo. Durante la ejecución, estas definiciones se convierten en actividades concretas realizadas por el equipo.\n\nSin embargo, una actividad planificada no necesariamente está preparada para comenzar. El gestor debe verificar que exista información suficiente, que el responsable esté disponible, que las dependencias hayan sido atendidas y que los resultados esperados sean comprensibles.\n\nEsta revisión permite detectar condiciones que pueden producir retrasos o reprocesos. No busca controlar cada detalle del trabajo, sino asegurar que el equipo pueda comenzar con una comprensión adecuada de lo que debe realizar.\n\nCuando una condición importante no está disponible, el gestor puede resolverla, reorganizar el trabajo, buscar una alternativa o esperar, dependiendo del impacto que tenga sobre el proyecto.\n\nEjemplo:\nProyecto: Aplicación para reservas\nEl cronograma establece que el desarrollo de la pantalla de reservas comenzará el lunes. El diseño está aprobado y el desarrollador está disponible.\nDurante una revisión se descubre que el requisito no explica qué ocurre cuando dos usuarios intentan reservar el último cupo disponible simultáneamente. El gestor decide aclarar primero la regla para evitar que el equipo implemente un comportamiento que posteriormente deba cambiarse."
@@ -3717,7 +3781,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 6,
+          "order": 8,
           "blockData": {
             "question": "Actividad: Prepara el despegue\nUna actividad está programada para comenzar. ¿Cuál es el orden correcto de las siete fases para preparar y asegurar las condiciones antes y durante la ejecución?",
             "options": [
@@ -3748,7 +3812,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 7,
+          "order": 9,
           "blockData": {
             "title": "Laboratorio de IA: Verificación de Condiciones Previas de Actividades",
             "role": "Actúa como analista de aseguramiento de proyectos TIC.",
@@ -3763,7 +3827,7 @@
         },
         {
           "type": "TEXT",
-          "order": 8,
+          "order": 10,
           "blockData": {
             "heading": "Pantalla 3: Liderazgo en proyectos",
             "content": "El liderazgo en proyectos consiste en orientar a las personas hacia los resultados esperados y crear condiciones para que puedan realizar su trabajo. No depende únicamente de la autoridad formal del gestor.\n\nLiderar implica comunicar expectativas, facilitar decisiones, gestionar dificultades, delegar responsabilidades y actuar cuando una situación puede afectar al equipo o al proyecto.\n\nEl gestor debe equilibrar dirección y autonomía. Algunas situaciones requieren instrucciones claras y seguimiento cercano, mientras que otras pueden resolverse permitiendo que un integrante experimentado actúe con mayor independencia.\n\nTambién es necesario comprender la situación antes de intervenir. Una intervención excesiva puede limitar al equipo, mientras que una intervención insuficiente puede dejar problemas sin resolver.\n\nEjemplo:\nProyecto: Sistema de gestión académica\nUna integrante nueva debe coordinar una actividad con usuarios y no conoce todavía el procedimiento utilizado por el proyecto.\nEl gestor explica el resultado esperado, revisa con ella el primer contacto y establece un seguimiento inicial. Una vez que comprende el proceso, puede continuar con mayor autonomía."
@@ -3771,7 +3835,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 9,
+          "order": 11,
           "blockData": {
             "question": "Actividad: ¿Qué haría un buen líder?\nEl estudiante recibe tres situaciones:\n• Caso A: una integrante nueva no comprende su responsabilidad.\n• Caso B: un especialista experimentado tiene una actividad claramente definida.\n• Caso C: dos integrantes no logran ponerse de acuerdo.\n¿Cuál combinación representa mejor la intervención del gestor?",
             "options": [
@@ -3802,7 +3866,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 10,
+          "order": 12,
           "blockData": {
             "title": "Laboratorio de IA: Intervención Situacional de Liderazgo",
             "role": "Actúa como consultor de liderazgo y gestión de personas.",
@@ -3817,7 +3881,7 @@
         },
         {
           "type": "TEXT",
-          "order": 11,
+          "order": 13,
           "blockData": {
             "heading": "Pantalla 4: Liderazgo adaptativo",
             "content": "El liderazgo adaptativo consiste en ajustar la forma de dirigir según las características de la situación, las necesidades del equipo y el nivel de autonomía de sus integrantes.\n\nEl gestor puede orientar, acompañar, facilitar o delegar. Estas alternativas permiten adaptar la intervención sin perder de vista los objetivos y resultados del proyecto.\n\nPara elegir una estrategia pueden considerarse la experiencia de la persona, la claridad de la actividad, la complejidad, la urgencia y las consecuencias de una decisión equivocada.\n\nNo existe una única forma correcta de liderar todas las situaciones. El gestor debe determinar cuándo aumentar la orientación y cuándo permitir mayor autonomía.\n\nEjemplo:\nProyecto: Portal de servicios empresariales\nEl responsable de pruebas conoce ampliamente el proceso y ha participado en proyectos similares. El gestor acuerda los resultados esperados y los puntos de revisión, pero no controla cada paso.\nUna nueva integrante, en cambio, necesita acompañamiento durante sus primeras actividades para comprender la forma de trabajo del proyecto."
@@ -3825,7 +3889,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 12,
+          "order": 14,
           "blockData": {
             "title": "Actividad: Descubre el estilo de liderazgo adaptativo",
             "instruction": "Relaciona cada situación del equipo con el estilo de liderazgo correspondiente:",
@@ -3863,7 +3927,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 13,
+          "order": 15,
           "blockData": {
             "title": "Laboratorio de IA: Determinación del Estilo de Liderazgo",
             "role": "Actúa como asesor de gestión de proyectos TIC.",
@@ -3878,7 +3942,7 @@
         },
         {
           "type": "TEXT",
-          "order": 14,
+          "order": 16,
           "blockData": {
             "heading": "Pantalla 5: Roles y responsabilidades del equipo",
             "content": "Los roles permiten establecer qué función desempeña cada participante y qué responsabilidades tiene frente al trabajo. Esta claridad reduce duplicidades, actividades sin responsable y conflictos derivados de expectativas diferentes.\n\nUna actividad puede involucrar varias personas con funciones distintas. Una persona puede ejecutar el trabajo, otra coordinarlo, otra verificarlo y otra validar el resultado.\n\nDurante la ejecución, el gestor necesita saber quién debe actuar, quién debe ser consultado y quién participa en la validación. Esto facilita la coordinación y evita que una situación quede sin atención porque todos suponían que otra persona debía actuar.\n\nCuando una responsabilidad cambia, la nueva distribución debe comunicarse al equipo para evitar interpretaciones diferentes.\n\nEjemplo:\nProyecto: Aplicación móvil de turismo\nEl desarrollador implementa la funcionalidad de rutas. El responsable de pruebas verifica su funcionamiento y el usuario clave comprueba si responde a la necesidad definida.\nEl desarrollador participa en la producción del resultado, pero no determina por sí solo si la funcionalidad satisface la necesidad del usuario."
@@ -3886,7 +3950,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 15,
+          "order": 17,
           "blockData": {
             "title": "Actividad: Arma el equipo — Roles y Responsabilidades",
             "instruction": "Relaciona cada rol con su responsabilidad principal dentro del proyecto TIC:",
@@ -3936,7 +4000,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 16,
+          "order": 18,
           "blockData": {
             "title": "Laboratorio de IA: Auditoría de Matriz de Responsabilidades",
             "role": "Actúa como auditor de procesos de gestión TIC.",
@@ -3951,7 +4015,7 @@
         },
         {
           "type": "TEXT",
-          "order": 17,
+          "order": 19,
           "blockData": {
             "heading": "Pantalla 6: Organización y coordinación del equipo",
             "content": "Coordinar un equipo implica organizar el trabajo para que las personas conozcan qué deben realizar, cuándo hacerlo y qué relación existe con otras actividades.\n\nEn los proyectos TIC, una actividad puede producir información o resultados necesarios para otra. Por ello, el gestor debe observar las dependencias que conectan el trabajo.\n\nCuando una actividad depende de otra que aún no está terminada, el gestor debe determinar cómo afecta esto al trabajo. Puede ser necesario esperar, cambiar la secuencia o buscar una alternativa.\n\nLa coordinación también requiere mecanismos para conocer el estado del trabajo y facilitar que los integrantes comuniquen dificultades oportunamente.\n\nEjemplo:\nProyecto: Plataforma de comercio electrónico\nEl desarrollo de la pantalla de pagos depende de una definición que debe proporcionar el analista. El desarrollador está disponible, pero la información todavía no ha sido entregada.\nAunque el desarrollador pueda comenzar, hacerlo sin esa información puede producir una solución incorrecta y generar modificaciones posteriores."
@@ -3959,7 +4023,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 18,
+          "order": 20,
           "blockData": {
             "title": "Actividad: Conecta la ruta — Dónde se produce el bloqueo",
             "instruction": "El proyecto sigue el flujo: Requisitos → Diseño → Desarrollo → Pruebas → Validación. Ubica cada obstáculo en el punto del flujo donde genera el bloqueo:",
@@ -3991,7 +4055,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 19,
+          "order": 21,
           "blockData": {
             "title": "Laboratorio de IA: Análisis de Actividades y Dependencias Bloqueantes",
             "role": "Actúa como analista de flujo y dependencias en proyectos TIC.",
@@ -4006,7 +4070,7 @@
         },
         {
           "type": "TEXT",
-          "order": 20,
+          "order": 22,
           "blockData": {
             "heading": "Pantalla 7: Desarrollo y fortalecimiento del equipo",
             "content": "El desempeño de un equipo se desarrolla durante el proyecto. Las personas necesitan comprender el propósito del trabajo, sus responsabilidades, las reglas de colaboración y la manera en que se comunicarán las decisiones.\n\nEl gestor puede contribuir mediante inducción, retroalimentación, capacitación, acompañamiento y acuerdos de trabajo.\n\nFortalecer un equipo no significa únicamente mejorar conocimientos técnicos. También implica desarrollar formas de colaboración que permitan comunicar problemas, coordinar responsabilidades y resolver diferencias.\n\nLa intervención debe responder a la causa de la situación. Una persona que desconoce un procedimiento necesita una respuesta diferente de un equipo que presenta problemas de comunicación.\n\nEjemplo:\nProyecto: Sistema de citas\nUna integrante se incorpora cuando el proyecto ya está en ejecución. Tiene experiencia, pero desconoce cómo se registran las decisiones y cuáles son los canales oficiales de comunicación.\nEl gestor realiza una inducción y explica los acuerdos de trabajo antes de asignarle responsabilidades independientes."
@@ -4014,7 +4078,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 21,
+          "order": 23,
           "blockData": {
             "title": "Actividad: Caja de herramientas de fortalecimiento de equipo",
             "instruction": "Ubica cada situación en la herramienta de gestión adecuada:",
@@ -4052,7 +4116,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 22,
+          "order": 24,
           "blockData": {
             "title": "Laboratorio de IA: Diagnóstico de Necesidades del Equipo",
             "role": "Actúa como coach y gestor de equipos de proyectos TIC.",
@@ -4067,7 +4131,7 @@
         },
         {
           "type": "TEXT",
-          "order": 23,
+          "order": 25,
           "blockData": {
             "heading": "Pantalla 8: Comunicación y colaboración",
             "content": "La comunicación durante la ejecución permite compartir información necesaria para coordinar el trabajo y tomar decisiones. Una comunicación deficiente puede generar interpretaciones diferentes, duplicidad de tareas, retrasos o decisiones basadas en información incompleta.\n\nEl gestor debe considerar qué información necesita cada participante, cuándo debe recibirla y qué canal resulta apropiado.\n\nNo toda comunicación tiene el mismo nivel de formalidad. Una solicitud de un usuario no necesariamente representa un cambio aprobado y una opinión de un integrante no constituye automáticamente una decisión del proyecto.\n\nMantener claridad sobre el estado de la información permite que el equipo actúe sobre datos confirmados y no sobre interpretaciones.\n\nEjemplo:\nProyecto: Plataforma de servicios ciudadanos\nUn usuario escribe en un chat:\n\"Sería bueno agregar una opción para descargar el comprobante.\"\nUn integrante interpreta el mensaje como aprobación y comienza a desarrollar la funcionalidad. El gestor revisa la situación y aclara que se trata de una solicitud que todavía debe analizarse."
@@ -4075,7 +4139,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 24,
+          "order": 26,
           "blockData": {
             "question": "Actividad: Detecta el mensaje correcto\nUn usuario escribe en un canal informal de chat: \"Sería bueno agregar una opción para descargar el comprobante.\" ¿Cuál mensaje debería recibir el equipo de desarrollo de parte del gestor?",
             "options": [
@@ -4106,7 +4170,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 25,
+          "order": 27,
           "blockData": {
             "title": "Laboratorio de IA: Clasificación del Estado de Comunicaciones",
             "role": "Actúa como analista de gestión de comunicaciones en proyectos TIC.",
@@ -4121,7 +4185,7 @@
         },
         {
           "type": "TEXT",
-          "order": 26,
+          "order": 28,
           "blockData": {
             "heading": "Pantalla 9: Motivación, confianza y compromiso",
             "content": "La confianza influye en la disposición de las personas para comunicar dificultades, solicitar ayuda y asumir responsabilidades. Cuando los integrantes pueden informar problemas oportunamente, el gestor tiene mayores posibilidades de actuar antes de que sus consecuencias aumenten.\n\nLa motivación también se relaciona con comprender el propósito del trabajo, reconocer las contribuciones y contar con condiciones razonables para cumplir las responsabilidades.\n\nEl gestor debe observar señales como disminución de participación, errores que no se comunican, conflictos frecuentes o sobrecargas que afectan el desempeño.\n\nAntes de intervenir debe comprender la causa. Una dificultad puede estar relacionada con carga de trabajo, falta de claridad, comunicación deficiente o necesidades de apoyo.\n\nEjemplo:\nProyecto: Portal de inscripción educativa\nUna integrante detecta un error en una funcionalidad, pero decide no comunicarlo porque anteriormente recibió una reacción negativa al informar otro problema.\nEl error aparece durante una prueba. Además de corregirlo, el gestor debe revisar por qué el equipo no se sintió en condiciones de comunicarlo oportunamente."
@@ -4129,7 +4193,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 27,
+          "order": 29,
           "blockData": {
             "title": "Actividad: Semáforo del equipo — Clima de Confianza",
             "instruction": "Clasifica cada situación de acuerdo a su impacto sobre la confianza del equipo:",
@@ -4176,7 +4240,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 28,
+          "order": 30,
           "blockData": {
             "title": "Laboratorio de IA: Análisis de Seguridad Psicológica y Compromiso",
             "role": "Actúa como consultor de clima organizacional y gestión de proyectos.",
@@ -4191,7 +4255,7 @@
         },
         {
           "type": "TEXT",
-          "order": 29,
+          "order": 31,
           "blockData": {
             "heading": "Pantalla 10: Gestión de conflictos durante la ejecución",
             "content": "Durante la ejecución pueden surgir desacuerdos entre integrantes del equipo, usuarios, responsables técnicos o proveedores. El papel del gestor no consiste simplemente en elegir quién tiene la razón, sino en intervenir para evitar que el conflicto afecte el trabajo, las relaciones del equipo o los resultados esperados.\n\nLa gestión de conflictos implica comprender la situación, escuchar las posiciones involucradas, identificar el impacto sobre el proyecto y facilitar acuerdos que permitan continuar el trabajo. La intervención debe ser proporcional a la situación y orientada a mantener la colaboración.\n\nUn conflicto puede aparecer por prioridades diferentes, interpretaciones distintas, distribución del trabajo, decisiones técnicas o presión por cumplir una fecha. Si no se atiende oportunamente, puede convertirse en retrasos, reprocesos o deterioro de la colaboración.\n\nDurante la ejecución, el gestor debe actuar como facilitador. Primero establece qué está ocurriendo y qué impacto tiene; después conduce la conversación hacia una solución viable y deja registro de las decisiones cuando estas afectan el proyecto.\n\nEjemplo:\nEn un proyecto TIC para implementar una plataforma de atención al usuario, el usuario clave solicita que el equipo priorice una nueva funcionalidad para consultar el estado de las solicitudes.\nEl desarrollador considera que primero debe corregirse un defecto que afecta una funcionalidad que ya está siendo probada. Ambos comienzan a discutir porque consideran que su actividad es la más importante.\nEl gestor revisa el impacto de ambas situaciones, reúne a los involucrados y facilita una decisión basada en las prioridades del proyecto. Se acuerda corregir primero el defecto porque bloquea las pruebas y posteriormente programar la nueva funcionalidad."
@@ -4199,7 +4263,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 30,
+          "order": 32,
           "blockData": {
             "question": "Actividad didáctica: Sala de mediación\nDurante la ejecución se presenta el siguiente intercambio:\nUsuario: \"Necesitamos esta funcionalidad antes de la demostración.\"\nDesarrollador: \"No puedo trabajar en ella hasta corregir el defecto que está bloqueando las pruebas.\"\n¿Cuál debería ser la primera intervención del gestor?",
             "options": [
@@ -4230,7 +4294,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 31,
+          "order": 33,
           "blockData": {
             "title": "Laboratorio de IA: Mediación de Conflictos y Búsqueda de Alternativas",
             "role": "Actúa como asistente para la gestión de proyectos TIC.",
@@ -4245,7 +4309,7 @@
         },
         {
           "type": "TEXT",
-          "order": 32,
+          "order": 34,
           "blockData": {
             "heading": "Pantalla 11: Gestión de problemas, impedimentos y bloqueos",
             "content": "Durante la ejecución aparecen situaciones que ya están afectando el trabajo: una herramienta que no funciona, una información que no llega, una persona que no está disponible o una dependencia que impide continuar. Estas situaciones deben gestionarse como parte de la operación cotidiana del proyecto.\n\nEl gestor debe determinar qué está bloqueando el trabajo, evaluar su impacto, coordinar la acción correspondiente y comprobar que el flujo pueda continuar. La atención oportuna evita que un problema localizado termine afectando otras actividades.\n\nUn problema representa una situación que ya ocurrió y requiere atención. Un impedimento dificulta la realización de una actividad, mientras que un bloqueo puede detener completamente su avance.\n\nDurante la ejecución, no basta con registrar estas situaciones. El gestor debe darles seguimiento hasta comprobar que la acción tomada realmente permitió recuperar el trabajo.\n\nEjemplo:\nEn una plataforma de atención ciudadana, el equipo de pruebas debe comenzar la validación de una funcionalidad. Sin embargo, el ambiente de pruebas presenta una falla y el responsable de infraestructura informa que necesita varias horas para solucionarla.\nEl gestor identifica que las pruebas dependen directamente de ese ambiente. Coordina con infraestructura, informa al equipo sobre la situación y reorganiza temporalmente una actividad que no depende del ambiente. Una vez solucionado el problema, verifica que las pruebas puedan continuar."
@@ -4253,7 +4317,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 33,
+          "order": 35,
           "blockData": {
             "title": "Actividad didáctica: Centro de emergencias — Priorización de Incidentes",
             "instruction": "Relaciona cada alerta que recibe el gestor con la acción inmediata correcta:",
@@ -4285,7 +4349,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 34,
+          "order": 36,
           "blockData": {
             "title": "Laboratorio de IA: Triage y Desbloqueo de Incidencias Operativas",
             "role": "Actúa como analista de soporte a la gestión de proyectos TIC.",
@@ -4300,7 +4364,7 @@
         },
         {
           "type": "TEXT",
-          "order": 35,
+          "order": 37,
           "blockData": {
             "heading": "Pantalla 12: Gestión del trabajo y avance durante la ejecución",
             "content": "Durante la ejecución, el gestor necesita conocer cómo está avanzando realmente el trabajo y no depender únicamente de lo que estaba previsto en el plan. El estado real permite identificar actividades terminadas, actividades en curso, trabajos detenidos y elementos que requieren atención.\n\nGestionar el avance implica observar el estado del trabajo, reconocer desviaciones y establecer prioridades para mantener el proyecto en movimiento. El avance no se determina únicamente contando cuántas actividades fueron terminadas.\n\nUna actividad completada puede tener poco impacto mientras que una actividad bloqueada puede detener varias tareas posteriores. Por esta razón, el gestor debe considerar dependencias, prioridades, bloqueos y efectos sobre los entregables.\n\nLa información del avance también permite comunicar un estado realista del proyecto y tomar decisiones oportunas antes de que una desviación se convierta en un problema mayor.\n\nEjemplo:\nEn una aplicación móvil turística, el equipo presenta el siguiente estado:\n• 8 actividades completadas.\n• 3 actividades en ejecución.\n• 1 actividad bloqueada.\nLa actividad bloqueada es necesaria para iniciar las pruebas de integración. Aunque la mayoría de las actividades están terminadas, el gestor identifica que resolver el bloqueo tiene mayor prioridad que iniciar otra actividad secundaria."
@@ -4308,7 +4372,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 36,
+          "order": 38,
           "blockData": {
             "question": "Actividad didáctica: Control de misión\nObserva el tablero:\n• Diseño de pantalla: Completado (sin dependencias)\n• API de consulta: Completado (sin dependencias)\n• Integración: Bloqueado (depende de API disponible)\n• Documentación: En curso (sin dependencias)\n• Pruebas: Pendiente (depende de Integración)\n¿Qué debe priorizar el gestor?",
             "options": [
@@ -4339,7 +4403,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 37,
+          "order": 39,
           "blockData": {
             "title": "Laboratorio de IA: Priorización Basada en Dependencias y Cuellos de Botella",
             "role": "Actúa como analista de operaciones y flujo de proyectos TIC.",
@@ -4354,7 +4418,7 @@
         },
         {
           "type": "TEXT",
-          "order": 38,
+          "order": 40,
           "blockData": {
             "heading": "Pantalla 13: Coordinación del flujo de trabajo y entregables",
             "content": "Durante la ejecución, el gestor debe procurar que el trabajo avance de manera continua entre las personas, actividades y etapas involucradas. Un trabajo terminado por un integrante no representa necesariamente un resultado utilizable si el siguiente responsable no puede continuar.\n\nLa coordinación del flujo consiste en identificar puntos donde el trabajo se acumula, espera o se detiene y actuar para recuperar la continuidad. Esto permite reducir tiempos de espera, reprocesos y entregas incompletas.\n\nEl flujo puede verse afectado por una dependencia no disponible, una revisión pendiente, información incompleta o una capacidad insuficiente en una etapa posterior. El gestor debe observar estas conexiones y coordinar las acciones necesarias.\n\nLa atención debe centrarse en mantener la continuidad desde que comienza una actividad hasta que su resultado puede ser utilizado, revisado o validado por quien corresponda.\n\nEjemplo:\nEn el desarrollo de una aplicación de reservas, el equipo de desarrollo finaliza una funcionalidad, pero el equipo de pruebas todavía no puede comenzar porque el ambiente requerido no está disponible.\nEl gestor identifica el punto de espera, coordina con infraestructura la disponibilidad del ambiente y comunica al equipo de pruebas cuándo podrá comenzar. Mientras tanto, evita enviar nuevas funcionalidades a pruebas si estas generarían una acumulación adicional."
@@ -4362,7 +4426,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 39,
+          "order": 41,
           "blockData": {
             "question": "Actividad didáctica: Desbloquea la línea de producción\n¿Cuál es el orden secuencial correcto de las cinco acciones que debe realizar el gestor cuando identifica que una etapa del flujo de trabajo está detenida?",
             "options": [
@@ -4393,7 +4457,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 40,
+          "order": 42,
           "blockData": {
             "title": "Laboratorio de IA: Diagnóstico de Flujo y Tiempos de Espera",
             "role": "Actúa como especialista en gestión de flujo y lean delivery TIC.",
@@ -4408,7 +4472,7 @@
         },
         {
           "type": "TEXT",
-          "order": 41,
+          "order": 43,
           "blockData": {
             "heading": "Pantalla 14: Gestión de capacidad y disponibilidad del equipo",
             "content": "Durante la ejecución, la capacidad real del equipo puede cambiar respecto a lo previsto. Una persona puede ausentarse, asumir una tarea urgente o quedar sobrecargada mientras otro integrante dispone de capacidad.\n\nEl gestor debe observar estas situaciones y ajustar la distribución del trabajo cuando sea necesario. La finalidad no es mantener una asignación rígida, sino utilizar responsablemente la capacidad disponible para sostener el avance.\n\nLa capacidad depende de factores como disponibilidad, experiencia, carga actual y necesidad de coordinación. Redistribuir una actividad no significa simplemente trasladarla a cualquier persona; debe considerarse quién puede realizarla sin generar nuevos bloqueos o sobrecargas.\n\nLa gestión de capacidad también permite anticipar situaciones en las que una persona se convierte en un punto de dependencia para demasiadas actividades.\n\nEjemplo:\nEn un proyecto de plataforma educativa, la responsable de pruebas tiene tres actividades simultáneas. Una de ellas es necesaria para liberar una funcionalidad que ya está lista para validación.\nOtro integrante del equipo tiene experiencia en pruebas funcionales y dispone de capacidad. El gestor redistribuye una actividad secundaria hacia esa persona y mantiene con la responsable de pruebas la actividad directamente relacionada con la liberación."
@@ -4416,7 +4480,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 42,
+          "order": 44,
           "blockData": {
             "question": "Actividad didáctica: Reorganiza el equipo\nEl gestor analiza decisiones frente a sobrecargas y ausencias. ¿Cuál de las siguientes decisiones es INCORRECTA?",
             "options": [
@@ -4447,7 +4511,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 43,
+          "order": 45,
           "blockData": {
             "title": "Laboratorio de IA: Balanceo de Capacidad y Asignación Responsable",
             "role": "Actúa como gestor de recursos y capacidad en proyectos de software.",
@@ -4462,7 +4526,7 @@
         },
         {
           "type": "TEXT",
-          "order": 44,
+          "order": 46,
           "blockData": {
             "heading": "Pantalla 15: Gestión del conocimiento y aprendizaje durante la ejecución",
             "content": "La ejecución genera conocimiento continuamente. El equipo descubre soluciones, toma decisiones, encuentra errores, modifica formas de trabajo y aprende de situaciones que no estaban previstas inicialmente.\n\nGestionar este conocimiento significa capturar aquello que puede ser útil para continuar el proyecto y evitar que información importante quede únicamente en conversaciones personales o se pierda cuando cambia algún integrante del equipo.\n\nNo todo lo que ocurre durante la ejecución debe registrarse. El gestor debe identificar información que tenga valor para el proyecto, como decisiones relevantes, soluciones a problemas, aprendizajes, cambios aprobados y acciones pendientes.\n\nEste conocimiento permite mejorar la continuidad del trabajo y facilita que otros integrantes comprendan por qué se tomó una decisión o cómo se resolvió una situación.\n\nEjemplo:\nDurante la integración de una plataforma, un desarrollador encuentra una solución para un error que aparecía al conectar dos componentes. La solución queda registrada únicamente en una conversación privada.\nDías después, otro integrante encuentra el mismo problema. El gestor decide incorporar la solución y el aprendizaje relevante en el repositorio de conocimiento del proyecto para que pueda ser reutilizado."
@@ -4470,7 +4534,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 45,
+          "order": 47,
           "blockData": {
             "title": "Actividad didáctica: Recupera el conocimiento perdido",
             "instruction": "Selecciona cuáles situaciones deben formar parte del repositorio de conocimiento del proyecto y cuáles deben descartarse:",
@@ -4516,7 +4580,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 46,
+          "order": 48,
           "blockData": {
             "title": "Laboratorio de IA: Extracción y Organización de Lecciones Aprendidas",
             "role": "Actúa como gestor del conocimiento en proyectos tecnológicos.",
@@ -4531,7 +4595,7 @@
         },
         {
           "type": "TEXT",
-          "order": 47,
+          "order": 49,
           "blockData": {
             "heading": "Pantalla 16: Coordinación de proveedores y dependencias externas",
             "content": "Durante la ejecución, el proyecto puede depender de organizaciones, servicios, especialistas o proveedores externos. Estas dependencias pueden afectar directamente el trabajo cuando cambian sus condiciones, presentan retrasos o requieren coordinación adicional.\n\nEl gestor debe mantener visibilidad sobre estas dependencias y actuar cuando una situación externa pueda afectar el avance. La gestión durante la ejecución se concentra en coordinar, comunicar, anticipar impactos y comprobar que el servicio o condición externa esté disponible cuando el proyecto lo necesita.\n\nUna dependencia externa puede estar relacionada con infraestructura, servicios en la nube, plataformas de autenticación, licencias, soporte técnico o entrega de componentes. Aunque la actividad esté fuera del control directo del equipo, su impacto forma parte de la gestión del proyecto.\n\nCuando aparece una situación con un proveedor, el gestor debe determinar qué trabajo puede verse afectado, establecer comunicación con el responsable correspondiente y coordinar alternativas cuando sea necesario.\n\nEjemplo:\nUna plataforma turística utiliza un servicio externo para autenticación de usuarios. El proveedor comunica que realizará una actualización durante el periodo en que el equipo tiene programadas pruebas de integración.\nEl gestor revisa qué actividades dependen del servicio, coordina con el proveedor la ventana de intervención y comunica al equipo las restricciones. Si la actualización afecta las pruebas, reorganiza las actividades que puedan ejecutarse mientras el servicio vuelve a estar disponible."
@@ -4539,7 +4603,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 48,
+          "order": 50,
           "blockData": {
             "title": "Actividad didáctica: Radar de dependencias externas",
             "instruction": "Relaciona cada alerta proveniente de un tercero con la acción adecuada:",
@@ -4577,7 +4641,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 49,
+          "order": 51,
           "blockData": {
             "title": "Laboratorio de IA: Evaluación de Comunicaciones de Proveedores",
             "role": "Actúa como analista de contratos y dependencias externas TIC.",
@@ -4592,7 +4656,7 @@
         },
         {
           "type": "TEXT",
-          "order": 50,
+          "order": 52,
           "blockData": {
             "heading": "Pantalla 17: Calidad durante la ejecución",
             "content": "La calidad debe gestionarse durante el desarrollo del trabajo y no únicamente al final del proyecto. Las revisiones y verificaciones realizadas durante la ejecución permiten identificar problemas antes de que se acumulen.\n\nLa calidad se relaciona con los criterios que deben cumplir los resultados y con la evidencia utilizada para comprobar que esos criterios se están cumpliendo.\n\nLas actividades de calidad pueden incluir revisiones, pruebas, inspecciones y verificaciones. Cuando se encuentra una desviación, el gestor debe coordinar su tratamiento y posteriormente comprobar que la corrección haya sido efectiva.\n\nEsto permite reducir el riesgo de descubrir problemas importantes cuando el proyecto está próximo a entregar sus resultados.\n\nEjemplo:\nProyecto: Plataforma de atención\nDurante una prueba de calidad se detecta que una solicitud registrada no aparece correctamente en el historial del usuario. El equipo corrige la funcionalidad y ejecuta nuevamente la prueba.\nCriterio de aceptación: cada solicitud registrada debe aparecer correctamente en el historial del usuario, mostrando como mínimo su identificador, fecha y estado. El entregable se considera conforme únicamente cuando la prueba confirma el cumplimiento de este criterio."
@@ -4600,7 +4664,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 51,
+          "order": 53,
           "blockData": {
             "question": "Actividad: Inspector de calidad\n¿Cuál es el orden riguroso de las seis fases dentro del flujo de control y aseguramiento de la calidad?",
             "options": [
@@ -4631,7 +4695,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 52,
+          "order": 54,
           "blockData": {
             "title": "Laboratorio de IA: Auditoría de Criterios y Evidencias de Calidad",
             "role": "Actúa como especialista en aseguramiento de calidad (QA).",
@@ -4646,7 +4710,7 @@
         },
         {
           "type": "TEXT",
-          "order": 53,
+          "order": 55,
           "blockData": {
             "heading": "Pantalla 18: IA generativa como apoyo a la ejecución",
             "content": "La IA generativa puede apoyar al gestor durante la ejecución en tareas como organizar información, resumir reuniones, comparar alternativas, preparar comunicaciones, estructurar reportes e identificar situaciones que requieren atención.\n\nSin embargo, una respuesta generada por IA no constituye automáticamente información verdadera ni una decisión del proyecto. El gestor debe revisar el contexto, verificar los datos y decidir qué información puede utilizar.\n\nUn uso responsable puede seguir cuatro momentos:\n1. Contextualizar: Proporcionar información suficiente y hechos verificados.\n2. Solicitar: Formular una instrucción precisa y acotada con restricciones.\n3. Revisar: Comparar la respuesta con la realidad y detectar posibles alucinaciones.\n4. Utilizar: Aplicar únicamente aquello que ha sido validado bajo responsabilidad humana.\n\nLa IA puede acelerar tareas de análisis y organización, pero no debe inventar datos faltantes ni asumir la responsabilidad de las decisiones del gestor.\n\nEjemplo:\nProyecto: Sistema de atención\nDespués de una reunión, el gestor tiene notas desordenadas donde aparecen decisiones, problemas y acciones pendientes.\nUtiliza IA para estructurar la información, pero posteriormente compara el resultado con las notas originales. Encuentra que la herramienta interpretó una propuesta como una decisión aprobada y corrige el resultado antes de incorporarlo al registro del proyecto."
@@ -4654,7 +4718,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 54,
+          "order": 56,
           "blockData": {
             "title": "Actividad: ¿IA, gestor o ambos?",
             "instruction": "Clasifica cada situación de gestión según la responsabilidad correspondiente:",
@@ -4696,7 +4760,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 55,
+          "order": 57,
           "blockData": {
             "title": "Laboratorio de IA: Prompt Maestro para la Gestión de Ejecución",
             "role": "Actúa como asistente de gestión de un proyecto TIC.",
@@ -4711,7 +4775,7 @@
         },
         {
           "type": "TEXT",
-          "order": 56,
+          "order": 58,
           "blockData": {
             "heading": "Pantalla 19: Simulación de ejecución — Preparación y Escenario Inicial",
             "content": "Misión del Producto 1:\nComienza el Producto 1. Simulación de ejecución. Continuarás gestionando el proyecto TIC trabajado durante los niveles anteriores (o el caso conductor de la Plataforma Digital de Atención al Usuario).\nAsumirás el rol de gestor del proyecto frente a la operación real.\n\nCaso Conductor: Plataforma Digital de Atención al Usuario:\nLa organización busca implementar una plataforma que permita registrar solicitudes, consultar su estado y facilitar la atención ciudadana.\n\nEquipo del Proyecto:\n• Gestor del proyecto (Tú)\n• Analista de requisitos\n• Diseñador UI/UX\n• Desarrollador\n• Responsable de pruebas (QA)\n• Usuario clave\n• Proveedor de infraestructura cloud\n\nEstado Inicial:\n• Equipo: Disponible\n• Diseño: Aprobado\n• Desarrollo: Listo para iniciar\n• Ambiente: Disponible\n• Usuario clave: Disponible en la mañana (hasta las 11:00 a. m.)\n• Proveedor: Activo\n• Requisito sobre adjuntos: Requiere aclaración (no especifica formatos permitidos)\n\nSituación Encontrada:\nEl desarrollador está listo para comenzar a codificar la pantalla de registro de solicitudes, pero identifica una duda sobre qué formatos de documentos adjuntos se permitirán (PDF, imágenes, tamaño máximo). El usuario clave puede atender la situación durante la mañana."
@@ -4719,7 +4783,7 @@
         },
         {
           "type": "SCENARIO",
-          "order": 57,
+          "order": 59,
           "blockData": {
             "title": "Simulación de Ejecución: Misión 1 — Decisión Frente a Requisito Ambiguo",
             "situation": "El desarrollador está listo para codificar a las 8:00 a. m., pero los formatos de adjuntos no están definidos. El usuario clave solo estará disponible hasta las 11:00 a. m. Como gestor del proyecto, ¿cuál decisión tomas?",
@@ -4754,7 +4818,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 58,
+          "order": 60,
           "blockData": {
             "stepNumber": 20,
             "title": "Simulación de Ejecución (Paso 1): Preparación y Escenario Inicial",
@@ -4791,7 +4855,7 @@
         },
         {
           "type": "TEXT",
-          "order": 59,
+          "order": 61,
           "blockData": {
             "heading": "Pantalla 20: Simulación de ejecución — Desarrollo y Situaciones",
             "content": "Misión de Desarrollo:\nEl proyecto ya está en plena ejecución. A lo largo de la semana aparecen cuatro eventos simultáneos que ponen a prueba tu capacidad de liderazgo y coordinación:\n\nEvento 1. Ausencia del analista:\nEl analista informa que estará ausente durante dos días por motivos de salud. Una actividad de desarrollo depende de una especificación detallada que él debía entregar.\nAcciones del gestor: Buscar información disponible en los requisitos iniciales, coordinar con el usuario clave o reasignar temporalmente el trabajo a tareas que no dependan del analista.\n\nEvento 2. Cambio del proveedor:\nEl proveedor de infraestructura anuncia una actualización que modificará los endpoints de una API externa utilizada para la integración.\nAcciones del gestor: Analizar la dependencia, coordinar una prueba de verificación preventiva y verificar si la ventana de mantenimiento choca con actividades críticas.\n\nEvento 3. Conflicto de prioridades:\nEl usuario clave exige que el equipo priorice una nueva pantalla para una demostración ante directivos. Al mismo tiempo, el desarrollador sostiene que debe corregirse primero un defecto que bloquea las pruebas del sistema.\nAcciones del gestor: Analizar el impacto de ambas solicitudes, revisar dependencias y facilitar un acuerdo sustentado en las prioridades del proyecto.\n\nEvento 4. Problema de calidad:\nDurante una prueba de integración se detecta que una funcionalidad marcada previamente como \"terminada\" falla al procesar solicitudes con acentos o caracteres especiales.\nAcciones del gestor: Registrar formalmente el defecto, coordinar la corrección técnica y programar la reverificación antes de dar conformidad."
@@ -4799,7 +4863,7 @@
         },
         {
           "type": "SCENARIO",
-          "order": 60,
+          "order": 62,
           "blockData": {
             "title": "Simulación de Ejecución: Misión 2 — Gestión Multievento en Plena Ejecución",
             "situation": "Llega el jueves por la mañana: el proveedor anuncia una actualización inminente y el usuario clave presiona por la pantalla de demo mientras un defecto bloquea las pruebas. ¿Cuál es tu plan de acción coordinado?",
@@ -4828,7 +4892,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 61,
+          "order": 63,
           "blockData": {
             "stepNumber": 21,
             "title": "Simulación de Ejecución (Paso 2): Matriz de Situaciones, Decisiones y Consecuencias",
@@ -4865,7 +4929,7 @@
         },
         {
           "type": "TEXT",
-          "order": 62,
+          "order": 64,
           "blockData": {
             "heading": "Pantalla 21: Simulación de ejecución — Decisiones y Resultados",
             "content": "Misión Final: Cierre de la Etapa de Ejecución:\nEl proyecto se encuentra en una etapa avanzada de ejecución. Algunas actividades están completas, pero persisten condiciones que exigen una intervención final antes de dar paso al seguimiento formal:\n\nEstado Acumulado:\n• Equipo: Estable; un integrante presenta sobrecarga acumulada; el conflicto de prioridades anterior fue resuelto con éxito.\n• Trabajo: Varias funcionalidades completadas; una actividad permanece bloqueada; la dependencia externa con el proveedor fue restablecida.\n• Entregables: Implementación base terminada; un defecto crítico pendiente de reverificación; validación formal del usuario pendiente.\n\nAcciones Disponibles del Gestor:\n1. Redistribuir trabajo: Aliviar la sobrecarga del integrante redistribuyendo tareas secundarias compatibles.\n2. Coordinar corrección: Pasar el defecto de pendiente a corregido con el desarrollador asignado.\n3. Actualizar estado: Reflejar las nuevas condiciones en el tablero Kanban y cronograma.\n4. Solicitar validación: Convocar al usuario clave para verificar la conformidad del entregable frente a criterios de aceptación.\n5. Registrar decisión: Mantener la trazabilidad en la bitácora de lecciones aprendidas.\n6. Convocar al equipo: Alinear al equipo sobre los próximos pasos hacia el módulo de seguimiento y métricas."
@@ -4873,7 +4937,7 @@
         },
         {
           "type": "SCENARIO",
-          "order": 63,
+          "order": 65,
           "blockData": {
             "title": "Simulación de Ejecución: Misión 3 — Decisiones Finales y Liberación Conforme",
             "situation": "Para cerrar con éxito esta etapa de ejecución y entregar el primer incremento utilizable al usuario clave, ¿cuál es la secuencia óptima de decisiones?",
@@ -4902,7 +4966,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 64,
+          "order": 66,
           "blockData": {
             "stepNumber": 22,
             "title": "Simulación de Ejecución (Paso 3): Balance Consolidado del Producto 1",
@@ -4939,7 +5003,7 @@
         },
         {
           "type": "EXAM",
-          "order": 65,
+          "order": 67,
           "blockData": {
             "title": "Microevaluación Módulo 10: Liderazgo, Equipo y Ejecución",
             "description": "Lee atentamente cada situación y selecciona la opción que consideres más adecuada. Las preguntas presentan escenarios relacionados con la ejecución de proyectos TIC, donde deberás aplicar tus conocimientos sobre liderazgo, coordinación de equipos, gestión de conflictos, problemas, avance, capacidad, calidad, dependencias externas y uso responsable de la IA generativa.",
@@ -5194,7 +5258,7 @@
         },
         {
           "type": "CHECKPOINT",
-          "order": 66,
+          "order": 68,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el Módulo 10 (Liderazgo, equipo y ejecución)",
             "description": "Has completado el Módulo 10. Liderazgo, equipo y ejecución. Durante este módulo pasaste de la planificación a la ejecución y asumiste el papel de gestor de un proyecto TIC.\n\nAhora puedes:\n• Comprender cómo se desarrolla la ejecución de un proyecto TIC.\n• Coordinar equipos y responsabilidades durante el trabajo.\n• Aplicar diferentes formas de liderazgo según la situación.\n• Gestionar la comunicación, colaboración y motivación del equipo.\n• Intervenir ante conflictos que afectan la ejecución.\n• Gestionar problemas, impedimentos y bloqueos.\n• Analizar el avance y priorizar acciones durante la ejecución.\n• Coordinar el flujo de trabajo y la continuidad de los entregables.\n• Gestionar la capacidad y disponibilidad del equipo.\n• Capturar decisiones, experiencias y aprendizajes del proyecto.\n• Coordinar situaciones relacionadas con proveedores y dependencias externas.\n• Aplicar prácticas de calidad durante la ejecución.\n• Utilizar la IA generativa como apoyo para analizar y organizar situaciones del proyecto.\n• Verificar la información generada por IA antes de utilizarla.\n• Integrar lo aprendido en la Simulación de ejecución del proyecto TIC.\n\nRecompensas obtenidas: +100 XP | Insignia: Líder de la Ejecución",
@@ -5215,7 +5279,7 @@
       ]
     },
     {
-      "title": "Módulo 13. Diseño, evaluación y mejora de instrucciones",
+      "title": "Diseño, evaluación y mejora de instrucciones",
       "order": 13,
       "level": 4,
       "levelTitle": "Nivel 4: IA Generativa Aplicada",
@@ -5224,13 +5288,29 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
-            "heading": "¡Bienvenido al Módulo 13: Diseño, evaluación y mejora de instrucciones!",
-            "content": "Módulo 13 (Módulo 1 del Nivel 4). Diseño, evaluación y mejora de instrucciones\nDuración estimada: 150–180 minutos | Nivel: Avanzado\n\nObjetivo general:\nDesarrollar capacidades para diseñar, estructurar, evaluar y mejorar instrucciones dirigidas a herramientas de inteligencia artificial generativa, utilizando principios de ingeniería de prompts para obtener resultados pertinentes, estructurados y útiles en situaciones relacionadas con proyectos tecnológicos.\n\nObjetivos específicos:\n• Comprender los fundamentos de la ingeniería de prompts y sus componentes esenciales.\n• Diferenciar instrucciones simples de instrucciones estructuradas y delimitar contexto y propósito.\n• Incorporar roles y perspectivas pertinentes; formular tareas y objetivos verificables.\n• Establecer restricciones y criterios de calidad objetivos; especificar formatos de salida estructurados.\n• Aplicar patrones de prompting (ej. few-shot) y descomponer problemas complejos en tareas manejables.\n• Diseñar prompts para operaciones cognitivas: análisis, generación, transformación, síntesis, comparación y evaluación.\n• Analizar la calidad de los resultados producidos por la IA y detectar deficiencias o alucinaciones causales.\n• Refinar prompts mediante ciclos sucesivos de mejora empírica y comparar versiones con criterios observables.\n• Diseñar prompts especializados para proyectos TIC y utilizar la IA como apoyo socrático.\n• Documentar evidencias de diseño, evaluación y refinamiento para el portafolio.\n\nProducto del módulo:\nProducto 1: Instrucciones diseñadas y validadas\nConstruirás y documentarás un conjunto de instrucciones aplicadas a proyectos TIC siguiendo el ciclo:\nTarea → Prompt inicial → Resultado → Evaluación → Problemas detectados → Refinamiento → Nuevo resultado → Comparación → Validación\nEste producto alimentará tu Portafolio de aplicaciones de IA validadas del Nivel 4.\n\nMapa del módulo:\nIngeniería de prompts → Estructura y contexto → Diseño de instrucciones → Patrones y descomposición → Aplicación de prompts → Evaluación y refinamiento → Prompts para proyectos TIC → Laboratorio → Microevaluación → ¡Felicidades!"
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 150–180 minutos | **Nivel:** Avanzado\n\n**Objetivo general:**\nDesarrollar capacidades para diseñar, estructurar, evaluar y mejorar instrucciones dirigidas a herramientas de inteligencia artificial generativa, utilizando principios de ingeniería de prompts para obtener resultados pertinentes, estructurados y útiles en situaciones relacionadas con proyectos tecnológicos.\n\n**Objetivos específicos:**\n• Comprender los fundamentos de la ingeniería de prompts y sus componentes esenciales.\n• Diferenciar instrucciones simples de instrucciones estructuradas y delimitar contexto y propósito.\n• Incorporar roles y perspectivas pertinentes; formular tareas y objetivos verificables.\n• Establecer restricciones y criterios de calidad objetivos; especificar formatos de salida estructurados.\n• Aplicar patrones de prompting (ej. few-shot) y descomponer problemas complejos en tareas manejables.\n• Diseñar prompts para operaciones cognitivas: análisis, generación, transformación, síntesis, comparación y evaluación.\n• Analizar la calidad de los resultados producidos por la IA y detectar deficiencias o alucinaciones causales.\n• Refinar prompts mediante ciclos sucesivos de mejora empírica y comparar versiones con criterios observables.\n• Diseñar prompts especializados para proyectos TIC y utilizar la IA como apoyo socrático.\n• Documentar evidencias de diseño, evaluación y refinamiento para el portafolio."
           }
         },
         {
           "type": "TEXT",
           "order": 2,
+          "blockData": {
+            "heading": "Producto del Módulo y Portafolio",
+            "content": "**Producto del módulo:**\n**Producto 1: Instrucciones diseñadas y validadas**\n\nConstruirás y documentarás un conjunto de instrucciones aplicadas a proyectos TIC siguiendo el ciclo:\n• **Tarea inicial:** Definición del objetivo y alcance de la interacción con la IA.\n• **Prompt inicial:** Formulación estructurada con rol, contexto y restricciones.\n• **Resultado:** Registro de la respuesta obtenida del modelo.\n• **Evaluación:** Identificación de fortalezas, omisiones, vacíos o alucinaciones.\n• **Refinamiento:** Ajuste empírico de la instrucción incorporando restricciones observables.\n• **Nuevo resultado y Comparación:** Medición de la mejora lograda.\n• **Validación:** Confirmación de aplicabilidad para la toma de decisiones.\n\nEste producto alimentará tu **Portafolio de aplicaciones de IA validadas del Nivel 4**."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nIngeniería de prompts → Estructura y contexto → Diseño de instrucciones → Patrones y descomposición → Aplicación de prompts → Evaluación y refinamiento → Prompts para proyectos TIC → Laboratorio → Microevaluación → ¡Felicidades!"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
           "blockData": {
             "heading": "Pantalla 1: Introducción a la ingeniería de prompts",
             "content": "La ingeniería de prompts consiste en diseñar instrucciones para orientar el comportamiento de un modelo de inteligencia artificial generativa hacia un resultado determinado. No se limita a escribir una pregunta, sino que implica establecer con claridad qué debe realizar el modelo y qué características debe tener la respuesta.\n\nEn un proyecto TIC, una petición como \"analiza los riesgos del proyecto\" deja demasiados elementos abiertos: el modelo no conoce qué proyecto está analizando, qué datos utilizar, qué criterios aplicar ni cómo presentar los riesgos identificados. La ingeniería de prompts convierte esa petición general en una instrucción controlada y verificable.\n\nEjemplo:\nUn equipo necesita revisar los riesgos de una aplicación móvil de turismo:\n• Petición inicial: \"Identifica los riesgos del proyecto.\"\n• Instrucción mejorada: \"Analiza los riesgos de una aplicación móvil de turismo cuya primera versión debe estar disponible en cuatro meses. Clasifica los riesgos por categoría y presenta causa, posible impacto y señal de alerta.\"\nLa segunda instrucción delimita la tarea y permite comprobar si la respuesta sirve para la toma de decisiones."
@@ -5238,7 +5318,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 3,
+          "order": 5,
           "blockData": {
             "title": "Actividad: Semáforo de instrucciones",
             "instruction": "Clasifica cada solicitud según su nivel de estructuración y control:",
@@ -5280,7 +5360,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 4,
+          "order": 6,
           "blockData": {
             "title": "IA Aplicada: Tutor socrático de ingeniería de prompts",
             "role": "Tutor de ingeniería de prompts para proyectos TIC",
@@ -5294,7 +5374,7 @@
         },
         {
           "type": "TEXT",
-          "order": 5,
+          "order": 7,
           "blockData": {
             "heading": "Pantalla 2: Anatomía de una instrucción",
             "content": "Una instrucción puede estructurarse mediante diferentes componentes que ayudan al modelo a interpretar correctamente la tarea: contexto, rol, tarea, criterios, restricciones y formato de salida.\n\nNo todos los prompts requieren todos los componentes. La finalidad no es agregar texto decorativo, sino incorporar aquellos elementos que reduzcan la ambigüedad y hagan verificable el resultado.\n\nEjemplo:\nSituación: Un gestor solicita a la IA revisar una matriz de riesgos.\n• Contexto: Plataforma web de reservas turísticas en fase de pruebas.\n• Rol: Especialista en riesgos TIC.\n• Tarea: Revisar la matriz registrada.\n• Criterio: Consistencia entre probabilidad e impacto sobre cronograma y costo.\n• Formato: Tabla estructurada de hallazgos."
@@ -5302,7 +5382,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 6,
+          "order": 8,
           "blockData": {
             "title": "Actividad: Relaciona las piezas de la instrucción",
             "instruction": "Relaciona cada fragmento con el componente estructural correspondiente:",
@@ -5346,7 +5426,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 7,
+          "order": 9,
           "blockData": {
             "title": "IA Aplicada: Tutor de validación del portafolio",
             "role": "Tutor de validación de evidencias del portafolio",
@@ -5360,7 +5440,7 @@
         },
         {
           "type": "TEXT",
-          "order": 8,
+          "order": 10,
           "blockData": {
             "heading": "Pantalla 3: Contexto y propósito",
             "content": "El contexto proporciona la información necesaria para interpretar la tarea dentro de una situación determinada (características del proyecto, etapa, restricciones técnicas). El propósito establece para qué se necesita el resultado y a qué decisión o audiencia va dirigido.\n\nSin contexto suficiente, el modelo completará vacíos con supuestos que no corresponden al proyecto. Un análisis para una reunión ejecutiva requiere un nivel de síntesis distinto al de una sesión técnica de depuración de código."
@@ -5368,7 +5448,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 9,
+          "order": 11,
           "blockData": {
             "question": "El equipo debe seleccionar una herramienta de colaboración. La coordinadora pide: \"Compara las alternativas y recomienda una\". Para que la IA realice una comparación pertinente, primero debe definir:",
             "options": [
@@ -5403,7 +5483,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 10,
+          "order": 12,
           "blockData": {
             "title": "IA Aplicada: Auditor socrático de contexto y supuestos",
             "role": "Auditor de contexto y supuestos",
@@ -5416,7 +5496,7 @@
         },
         {
           "type": "TEXT",
-          "order": 11,
+          "order": 13,
           "blockData": {
             "heading": "Pantalla 4: Rol y perspectiva",
             "content": "Un rol orienta la perspectiva disciplinar desde la cual la IA debe abordar la tarea (gestor de proyectos, analista de seguridad, arquitecto de software). \n\nEl rol no sustituye la información ni los datos de entrada. Decir \"actúa como un genio de la informática\" no aporta criterios operativos; en cambio, \"actúa como gestor de proyectos TIC considerando dependencias, esfuerzo y cronograma\" delimita el enfoque de evaluación."
@@ -5424,7 +5504,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 12,
+          "order": 14,
           "blockData": {
             "title": "Actividad: Detective de perspectivas",
             "instruction": "Determina si la asignación de rol en cada prompt es Pertinente u Innecesaria:",
@@ -5460,7 +5540,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 13,
+          "order": 15,
           "blockData": {
             "title": "IA Aplicada: Análisis de pertinencia de rol",
             "role": "Analista de roles y perspectivas",
@@ -5473,7 +5553,7 @@
         },
         {
           "type": "TEXT",
-          "order": 14,
+          "order": 16,
           "blockData": {
             "heading": "Pantalla 5: Tarea y objetivo",
             "content": "La tarea indica qué operación concreta debe realizar la IA (clasificar, comparar, transformar, analizar), mientras que el objetivo explica para qué se busca conseguir esa operación.\n\nSeparar la acción del objeto y del propósito evita ambigüedades. \"Analiza este cronograma\" es incompleto frente a: \"Analiza las dependencias del cronograma e identifica secuencias críticas que generen retrasos, con el propósito de preparar la reunión de seguimiento.\""
@@ -5481,7 +5561,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 15,
+          "order": 17,
           "blockData": {
             "question": "¿Cuál es el orden secuencial correcto para construir una formulación de tarea completa y verificable?",
             "options": [
@@ -5516,7 +5596,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 16,
+          "order": 18,
           "blockData": {
             "title": "IA Aplicada: Precisión de verbos operativos",
             "role": "Tutor de precisión sintáctica y operativa de prompts",
@@ -5529,7 +5609,7 @@
         },
         {
           "type": "TEXT",
-          "order": 17,
+          "order": 19,
           "blockData": {
             "heading": "Pantalla 6: Restricciones y criterios",
             "content": "Las restricciones delimitan las condiciones inviolables que la respuesta debe respetar (presupuesto, plazos, tecnologías, exclusiones). Los criterios permiten determinar si el resultado cumple con los estándares de calidad exigidos.\n\nEn proyectos TIC, las restricciones evitan que la IA proponga soluciones técnicamente atractivas pero financieramente inviables o contractualmente prohibidas."
@@ -5537,7 +5617,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 18,
+          "order": 20,
           "blockData": {
             "question": "Un equipo busca alternativas para reducir la duración de una actividad sin aumentar presupuesto ni añadir personal externo. ¿Cuáles restricciones son pertinentes para el prompt?",
             "options": [
@@ -5572,7 +5652,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 19,
+          "order": 21,
           "blockData": {
             "title": "IA Aplicada: Criterios observables vs restricciones superfluas",
             "role": "Profesor de diseño y refinamiento de restricciones",
@@ -5585,7 +5665,7 @@
         },
         {
           "type": "TEXT",
-          "order": 20,
+          "order": 22,
           "blockData": {
             "heading": "Pantalla 7: Formato y estructura de salida",
             "content": "Definir el formato de salida indica cómo debe estructurarse la respuesta: tablas, listas ordenadas, matrices, esquemas JSON, fichas estandarizadas.\n\nEl formato debe responder al uso posterior: si el resultado se integrará en una matriz de riesgos, pedir una tabla comparativa con columnas explícitas ahorra reprocesos y facilita auditorías de completitud."
@@ -5593,7 +5673,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 21,
+          "order": 23,
           "blockData": {
             "title": "Actividad: Relaciona necesidad y formato de salida",
             "instruction": "Asigna a cada necesidad de gestión el formato de salida más adecuado:",
@@ -5631,7 +5711,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 22,
+          "order": 24,
           "blockData": {
             "title": "IA Aplicada: Selección de formato según ciclo de vida",
             "role": "Tutor de especificación de salidas estructuradas",
@@ -5644,7 +5724,7 @@
         },
         {
           "type": "TEXT",
-          "order": 23,
+          "order": 25,
           "blockData": {
             "heading": "Pantalla 8: Prompts simples vs estructurados",
             "content": "Un prompt simple contiene una instrucción directa y es suficiente para operaciones de baja complejidad. Un prompt estructurado desglosa contexto, tarea, criterios y salida cuando intervienen múltiples variables.\n\nRegla de diseño:\nLa complejidad del prompt debe corresponder a la complejidad de la tarea. Sobrediseñar un prompt para traducir una frase añade fricción inútil; subdiseñar un prompt para conciliar desviaciones de alcance y costos genera respuestas ambiguas."
@@ -5652,7 +5732,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 24,
+          "order": 26,
           "blockData": {
             "title": "Actividad: Simple o estructurado",
             "instruction": "Clasifica cada caso según el nivel de estructuración requerido en el prompt:",
@@ -5688,7 +5768,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 25,
+          "order": 27,
           "blockData": {
             "title": "IA Aplicada: Balance de esfuerzo y control en prompts",
             "role": "Evaluador de balance de complejidad en prompts",
@@ -5701,7 +5781,7 @@
         },
         {
           "type": "TEXT",
-          "order": 26,
+          "order": 28,
           "blockData": {
             "heading": "Pantalla 9: Patrones de prompting y few-shot",
             "content": "Los patrones de prompting son esquemas recurrentes de diseño instruccional (ej. role prompting, few-shot prompting, chain-of-thought, templates de extracción).\n\nFew-shot prompting:\nConsiste en proporcionar ejemplos representativos de pares entrada-salida para que el modelo replique el criterio de clasificación, tono o formato exacto sin necesidad de largas explicaciones teóricas."
@@ -5709,7 +5789,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 27,
+          "order": 29,
           "blockData": {
             "question": "Un equipo incluye 3 ejemplos de tickets clasificados previamente (Caso 1 → Alta, Caso 2 → Media, Caso 3 → Baja) antes de pedir la clasificación de nuevos casos. ¿Qué patrón se está utilizando?",
             "options": [
@@ -5744,7 +5824,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 28,
+          "order": 30,
           "blockData": {
             "title": "IA Aplicada: Explorador de patrones para proyectos TIC",
             "role": "Consultor de patrones de prompting para gestión tecnológica",
@@ -5757,7 +5837,7 @@
         },
         {
           "type": "TEXT",
-          "order": 29,
+          "order": 31,
           "blockData": {
             "heading": "Pantalla 10: Descomposición de problemas complejos",
             "content": "La descomposición consiste en fragmentar un problema amplio en operaciones secuenciales manejables (diagnóstico → análisis causal → alternativas → evaluación). \n\nPedir \"analiza el proyecto y resuélvelo todo\" mezcla diagnóstico con decisión y suele producir alucinaciones. Separar en etapas permite controlar y auditar la evidencia antes de pasar a la siguiente fase."
@@ -5765,7 +5845,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 30,
+          "order": 32,
           "blockData": {
             "question": "Frente a un retraso crítico en una entrega, ¿cuál es el orden metodológico para descomponer la instrucción a la IA?",
             "options": [
@@ -5800,7 +5880,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 31,
+          "order": 33,
           "blockData": {
             "title": "IA Aplicada: Encadenamiento de tareas intermedias",
             "role": "Tutor de descomposición funcional y encadenamiento de prompts",
@@ -5813,7 +5893,7 @@
         },
         {
           "type": "TEXT",
-          "order": 32,
+          "order": 34,
           "blockData": {
             "heading": "Pantalla 11: Prompts para análisis de datos",
             "content": "Los prompts de análisis instruyen a la IA para examinar datos existentes y extraer patrones, inconsistencias o categorías sin inventar información no suministrada.\n\nHecho observable vs Inferencia causal:\n• Hecho sustentado: Lo que los datos demuestran de forma directa.\n• Hipótesis o aspecto por verificar: Una relación posible que requiere investigación adicional.\n• Atribución causal sin evidencia: Afirmar que A causó B sin datos que demuestren el mecanismo causal."
@@ -5821,7 +5901,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 33,
+          "order": 35,
           "blockData": {
             "title": "Actividad: Hecho, hipótesis o causalidad en datos de incidencias",
             "instruction": "A partir de datos de 3 periodos (Periodo 1: 8 inc, 90h; Periodo 2: 11 inc, 82h; Periodo 3: 15 inc, 75h), clasifica cada afirmación:",
@@ -5858,7 +5938,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 34,
+          "order": 36,
           "blockData": {
             "title": "IA Aplicada: Detección de alucinación causal en análisis",
             "role": "Auditor de análisis de datos para proyectos",
@@ -5871,7 +5951,7 @@
         },
         {
           "type": "TEXT",
-          "order": 35,
+          "order": 37,
           "blockData": {
             "heading": "Pantalla 12: Prompts para generación de alternativas",
             "content": "Los prompts de generación solicitan a la IA producir alternativas, borradores o escenarios dentro de un espacio delimitado de restricciones.\n\nRegla clave:\nGenerar no es aceptar acríticamente. El prompt debe fijar cantidad, condiciones de viabilidad y restricciones explícitas para evitar opciones inviables."
@@ -5879,7 +5959,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 36,
+          "order": 38,
           "blockData": {
             "question": "Se necesita reducir el tiempo de capacitación sin eliminar temas obligatorios ni contratar servicios externos y usando recursos digitales existentes. ¿Cuál prompt está mejor formulado?",
             "options": [
@@ -5914,7 +5994,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 37,
+          "order": 39,
           "blockData": {
             "title": "IA Aplicada: Generación de alternativas delimitadas",
             "role": "Tutor de generación controlada de soluciones",
@@ -5927,7 +6007,7 @@
         },
         {
           "type": "TEXT",
-          "order": 38,
+          "order": 40,
           "blockData": {
             "heading": "Pantalla 13: Prompts para transformación y síntesis",
             "content": "La transformación adapta el formato o lenguaje de una información existente para una audiencia particular sin alterar el contenido esencial. La síntesis integra múltiples fuentes dispersas en un resumen estructurado.\n\nDistinción:\nTransformar no es embellecer texto: al traducir una especificación técnica para usuarios finales se debe conservar la regla funcional eliminando jerga de arquitectura interna."
@@ -5935,7 +6015,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 39,
+          "order": 41,
           "blockData": {
             "title": "Actividad: Conserva, transforma o reduce",
             "instruction": "Al adaptar una lista técnica de requisitos para una sesión de validación con usuarios finales, clasifica qué hacer con cada elemento:",
@@ -5977,7 +6057,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 40,
+          "order": 42,
           "blockData": {
             "title": "IA Aplicada: Transformación para audiencias ejecutivas",
             "role": "Especialista en comunicación y síntesis técnica",
@@ -5990,7 +6070,7 @@
         },
         {
           "type": "TEXT",
-          "order": 41,
+          "order": 43,
           "blockData": {
             "heading": "Pantalla 14: Prompts para comparación y evaluación",
             "content": "Los prompts de comparación contrastan alternativas bajo una base de análisis común y homogénea. Los prompts de evaluación miden el grado de cumplimiento de un objeto frente a criterios observables.\n\nCriterios homogéneos:\nComparar una herramienta por costo y otra por interfaz invalida metodológicamente el análisis. Las dimensiones deben evaluarse en todas las alternativas por igual."
@@ -5998,7 +6078,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 42,
+          "order": 44,
           "blockData": {
             "title": "Actividad: Construye la matriz de comparación",
             "instruction": "Determina si cada criterio es Pertinente y objetivo o Subjetivo e inadecuado para comparar 3 herramientas de gestión TIC:",
@@ -6044,7 +6124,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 43,
+          "order": 45,
           "blockData": {
             "title": "IA Aplicada: Matriz de evaluación con indicadores observables",
             "role": "Tutor de evaluación multicriterio para proyectos TIC",
@@ -6057,7 +6137,7 @@
         },
         {
           "type": "TEXT",
-          "order": 44,
+          "order": 46,
           "blockData": {
             "heading": "Pantalla 15: Iteración de instrucciones",
             "content": "La iteración es el proceso deliberado de modificar componentes de un prompt tras auditar las deficiencias de la respuesta inicial. El primer prompt es una hipótesis de trabajo sujeta a prueba empírica."
@@ -6065,7 +6145,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 45,
+          "order": 47,
           "blockData": {
             "question": "La primera respuesta para redactar criterios de aceptación produjo declaraciones vagas no verificables en pruebas de software. ¿Qué cambios deben incorporarse en la siguiente iteración?",
             "options": [
@@ -6100,7 +6180,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 46,
+          "order": 48,
           "blockData": {
             "title": "IA Aplicada: Formulación de hipótesis de refinamiento",
             "role": "Consultor de iteración y optimización de prompts",
@@ -6113,7 +6193,7 @@
         },
         {
           "type": "TEXT",
-          "order": 47,
+          "order": 49,
           "blockData": {
             "heading": "Pantalla 16: Evaluación y auditoría de resultados",
             "content": "Evaluar un resultado implica auditar su correspondencia con los datos, la precisión conceptual, el respeto a las restricciones y la completitud del formato. La elocuencia del lenguaje no es evidencia de veracidad técnica."
@@ -6121,7 +6201,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 48,
+          "order": 50,
           "blockData": {
             "question": "El prompt pedía un objetivo claro, medible y orientado a reducir tiempos de atención. La IA propuso: \"Mejorar la experiencia de los usuarios mediante una plataforma de atención moderna.\" ¿Qué falla en la auditoría?",
             "options": [
@@ -6156,7 +6236,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 49,
+          "order": 51,
           "blockData": {
             "title": "IA Aplicada: Matriz de auditoría de cumplimiento",
             "role": "Auditor riguroso de resultados generados por IA",
@@ -6169,7 +6249,7 @@
         },
         {
           "type": "TEXT",
-          "order": 50,
+          "order": 52,
           "blockData": {
             "heading": "Pantalla 17: Detección de respuestas deficientes y alucinaciones",
             "content": "Una respuesta deficiente puede contener inferencias no sustentadas, supuestos no solicitados o contradicciones directas con los datos suministrados."
@@ -6177,7 +6257,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 51,
+          "order": 53,
           "blockData": {
             "question": "Ante 18 incidencias (7 críticas) y un retraso de 2 días, la IA responde: \"Las 18 incidencias provocaron el retraso y causarán al menos 5 días más de atraso. Debe contratarse más personal ya.\" ¿Cuál es el problema?",
             "options": [
@@ -6212,7 +6292,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 52,
+          "order": 54,
           "blockData": {
             "title": "IA Aplicada: Separación estricta de hechos y conjeturas",
             "role": "Auditor de evidencia y trazabilidad factual",
@@ -6225,7 +6305,7 @@
         },
         {
           "type": "TEXT",
-          "order": 53,
+          "order": 55,
           "blockData": {
             "heading": "Pantalla 18: Refinamiento quirúrgico del prompt",
             "content": "Refinar un prompt es intervenir específicamente el componente que causó la deficiencia (alcance, categorías, formato, restricciones de inferencia), manteniendo la trazabilidad del cambio."
@@ -6233,7 +6313,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 54,
+          "order": 56,
           "blockData": {
             "title": "Actividad: Empareja problema y refinamiento",
             "instruction": "Relaciona cada problema detectado en la respuesta con la acción de refinamiento correspondiente:",
@@ -6271,7 +6351,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 55,
+          "order": 57,
           "blockData": {
             "title": "IA Aplicada: Refinamiento quirúrgico sin sobrecarga",
             "role": "Tutor de refinamiento estructurado de prompts",
@@ -6284,7 +6364,7 @@
         },
         {
           "type": "TEXT",
-          "order": 56,
+          "order": 58,
           "blockData": {
             "heading": "Pantalla 19: Comparación sistemática entre versiones",
             "content": "Comparar versiones requiere mantener criterios estables (pertinencia, extensión, estructura, completitud) y contrastar evidencias. Una respuesta más corta no siempre es mejor si sacrificó información esencial."
@@ -6292,7 +6372,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 57,
+          "order": 59,
           "blockData": {
             "question": "La Versión 1 produjo criterios de aceptación claros pero muy largos. La Versión 2 los hizo breves, pero varios perdieron datos necesarios para escribir las pruebas de software. ¿Cuál es la conclusión correcta?",
             "options": [
@@ -6327,7 +6407,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 58,
+          "order": 60,
           "blockData": {
             "title": "IA Aplicada: Comparación de versiones con matriz objetiva",
             "role": "Auditor comparativo de iteraciones de prompts",
@@ -6340,7 +6420,7 @@
         },
         {
           "type": "TEXT",
-          "order": 59,
+          "order": 61,
           "blockData": {
             "heading": "Pantalla 20: Prompts especializados para proyectos TIC (Tailoring)",
             "content": "Concepto y Principio de Adaptación (PMBOK®):\nUn prompt especializado para proyectos TIC incorpora elementos propios del dominio (requisitos funcionales vs no funcionales, rutas críticas, matriz de riesgos, pruebas de integración).\n\nTailoring:\nEl PMBOK® Guide enfatiza que las prácticas y herramientas deben adaptarse al contexto específico del proyecto. Especializar no es saturar de tecnicismos, sino formular la tarea respetando el ciclo de vida y los criterios del proyecto."
@@ -6348,7 +6428,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 60,
+          "order": 62,
           "blockData": {
             "question": "Para revisar requisitos de una app turística sin que la IA invente datos inexistentes, ¿cuál prompt está mejor especializado?",
             "options": [
@@ -6383,7 +6463,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 61,
+          "order": 63,
           "blockData": {
             "title": "IA Aplicada: Especialización de prompts según dominio TIC",
             "role": "Tutor de ingeniería de prompts aplicada a proyectos TIC",
@@ -6396,7 +6476,7 @@
         },
         {
           "type": "TEXT",
-          "order": 62,
+          "order": 64,
           "blockData": {
             "heading": "Pantalla 21: Laboratorio de construcción de instrucciones",
             "content": "Reto Práctico del Módulo:\nIntegrarás los principios aprendidos para diseñar, probar, evaluar y refinar un prompt especializado en una de las siguientes situaciones:\n• Situación A (Análisis de riesgos): Analizar riesgos e identificar cuáles requieren mayor atención.\n• Situación B (Revisión de requisitos): Detectar ambigüedades, omisiones y separar funcionales de no funcionales.\n• Situación C (Generación de alternativas): Proponer alternativas para resolver un cuello de botella con restricciones de tiempo y presupuesto.\n• Situación D (Transformación de información): Traducir especificaciones técnicas complejas a lenguaje claro para usuarios de negocio.\n\nSigue el ciclo de 5 pasos en tu Bitácora:\nPaso 1: Define la tarea → Paso 2: Construye Versión 1 → Paso 3: Ejecuta y audita → Paso 4: Refina a Versión 2 → Paso 5: Justifica la mejora."
@@ -6404,7 +6484,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 63,
+          "order": 65,
           "blockData": {
             "stepNumber": 21,
             "title": "Documento de diseño, prueba y refinamiento del prompt especializado",
@@ -6453,7 +6533,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 64,
+          "order": 66,
           "blockData": {
             "title": "IA Aplicada: Acompañamiento en el laboratorio de prompts",
             "role": "Profesor evaluador de laboratorio de prompting",
@@ -6466,7 +6546,7 @@
         },
         {
           "type": "EXAM",
-          "order": 65,
+          "order": 67,
           "blockData": {
             "title": "Pantalla 22: Microevaluación — Diseño, evaluación y mejora de instrucciones",
             "description": "10 preguntas contextualizadas de opción múltiple sobre ingeniería de prompts para proyectos TIC. Mínimo aprobatorio: 70%.",
@@ -6720,7 +6800,7 @@
         },
         {
           "type": "CHECKPOINT",
-          "order": 66,
+          "order": 68,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el Módulo 13",
             "description": "Has dominado el diseño, evaluación, auditoría y refinamiento de instrucciones para proyectos tecnológicos.",
@@ -6738,7 +6818,7 @@
       ]
     },
     {
-      "title": "Módulo 14. Laboratorio de IA para proyectos tecnológicos",
+      "title": "Laboratorio de IA para proyectos tecnológicos",
       "order": 14,
       "level": 4,
       "levelTitle": "Nivel 4: IA Generativa Aplicada",
@@ -6747,13 +6827,29 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
-            "heading": "¡Bienvenido al Módulo 14: Laboratorio de IA para proyectos tecnológicos!",
-            "content": "Módulo 14. Laboratorio de IA para proyectos tecnológicos\nDuración estimada: 180–240 minutos | Nivel: Avanzado\n\nObjetivo general:\nAplicar instrucciones de IA generativa en situaciones contextualizadas de proyectos tecnológicos, evaluando los resultados obtenidos, realizando refinamientos fundamentados y validando su utilidad como apoyo a diferentes actividades de gestión del proyecto.\n\nObjetivos específicos:\n• Aplicar instrucciones previamente diseñadas a situaciones concretas del proyecto tecnológico SIGA-TI (TecnoGestión S.A.S.).\n• Seleccionar y preparar información contextualizada diferenciando datos observados de interpretaciones.\n• Auditar resultados generados identificando vacíos, afirmaciones no sustentadas e inconsistencias.\n• Refinar instrucciones a partir de la evidencia observada y comparar resultados antes y después del refinamiento.\n• Validar la utilidad de aplicaciones de IA mediante evidencias contrastadas con el equipo.\n• Construir y documentar el Portafolio de aplicaciones de IA validadas.\n\nMapa de entregables del laboratorio:\n1. Laboratorio 1: Ficha de aplicación de IA (Semana 8)\n2. Laboratorio 2: Registro de aplicación de IA (Semana 9)\n3. Laboratorio 3: Informe de evaluación y refinamiento (Semana 10)\n4. Laboratorio 4: Caso de aplicación integral de IA (Semana 11 - Reto integrador)\n5. Portafolio de aplicaciones de IA validadas: Consolidación final para la toma de decisiones."
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 180–240 minutos | **Nivel:** Avanzado\n\n**Objetivo general:**\nAplicar instrucciones de IA generativa en situaciones contextualizadas de proyectos tecnológicos, evaluando los resultados obtenidos, realizando refinamientos fundamentados y validando su utilidad como apoyo a diferentes actividades de gestión del proyecto.\n\n**Objetivos específicos:**\n• Aplicar instrucciones previamente diseñadas a situaciones concretas del proyecto tecnológico SIGA-TI (TecnoGestión S.A.S.).\n• Seleccionar y preparar información contextualizada diferenciando datos observados de interpretaciones.\n• Auditar resultados generados identificando vacíos, afirmaciones no sustentadas e inconsistencias.\n• Refinar instrucciones a partir de la evidencia observada y comparar resultados antes y después del refinamiento.\n• Validar la utilidad de aplicaciones de IA mediante evidencias contrastadas con el equipo.\n• Construir y documentar el Portafolio de aplicaciones de IA validadas."
           }
         },
         {
           "type": "TEXT",
           "order": 2,
+          "blockData": {
+            "heading": "Entregables del Laboratorio y Portafolio",
+            "content": "**Mapa de entregables del laboratorio:**\n• **Laboratorio 1:** Ficha de aplicación de IA (Semana 8)\n• **Laboratorio 2:** Registro de aplicación de IA (Semana 9)\n• **Laboratorio 3:** Informe de evaluación y refinamiento (Semana 10)\n• **Laboratorio 4:** Caso de aplicación integral de IA (Semana 11 - Reto integrador)\n\n**Producto consolidado:**\n**Portafolio de aplicaciones de IA validadas:**\nConsolidación final de evidencias, fichas, registros y refinamientos empíricos aplicados al proyecto SIGA-TI para respaldar la toma de decisiones del equipo directivo."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nInicio del laboratorio → Preparación de entregables → Laboratorio 1: Ficha de aplicación → Laboratorio 2: Registro de aplicación → Laboratorio 3: Informe de evaluación → Laboratorio 4: Caso integral → Portafolio de aplicaciones validadas → ¡Felicidades!"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
           "blockData": {
             "heading": "Laboratorio 1: Identifica una oportunidad de aplicación de IA (Semana 8)",
             "content": "Caso del Proyecto SIGA-TI (Semana 8):\nLa empresa TecnoGestión S.A.S. desarrolla la plataforma web SIGA-TI (duración: 20 semanas, actualmente en Semana 8) para centralizar solicitudes de soporte tecnológico.\n\nRecursos disponibles del caso:\n• Recurso 1. Requisitos:\n  - RQ-01: Registrar solicitudes indicando asunto, descripción y prioridad.\n  - RQ-02: Consultar el estado de una solicitud.\n  - RQ-03: Asignar solicitudes a responsables.\n  - RQ-04: Notificar cambios de estado.\n  - RQ-05: Consultar reportes mensuales.\n  - RQ-06: Dar tratamiento prioritario a solicitudes de seguridad.\n  - RQ-07: Filtrar solicitudes por estado, responsable, prioridad y fecha.\n  - RQ-08: Generar resumen mensual de solicitudes atendidas.\n• Recurso 2. Historias de usuario: HU-01 a HU-05 (registro, pendientes, reportes, seguridad, incidencias de pruebas).\n• Recurso 3. Incidencias registradas:\n  - INC-01 (Alta, Abierta, Solicitudes): Botón de registro no responde tras completar formulario.\n  - INC-02 (Media, Análisis, Notificaciones): Correo de notificación llega con retraso.\n  - INC-03 (Alta, Abierta, Reportes): Filtro por responsable no devuelve todos los registros.\n  - INC-04 (Media, Análisis, Consultas): Pantalla de consulta tarda más de lo esperado.\n  - INC-05 (Alta, Abierta, Seguridad): Un usuario puede consultar solicitudes fuera de su área.\n  - INC-06 (Alta, Análisis, Reportes): Reporte mensual presenta registros duplicados.\n  - INC-07 (Media, Abierta, Solicitudes): Prioridad seleccionada no aparece correctamente.\n  - INC-08 (Baja, Abierta, Solicitudes): Cambio de estado no actualiza inmediatamente la UI.\n• Recurso 4. Registro de reunión: El director pide hallar qué problemas se repiten más; el analista nota mezcla de necesidades con soluciones; el profesional de pruebas pide priorizar.\n• Recurso 5. Condiciones: La IA debe responder a una necesidad concreta, no inventar datos, señalar información insuficiente y permitir revisión humana."
@@ -6761,7 +6857,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 3,
+          "order": 5,
           "blockData": {
             "stepNumber": 22,
             "title": "Laboratorio 1: Ficha de aplicación de IA",
@@ -6810,7 +6906,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 4,
+          "order": 6,
           "blockData": {
             "title": "IA Aplicada: Asistente para delimitar la oportunidad en SIGA-TI",
             "role": "Tutor de gestión de proyectos para delimitación de casos",
@@ -6823,7 +6919,7 @@
         },
         {
           "type": "TEXT",
-          "order": 5,
+          "order": 7,
           "blockData": {
             "heading": "Laboratorio 2: Aplica IA a una situación del proyecto (Semana 9)",
             "content": "Contexto del Proyecto SIGA-TI (Semana 9):\nEl proyecto avanza a la Semana 9. Han surgido nuevas solicitudes, incidencias y solicitudes de cambio que presionan el alcance y los módulos en desarrollo.\n\nNuevos Recursos disponibles:\n• Recurso 1. Nuevas solicitudes: SOL-01 a SOL-08 (historial completo, tickets estancados, reporte gerencial de fallas, clasificación de accesos por seguridad, preparación de reunión de seguimiento).\n• Recurso 2. Nuevas incidencias:\n  - INC-09 (Alta, Abierta, Seguimiento): Solicitudes sin actualización durante varios días.\n  - INC-10 (Media, Análisis, Historial): Historial no muestra todos los cambios realizados.\n  - INC-11 (Media, Abierta, Solicitudes): Descripciones demasiado generales en tickets.\n  - INC-12 (Alta, Abierta, Seguridad): Solicitudes de accesos sin clasificación uniforme.\n  - INC-13 (Alta, Análisis, Reportes): Reportes contienen datos que requieren revisión previa.\n  - INC-14 (Media, Abierta, Solicitudes): Solicitudes similares registradas con descripciones dispares.\n  - INC-15 (Alta, Análisis, Pruebas): Problemas registrados en múltiples módulos en simultáneo.\n  - INC-16 (Media, Abierta, Solicitudes): Información insuficiente para determinar tratamiento del ticket.\n• Recurso 3. Solicitudes de cambio (En revisión/análisis):\n  - CAM-01: Categoría específica para solicitudes de seguridad.\n  - CAM-02: Modificar contenido del reporte mensual.\n  - CAM-03: Incorporar campos adicionales en el historial.\n  - CAM-04: Ajustar filtros para consultar solicitudes.\n• Recurso 4. Estado de actividades: Desarrollo de solicitudes, reportes, pruebas funcionales y pruebas de seguridad en ejecución; notificaciones en revisión; pruebas con usuarios pendientes.\n• Condición clave: Diferenciar estrictamente datos observados de inferencias; no predecir impactos sin datos numéricos suficientes."
@@ -6831,7 +6927,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 6,
+          "order": 8,
           "blockData": {
             "stepNumber": 23,
             "title": "Laboratorio 2: Registro de aplicación de IA",
@@ -6880,7 +6976,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 7,
+          "order": 9,
           "blockData": {
             "title": "IA Aplicada: Verificación de evidencia empírica en Semana 9",
             "role": "Auditor de calidad y seguimiento de proyectos TIC",
@@ -6893,7 +6989,7 @@
         },
         {
           "type": "TEXT",
-          "order": 8,
+          "order": 10,
           "blockData": {
             "heading": "Laboratorio 3: Audita y mejora el resultado (Semana 10)",
             "content": "Situación de Auditoría en la Semana 10:\nDurante la semana 10 se analizó la lista de incidencias INC-01 a INC-08. Se ejecutó una instrucción inicial que produjo un resultado con graves sesgos metodológicos.\n\nInstrucción inicial defectuosa utilizada:\n“Analiza las incidencias del proyecto SIGA-TI y presenta un resumen organizado por módulo. Identifica cuáles son los problemas más importantes, explica qué está ocurriendo y señala qué debería hacer el equipo para solucionarlos.”\n\nResultado inicial generado por la IA (a auditar):\nResumen de incidencias: El análisis muestra que la mayoría de problemas están relacionados con el módulo de solicitudes. Los principales problemas parecen deberse a deficiencias en el desarrollo y a una falta de coordinación entre los desarrolladores.\nLas incidencias de mayor importancia son INC-01, INC-03, INC-05 e INC-06. Estas deberían solucionarse inmediatamente porque afectan la operación.\nLas incidencias de reportes son las más frecuentes. Esto indica que el módulo de reportes presenta problemas estructurales que requieren una revisión completa. Las de prioridad media son secundarias.\nSe recomienda asignar más desarrolladores a estas áreas y hacer una revisión técnica completa.\nConclusión: El principal problema es la calidad del desarrollo. Hay alta probabilidad de problemas técnicos adicionales no detectados.\n\nAuditoría requerida:\n1. Afirmación no sustentada: Culpar a la \"falta de coordinación de los desarrolladores\" sin ningún dato sobre desempeño de equipo.\n2. Error de conteo: Decir que las incidencias de reportes son \"las más frecuentes\" cuando solicitudes tiene 3 (INC-01, 07, 08) y reportes tiene 2 (INC-03, 06).\n3. Decisiones no autorizadas: Recomendar \"asignar más desarrolladores\" sin conocer presupuesto ni capacidad.\n4. Vulnerabilidad de seguridad subestimada: Tratar INC-05 (acceso indebido a solicitudes ajenas) como una falla común sin destacar la violación de confidencialidad."
@@ -6901,7 +6997,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 9,
+          "order": 11,
           "blockData": {
             "stepNumber": 24,
             "title": "Laboratorio 3: Informe de evaluación y refinamiento",
@@ -6950,7 +7046,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 10,
+          "order": 12,
           "blockData": {
             "title": "IA Aplicada: Detección socrática de juicios de valor en auditoría",
             "role": "Auditor de sesgos e inferencias causales en IA",
@@ -6963,7 +7059,7 @@
         },
         {
           "type": "TEXT",
-          "order": 11,
+          "order": 13,
           "blockData": {
             "heading": "Laboratorio 4: Reto integrador TIC (Semana 11)",
             "content": "Reto Integrador en la Semana 11:\nEn la Semana 11, el proyecto acumula:\n• 8 Requisitos formales (RQ-01 a RQ-08)\n• 5 Historias de usuario (HU-01 a HU-05)\n• 16 Incidencias acumuladas (INC-01 a INC-16)\n• 4 Solicitudes de cambio (CAM-01 a CAM-04)\n• Actividades en desarrollo y pruebas con usuarios preparándose.\n\nEl desafío:\nDebes asumir el ciclo completo de aplicación de IA generativa para apoyar una actividad estratégica de toma de decisiones (ej. priorización de defectos de cara a las pruebas con usuarios, conciliación de solicitudes de cambio vs estabilidad de módulos, o análisis cruzado de seguridad).\n\nCondiciones obligatorias:\n1. Responder a una necesidad concreta del proyecto.\n2. Utilizar únicamente información pertinente sin inventar datos.\n3. Diferenciar datos de interpretaciones y señalar vacíos de información.\n4. Generar resultado inicial → auditar → refinar instrucción → generar nuevo resultado → comparar → validar.\n5. El resultado final permanece sujeto a revisión y decisión humana."
@@ -6971,7 +7067,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 12,
+          "order": 14,
           "blockData": {
             "stepNumber": 25,
             "title": "Laboratorio 4: Caso de aplicación integral de IA",
@@ -7020,7 +7116,7 @@
         },
         {
           "type": "TEXT",
-          "order": 13,
+          "order": 15,
           "blockData": {
             "heading": "Consolidación del Portafolio de aplicaciones de IA validadas",
             "content": "Portafolio de Aplicaciones de IA Validadas:\nCon los cuatro laboratorios concluidos, has conformado tu portafolio oficial:\n1. Ficha de aplicación de IA (Lab 1): Delimitación y pertinencia en fase de desarrollo.\n2. Registro de aplicación de IA (Lab 2): Análisis de cambios e incidencias con trazabilidad empírica.\n3. Informe de evaluación y refinamiento (Lab 3): Auditoría crítica, eliminación de sesgos y refinamiento instruccional.\n4. Caso de aplicación integral de IA (Lab 4): Gobernanza integral, ciclo de mejora y supervisión humana activa.\n\nEste portafolio constituye la evidencia verificable de tu competencia como gestor tecnológico en la era de la inteligencia artificial."
@@ -7028,7 +7124,7 @@
         },
         {
           "type": "EXAM",
-          "order": 14,
+          "order": 16,
           "blockData": {
             "title": "Microevaluación — Laboratorio de IA para proyectos tecnológicos",
             "description": "5 preguntas de evaluación sobre la aplicación práctica de IA en el proyecto SIGA-TI. Mínimo aprobatorio: 70%.",
@@ -7162,7 +7258,7 @@
         },
         {
           "type": "CHECKPOINT",
-          "order": 15,
+          "order": 17,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el Módulo 14",
             "description": "Has culminado con éxito los laboratorios prácticos de IA aplicada al proyecto tecnológico SIGA-TI y consolidado tu portafolio.",
@@ -7178,7 +7274,7 @@
         },
         {
           "type": "EXAM",
-          "order": 16,
+          "order": 18,
           "blockData": {
             "title": "Evaluación Final - Nivel 4: IA Generativa Aplicada",
             "description": "Evaluación integral de los Módulos 13 y 14. Consta de 25 preguntas de opción múltiple (4 puntos c/u = 100 puntos en total). Mínimo aprobatorio: 70%. Al aprobar obtendrás la insignia \"Especialista Nivel 4\" y habilitarás el Nivel 5.",
@@ -7794,7 +7890,7 @@
       ]
     },
     {
-      "title": "Módulo 15. Uso responsable, gobernanza y proyecto final",
+      "title": "Uso responsable, gobernanza y proyecto final",
       "order": 15,
       "level": 5,
       "levelTitle": "Nivel 5: Gobernanza y Proyecto Integrador",
@@ -7803,13 +7899,29 @@
           "type": "TEXT",
           "order": 1,
           "blockData": {
-            "heading": "¡Bienvenido al Módulo 15: Uso responsable, gobernanza y proyecto final!",
-            "content": "Módulo 15. Uso responsable, gobernanza y proyecto final\nDuración estimada: 120 – 150 minutos | Nivel: Avanzado\nProducto: Proyecto completo, sustentación y reflexión crítica.\n\nProyecto TIC Integral con IA Responsable y Gobernanza:\nEl estudiante desarrollará y sustentará un nuevo proyecto TIC, integrando los aprendizajes de los niveles anteriores: comprensión y caracterización del proyecto, formulación y planificación, ejecución, seguimiento y cierre. Sobre este nuevo proyecto deberá determinar cómo utilizar la IA de manera responsable, diseñar sus propias instrucciones para interactuar con herramientas de IA, identificar riesgos éticos y regulatorios y establecer mecanismos de gobernanza, supervisión, trazabilidad y control.\n\nObjetivo general:\nDiseñar y sustentar un proyecto TIC integral que incorpore inteligencia artificial mediante criterios éticos, regulatorios y de gobernanza, estableciendo mecanismos de uso responsable, gestión de riesgos, protección de datos, supervisión humana, trazabilidad y rendición de cuentas.\n\nObjetivos específicos:\n• Comprender los fundamentos éticos asociados al diseño y uso de sistemas de IA y su impacto en proyectos TIC.\n• Identificar valores, principios y criterios para evaluar aplicaciones de IA y reconocer riesgos éticos, sociales y técnicos.\n• Diferenciar ética, regulación, cumplimiento, estándares, políticas institucionales y gobernanza.\n• Analizar marcos regulatorios y normativos contemporáneos (AI Act de la UE, Ley 1581 de 2012 y CONPES 4144 de Colombia).\n• Comprender las obligaciones relacionadas con privacidad, minimización y protección de datos personales.\n• Analizar el enfoque basado en riesgos, la norma ISO/IEC 42001 y el marco NIST AI RMF (Generative AI Profile).\n• Comprender la función de la gobernanza durante todo el ciclo de vida de un sistema de IA (autoridad, controles, supervisión, trazabilidad y rendición de cuentas).\n• Aplicar todos estos elementos al nuevo proyecto TIC integral y preparar la sustentación final.\n\nMapa del módulo:\nUso responsable de IA → Ética y principios → Riesgos e impactos → Privacidad y protección de datos → Regulación de IA → Normativas y marcos regulatorios → Gobernanza de IA → Roles y responsabilidades → Gestión del riesgo y controles → Trazabilidad y auditoría → Capacidades organizacionales → Proyecto final → Microevaluación → ¡Felicidades!"
+            "heading": "Presentación y Objetivos del Módulo",
+            "content": "**Duración estimada:** 120 – 150 minutos | **Nivel:** Avanzado\n\n**Proyecto TIC Integral con IA Responsable y Gobernanza:**\nEl estudiante desarrollará y sustentará un nuevo proyecto TIC, integrando los aprendizajes de los niveles anteriores: comprensión y caracterización del proyecto, formulación y planificación, ejecución, seguimiento y cierre. Sobre este nuevo proyecto deberá determinar cómo utilizar la IA de manera responsable, diseñar sus propias instrucciones para interactuar con herramientas de IA, identificar riesgos éticos y regulatorios y establecer mecanismos de gobernanza, supervisión, trazabilidad y control.\n\n**Objetivo general:**\nDiseñar y sustentar un proyecto TIC integral que incorpore inteligencia artificial mediante criterios éticos, regulatorios y de gobernanza, estableciendo mecanismos de uso responsable, gestión de riesgos, protección de datos, supervisión humana, trazabilidad y rendición de cuentas.\n\n**Objetivos específicos:**\n• Comprender los fundamentos éticos asociados al diseño y uso de sistemas de IA y su impacto en proyectos TIC.\n• Identificar valores, principios y criterios para evaluar aplicaciones de IA y reconocer riesgos éticos, sociales y técnicos.\n• Diferenciar ética, regulación, cumplimiento, estándares, políticas institucionales y gobernanza.\n• Analizar marcos regulatorios y normativos contemporáneos (AI Act de la UE, Ley 1581 de 2012 y CONPES 4144 de Colombia).\n• Comprender las obligaciones relacionadas con privacidad, minimización y protección de datos personales.\n• Analizar el enfoque basado en riesgos, la norma ISO/IEC 42001 y el marco NIST AI RMF (Generative AI Profile).\n• Comprender la función de la gobernanza durante todo el ciclo de vida de un sistema de IA (autoridad, controles, supervisión, trazabilidad y rendición de cuentas).\n• Aplicar todos estos elementos al nuevo proyecto TIC integral y preparar la sustentación final."
           }
         },
         {
           "type": "TEXT",
           "order": 2,
+          "blockData": {
+            "heading": "Producto Final y Sustentación",
+            "content": "**Producto del módulo:**\n**Proyecto completo, sustentación y reflexión crítica.**\n\nTu recorrido formativo culmina con la integración de cuatro componentes clave:\n• **Proyecto completo:** Documento integral que reúne alcance, cronograma, costos, riesgos, calidad y gobernanza de IA.\n• **Evidencias de gestión:** Fichas de prompts, matrices de riesgos éticos y registros de trazabilidad.\n• **Sustentación:** Presentación estructurada defendiendo las decisiones estratégicas y técnicas del proyecto.\n• **Reflexión crítica:** Análisis autocrítico sobre el impacto social, ético y operativo de la solución implementada."
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 3,
+          "blockData": {
+            "heading": "Mapa del Módulo",
+            "content": "Estaciones de aprendizaje del módulo:\n\nUso responsable de IA → Ética y principios → Riesgos e impactos → Privacidad y protección de datos → Regulación de IA → Normativas y marcos regulatorios → Gobernanza de IA → Roles y responsabilidades → Gestión del riesgo y controles → Trazabilidad y auditoría → Capacidades organizacionales → Proyecto final → Microevaluación → ¡Felicidades!"
+          }
+        },
+        {
+          "type": "TEXT",
+          "order": 4,
           "blockData": {
             "heading": "Pantalla 1: Ética en inteligencia artificial",
             "content": "La ética en inteligencia artificial estudia los principios y criterios que permiten valorar si el diseño, desarrollo, implementación y uso de sistemas de IA respeta valores humanos y sociales. No se limita a determinar si una tecnología funciona, sino que analiza sus consecuencias sobre las personas, las organizaciones y la sociedad.\n\nUna solución puede ser legal o técnicamente eficiente y, al mismo tiempo, generar problemas graves de discriminación, exclusión o daño. La ética plantea preguntas críticas: ¿quién puede verse afectado?, ¿qué derechos podrían estar comprometidos?, ¿quién debe supervisar la decisión y qué riesgos son inaceptables?\n\nEjemplo:\nUna empresa desarrolla una herramienta para calificar automáticamente candidatos a programas de formación. El sistema asigna puntuaciones inferiores de forma sistemática a determinados perfiles demográficos. Aunque el algoritmo procesa miles de registros en segundos, el equipo debe intervenir para corregir el sesgo discriminatorio y exigir supervisión humana."
@@ -7817,7 +7929,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 3,
+          "order": 5,
           "blockData": {
             "title": "Actividad: Radar ético",
             "instruction": "Clasifica cada decisión organizacional según su compatibilidad con un uso ético y responsable:",
@@ -7858,7 +7970,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 4,
+          "order": 6,
           "blockData": {
             "title": "IA Aplicada: Evaluación ética de casos de uso",
             "role": "Consultor de ética aplicada en sistemas de inteligencia artificial",
@@ -7871,7 +7983,7 @@
         },
         {
           "type": "TEXT",
-          "order": 5,
+          "order": 7,
           "blockData": {
             "heading": "Pantalla 2: Importancia del uso responsable de IA",
             "content": "El uso responsable de IA implica utilizar estas tecnologías considerando sus beneficios, riesgos, límites y efectos durante todo su ciclo de vida: selección, propósito, configuración, supervisión, documentación y gestión de incidentes.\n\nPasar de principios a prácticas:\nNo basta con publicar un código de principios en la página web; la responsabilidad se traduce en procedimientos operativos: definir quién autoriza una herramienta, qué datos están prohibidos ingresar en plataformas públicas y cómo se verifican los resultados antes de tomar decisiones de proyecto."
@@ -7879,7 +7991,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 6,
+          "order": 8,
           "blockData": {
             "question": "Una empresa propone cinco medidas para implementar IA en la gestión de proyectos. ¿Cuáles tres son indispensables antes de poner el sistema en operación?",
             "options": [
@@ -7914,7 +8026,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 7,
+          "order": 9,
           "blockData": {
             "title": "IA Aplicada: Verificación de condiciones mínimas de uso responsable",
             "role": "Auditor de políticas de uso responsable de IA",
@@ -7927,7 +8039,7 @@
         },
         {
           "type": "TEXT",
-          "order": 8,
+          "order": 10,
           "blockData": {
             "heading": "Pantalla 3: Valores y principios de IA responsable",
             "content": "Los valores representan lo que una organización protege (dignidad, equidad, bienestar); los principios traducen esos valores en directrices operativas:\n• Justicia y no discriminación: Trato equitativo e imparcial.\n• Transparencia y explicabilidad: Claridad en el funcionamiento y justificación comprensible de salidas.\n• Privacidad y protección de datos: Respeto a los derechos de los titulares y minimización.\n• Seguridad y robustez: Resistencia frente a ataques, errores y uso no intencionado.\n• Responsabilidad y supervisión humana: Obligación de responder y mantener el control humano."
@@ -7935,7 +8047,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 9,
+          "order": 11,
           "blockData": {
             "title": "Actividad: Empareja el principio de IA responsable",
             "instruction": "Relaciona cada situación u objetivo con el principio ético correspondiente:",
@@ -7979,7 +8091,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 10,
+          "order": 12,
           "blockData": {
             "title": "IA Aplicada: Matriz Caso de uso → Principio → Riesgo → Control",
             "role": "Especialista en gobernanza y matrices de control ético",
@@ -7992,7 +8104,7 @@
         },
         {
           "type": "TEXT",
-          "order": 11,
+          "order": 13,
           "blockData": {
             "heading": "Pantalla 4: Dilemas éticos en proyectos tecnológicos",
             "content": "Un dilema ético surge cuando objetivos legítimos entran en tensión: por ejemplo, aumentar la precisión del modelo o la velocidad del servicio a costa de recolectar masivamente datos personales o prescindir de la revisión humana.\n\nToma de decisiones fundamentada:\nEl gestor responsable no elige la opción que simplemente maximiza una métrica a corto plazo. Debe evaluar qué se gana, qué se arriesga, quién asume las consecuencias y cómo mitigar los impactos negativos."
@@ -8000,7 +8112,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 12,
+          "order": 14,
           "blockData": {
             "question": "Una plataforma educativa evalúa usar IA para predecir deserción estudiantil analizando datos personales y de comportamiento. ¿Cuál alternativa representa el enfoque responsable?",
             "options": [
@@ -8035,7 +8147,7 @@
         },
         {
           "type": "TEXT",
-          "order": 13,
+          "order": 15,
           "blockData": {
             "heading": "Pantalla 5: Transparencia, explicabilidad y trazabilidad",
             "content": "Conceptos clave:\n• Transparencia: Comunicar claramente a los usuarios que están interactuando con un sistema de IA o que un contenido fue generado por ella.\n• Explicabilidad: Capacidad de entender la lógica y los factores determinantes detrás de un resultado.\n• Trazabilidad: Capacidad de registrar y reconstruir las versiones de modelos, datos e instrucciones que originaron una salida.\n• Supervisión humana: Capacidad real de una persona autorizada de intervenir, modificar o revocar una decisión del sistema."
@@ -8043,7 +8155,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 14,
+          "order": 16,
           "blockData": {
             "title": "Actividad: Abre la caja negra de la gobernanza",
             "instruction": "Asigna a cada situación la dimensión de gobernanza correspondiente:",
@@ -8081,7 +8193,7 @@
         },
         {
           "type": "TEXT",
-          "order": 15,
+          "order": 17,
           "blockData": {
             "heading": "Pantalla 6: Responsabilidad y rendición de cuentas (Accountability)",
             "content": "La responsabilidad asigna obligaciones; la rendición de cuentas exige demostrar con evidencias qué se decidió, quién intervino, con qué controles y qué ocurrió después.\n\nEvitar el vacío de responsabilidad:\nNunca se debe aceptar la excusa de \"la IA fue quien decidió\". Las herramientas de IA son instrumentos técnicos; la responsabilidad jurídica y organizativa es siempre de las personas y de la organización."
@@ -8089,7 +8201,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 16,
+          "order": 18,
           "blockData": {
             "title": "Actividad: ¿Quién responde en la gobernanza?",
             "instruction": "Asigna a cada responsabilidad el rol organizacional correspondiente:",
@@ -8133,7 +8245,7 @@
         },
         {
           "type": "TEXT",
-          "order": 17,
+          "order": 19,
           "blockData": {
             "heading": "Pantalla 7: ¿Por qué regular la inteligencia artificial?",
             "content": "La regulación establece obligaciones, prohibiciones y derechos exigibles jurídicamente. La ética orienta lo que debería hacerse; la regulación determina lo que es obligatorio cumplir bajo sanción legal.\n\nConvivencia armónica:\nUn proyecto debe cumplir la ley y, al mismo tiempo, aplicar principios éticos organizacionales que pueden ser más estrictos que el mínimo legal vigente."
@@ -8141,7 +8253,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 18,
+          "order": 20,
           "blockData": {
             "title": "Actividad: ¿Ética, regulación o ambas?",
             "instruction": "Determina el origen de cada obligación o decisión en el proyecto:",
@@ -8179,7 +8291,7 @@
         },
         {
           "type": "TEXT",
-          "order": 19,
+          "order": 21,
           "blockData": {
             "heading": "Pantalla 8: Tipos de instrumentos normativos y de gestión",
             "content": "Taxonomía de instrumentos:\n• Ley: Norma jurídica de obligatorio cumplimiento aprobada por el legislador.\n• Reglamento: Disposición que desarrolla y detalla la aplicación de una ley.\n• Norma o estándar internacional (ej. ISO/IEC 42001): Requisitos técnicos para sistemas de gestión certificables.\n• Marco de referencia voluntario (ej. NIST AI RMF): Guía metodológica para estructurar la gestión de riesgos.\n• Política interna: Reglas corporativas adoptadas por una organización."
@@ -8187,7 +8299,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 20,
+          "order": 22,
           "blockData": {
             "title": "Actividad: Clasificador normativo",
             "instruction": "Relaciona cada instrumento con su naturaleza jurídica u organizacional:",
@@ -8225,7 +8337,7 @@
         },
         {
           "type": "TEXT",
-          "order": 21,
+          "order": 23,
           "blockData": {
             "heading": "Pantalla 9: Enfoque basado en riesgos",
             "content": "El enfoque basado en riesgos modula la intensidad de los controles y requisitos según la magnitud del impacto potencial sobre los derechos, la seguridad y los intereses de las personas.\n\nProporcionalidad:\nNo tiene sentido aplicar controles de auditoría forense a un generador de títulos para diapositivas, ni dejar sin supervisión humana a un modelo que evalúa el acceso a un subsidio o empleo."
@@ -8233,7 +8345,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 22,
+          "order": 24,
           "blockData": {
             "title": "Actividad: Semáforo de riesgo para casos de IA",
             "instruction": "Clasifica cada caso de uso según su nivel de impacto y exigencia de control:",
@@ -8275,7 +8387,7 @@
         },
         {
           "type": "TEXT",
-          "order": 23,
+          "order": 25,
           "blockData": {
             "heading": "Pantalla 10: Ley de IA de la Unión Europea (AI Act)",
             "content": "Marco pionero mundial:\nEl Reglamento de IA de la UE (AI Act) clasifica los sistemas en cuatro niveles:\n1. Riesgo inaceptable (Prohibidos): Manipulación subliminal, puntuación social ciudadana, biometría en tiempo real en espacios públicos sin orden judicial.\n2. Alto riesgo: Empleo, educación, infraestructuras críticas, justicia, acceso a servicios esenciales (sujetos a rigurosas auditorías, gestión de riesgos y supervisión humana).\n3. Riesgo específico de transparencia: Chatbots, deepfakes, sistemas generativos (deben informar al usuario que interactúa con IA).\n4. Riesgo mínimo: Filtros de spam, videojuegos con IA (sin obligaciones adicionales).\n\nAplicación progresiva:\nLas prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza y modelos de uso general en agosto de 2025; y las obligaciones de alto riesgo en 2026-2027."
@@ -8283,7 +8395,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 24,
+          "order": 26,
           "blockData": {
             "question": "Respecto a la Ley de IA de la Unión Europea (AI Act), ¿cuál combinación de afirmaciones es correcta?",
             "options": [
@@ -8318,7 +8430,7 @@
         },
         {
           "type": "TEXT",
-          "order": 25,
+          "order": 27,
           "blockData": {
             "heading": "Pantalla 11: Protección de datos en Colombia (Ley 1581 de 2012)",
             "content": "Marco normativo colombiano:\nLa Ley 1581 de 2012 regula el tratamiento de datos personales en Colombia, supervisada por la Superintendencia de Industria y Comercio (SIC).\n\nPrincipio de Minimización y Datos Sensibles:\nTener datos disponibles no autoriza su uso para entrenar o alimentar modelos de IA. Solo deben recolectarse los datos estrictamente necesarios y proporcionales a la finalidad informada y autorizada por el titular. Los datos sensibles (salud, biometría, convicciones) requieren protección reforzada y consentimiento explícito."
@@ -8326,7 +8438,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 26,
+          "order": 28,
           "blockData": {
             "question": "Una app turística con IA quiere recolectar para su perfil: Nombre, Correo, Ubicación exacta en tiempo real, Cédula, Historial completo de navegación e Idioma. ¿Cuáles datos requieren justificación estricta de necesidad y proporcionalidad según la Ley 1581?",
             "options": [
@@ -8361,7 +8473,7 @@
         },
         {
           "type": "TEXT",
-          "order": 27,
+          "order": 29,
           "blockData": {
             "heading": "Pantalla 12: Política Nacional de IA: CONPES 4144 de 2025",
             "content": "Hoja de ruta de política pública:\nEl documento CONPES 4144 de 2025 define la Política Nacional de Inteligencia Artificial de Colombia.\n\nDiferencia crucial:\nUn documento CONPES es un instrumento de política pública y planeación estatal, no una ley aprobada por el Congreso. Traza 6 ejes estratégicos: ética y gobernanza, infraestructura y datos, innovación, talento digital, mitigación de riesgos y adopción responsable. Sirve como brújula estratégica para proyectos del sector público y privado."
@@ -8369,7 +8481,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 28,
+          "order": 30,
           "blockData": {
             "title": "Actividad: ¿Ley, política o marco de referencia?",
             "instruction": "Relaciona cada instrumento normativo o de gestión con su categoría jurídica exacta:",
@@ -8413,7 +8525,7 @@
         },
         {
           "type": "TEXT",
-          "order": 29,
+          "order": 31,
           "blockData": {
             "heading": "Pantalla 13: ¿Qué es la gobernanza de IA?",
             "content": "La gobernanza de IA es el conjunto de estructuras, reglas, autoridades, procesos y controles mediante los cuales una organización dirige, supervisa, audita y responde por el desarrollo y uso de sistemas de IA.\n\nPreguntas operativas:\n¿Quién aprueba un nuevo caso de uso? ¿Quién tiene autoridad para detener un modelo en producción? ¿Qué registros se guardan? ¿Cómo se gestionan incidentes éticos o de seguridad?"
@@ -8421,7 +8533,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 30,
+          "order": 32,
           "blockData": {
             "title": "Actividad: Construye los pilares de la gobernanza",
             "instruction": "Asocia cada necesidad de gestión con el componente de gobernanza correspondiente:",
@@ -8477,7 +8589,7 @@
         },
         {
           "type": "TEXT",
-          "order": 31,
+          "order": 33,
           "blockData": {
             "heading": "Pantalla 14: Gobernanza, gestión y cumplimiento",
             "content": "Tres funciones indispensables:\n• Gobernanza: Define la dirección, asigna autoridad y establece mecanismos de supervisión (¿Quién decide y controla?).\n• Gestión: Planifica, coordina y ejecuta las actividades para lograr los objetivos (¿Cómo se hace el trabajo?).\n• Cumplimiento (Compliance): Verifica que las actuaciones respeten las leyes, normas y políticas vigentes (¿Se acatan las reglas?)."
@@ -8485,7 +8597,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 32,
+          "order": 34,
           "blockData": {
             "title": "Actividad: Detectives de las tres dimensiones",
             "instruction": "Clasifica cada situación de proyecto en Gobernanza, Gestión o Cumplimiento:",
@@ -8527,7 +8639,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 33,
+          "order": 35,
           "blockData": {
             "title": "IA Aplicada: Revisor conceptual de decisiones de proyecto",
             "role": "Auditor de gobernanza, gestión y cumplimiento",
@@ -8540,7 +8652,7 @@
         },
         {
           "type": "TEXT",
-          "order": 34,
+          "order": 36,
           "blockData": {
             "heading": "Pantalla 15: Niveles de gobernanza de la IA",
             "content": "Gobernanza multinivel:\nLa gobernanza opera desde la base operativa hasta el marco global:\n1. Equipo de desarrollo/proyecto: Acuerdos técnicos, revisiones de código, prompts y pruebas.\n2. Organización: Políticas corporativas, comités de ética, seguridad de la información.\n3. Sectorial/Industria: Estándares bancarios, sanitarios o de telecomunicaciones.\n4. Nacional: Leyes de datos, ciberseguridad y políticas de Estado.\n5. Internacional: Tratados, acuerdos multilaterales y estándares globales (ISO, OCDE, UNESCO)."
@@ -8548,7 +8660,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 35,
+          "order": 37,
           "blockData": {
             "question": "¿Cuál es el orden secuencial correcto de los niveles de gobernanza, desde el más cercano a la operación del proyecto hasta el más amplio?",
             "options": [
@@ -8583,7 +8695,7 @@
         },
         {
           "type": "TEXT",
-          "order": 36,
+          "order": 38,
           "blockData": {
             "heading": "Pantalla 16: Roles, autoridad y límites de decisión",
             "content": "Autoridad efectiva:\nDefinir roles en una matriz RACI de IA garantiza que cada persona conozca sus facultades: quién puede ajustar un prompt, quién puede autorizar el uso de un nuevo dataset y quién tiene la potestad de ordenar el apagado de emergencia (kill switch) del sistema."
@@ -8591,7 +8703,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 37,
+          "order": 39,
           "blockData": {
             "title": "Actividad: ¿Quién tiene la autoridad formal?",
             "instruction": "Asigna cada decisión crítica al actor que posee la autoridad formal correspondiente:",
@@ -8629,7 +8741,7 @@
         },
         {
           "type": "TEXT",
-          "order": 38,
+          "order": 40,
           "blockData": {
             "heading": "Pantalla 17: Gobernanza durante todo el ciclo de vida",
             "content": "Gobernanza de ciclo completo:\nLa gobernanza no es un sello estático antes del lanzamiento. Debe acompañar cada etapa:\nDefinir propósito → Identificar riesgos → Diseñar controles → Probar → Autorizar → Implementar → Monitorear → Revisar → Retirar o modificar."
@@ -8637,7 +8749,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 39,
+          "order": 41,
           "blockData": {
             "question": "¿Cuál es la secuencia lógica de gobernanza durante el ciclo de vida de una solución de IA?",
             "options": [
@@ -8672,7 +8784,7 @@
         },
         {
           "type": "TEXT",
-          "order": 40,
+          "order": 42,
           "blockData": {
             "heading": "Pantalla 18: ISO/IEC 42001 — Sistema de Gestión de IA (AIMS)",
             "content": "La primera norma internacional certificable de IA:\nPublicada en 2023, la norma ISO/IEC 42001 proporciona requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de Inteligencia Artificial (AIMS) en organizaciones.\n\nEnfoque de gestión:\nSigue la estructura de alto nivel de ISO (Plan-Do-Check-Act), integrando liderazgo, evaluación de impacto, controles operacionales y mejora continua. No sustituye la ley, pero otorga un marco estructurado y auditable."
@@ -8680,7 +8792,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 41,
+          "order": 43,
           "blockData": {
             "question": "Durante una reunión sobre ISO/IEC 42001, un directivo afirma: \"Al certificarnos en ISO 42001 ya no necesitamos cumplir las leyes de datos ni supervisar a los usuarios\". ¿Cuál afirmación corrige esta postura?",
             "options": [
@@ -8715,7 +8827,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 42,
+          "order": 44,
           "blockData": {
             "title": "IA Aplicada: Diagnóstico preliminar de procesos para ISO 42001",
             "role": "Consultor de sistemas de gestión según ISO/IEC 42001",
@@ -8728,7 +8840,7 @@
         },
         {
           "type": "TEXT",
-          "order": 43,
+          "order": 45,
           "blockData": {
             "heading": "Pantalla 19: NIST AI Risk Management Framework y Generative Profile",
             "content": "El marco de referencia voluntario:\nEl NIST AI RMF 1.0 (junto con su perfil específico para IA Generativa, NIST AI 600-1) estructura la gestión de riesgos en cuatro funciones operativas:\n• GOVERN (Gobernar): Cultura organizacional, políticas y responsabilidades.\n• MAP (Mapear): Contexto, capacidades de la IA y mapeo de riesgos e impactos.\n• MEASURE (Medir): Métricas, evaluaciones cuantitativas/cualitativas y pruebas de confiabilidad.\n• MANAGE (Gestionar): Controles, tratamiento de riesgos, mitigación y monitoreo continuo."
@@ -8736,7 +8848,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 44,
+          "order": 46,
           "blockData": {
             "question": "El responsable del proyecto plantea: \"Necesitamos una referencia voluntaria internacional para reconocer, medir y mitigar los riesgos específicos de la IA generativa en nuestro software\". ¿Cuál instrumento responde a esta necesidad?",
             "options": [
@@ -8771,7 +8883,7 @@
         },
         {
           "type": "TEXT",
-          "order": 20,
+          "order": 47,
           "blockData": {
             "heading": "Pantalla 20: Capacidades organizacionales para la IA responsable",
             "content": "Personas, Procesos y Controles:\nPara gobernar la IA se requieren tres pilares articulados:\n1. Personas capacitadas: Alfabetización crítica en IA, ética y habilidades de supervisión.\n2. Procesos estandarizados: Flujos de aprobación, auditorías periódicas y protocolos de respuesta a incidentes.\n3. Controles técnicos y humanos: Registros de auditoría, filtros de datos y validaciones manuales."
@@ -8779,7 +8891,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 46,
+          "order": 48,
           "blockData": {
             "question": "Una empresa busca consolidar una cultura de IA responsable en sus proyectos. ¿Cuál opción representa la mejor capacidad a fortalecer?",
             "options": [
@@ -8814,7 +8926,7 @@
         },
         {
           "type": "TEXT",
-          "order": 47,
+          "order": 49,
           "blockData": {
             "heading": "Pantalla 21: Controles para el uso responsable de IA",
             "content": "Tipos de controles:\n• Preventivos: Control de acceso, minimización de datos en el prompt, políticas de uso aceptable.\n• Detectivos: Monitoreo de salidas, auditoría de logs, detección de alucinaciones y sesgos.\n• Correctivos: Revocación de decisiones erróneas, ajuste de prompts, bloqueo de endpoints comprometidos."
@@ -8822,7 +8934,7 @@
         },
         {
           "type": "CLASSIFICATION",
-          "order": 48,
+          "order": 50,
           "blockData": {
             "title": "Actividad: Completa la frase de controles",
             "instruction": "Asigna a cada enunciado el concepto de control que lo completa correctamente:",
@@ -8860,7 +8972,7 @@
         },
         {
           "type": "TEXT",
-          "order": 49,
+          "order": 51,
           "blockData": {
             "heading": "Pantalla 22: Trazabilidad y documentación de evidencias",
             "content": "Evidencia auditable:\nPara investigar un incidente o demostrar cumplimiento ante un regulador se requiere conservar:\n• Versión exacta del modelo y fecha/hora de la interacción.\n• Texto completo del prompt (instrucción y datos de entrada).\n• Resultado emitido por la IA y auditoría humana realizada.\n• Identidad del funcionario que validó o modificó la salida.\n• Registro de incidentes o desviaciones detectadas."
@@ -8868,7 +8980,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 50,
+          "order": 52,
           "blockData": {
             "question": "Durante una auditoría de decisiones asistidas por IA, ¿cuál grupo de elementos constituye la evidencia técnica y documental legítima que debe conservarse?",
             "options": [
@@ -8903,7 +9015,7 @@
         },
         {
           "type": "TEXT",
-          "order": 51,
+          "order": 53,
           "blockData": {
             "heading": "Pantalla 23: Auditoría y supervisión humana reforzada",
             "content": "Supervisión proporcional al impacto:\nNo todas las salidas demandan el mismo nivel de revisión:\n• Bajo impacto (supervisión ligera): Generación de borradores, corrección estilística, lluvia de ideas.\n• Alto impacto (supervisión reforzada obligatoria): Exclusión de beneficiarios, denegación de servicios, sanciones, decisiones laborales o de seguridad crítica. La persona revisora debe tener competencia técnica y autoridad real para vetar la recomendación."
@@ -8911,7 +9023,7 @@
         },
         {
           "type": "QUIZ",
-          "order": 52,
+          "order": 54,
           "blockData": {
             "question": "Una institución utiliza IA en cuatro tareas. ¿En cuál situación debe establecerse una supervisión humana reforzada y obligatoria antes de ejecutar cualquier acción?",
             "options": [
@@ -8946,7 +9058,7 @@
         },
         {
           "type": "TEXT",
-          "order": 53,
+          "order": 55,
           "blockData": {
             "heading": "Pantalla 24: Proyecto Integrador Final — Guía de Desarrollo",
             "content": "Reto Cúspide del OVA:\nDesarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicando y demostrando las competencias de los 5 niveles:\n1. Inicio y Caracterización: Problema, objetivos, justificación, valor esperado, viabilidad 5D, interesados y ciclo de vida (predictivo, ágil o híbrido).\n2. Planificación Integral: Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.\n3. Ejecución y Seguimiento: Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.\n4. Uso Responsable e Ingeniería de Prompts: Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.\n5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, matriz RACI de gobernanza, controles, trazabilidad y supervisión humana.\n6. Cierre y Lecciones Aprendidas: Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA."
@@ -8954,7 +9066,7 @@
         },
         {
           "type": "PROJECT_STEP",
-          "order": 54,
+          "order": 56,
           "blockData": {
             "stepNumber": 26,
             "title": "Proyecto TIC Integral con IA Responsable y Gobernanza",
@@ -9003,7 +9115,7 @@
         },
         {
           "type": "AI_PROMPT_LAB",
-          "order": 55,
+          "order": 57,
           "blockData": {
             "title": "IA Aplicada: Simulador de sustentación y defensa crítica del proyecto",
             "role": "Tribunal evaluador de proyectos TIC con IA",
@@ -9016,7 +9128,7 @@
         },
         {
           "type": "EXAM",
-          "order": 56,
+          "order": 58,
           "blockData": {
             "title": "Pantalla 25: Microevaluación — Uso responsable, gobernanza y proyecto final",
             "description": "5 preguntas de evaluación sobre ética, regulación, marcos de gobernanza y supervisión humana en proyectos TIC. Mínimo aprobatorio: 70%.",
@@ -9150,7 +9262,7 @@
         },
         {
           "type": "CHECKPOINT",
-          "order": 57,
+          "order": 59,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el OVA en su totalidad",
             "description": "Has culminado el recorrido formativo de los 5 niveles del Objeto Virtual de Aprendizaje \"Integración de la Inteligencia Artificial Generativa en la Gestión de Proyectos Informáticos\".",

@@ -1813,7 +1813,7 @@ async function main() {
   )
 
   const newModule13: ModuleSeed = {
-    title: 'Módulo 13. Diseño, evaluación y mejora de instrucciones',
+    title: 'Diseño, evaluación y mejora de instrucciones',
     order: 13,
     level: 4,
     levelTitle: 'Nivel 4: IA Generativa Aplicada',
@@ -1821,7 +1821,7 @@ async function main() {
   }
 
   const newModule14: ModuleSeed = {
-    title: 'Módulo 14. Laboratorio de IA para proyectos tecnológicos',
+    title: 'Laboratorio de IA para proyectos tecnológicos',
     order: 14,
     level: 4,
     levelTitle: 'Nivel 4: IA Generativa Aplicada',

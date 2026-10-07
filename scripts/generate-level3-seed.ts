@@ -1443,7 +1443,7 @@ async function main() {
   const existingModules = currentSeed.modules.filter((m: ModuleSeed) => (m.level ?? 1) < 3)
 
   const newModule10: ModuleSeed = {
-    title: 'Módulo 10. Liderazgo, equipo y ejecución',
+    title: 'Liderazgo, equipo y ejecución',
     order: 10,
     level: 3,
     levelTitle: 'Nivel 3: Ejecución, seguimiento y cierre',

@@ -927,14 +927,14 @@ const module8Blocks: BlockSeed[] = [
     order: 7,
     blockData: {
       heading: 'Pantalla 11-15: Ruta Crítica, Holgura y Diagrama de Gantt',
-      content: '• Ruta Crítica (CPM): La secuencia más larga de actividades dependientes que determina la duración mínima total del proyecto. Cualquier retraso en una actividad de la ruta crítica retrasará la fecha final del proyecto.\n\n• Holgura: Margen de tiempo que una actividad puede retrasarse sin afectar la fecha de finalización del proyecto. Las actividades sobre la ruta crítica tienen holgura cero (0).\n\n• Diagrama de Gantt: Representación visual que muestra la distribución temporal de actividades, dependencias, hitos y avances.',
+      content: '• **Ruta Crítica (CPM):** La secuencia más larga de actividades dependientes que determina la duración mínima total del proyecto. Cualquier retraso en una actividad de la ruta crítica retrasará la fecha final del proyecto.\n\n• **Holgura:** Margen de tiempo que una actividad puede retrasarse sin afectar la fecha de finalización del proyecto. Las actividades sobre la ruta crítica tienen holgura cero (0).\n\n• **Diagrama de Red y Ruta Crítica:**\nRuta A: Análisis (3 días) → Diseño (5 días) → Desarrollo (4 días) = **12 días**\nRuta B: Configuración (2 días) → Pruebas (3 días) → Documentación (2 días) = **7 días**\nDuración mínima del proyecto = **12 días** (determinada por la Ruta A).\n\n![Diagrama de Red del Proyecto - Ruta Crítica](/images/ruta-critica-diagrama.png)',
     },
   },
   {
     type: 'QUIZ',
     order: 8,
     blockData: {
-      question: 'En un proyecto, la Ruta A es la ruta crítica con 12 días. La actividad A2 (Diseño) sufre un retraso y aumenta su duración en 3 días. ¿Qué sucederá con la duración del proyecto?',
+      question: 'En el diagrama de red del proyecto, la **Ruta A** es la ruta crítica y está compuesta por:\n\n![Detalle de la Ruta A](/images/ruta-critica-ruta-a.png)\n\nLa actividad **A2 – Diseño** aumenta su duración de 5 a 8 días debido a un retraso en la validación del diseño. ¿Qué podría suceder con la duración del proyecto?',
       options: [
         { id: 'a', text: 'La duración del proyecto disminuirá 3 días', isCorrect: false },
         { id: 'b', text: 'La duración del proyecto aumentará en 3 días si no se aplica una acción compensatoria', isCorrect: true },
@@ -1086,7 +1086,7 @@ async function main() {
   const level1Modules = currentSeed.modules.filter((m: ModuleSeed) => (m.level ?? 1) === 1)
 
   const newModule6: ModuleSeed = {
-    title: 'Módulo 6. Problema, Oportunidad, Objetivos y Viabilidad',
+    title: 'Problema, Oportunidad, Objetivos y Viabilidad',
     order: 6,
     level: 2,
     levelTitle: 'Nivel 2: Formulación y planeación',
@@ -1094,7 +1094,7 @@ async function main() {
   }
 
   const newModule7: ModuleSeed = {
-    title: 'Módulo 7. Interesados (Stakeholders), Requisitos, Alcance y Entregables',
+    title: 'Interesados (Stakeholders), Requisitos, Alcance y Entregables',
     order: 7,
     level: 2,
     levelTitle: 'Nivel 2: Formulación y planeación',
@@ -1102,7 +1102,7 @@ async function main() {
   }
 
   const newModule8: ModuleSeed = {
-    title: 'Módulo 8. Cronograma, Recursos y Costos',
+    title: 'Cronograma, Recursos y Costos',
     order: 8,
     level: 2,
     levelTitle: 'Nivel 2: Formulación y planeación',

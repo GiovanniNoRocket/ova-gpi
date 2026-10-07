@@ -975,7 +975,7 @@ async function main() {
   )
 
   const newModule15: ModuleSeed = {
-    title: 'Módulo 15. Uso responsable, gobernanza y proyecto final',
+    title: 'Uso responsable, gobernanza y proyecto final',
     order: 15,
     level: 5,
     levelTitle: 'Nivel 5: Gobernanza y Proyecto Integrador',
