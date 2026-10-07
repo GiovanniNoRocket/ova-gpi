@@ -10,8 +10,8 @@ export default async function HomePage() {
     redirect('/login')
   }
 
-  // Si es docente, va a su panel de gestión
-  if (user.role === 'TEACHER') {
+  // Si es docente o administrador, va a su panel de gestión
+  if (user.role === 'TEACHER' || user.role === 'ADMIN') {
     redirect('/dashboard')
   }
 

@@ -10,8 +10,10 @@ import {
   loginSchema,
   registerSchema,
   registerStudentSchema,
+  registerTeacherSchema,
   type RegisterInput,
   type RegisterStudentInput,
+  type RegisterTeacherInput,
 } from '@/lib/validations/auth'
 
 const DEFAULT_COURSE_SLUG = 'ia-gestion-proyectos'
@@ -25,8 +27,12 @@ export type RegisterStudentActionState = AuthActionState & {
   success?: string
 }
 
-function getRoleRedirect(role: 'STUDENT' | 'TEACHER') {
-  return role === 'TEACHER' ? '/dashboard' : '/course/ia-gestion-proyectos'
+export type RegisterTeacherActionState = AuthActionState & {
+  success?: string
+}
+
+function getRoleRedirect(role: 'STUDENT' | 'TEACHER' | 'ADMIN') {
+  return role === 'TEACHER' || role === 'ADMIN' ? '/dashboard' : '/course/ia-gestion-proyectos'
 }
 
 export async function loginAction(
@@ -73,16 +79,30 @@ export async function loginAction(
 
 export async function registerAction(
   _prevState: AuthActionState,
-  formData: FormData,
+  _formData: FormData,
 ): Promise<AuthActionState> {
-  const raw: RegisterInput = {
+  return {
+    error: 'El registro público está deshabilitado. Solo un administrador puede crear cuentas de docentes.',
+  }
+}
+
+export async function registerTeacherAction(
+  _prevState: RegisterTeacherActionState,
+  formData: FormData,
+): Promise<RegisterTeacherActionState> {
+  const session = await auth()
+  if (session?.user?.role !== 'ADMIN') {
+    return { error: 'No autorizado. Solo los administradores pueden registrar docentes.' }
+  }
+
+  const raw: RegisterTeacherInput = {
     name: formData.get('name') as string,
     email: formData.get('email') as string,
     password: formData.get('password') as string,
     confirmPassword: formData.get('confirmPassword') as string,
   }
 
-  const parsed = registerSchema.safeParse(raw)
+  const parsed = registerTeacherSchema.safeParse(raw)
   if (!parsed.success) {
     return { fieldErrors: parsed.error.flatten().fieldErrors }
   }
@@ -96,34 +116,18 @@ export async function registerAction(
 
   const passwordHash = await hashPassword(parsed.data.password)
 
-  const user = await prisma.user.create({
+  const teacher = await prisma.user.create({
     data: {
       name: parsed.data.name,
       email: parsed.data.email,
       passwordHash,
       role: 'TEACHER',
     },
-    select: { role: true },
   })
 
-  try {
-    const result = await signIn('credentials', {
-      email: parsed.data.email,
-      password: parsed.data.password,
-      redirect: false,
-    })
+  revalidatePath('/dashboard')
 
-    if (result?.error) {
-      return { error: 'Cuenta creada, pero no se pudo iniciar sesión. Intenta en /login.' }
-    }
-  } catch (error) {
-    if (error instanceof AuthError) {
-      return { error: 'Cuenta creada, pero no se pudo iniciar sesión. Intenta en /login.' }
-    }
-    throw error
-  }
-
-  redirect(getRoleRedirect(user.role))
+  return { success: `Cuenta docente creada exitosamente para ${teacher.email}` }
 }
 
 export async function registerStudentAction(
@@ -131,7 +135,7 @@ export async function registerStudentAction(
   formData: FormData,
 ): Promise<RegisterStudentActionState> {
   const session = await auth()
-  if (session?.user?.role !== 'TEACHER') {
+  if (session?.user?.role !== 'TEACHER' && session?.user?.role !== 'ADMIN') {
     return { error: 'No autorizado' }
   }
 
@@ -185,3 +189,4 @@ export async function registerStudentAction(
 export async function logoutAction() {
   await signOut({ redirectTo: '/' })
 }
+

@@ -18,7 +18,9 @@ export const registerSchema = z
   })
 
 export const registerStudentSchema = registerSchema
+export const registerTeacherSchema = registerSchema
 
 export type LoginInput = z.infer<typeof loginSchema>
 export type RegisterInput = z.infer<typeof registerSchema>
 export type RegisterStudentInput = z.infer<typeof registerStudentSchema>
+export type RegisterTeacherInput = z.infer<typeof registerTeacherSchema>

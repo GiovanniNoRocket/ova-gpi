@@ -7,6 +7,8 @@ import {
   BookOpen,
   Calendar,
   Flame,
+  GraduationCap,
+  ShieldCheck,
   Sparkles,
   Star,
   TrendingUp,
@@ -18,6 +20,7 @@ import { logoutAction } from '@/app/actions/auth'
 import { auth } from '@/auth'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { AdminFormsTabs } from '@/components/dashboard/admin-forms-tabs'
 import { RegisterStudentForm } from '@/components/dashboard/register-student-form'
 import { prisma } from '@/lib/prisma'
 
@@ -36,6 +39,7 @@ function getInitials(name?: string | null, email?: string | null) {
 
 export default async function DashboardPage() {
   const session = await auth()
+  const isAdmin = session?.user?.role === 'ADMIN'
 
   const payload = await getPayload({ config })
   const courseResult = await payload.find({
@@ -72,35 +76,49 @@ export default async function DashboardPage() {
     }
   }
 
-  const students = await prisma.user.findMany({
-    where: { role: 'STUDENT' },
-    orderBy: { createdAt: 'desc' },
-    select: {
-      id: true,
-      name: true,
-      email: true,
-      createdAt: true,
-      gamification: {
-        select: {
-          points: true,
-          level: true,
-          streak: true,
+  const [students, teachers] = await Promise.all([
+    prisma.user.findMany({
+      where: { role: 'STUDENT' },
+      orderBy: { createdAt: 'desc' },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        createdAt: true,
+        gamification: {
+          select: {
+            points: true,
+            level: true,
+            streak: true,
+          },
+        },
+        progress: {
+          where: { status: 'COMPLETED' },
+          select: {
+            blockId: true,
+            completedAt: true,
+          },
+        },
+        achievements: {
+          select: {
+            achievementId: true,
+          },
         },
       },
-      progress: {
-        where: { status: 'COMPLETED' },
-        select: {
-          blockId: true,
-          completedAt: true,
-        },
-      },
-      achievements: {
-        select: {
-          achievementId: true,
-        },
-      },
-    },
-  })
+    }),
+    isAdmin
+      ? prisma.user.findMany({
+          where: { role: 'TEACHER' },
+          orderBy: { createdAt: 'desc' },
+          select: {
+            id: true,
+            name: true,
+            email: true,
+            createdAt: true,
+          },
+        })
+      : Promise.resolve([]),
+  ])
 
   // Helper to count only completed blocks that actually exist in the current course
   const getCompletedCount = (progressList: { blockId: string }[]) =>
@@ -144,15 +162,24 @@ export default async function DashboardPage() {
               priority
               className="h-10 w-auto object-contain dark:brightness-0 dark:invert"
             />
-            <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-primary">
-              Panel Docente
-            </span>
+            {isAdmin ? (
+              <span className="flex items-center gap-1.5 rounded-full bg-violet-500/10 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                Panel Administrador
+              </span>
+            ) : (
+              <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-primary">
+                Panel Docente
+              </span>
+            )}
           </div>
           <h1 className="text-3xl font-extrabold tracking-tight">
-            Hola, {session?.user?.name || 'Docente'}
+            Hola, {session?.user?.name || (isAdmin ? 'Administrador' : 'Docente')}
           </h1>
           <p className="text-sm text-muted-foreground">
-            Panel del Docente · Gestiona a tus estudiantes y monitorea su avance en tiempo real.
+            {isAdmin
+              ? 'Panel de Administración · Gestiona docentes, estudiantes y monitorea el avance del curso.'
+              : 'Panel del Docente · Gestiona a tus estudiantes y monitorea su avance en tiempo real.'}
           </p>
         </div>
 
@@ -179,48 +206,99 @@ export default async function DashboardPage() {
 
       {/* KPI Stats Grid */}
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card className="border-l-4 border-l-blue-500">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Estudiantes
-            </CardTitle>
-            <Users className="h-4 w-4 text-blue-500" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{totalStudents}</div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              {activeStudents} {activeStudents === 1 ? 'estudiante activo' : 'estudiantes activos'}
-            </p>
-          </CardContent>
-        </Card>
+        {isAdmin ? (
+          <Card className="border-l-4 border-l-violet-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Docentes
+              </CardTitle>
+              <GraduationCap className="h-4 w-4 text-violet-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{teachers.length}</div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                {teachers.length === 1 ? 'docente registrado' : 'docentes registrados'}
+              </p>
+            </CardContent>
+          </Card>
+        ) : (
+          <Card className="border-l-4 border-l-blue-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Estudiantes
+              </CardTitle>
+              <Users className="h-4 w-4 text-blue-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{totalStudents}</div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                {activeStudents} {activeStudents === 1 ? 'estudiante activo' : 'estudiantes activos'}
+              </p>
+            </CardContent>
+          </Card>
+        )}
 
-        <Card className="border-l-4 border-l-emerald-500">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Avance Promedio
-            </CardTitle>
-            <TrendingUp className="h-4 w-4 text-emerald-500" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{avgProgress}%</div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              del total de {totalBlocks} lecciones
-            </p>
-          </CardContent>
-        </Card>
+        {isAdmin ? (
+          <Card className="border-l-4 border-l-blue-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Estudiantes
+              </CardTitle>
+              <Users className="h-4 w-4 text-blue-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{totalStudents}</div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                {activeStudents} {activeStudents === 1 ? 'estudiante activo' : 'estudiantes activos'}
+              </p>
+            </CardContent>
+          </Card>
+        ) : (
+          <Card className="border-l-4 border-l-emerald-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Avance Promedio
+              </CardTitle>
+              <TrendingUp className="h-4 w-4 text-emerald-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{avgProgress}%</div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                del total de {totalBlocks} lecciones
+              </p>
+            </CardContent>
+          </Card>
+        )}
 
-        <Card className="border-l-4 border-l-amber-500">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Puntos Promedio
-            </CardTitle>
-            <Trophy className="h-4 w-4 text-amber-500" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{avgPoints} pts</div>
-            <p className="mt-1 text-xs text-muted-foreground">por estudiante registrado</p>
-          </CardContent>
-        </Card>
+        {isAdmin ? (
+          <Card className="border-l-4 border-l-emerald-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Avance Promedio
+              </CardTitle>
+              <TrendingUp className="h-4 w-4 text-emerald-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{avgProgress}%</div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                del total de {totalBlocks} lecciones
+              </p>
+            </CardContent>
+          </Card>
+        ) : (
+          <Card className="border-l-4 border-l-amber-500">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Puntos Promedio
+              </CardTitle>
+              <Trophy className="h-4 w-4 text-amber-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{avgPoints} pts</div>
+              <p className="mt-1 text-xs text-muted-foreground">por estudiante registrado</p>
+            </CardContent>
+          </Card>
+        )}
 
         <Card className="border-l-4 border-l-violet-500">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
@@ -236,15 +314,77 @@ export default async function DashboardPage() {
         </Card>
       </section>
 
-      {/* Main Split: Form & Student List */}
+      {/* Main Split: Forms & Lists */}
       <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
-        {/* Registration Form (4 cols) */}
+        {/* Registration Form / Tabs (4 cols) */}
         <div className="lg:col-span-4">
-          <RegisterStudentForm />
+          {isAdmin ? <AdminFormsTabs /> : <RegisterStudentForm />}
         </div>
 
-        {/* Students Progress Roster (8 cols) */}
-        <div className="lg:col-span-8">
+        {/* Rosters (8 cols) */}
+        <div className="flex flex-col gap-8 lg:col-span-8">
+          {isAdmin && (
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <GraduationCap className="h-5 w-5 text-primary" />
+                      Cuerpo Docente Registrado
+                    </CardTitle>
+                    <CardDescription>
+                      Profesores habilitados para gestionar estudiantes y evaluar el curso.
+                    </CardDescription>
+                  </div>
+                  <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">
+                    {teachers.length} {teachers.length === 1 ? 'docente' : 'docentes'}
+                  </span>
+                </div>
+              </CardHeader>
+
+              <CardContent>
+                {teachers.length === 0 ? (
+                  <div className="py-8 text-center text-sm text-muted-foreground">
+                    <GraduationCap className="mx-auto mb-2 h-8 w-8 opacity-40" />
+                    No hay docentes registrados todavía. Utiliza el formulario para dar de alta al primero.
+                  </div>
+                ) : (
+                  <div className="divide-y">
+                    {teachers.map((teacher) => (
+                      <div
+                        key={teacher.id}
+                        className="flex items-center justify-between py-3.5 transition-colors hover:bg-muted/20"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-violet-500/10 font-bold text-violet-700 dark:text-violet-300">
+                            {getInitials(teacher.name, teacher.email)}
+                          </div>
+                          <div>
+                            <p className="font-semibold text-sm leading-tight">
+                              {teacher.name || 'Sin nombre'}
+                            </p>
+                            <p className="text-xs text-muted-foreground">{teacher.email}</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                          <Calendar className="h-3.5 w-3.5" />
+                          <span>
+                            {new Date(teacher.createdAt).toLocaleDateString('es-ES', {
+                              day: 'numeric',
+                              month: 'short',
+                              year: 'numeric',
+                            })}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          )}
+
           <Card>
             <CardHeader>
               <div className="flex items-center justify-between">

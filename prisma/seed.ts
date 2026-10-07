@@ -43,6 +43,21 @@ type CourseSeed = {
 async function seedPrismaUsers(courseSlug: string) {
   const passwordHash = await hash(PASSWORD, 12)
 
+  const admin = await prisma.user.upsert({
+    where: { email: 'admin@ova.test' },
+    update: {
+      name: 'Administrador OVA',
+      role: 'ADMIN',
+      passwordHash,
+    },
+    create: {
+      email: 'admin@ova.test',
+      name: 'Administrador OVA',
+      role: 'ADMIN',
+      passwordHash,
+    },
+  })
+
   const teacher = await prisma.user.upsert({
     where: { email: 'teacher@ova.test' },
     update: {
@@ -180,22 +195,71 @@ async function seedPrismaUsers(courseSlug: string) {
       icon: 'award',
       points: 300,
     },
+    {
+      key: 'lider-ejecucion',
+      title: 'Líder de la Ejecución',
+      description: 'Superaste la Simulación de Ejecución y dominaste el liderazgo, coordinación y calidad en proyectos TIC (Módulo 10).',
+      icon: 'award',
+      points: 100,
+    },
+    {
+      key: 'graduado-nivel-3',
+      title: 'Especialista Nivel 3',
+      description: 'Completaste con éxito la fase de Ejecución, Seguimiento y Cierre del proyecto tecnológico.',
+      icon: 'graduation-cap',
+      points: 500,
+    },
+    {
+      key: 'arquitecto-instrucciones',
+      title: 'Arquitecto de Instrucciones',
+      description: 'Diseñaste, estructuraste, evaluaste y refinaste instrucciones de IA generativa para proyectos TIC (Módulo 13).',
+      icon: 'cpu',
+      points: 100,
+    },
+    {
+      key: 'arquitecto-aplicaciones-ia',
+      title: 'Arquitecto de Aplicaciones de IA',
+      description: 'Superaste los cuatro laboratorios prácticos del proyecto SIGA-TI y construiste el Portafolio de aplicaciones validadas (Módulo 14).',
+      icon: 'bot',
+      points: 100,
+    },
+    {
+      key: 'graduado-nivel-4',
+      title: 'Especialista Nivel 4',
+      description: 'Aprobaste la Evaluación Final de 25 preguntas del Nivel 4 (IA Generativa Aplicada).',
+      icon: 'graduation-cap',
+      points: 500,
+    },
+    {
+      key: 'arquitecto-gobernanza-ia',
+      title: 'Arquitecto de Gobernanza de IA',
+      description: 'Dominaste los marcos éticos, regulatorios (Ley 1581, AI Act, CONPES 4144) y estándares de gobernanza (ISO 42001, NIST AI RMF) (Módulo 15).',
+      icon: 'shield',
+      points: 100,
+    },
+    {
+      key: 'graduado-ova-master',
+      title: 'Graduado Maestro del OVA',
+      description: 'Completaste los 5 niveles del curso y diseñaste el Proyecto TIC Integral con IA Responsable y Gobernanza.',
+      icon: 'star',
+      points: 1000,
+    },
   ]
 
-  const achievements = await Promise.all(
-    achievementsList.map((ach) =>
-      prisma.achievement.upsert({
-        where: { key: ach.key },
-        update: {
-          title: ach.title,
-          description: ach.description,
-          icon: ach.icon,
-          points: ach.points,
-        },
-        create: ach,
-      }),
-    ),
-  )
+  const achievements = []
+  for (const ach of achievementsList) {
+    const record = await prisma.achievement.upsert({
+      where: { key: ach.key },
+      update: {
+        title: ach.title,
+        description: ach.description,
+        icon: ach.icon,
+        points: ach.points,
+      },
+      create: ach,
+    })
+    achievements.push(record)
+  }
 
   for (const student of students) {
     await prisma.enrollment.upsert({

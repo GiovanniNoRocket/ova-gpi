@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Autenticación — OVA',
-  description: 'Inicia sesión o regístrate en OVA',
+  description: 'Inicia sesión en la plataforma OVA',
 }
 
 export default function AuthLayout({

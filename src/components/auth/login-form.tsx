@@ -2,7 +2,6 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useActionState, useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 
@@ -118,11 +117,8 @@ export function LoginForm() {
           </form>
         </Form>
 
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          ¿No tienes cuenta?{' '}
-          <Link href="/register" className="font-medium text-primary underline-offset-4 hover:underline">
-            Regístrate
-          </Link>
+        <p className="mt-4 text-center text-xs text-muted-foreground">
+          El acceso y la creación de cuentas son gestionados institucionalmente por la administración.
         </p>
       </CardContent>
     </Card>

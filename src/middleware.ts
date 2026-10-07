@@ -12,7 +12,7 @@ export default auth((req) => {
     if (!isLoggedIn) {
       return NextResponse.redirect(new URL('/login', req.url))
     }
-    if (role !== 'TEACHER') {
+    if (role !== 'TEACHER' && role !== 'ADMIN') {
       return NextResponse.redirect(new URL('/', req.url))
     }
   }
@@ -21,7 +21,7 @@ export default auth((req) => {
     if (!isLoggedIn) {
       return NextResponse.redirect(new URL('/login', req.url))
     }
-    if (role !== 'STUDENT' && role !== 'TEACHER') {
+    if (role !== 'STUDENT' && role !== 'TEACHER' && role !== 'ADMIN') {
       return NextResponse.redirect(new URL('/', req.url))
     }
   }
@@ -30,7 +30,7 @@ export default auth((req) => {
     if (!isLoggedIn) {
       return NextResponse.redirect(new URL('/login', req.url))
     }
-    if (role !== 'TEACHER') {
+    if (role !== 'TEACHER' && role !== 'ADMIN') {
       return NextResponse.redirect(new URL('/', req.url))
     }
   }
