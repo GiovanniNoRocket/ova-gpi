@@ -11773,7 +11773,7 @@
           "order": 25,
           "blockData": {
             "heading": "Pantalla 10: Ley de IA de la Unión Europea (AI Act)",
-            "content": "Marco pionero mundial:\nEl Reglamento de IA de la UE (AI Act) clasifica los sistemas en cuatro niveles:\n1. Riesgo inaceptable (Prohibidos): Manipulación subliminal, puntuación social ciudadana, biometría en tiempo real en espacios públicos sin orden judicial.\n2. Alto riesgo: Empleo, educación, infraestructuras críticas, justicia, acceso a servicios esenciales (sujetos a rigurosas auditorías, gestión de riesgos y supervisión humana).\n3. Riesgo específico de transparencia: Chatbots, deepfakes, sistemas generativos (deben informar al usuario que interactúa con IA).\n4. Riesgo mínimo: Filtros de spam, videojuegos con IA (sin obligaciones adicionales).\n\nAplicación progresiva:\nLas prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza y modelos de uso general en agosto de 2025; y las obligaciones de alto riesgo en 2026-2027."
+            "content": "Marco pionero mundial:\nEl Reglamento de IA de la UE (AI Act) clasifica los sistemas en cuatro niveles:\n1. Riesgo inaceptable (Prohibidos): Manipulación subliminal, puntuación social ciudadana, biometría en tiempo real en espacios públicos sin orden judicial.\n2. Alto riesgo: Empleo, educación, infraestructuras críticas, justicia, acceso a servicios esenciales (sujetos a rigurosas auditorías, gestión de riesgos y supervisión humana).\n3. Riesgo específico de transparencia: Chatbots, deepfakes, sistemas generativos (deben informar al usuario que interactúa con IA).\n4. Riesgo mínimo: Filtros de spam, videojuegos con IA (sin obligaciones adicionales).\n\nAplicación progresiva:\nA octubre de 2026, la aplicación del AI Act es progresiva. Las prohibiciones y las obligaciones de alfabetización en IA comenzaron a aplicarse el 2 de febrero de 2025; las reglas de gobernanza y las obligaciones para modelos de IA de uso general, el 2 de agosto de 2025; y determinadas obligaciones para sistemas de alto riesgo tienen aplicación posterior, incluyendo fechas en 2027 y 2028 según la categoría.\nUna norma puede tener diferentes fechas de aplicación: nunca asumas que toda la regulación está vigente de la misma manera al mismo tiempo."
           }
         },
         {
@@ -11784,9 +11784,9 @@
             "options": [
               {
                 "id": "act_a",
-                "text": "Establece un enfoque basado en riesgos, exige obligaciones de transparencia para sistemas generativos y contempla prohibiciones para ciertas prácticas inaceptables.",
+                "text": "Establece un enfoque basado en niveles de riesgo, sujeta determinados sistemas y usos a obligaciones de transparencia y define obligaciones de gobernanza, supervisión y cumplimiento.",
                 "isCorrect": true,
-                "feedback": "¡Correcto! El AI Act prohíbe ciertas prácticas, regula alto riesgo y exige transparencia."
+                "feedback": "¡Correcto! El AI Act se basa en el riesgo, exige transparencia en determinados casos y establece mecanismos de gobernanza y supervisión."
               },
               {
                 "id": "act_b",
@@ -11807,7 +11807,7 @@
                 "feedback": "Falso. Su aplicación es por fases plurianuales."
               }
             ],
-            "explanation": "El AI Act es un marco por niveles de riesgo con aplicación gradual y exigencias proporcionales.",
+            "explanation": "El AI Act establece un marco basado en el riesgo: algunas prácticas están prohibidas y otros sistemas tienen obligaciones según su clasificación y finalidad. También exige transparencia y mecanismos de gobernanza y supervisión. Su aplicación es progresiva, por lo que debe verificarse qué disposición aplica y desde cuándo.",
             "pointsAwarded": 10
           }
         },
@@ -12080,8 +12080,8 @@
           "type": "TEXT",
           "order": 38,
           "blockData": {
-            "heading": "Pantalla 16: Roles, autoridad y límites de decisión",
-            "content": "Autoridad efectiva:\nDefinir roles en una matriz RACI de IA garantiza que cada persona conozca sus facultades: quién puede ajustar un prompt, quién puede autorizar el uso de un nuevo dataset y quién tiene la potestad de ordenar el apagado de emergencia (kill switch) del sistema."
+            "heading": "Pantalla 16: Roles, autoridad y responsabilidad",
+            "content": "Una estructura de gobernanza necesita definir quién puede decidir, aprobar, modificar, detener, supervisar y auditar el uso de IA. La tecnología no puede asumir por sí misma la responsabilidad organizacional de las decisiones que produce o apoya.\n\nLa asignación de roles permite evitar vacíos de responsabilidad y facilita que los incidentes puedan escalarse hacia la persona o instancia con autoridad para intervenir.\n\nLos roles no tienen que ser idénticos en todas las organizaciones. Lo importante es que las funciones críticas estén asignadas y que exista claridad sobre sus límites de autoridad."
           }
         },
         {
@@ -12444,7 +12444,7 @@
           "order": 55,
           "blockData": {
             "heading": "Pantalla 24: Proyecto Integrador Final — Guía de Desarrollo",
-            "content": "Reto Cúspide del OVA:\nDesarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicando y demostrando las competencias de los 5 niveles:\n1. Inicio y Caracterización: Problema, objetivos, justificación, valor esperado, viabilidad 5D, interesados y ciclo de vida (predictivo, ágil o híbrido).\n2. Planificación Integral: Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.\n3. Ejecución y Seguimiento: Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.\n4. Uso Responsable e Ingeniería de Prompts: Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.\n5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, matriz RACI de gobernanza, controles, trazabilidad y supervisión humana.\n6. Cierre y Lecciones Aprendidas: Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA."
+            "content": "Reto Cúspide del OVA:\nDesarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicando y demostrando las competencias de los 5 niveles:\n1. Inicio y Caracterización: Problema, objetivos, justificación, valor esperado, viabilidad 5D, interesados y ciclo de vida (predictivo, ágil o híbrido).\n2. Planificación Integral: Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.\n3. Ejecución y Seguimiento: Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.\n4. Uso Responsable e Ingeniería de Prompts: Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.\n5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, roles y responsabilidades de gobernanza, controles, trazabilidad y supervisión humana.\n6. Cierre y Lecciones Aprendidas: Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA."
           }
         },
         {
@@ -12481,7 +12481,7 @@
               },
               {
                 "key": "p5_gobernanza_etica_legal",
-                "label": "5. Gobernanza, Ética y Regulación (RACI de gobernanza, protección de datos, controles y supervisión humana):",
+                "label": "5. Gobernanza, Ética y Regulación (roles de gobernanza, protección de datos, controles y supervisión humana):",
                 "fieldType": "textarea",
                 "maxWords": 150
               },

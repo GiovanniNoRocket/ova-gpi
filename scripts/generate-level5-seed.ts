@@ -334,7 +334,8 @@ El Reglamento de IA de la UE (AI Act) clasifica los sistemas en cuatro niveles:
 4. Riesgo mínimo: Filtros de spam, videojuegos con IA (sin obligaciones adicionales).
 
 Aplicación progresiva:
-Las prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza y modelos de uso general en agosto de 2025; y las obligaciones de alto riesgo en 2026-2027.`,
+A octubre de 2026, la aplicación del AI Act es progresiva. Las prohibiciones y las obligaciones de alfabetización en IA comenzaron a aplicarse el 2 de febrero de 2025; las reglas de gobernanza y las obligaciones para modelos de IA de uso general, el 2 de agosto de 2025; y determinadas obligaciones para sistemas de alto riesgo tienen aplicación posterior, incluyendo fechas en 2027 y 2028 según la categoría.
+Una norma puede tener diferentes fechas de aplicación: nunca asumas que toda la regulación está vigente de la misma manera al mismo tiempo.`,
     },
   },
   {
@@ -343,12 +344,12 @@ Las prohibiciones entraron en vigor a inicios de 2025; las reglas de gobernanza 
     blockData: {
       question: 'Respecto a la Ley de IA de la Unión Europea (AI Act), ¿cuál combinación de afirmaciones es correcta?',
       options: [
-        { id: 'act_a', text: 'Establece un enfoque basado en riesgos, exige obligaciones de transparencia para sistemas generativos y contempla prohibiciones para ciertas prácticas inaceptables.', isCorrect: true, feedback: '¡Correcto! El AI Act prohíbe ciertas prácticas, regula alto riesgo y exige transparencia.' },
+        { id: 'act_a', text: 'Establece un enfoque basado en niveles de riesgo, sujeta determinados sistemas y usos a obligaciones de transparencia y define obligaciones de gobernanza, supervisión y cumplimiento.', isCorrect: true, feedback: '¡Correcto! El AI Act se basa en el riesgo, exige transparencia en determinados casos y establece mecanismos de gobernanza y supervisión.' },
         { id: 'act_b', text: 'Prohíbe todos los sistemas de IA en territorio europeo sin excepción.', isCorrect: false, feedback: 'Falso.' },
         { id: 'act_c', text: 'Aplica exactamente los mismos controles a un videojuego que a un sistema de diagnóstico médico.', isCorrect: false, feedback: 'Falso. Sigue un enfoque escalonado por riesgo.' },
         { id: 'act_d', text: 'Entró en vigor íntegramente en un solo día sin calendario de transición.', isCorrect: false, feedback: 'Falso. Su aplicación es por fases plurianuales.' },
       ],
-      explanation: 'El AI Act es un marco por niveles de riesgo con aplicación gradual y exigencias proporcionales.',
+      explanation: 'El AI Act establece un marco basado en el riesgo: algunas prácticas están prohibidas y otros sistemas tienen obligaciones según su clasificación y finalidad. También exige transparencia y mecanismos de gobernanza y supervisión. Su aplicación es progresiva, por lo que debe verificarse qué disposición aplica y desde cuándo.',
       pointsAwarded: 10,
     },
   },
@@ -527,9 +528,12 @@ La gobernanza opera desde la base operativa hasta el marco global:
     type: 'TEXT',
     order: 36,
     blockData: {
-      heading: 'Pantalla 16: Roles, autoridad y límites de decisión',
-      content: `Autoridad efectiva:
-Definir roles en una matriz RACI de IA garantiza que cada persona conozca sus facultades: quién puede ajustar un prompt, quién puede autorizar el uso de un nuevo dataset y quién tiene la potestad de ordenar el apagado de emergencia (kill switch) del sistema.`,
+      heading: 'Pantalla 16: Roles, autoridad y responsabilidad',
+      content: `Una estructura de gobernanza necesita definir quién puede decidir, aprobar, modificar, detener, supervisar y auditar el uso de IA. La tecnología no puede asumir por sí misma la responsabilidad organizacional de las decisiones que produce o apoya.
+
+La asignación de roles permite evitar vacíos de responsabilidad y facilita que los incidentes puedan escalarse hacia la persona o instancia con autoridad para intervenir.
+
+Los roles no tienen que ser idénticos en todas las organizaciones. Lo importante es que las funciones críticas estén asignadas y que exista claridad sobre sus límites de autoridad.`,
     },
   },
   {
@@ -779,7 +783,7 @@ Desarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicand
 2. Planificación Integral: Requisitos MoSCoW, EDT/WBS, cronograma, ruta crítica, recursos, costos, calidad y matriz de riesgos.
 3. Ejecución y Seguimiento: Registro de avance, gestión de incidentes, control de cambios y toma de decisiones.
 4. Uso Responsable e Ingeniería de Prompts: Prompts diseñados con el ciclo completo, auditoría de resultados, refinamiento y mitigación de alucinaciones.
-5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, matriz RACI de gobernanza, controles, trazabilidad y supervisión humana.
+5. Gobernanza, Ética y Regulación: Cumplimiento de la Ley 1581 / AI Act, roles y responsabilidades de gobernanza, controles, trazabilidad y supervisión humana.
 6. Cierre y Lecciones Aprendidas: Cumplimiento de objetivos, balance final y lecciones aprendidas de gestión e IA.`,
     },
   },
@@ -795,7 +799,7 @@ Desarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicand
         { key: 'p5_planificacion', label: '2. Planificación Integral (Alcance clave, entregables, cronograma estimado, presupuesto y principales riesgos):', fieldType: 'textarea', maxWords: 150 },
         { key: 'p5_ejecucion_seguimiento', label: '3. Ejecución, Seguimiento y Cambios (Incidentes gestionados, decisiones tomadas y control del avance):', fieldType: 'textarea', maxWords: 150 },
         { key: 'p5_ia_responsable_prompts', label: '4. Aplicación de IA e Ingeniería de Prompts (Casos de uso, prompt inicial, auditoría, refinamiento y validación):', fieldType: 'textarea', maxWords: 150 },
-        { key: 'p5_gobernanza_etica_legal', label: '5. Gobernanza, Ética y Regulación (RACI de gobernanza, protección de datos, controles y supervisión humana):', fieldType: 'textarea', maxWords: 150 },
+        { key: 'p5_gobernanza_etica_legal', label: '5. Gobernanza, Ética y Regulación (roles de gobernanza, protección de datos, controles y supervisión humana):', fieldType: 'textarea', maxWords: 150 },
         { key: 'p5_cierre_lecciones', label: '6. Cierre, Sustentación y Reflexión Crítica (Resultados obtenidos, balance de valor y lecciones aprendidas):', fieldType: 'textarea', maxWords: 150 },
       ],
       advice: 'Este documento constituye el corazón de tu sustentación final y evidencia tu capacidad integral como gestor de proyectos con IA.',
