@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, RotateCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
-export type Flashcard = { id: string; front: string; back: string }
+export type Flashcard = { id: string; kind: 'concept' | 'question'; front: string; back: string }
 
 export function FlashcardDeck({ cards }: { cards: Flashcard[] }) {
   const [index, setIndex] = useState(0)
@@ -15,7 +15,7 @@ export function FlashcardDeck({ cards }: { cards: Flashcard[] }) {
   if (cards.length === 0) {
     return (
       <p className="text-center text-sm text-muted-foreground">
-        Este curso todavía no tiene tarjetas de repaso.
+        Todavía no hay tarjetas de repaso. Avanza en las lecciones y responde las preguntas para generarlas.
       </p>
     )
   }
@@ -29,6 +29,13 @@ export function FlashcardDeck({ cards }: { cards: Flashcard[] }) {
 
   return (
     <div className="mx-auto max-w-xl space-y-6">
+      <div className="space-y-1 text-center">
+        <h2 className="text-xl font-bold tracking-tight">Tarjetas de repaso</h2>
+        <p className="text-sm text-muted-foreground">
+          Repasa los conceptos clave y las preguntas que ya respondiste. Toca la tarjeta para ver la respuesta.
+        </p>
+      </div>
+
       <div className="text-center text-xs font-medium uppercase tracking-wide text-muted-foreground">
         Tarjeta {index + 1} de {cards.length}
       </div>
@@ -39,7 +46,13 @@ export function FlashcardDeck({ cards }: { cards: Flashcard[] }) {
       >
         <CardContent className="flex flex-col items-center justify-center gap-3 p-0">
           <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            {flipped ? 'Respuesta' : 'Pregunta'}
+            {card.kind === 'question'
+              ? flipped
+                ? 'Respuesta'
+                : 'Pregunta'
+              : flipped
+                ? 'Repaso'
+                : 'Concepto'}
           </span>
           <p className="whitespace-pre-line text-lg font-medium leading-relaxed">
             {flipped ? card.back : card.front}

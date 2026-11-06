@@ -22,6 +22,7 @@ import {
   Sparkles,
   Star,
   Trophy,
+  UserRound,
   Video as VideoIcon,
   X,
 } from 'lucide-react'
@@ -38,7 +39,6 @@ import type {
   QuizBlockData,
   ScenarioBlockData,
   TextBlockData,
-  VideoBlockData,
 } from '@/types/content-blocks'
 
 import { BitacoraModal } from './bitacora-modal'
@@ -142,17 +142,13 @@ function flashcardForBlock(block: CourseBlock, moduleTitle: string): Flashcard |
   switch (block.type) {
     case 'TEXT': {
       const data = block.blockData as TextBlockData
-      return { id: block.id, front: data.heading || moduleTitle, back: data.content }
-    }
-    case 'VIDEO': {
-      const data = block.blockData as VideoBlockData
-      if (!data.transcript) return null
-      return { id: block.id, front: data.title || 'Video', back: data.transcript }
+      return { id: block.id, kind: 'concept', front: data.heading || moduleTitle, back: data.content }
     }
     case 'CHECKPOINT': {
       const data = block.blockData as CheckpointBlockData
       return {
         id: block.id,
+        kind: 'concept',
         front: data.title,
         back: [data.description, ...data.criteria.map((c) => `• ${c}`)].join('\n\n'),
       }
@@ -163,6 +159,7 @@ function flashcardForBlock(block: CourseBlock, moduleTitle: string): Flashcard |
       const correctOption = data.options.find((option) => option.isCorrect)
       return {
         id: block.id,
+        kind: 'question',
         front: data.question,
         back: [correctOption?.text, data.explanation].filter(Boolean).join('\n\n'),
       }
@@ -174,6 +171,7 @@ function flashcardForBlock(block: CourseBlock, moduleTitle: string): Flashcard |
       if (!optimal) return null
       return {
         id: block.id,
+        kind: 'question',
         front: data.situation,
         back: [optimal.text, optimal.feedback].filter(Boolean).join('\n\n'),
       }
@@ -222,7 +220,9 @@ export function CoursePlayer({
   modules: initialModules,
   gamification: initialGamification,
   achievements: initialAchievements,
+  currentUser,
 }: {
+  currentUser: { name: string | null; email: string | null }
   courseSlug: string
   courseTitle: string
   courseDescription: string
@@ -635,6 +635,16 @@ export function CoursePlayer({
               )}
             </button>
 
+            <div
+              className="flex items-center gap-1.5 rounded-full border bg-muted/40 px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm"
+              title={currentUser.email ? `Sesión iniciada como ${currentUser.email}` : 'Sesión iniciada'}
+            >
+              <UserRound className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-muted-foreground" />
+              <span className="hidden sm:inline max-w-[160px] truncate font-medium">
+                {currentUser.name || currentUser.email || 'Estudiante'}
+              </span>
+            </div>
+
             <form action={logoutAction}>
               <Button type="submit" variant="outline" size="sm" className="h-8 sm:h-9 text-xs px-2.5 sm:px-3">
                 <span className="hidden sm:inline">Cerrar sesión</span>
@@ -714,7 +724,7 @@ export function CoursePlayer({
               )}
             >
               <RotateCw className="h-3.5 w-3.5" />
-              Tarjetas ({flashcards.length})
+              Repaso ({flashcards.length})
             </button>
           </div>
 

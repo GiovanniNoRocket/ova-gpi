@@ -143,6 +143,7 @@ export default async function CoursePage({
         streak: gamification.streak,
       }}
       achievements={achievementSummaries}
+      currentUser={{ name: session.user.name ?? null, email: session.user.email ?? null }}
     />
   )
 }
