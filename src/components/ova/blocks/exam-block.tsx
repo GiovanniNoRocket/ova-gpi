@@ -198,7 +198,7 @@ export function ExamBlock({
               </div>
             )}
 
-            <h3 className="text-base font-semibold leading-relaxed text-foreground">
+            <h3 className="whitespace-pre-line text-base font-semibold leading-relaxed text-foreground">
               {currentQ.question}
             </h3>
 
@@ -243,7 +243,7 @@ export function ExamBlock({
             {reviewMode && currentQ.explanation && (
               <div className="mt-4 rounded-lg border border-primary/20 bg-primary/5 p-3.5 text-xs">
                 <p className="font-semibold text-primary">Explicación técnica:</p>
-                <p className="mt-1 leading-relaxed text-foreground/90">{currentQ.explanation}</p>
+                <p className="mt-1 whitespace-pre-line leading-relaxed text-foreground/90">{currentQ.explanation}</p>
               </div>
             )}
           </div>
