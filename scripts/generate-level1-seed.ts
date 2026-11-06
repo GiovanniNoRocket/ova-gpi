@@ -168,7 +168,7 @@ const module1Blocks: BlockSeed[] = [
     blockData: {
       heading: 'Ruta de Aprendizaje del OVA',
       content:
-        'El curso está organizado en tres niveles progresivos:\n\n• NIVEL 1: Comprensión del proyecto tecnológico (Fundamentos, PMBOK, tipos TIC, enfoques y fundamentos de IA).\n• NIVEL 2: Formulación y planeación (Alcance, cronograma, riesgos, presupuesto y prompts avanzados).\n• NIVEL 3: Ejecución, seguimiento, gobernanza y cierre (Monitoreo, control, ética y entrega del proyecto).\n\nCada nivel se desbloquea al completar y aprobar el nivel anterior.',
+        'El curso está organizado en cinco niveles progresivos. Cada nivel desarrolla nuevas competencias y aporta un componente al proyecto integrador.\n\n• NIVEL 1: Comprensión del proyecto tecnológico.\n• NIVEL 2: Formulación y planeación.\n• NIVEL 3: Ejecución, seguimiento y cierre.\n• NIVEL 4: IA generativa aplicada.\n• NIVEL 5: Gobernanza y proyecto integrador.\n\nCada nivel se desbloquea al completar el anterior.',
     },
   },
   {
@@ -188,7 +188,7 @@ const module1Blocks: BlockSeed[] = [
     blockData: {
       heading: 'Sistema de Gamificación: Niveles, XP e Insignias',
       content:
-        'Durante este curso avanzarás mediante retos y recompensas:\n\n• XP (Experiencia): ganas puntos por completar lecturas, acertar quizzes, interactuar con IA y registrar tu Bitácora.\n• Niveles: tu nivel sube a medida que acumulas XP.\n• Insignias: obtendrás insignias por hitos como "Explorador del OVA", "Arquitecto del Proyecto", "Detector de IA" y "Especialista Nivel 1".\n\nNo compites contra otros: compites contigo mismo para mejorar continuamente.',
+        'Durante este curso avanzarás mediante retos y recompensas:\n\n• XP (Experiencia): ganas puntos por completar lecturas, acertar quizzes, interactuar con IA y registrar tu Bitácora.\n• Niveles: tu nivel sube a medida que acumulas XP.\n• Insignias: recibirás insignias por logros especiales y específicos, por ejemplo: "Explorador del OVA", "Constructor de Proyectos", "Planificador Estratégico", "Analista de Riesgos", "Maestro de Prompts", "Gestor Inteligente", "Colaborador IA" y "Director de Proyectos".\n\nNo compites contra otros: compites contigo mismo para mejorar continuamente.',
     },
   },
   {
@@ -231,21 +231,96 @@ const module1Blocks: BlockSeed[] = [
     },
   },
   {
+    type: 'TEXT',
+    order: 18,
+    blockData: {
+      heading: 'Evaluación diagnóstica',
+      content:
+        'Esta evaluación no tiene calificación.\n\nSu objetivo es conocer tu nivel de conocimiento para recomendarte una ruta de aprendizaje adecuada. Responde las cinco preguntas con honestidad.',
+    },
+  },
+  {
+    type: 'QUIZ',
+    order: 18,
+    blockData: {
+      question: 'Diagnóstico · Pregunta 1: ¿Qué es un proyecto?',
+      options: [
+        { id: 'a', text: 'Una actividad repetitiva.', isCorrect: false },
+        { id: 'b', text: 'Un esfuerzo temporal para crear un producto, servicio o resultado único.', isCorrect: true },
+        { id: 'c', text: 'Una operación diaria.', isCorrect: false },
+        { id: 'd', text: 'Un documento administrativo.', isCorrect: false },
+      ],
+      explanation:
+        'Un proyecto es un esfuerzo temporal para crear un producto, servicio o resultado único. Las actividades repetitivas y las operaciones diarias no son proyectos.',
+      pointsAwarded: 4,
+    },
+  },
+  {
     type: 'SURVEY',
     order: 18,
     blockData: {
-      title: 'Evaluación Diagnóstica Inicial',
-      question: 'Responde honestamente para personalizar tu ruta de aprendizaje:',
+      title: 'Diagnóstico · Pregunta 2',
+      question: '¿Has utilizado alguna herramienta de IA generativa?',
       maxSelections: 1,
       options: [
-        { id: '1', text: 'Nunca he gestionado proyectos ni utilizado herramientas de IA' },
-        { id: '2', text: 'Tengo nociones básicas de proyectos pero poco uso de IA' },
-        { id: '3', text: 'Utilizo IA frecuentemente pero quiero estructurar la gestión de proyectos' },
-        { id: '4', text: 'Tengo experiencia en ambas áreas y busco profesionalizar mis competencias' },
+        { id: 'frecuente', text: 'Sí, frecuentemente.' },
+        { id: 'algunas', text: 'Algunas veces.' },
+        { id: 'poco', text: 'Muy poco.' },
+        { id: 'nunca', text: 'Nunca.' },
+      ],
+      pointsAwarded: 4,
+    },
+  },
+  {
+    type: 'SURVEY',
+    order: 18,
+    blockData: {
+      title: 'Diagnóstico · Pregunta 3',
+      question: '¿Cuál es tu nivel de conocimiento sobre gestión de proyectos?',
+      maxSelections: 1,
+      options: [
+        { id: 'ninguno', text: 'Ninguno.' },
+        { id: 'basico', text: 'Básico.' },
+        { id: 'intermedio', text: 'Intermedio.' },
+        { id: 'avanzado', text: 'Avanzado.' },
+      ],
+      pointsAwarded: 4,
+    },
+  },
+  {
+    type: 'SURVEY',
+    order: 18,
+    blockData: {
+      title: 'Diagnóstico · Pregunta 4',
+      question: '¿Has participado en un proyecto?',
+      maxSelections: 1,
+      options: [
+        { id: 'nunca', text: 'Nunca.' },
+        { id: 'integrante', text: 'Como integrante.' },
+        { id: 'lider', text: 'Como líder.' },
+        { id: 'director', text: 'Como director del proyecto.' },
+      ],
+      pointsAwarded: 4,
+    },
+  },
+  {
+    type: 'SURVEY',
+    order: 18,
+    blockData: {
+      title: 'Diagnóstico · Pregunta 5',
+      question: '¿Qué esperas aprender principalmente?',
+      maxSelections: 1,
+      options: [
+        { id: 'gp', text: 'Gestión de proyectos.' },
+        { id: 'ia', text: 'Inteligencia Artificial.' },
+        { id: 'prompts', text: 'Ingeniería de prompts.' },
+        { id: 'riesgos', text: 'Gestión de riesgos.' },
+        { id: 'liderazgo', text: 'Liderazgo.' },
+        { id: 'todo', text: 'Todo lo anterior.' },
       ],
       feedback:
-        '¡Diagnóstico registrado! El curso te guiará paso a paso desde conceptos básicos hasta aplicaciones avanzadas.',
-      pointsAwarded: 20,
+        '¡Diagnóstico registrado! El curso te guiará paso a paso desde los conceptos básicos hasta aplicaciones avanzadas.',
+      pointsAwarded: 4,
     },
   },
   {
