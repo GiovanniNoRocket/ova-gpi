@@ -75,6 +75,7 @@ const MODULE_ACHIEVEMENTS: Record<number, string> = {
   6: 'formulador-proyectos',
   7: 'arquitecto-alcance',
   8: 'planificador-costos',
+  9: 'estratega-proyecto-nivel-2',
 }
 
 async function checkAndAwardAchievements(

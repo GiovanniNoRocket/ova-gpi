@@ -183,9 +183,16 @@ async function seedPrismaUsers(courseSlug: string) {
     },
     {
       key: 'planificador-costos',
-      title: 'Estratega de Cronograma y Costos',
+      title: 'Arquitecto de la Planificación',
       description: 'Construiste ruta crítica, diagrama de Gantt, matriz de recursos y presupuesto (Módulo 8).',
       icon: 'calendar',
+      points: 100,
+    },
+    {
+      key: 'estratega-proyecto-nivel-2',
+      title: 'Estratega del Proyecto (Nivel 2)',
+      description: 'Planificaste riesgos, calidad, comunicaciones y adquisiciones de tu proyecto (Módulo 9).',
+      icon: 'shield',
       points: 100,
     },
     {
