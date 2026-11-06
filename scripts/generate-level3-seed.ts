@@ -1,81 +1,9 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-import { parseBlockData, type BlockType } from '../src/types/content-blocks.ts'
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const SEED_FILE_PATH = path.join(__dirname, '../content/seeds/ia-gestion-proyectos.json')
-
-type BlockSeed = {
-  type: BlockType
-  order: number
-  blockData: Record<string, unknown>
-}
-
-type ModuleSeed = {
-  title: string
-  order: number
-  level: number
-  levelTitle: string
-  blocks: BlockSeed[]
-}
+import { buildModule, mergeModulesIntoSeed, type BlockSeed } from './lib/seed-builder.ts'
 
 // =========================================================================
 // MÓDULO 10: Liderazgo, equipo y ejecución (Nivel 3)
 // =========================================================================
 const module10Blocks: BlockSeed[] = [
-  // Pantalla 0: Introducción al Módulo
-  {
-    type: 'TEXT',
-    order: 1,
-    blockData: {
-      heading: '¡Bienvenido al Módulo 10: Liderazgo, equipo y ejecución!',
-      content: `Módulo 10. Liderazgo, equipo y ejecución
-Duración estimada: 120 – 150 minutos | Nivel: Intermedio
-
-Objetivo general:
-Desarrollar capacidades para liderar y coordinar la ejecución de un proyecto TIC, gestionando personas, actividades, recursos, entregables, situaciones problemáticas y relaciones con terceros, mediante una actuación organizada y el uso responsable de IA generativa.
-
-Objetivos específicos:
-Al finalizar este módulo, el estudiante podrá:
-• Comprender cómo se desarrolla la ejecución de un proyecto TIC a partir de la planificación realizada.
-• Reconocer las responsabilidades del gestor durante la ejecución.
-• Aplicar estrategias de liderazgo según las situaciones del proyecto.
-• Coordinar roles, responsabilidades, actividades y recursos.
-• Gestionar la comunicación y colaboración del equipo.
-• Identificar y gestionar conflictos, problemas e impedimentos.
-• Coordinar actividades y entregables durante la ejecución.
-• Gestionar situaciones relacionadas con recursos, proveedores y terceros.
-• Integrar la calidad en el desarrollo del trabajo.
-• Gestionar el conocimiento generado durante la ejecución.
-• Utilizar IA generativa como apoyo a diferentes actividades de gestión.
-• Verificar la información generada por IA antes de utilizarla.
-• Tomar decisiones considerando las consecuencias sobre el proyecto.
-• Aplicar lo aprendido mediante una simulación de ejecución.
-
-Competencias a desarrollar:
-• Coordinar equipos de trabajo en proyectos TIC, considerando roles, responsabilidades y necesidades de colaboración.
-• Aplicar estrategias de liderazgo de acuerdo con las situaciones que se presentan durante la ejecución.
-• Gestionar la comunicación y colaboración entre los participantes del proyecto.
-• Identificar y gestionar conflictos, problemas e impedimentos que afecten la ejecución.
-• Coordinar actividades, recursos y entregables de acuerdo con las necesidades del proyecto.
-• Gestionar situaciones relacionadas con proveedores y terceros durante la ejecución.
-• Integrar prácticas de calidad en el desarrollo y seguimiento de las actividades.
-• Registrar decisiones, experiencias y aprendizajes generados durante la ejecución.
-• Tomar decisiones frente a situaciones y cambios que se presenten en el proyecto.
-• Utilizar IA generativa para apoyar el análisis y organización de situaciones del proyecto.
-• Verificar los resultados generados por IA antes de utilizarlos.
-• Integrar las competencias desarrolladas en la Simulación de ejecución del proyecto TIC.
-
-Mapa del módulo:
-Plan → Liderazgo → Equipo → Organización → Desarrollo → Comunicación → Motivación → Conflictos → Trabajo y entregables → Recursos y conocimiento → Proveedores, calidad e IA → Simulación y decisiones → Felicidades.
-
-Producto del módulo: Producto 1. Simulación de ejecución:
-El estudiante continuará trabajando sobre el proyecto TIC desarrollado durante los niveles anteriores. En la simulación asumirá el rol de gestor y deberá enfrentar situaciones relacionadas con el equipo, las actividades, los recursos, los entregables, los proveedores y la calidad.`,
-    },
-  },
-
   // Pantalla 1: La Ejecución del Proyecto TIC
   {
     type: 'TEXT',
@@ -1435,41 +1363,19 @@ Acciones Disponibles del Gestor:
 ]
 
 async function main() {
-  console.log('Reading current seed file to integrate Level 3 (Módulo 10)...')
-  const fileContent = await readFile(SEED_FILE_PATH, 'utf-8')
-  const currentSeed = JSON.parse(fileContent)
+  const modules = [
+    buildModule(
+      {
+        title: 'Liderazgo, equipo y ejecución',
+        order: 10,
+        level: 3,
+        levelTitle: 'Nivel 3: Ejecución, seguimiento y cierre',
+      },
+      module10Blocks,
+    ),
+  ]
 
-  // Keep all modules from Level 1 (modules 1-5) and Level 2 (modules 6-8)
-  const existingModules = currentSeed.modules.filter((m: ModuleSeed) => (m.level ?? 1) < 3)
-
-  const newModule10: ModuleSeed = {
-    title: 'Liderazgo, equipo y ejecución',
-    order: 10,
-    level: 3,
-    levelTitle: 'Nivel 3: Ejecución, seguimiento y cierre',
-    blocks: module10Blocks,
-  }
-
-  const allModules: ModuleSeed[] = [...existingModules, newModule10]
-
-  console.log(`Validating all blocks across ${allModules.length} modules with Zod...`)
-  let totalBlocks = 0
-  for (const mod of allModules) {
-    for (const b of mod.blocks) {
-      parseBlockData(b.type, b.blockData)
-      totalBlocks++
-    }
-  }
-
-  console.log(`✓ All ${totalBlocks} blocks validated successfully against Zod schemas!`)
-
-  const updatedCourseSeed = {
-    ...currentSeed,
-    modules: allModules,
-  }
-
-  await writeFile(SEED_FILE_PATH, JSON.stringify(updatedCourseSeed, null, 2), 'utf-8')
-  console.log(`✓ Successfully updated ${SEED_FILE_PATH} with Nivel 3 (Módulo 10)!`)
+  await mergeModulesIntoSeed(modules, 'Nivel 3 (Módulo 10)')
 }
 
 main().catch((err) => {

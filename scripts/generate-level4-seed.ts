@@ -1,65 +1,9 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-import { parseBlockData, type BlockType } from '../src/types/content-blocks.ts'
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const SEED_FILE_PATH = path.join(__dirname, '../content/seeds/ia-gestion-proyectos.json')
-
-type BlockSeed = {
-  type: BlockType
-  order: number
-  blockData: Record<string, unknown>
-}
-
-type ModuleSeed = {
-  title: string
-  order: number
-  level: number
-  levelTitle: string
-  blocks: BlockSeed[]
-}
+import { buildModule, mergeModulesIntoSeed, type BlockSeed } from './lib/seed-builder.ts'
 
 // =========================================================================
 // MÓDULO 13: Diseño, evaluación y mejora de instrucciones (Nivel 4 - Módulo 1)
 // =========================================================================
 export const module13Blocks: BlockSeed[] = [
-  // Pantalla 0: Introducción al Módulo
-  {
-    type: 'TEXT',
-    order: 1,
-    blockData: {
-      heading: '¡Bienvenido al Módulo 13: Diseño, evaluación y mejora de instrucciones!',
-      content: `Módulo 13 (Módulo 1 del Nivel 4). Diseño, evaluación y mejora de instrucciones
-Duración estimada: 150–180 minutos | Nivel: Avanzado
-
-Objetivo general:
-Desarrollar capacidades para diseñar, estructurar, evaluar y mejorar instrucciones dirigidas a herramientas de inteligencia artificial generativa, utilizando principios de ingeniería de prompts para obtener resultados pertinentes, estructurados y útiles en situaciones relacionadas con proyectos tecnológicos.
-
-Objetivos específicos:
-• Comprender los fundamentos de la ingeniería de prompts y sus componentes esenciales.
-• Diferenciar instrucciones simples de instrucciones estructuradas y delimitar contexto y propósito.
-• Incorporar roles y perspectivas pertinentes; formular tareas y objetivos verificables.
-• Establecer restricciones y criterios de calidad objetivos; especificar formatos de salida estructurados.
-• Aplicar patrones de prompting (ej. few-shot) y descomponer problemas complejos en tareas manejables.
-• Diseñar prompts para operaciones cognitivas: análisis, generación, transformación, síntesis, comparación y evaluación.
-• Analizar la calidad de los resultados producidos por la IA y detectar deficiencias o alucinaciones causales.
-• Refinar prompts mediante ciclos sucesivos de mejora empírica y comparar versiones con criterios observables.
-• Diseñar prompts especializados para proyectos TIC y utilizar la IA como apoyo socrático.
-• Documentar evidencias de diseño, evaluación y refinamiento para el portafolio.
-
-Producto del módulo:
-Producto 1: Instrucciones diseñadas y validadas
-Construirás y documentarás un conjunto de instrucciones aplicadas a proyectos TIC siguiendo el ciclo:
-Tarea → Prompt inicial → Resultado → Evaluación → Problemas detectados → Refinamiento → Nuevo resultado → Comparación → Validación
-Este producto alimentará tu Portafolio de aplicaciones de IA validadas del Nivel 4.
-
-Mapa del módulo:
-Ingeniería de prompts → Estructura y contexto → Diseño de instrucciones → Patrones y descomposición → Aplicación de prompts → Evaluación y refinamiento → Prompts para proyectos TIC → Laboratorio → Microevaluación → ¡Felicidades!`,
-    },
-  },
-
   // Pantalla 1: Introducción a la ingeniería de prompts
   {
     type: 'TEXT',
@@ -1114,35 +1058,6 @@ Paso 1: Define la tarea → Paso 2: Construye Versión 1 → Paso 3: Ejecuta y a
 // MÓDULO 14: Laboratorio de IA para proyectos tecnológicos (Nivel 4 - Módulo 2)
 // =========================================================================
 export const module14Blocks: BlockSeed[] = [
-  // Pantalla 0: Introducción al Módulo 14
-  {
-    type: 'TEXT',
-    order: 1,
-    blockData: {
-      heading: '¡Bienvenido al Módulo 14: Laboratorio de IA para proyectos tecnológicos!',
-      content: `Módulo 14. Laboratorio de IA para proyectos tecnológicos
-Duración estimada: 180–240 minutos | Nivel: Avanzado
-
-Objetivo general:
-Aplicar instrucciones de IA generativa en situaciones contextualizadas de proyectos tecnológicos, evaluando los resultados obtenidos, realizando refinamientos fundamentados y validando su utilidad como apoyo a diferentes actividades de gestión del proyecto.
-
-Objetivos específicos:
-• Aplicar instrucciones previamente diseñadas a situaciones concretas del proyecto tecnológico SIGA-TI (TecnoGestión S.A.S.).
-• Seleccionar y preparar información contextualizada diferenciando datos observados de interpretaciones.
-• Auditar resultados generados identificando vacíos, afirmaciones no sustentadas e inconsistencias.
-• Refinar instrucciones a partir de la evidencia observada y comparar resultados antes y después del refinamiento.
-• Validar la utilidad de aplicaciones de IA mediante evidencias contrastadas con el equipo.
-• Construir y documentar el Portafolio de aplicaciones de IA validadas.
-
-Mapa de entregables del laboratorio:
-1. Laboratorio 1: Ficha de aplicación de IA (Semana 8)
-2. Laboratorio 2: Registro de aplicación de IA (Semana 9)
-3. Laboratorio 3: Informe de evaluación y refinamiento (Semana 10)
-4. Laboratorio 4: Caso de aplicación integral de IA (Semana 11 - Reto integrador)
-5. Portafolio de aplicaciones de IA validadas: Consolidación final para la toma de decisiones.`,
-    },
-  },
-
   // Laboratorio 1: Identifica una oportunidad de aplicación de IA
   {
     type: 'TEXT',
@@ -1803,55 +1718,28 @@ Este portafolio constituye la evidencia verificable de tu competencia como gesto
 ]
 
 async function main() {
-  console.log(`Reading course seed from ${SEED_FILE_PATH}...`)
-  const fileRaw = await readFile(SEED_FILE_PATH, 'utf-8')
-  const currentSeed = JSON.parse(fileRaw)
+  const modules = [
+    buildModule(
+      {
+        title: 'Diseño, evaluación y mejora de instrucciones',
+        order: 13,
+        level: 4,
+        levelTitle: 'Nivel 4: IA Generativa Aplicada',
+      },
+      module13Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Laboratorio de IA para proyectos tecnológicos',
+        order: 14,
+        level: 4,
+        levelTitle: 'Nivel 4: IA Generativa Aplicada',
+      },
+      module14Blocks,
+    ),
+  ]
 
-  // Filter out any existing module 13 or 14 to allow idempotent updates
-  const existingModules: ModuleSeed[] = currentSeed.modules.filter(
-    (m: ModuleSeed) => m.order !== 13 && m.order !== 14,
-  )
-
-  const newModule13: ModuleSeed = {
-    title: 'Diseño, evaluación y mejora de instrucciones',
-    order: 13,
-    level: 4,
-    levelTitle: 'Nivel 4: IA Generativa Aplicada',
-    blocks: module13Blocks,
-  }
-
-  const newModule14: ModuleSeed = {
-    title: 'Laboratorio de IA para proyectos tecnológicos',
-    order: 14,
-    level: 4,
-    levelTitle: 'Nivel 4: IA Generativa Aplicada',
-    blocks: module14Blocks,
-  }
-
-  const allModules: ModuleSeed[] = [...existingModules, newModule13, newModule14]
-
-  console.log(`Validating all blocks across ${allModules.length} modules with Zod...`)
-  let totalBlocks = 0
-  for (const mod of allModules) {
-    for (const b of mod.blocks) {
-      parseBlockData(b.type, b.blockData)
-      totalBlocks++
-    }
-  }
-
-  console.log(`✓ All ${totalBlocks} blocks validated successfully against Zod schemas!`)
-
-  const updatedCourseSeed = {
-    ...currentSeed,
-    course: {
-      ...currentSeed.course,
-      description: 'Nivel 1 a 4 · Fundamentos de Gestión de Proyectos con IA, Formulación, Ejecución y Laboratorio de IA Generativa Aplicada (PMBOK®).'
-    },
-    modules: allModules,
-  }
-
-  await writeFile(SEED_FILE_PATH, JSON.stringify(updatedCourseSeed, null, 2), 'utf-8')
-  console.log(`✓ Successfully updated ${SEED_FILE_PATH} with Nivel 4 (Módulos 13 y 14)!`)
+  await mergeModulesIntoSeed(modules, 'Nivel 4 (Módulos 13 y 14)')
 }
 
 main().catch((err) => {

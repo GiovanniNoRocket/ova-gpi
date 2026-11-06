@@ -1,25 +1,4 @@
-import { writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-import { parseBlockData, type BlockType } from '../src/types/content-blocks.ts'
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const OUTPUT_PATH = path.join(__dirname, '../content/seeds/ia-gestion-proyectos.json')
-
-type BlockSeed = {
-  type: BlockType
-  order: number
-  blockData: Record<string, unknown>
-}
-
-type ModuleSeed = {
-  title: string
-  order: number
-  level: number
-  levelTitle: string
-  blocks: BlockSeed[]
-}
+import { buildModule, mergeModulesIntoSeed, type BlockSeed } from './lib/seed-builder.ts'
 
 // ----------------------------------------------------
 // MÓDULO 1: Orientación, Diagnóstico Y Reto Integrador
@@ -1180,72 +1159,59 @@ const finalExamBlock: BlockSeed = {
   },
 }
 
-// ----------------------------------------------------
-// ENSAMBLAJE DEL CURSO NIVEL 1
-// ----------------------------------------------------
-const level1Course = {
-  course: {
-    title: 'Fundamentos de Gestión de Proyectos e Inteligencia Artificial',
-    slug: 'ia-gestion-proyectos',
-    description:
-      'Nivel 1 de 3 · Comprensión del proyecto tecnológico, PMBOK®, enfoques predictivos, ágiles e híbridos, gobernanza y uso responsable de Inteligencia Artificial Generativa.',
-  },
-  modules: [
-    {
-      title: 'Orientación, Diagnóstico y Reto Integrador',
-      order: 1,
-      level: 1,
-      levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
-      blocks: module1Blocks,
-    },
-    {
-      title: 'Proyecto, Valor y Contexto Organizacional',
-      order: 2,
-      level: 1,
-      levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
-      blocks: module2Blocks,
-    },
-    {
-      title: 'Proyectos, Programas, Portafolios y Operaciones',
-      order: 3,
-      level: 1,
-      levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
-      blocks: module3Blocks,
-    },
-    {
-      title: 'Ciclo de Vida, Enfoques de Gestión y Dominios de Desempeño',
-      order: 4,
-      level: 1,
-      levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
-      blocks: module4Blocks,
-    },
-    {
-      title: 'Fundamentos de IA para la Gestión de Proyectos',
-      order: 5,
-      level: 1,
-      levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
-      blocks: [...module5Blocks, finalExamBlock],
-    },
-  ],
-}
-
 async function main() {
-  console.log('Validating all block schemas...')
-  let totalBlocks = 0
-  for (const m of level1Course.modules) {
-    for (const b of m.blocks) {
-      parseBlockData(b.type, b.blockData)
-      totalBlocks++
-    }
-  }
-  console.log(`✓ Validated ${totalBlocks} blocks across ${level1Course.modules.length} modules without errors.`)
+  const modules = [
+    buildModule(
+      {
+        title: 'Orientación, Diagnóstico y Reto Integrador',
+        order: 1,
+        level: 1,
+        levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
+      },
+      module1Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Proyecto, Valor y Contexto Organizacional',
+        order: 2,
+        level: 1,
+        levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
+      },
+      module2Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Proyectos, Programas, Portafolios y Operaciones',
+        order: 3,
+        level: 1,
+        levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
+      },
+      module3Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Ciclo de Vida, Enfoques de Gestión y Dominios de Desempeño',
+        order: 4,
+        level: 1,
+        levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
+      },
+      module4Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Fundamentos de IA para la Gestión de Proyectos',
+        order: 5,
+        level: 1,
+        levelTitle: 'Nivel 1: Comprensión del Proyecto Tecnológico',
+      },
+      [...module5Blocks, finalExamBlock],
+    ),
+  ]
 
-  const jsonContent = JSON.stringify(level1Course, null, 2)
-  await writeFile(OUTPUT_PATH, jsonContent, 'utf-8')
-  console.log(`✓ Successfully generated complete seed file: ${OUTPUT_PATH}`)
+  await mergeModulesIntoSeed(modules, 'Nivel 1 (Módulos 1-5)')
 }
 
 main().catch((err) => {
-  console.error('Error generating seed:', err)
+  console.error('Error generating level 1 seed:', err)
   process.exit(1)
 })

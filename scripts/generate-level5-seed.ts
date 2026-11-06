@@ -1,61 +1,9 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-import { parseBlockData, type BlockType } from '../src/types/content-blocks.ts'
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const SEED_FILE_PATH = path.join(__dirname, '../content/seeds/ia-gestion-proyectos.json')
-
-type BlockSeed = {
-  type: BlockType
-  order: number
-  blockData: Record<string, unknown>
-}
-
-type ModuleSeed = {
-  title: string
-  order: number
-  level: number
-  levelTitle: string
-  blocks: BlockSeed[]
-}
+import { buildModule, mergeModulesIntoSeed, type BlockSeed } from './lib/seed-builder.ts'
 
 // =========================================================================
 // MÓDULO 15: Uso responsable, gobernanza y proyecto final (NIVEL 5)
 // =========================================================================
 export const module15Blocks: BlockSeed[] = [
-  // Pantalla 0: Introducción al Módulo 15
-  {
-    type: 'TEXT',
-    order: 1,
-    blockData: {
-      heading: '¡Bienvenido al Módulo 15: Uso responsable, gobernanza y proyecto final!',
-      content: `Módulo 15. Uso responsable, gobernanza y proyecto final
-Duración estimada: 120 – 150 minutos | Nivel: Avanzado
-Producto: Proyecto completo, sustentación y reflexión crítica.
-
-Proyecto TIC Integral con IA Responsable y Gobernanza:
-El estudiante desarrollará y sustentará un nuevo proyecto TIC, integrando los aprendizajes de los niveles anteriores: comprensión y caracterización del proyecto, formulación y planificación, ejecución, seguimiento y cierre. Sobre este nuevo proyecto deberá determinar cómo utilizar la IA de manera responsable, diseñar sus propias instrucciones para interactuar con herramientas de IA, identificar riesgos éticos y regulatorios y establecer mecanismos de gobernanza, supervisión, trazabilidad y control.
-
-Objetivo general:
-Diseñar y sustentar un proyecto TIC integral que incorpore inteligencia artificial mediante criterios éticos, regulatorios y de gobernanza, estableciendo mecanismos de uso responsable, gestión de riesgos, protección de datos, supervisión humana, trazabilidad y rendición de cuentas.
-
-Objetivos específicos:
-• Comprender los fundamentos éticos asociados al diseño y uso de sistemas de IA y su impacto en proyectos TIC.
-• Identificar valores, principios y criterios para evaluar aplicaciones de IA y reconocer riesgos éticos, sociales y técnicos.
-• Diferenciar ética, regulación, cumplimiento, estándares, políticas institucionales y gobernanza.
-• Analizar marcos regulatorios y normativos contemporáneos (AI Act de la UE, Ley 1581 de 2012 y CONPES 4144 de Colombia).
-• Comprender las obligaciones relacionadas con privacidad, minimización y protección de datos personales.
-• Analizar el enfoque basado en riesgos, la norma ISO/IEC 42001 y el marco NIST AI RMF (Generative AI Profile).
-• Comprender la función de la gobernanza durante todo el ciclo de vida de un sistema de IA (autoridad, controles, supervisión, trazabilidad y rendición de cuentas).
-• Aplicar todos estos elementos al nuevo proyecto TIC integral y preparar la sustentación final.
-
-Mapa del módulo:
-Uso responsable de IA → Ética y principios → Riesgos e impactos → Privacidad y protección de datos → Regulación de IA → Normativas y marcos regulatorios → Gobernanza de IA → Roles y responsabilidades → Gestión del riesgo y controles → Trazabilidad y auditoría → Capacidades organizacionales → Proyecto final → Microevaluación → ¡Felicidades!`,
-    },
-  },
-
   // Pantalla 1: Ética en inteligencia artificial
   {
     type: 'TEXT',
@@ -704,7 +652,7 @@ El NIST AI RMF 1.0 (junto con su perfil específico para IA Generativa, NIST AI 
   // Pantalla 20: Capacidades organizacionales para IA responsable
   {
     type: 'TEXT',
-    order: 20,
+    order: 45,
     blockData: {
       heading: 'Pantalla 20: Capacidades organizacionales para la IA responsable',
       content: `Personas, Procesos y Controles:
@@ -965,47 +913,19 @@ Desarrollarás de inicio a fin un nuevo proyecto tecnológico integral, aplicand
 ]
 
 async function main() {
-  console.log(`Reading course seed from ${SEED_FILE_PATH}...`)
-  const fileRaw = await readFile(SEED_FILE_PATH, 'utf-8')
-  const currentSeed = JSON.parse(fileRaw)
+  const modules = [
+    buildModule(
+      {
+        title: 'Uso responsable, gobernanza y proyecto final',
+        order: 15,
+        level: 5,
+        levelTitle: 'Nivel 5: Gobernanza y Proyecto Integrador',
+      },
+      module15Blocks,
+    ),
+  ]
 
-  // Filter out any existing module 15 to allow idempotent updates
-  const existingModules: ModuleSeed[] = currentSeed.modules.filter(
-    (m: ModuleSeed) => m.order !== 15,
-  )
-
-  const newModule15: ModuleSeed = {
-    title: 'Uso responsable, gobernanza y proyecto final',
-    order: 15,
-    level: 5,
-    levelTitle: 'Nivel 5: Gobernanza y Proyecto Integrador',
-    blocks: module15Blocks,
-  }
-
-  const allModules: ModuleSeed[] = [...existingModules, newModule15]
-
-  console.log(`Validating all blocks across ${allModules.length} modules with Zod...`)
-  let totalBlocks = 0
-  for (const mod of allModules) {
-    for (const b of mod.blocks) {
-      parseBlockData(b.type, b.blockData)
-      totalBlocks++
-    }
-  }
-
-  console.log(`✓ All ${totalBlocks} blocks validated successfully against Zod schemas!`)
-
-  const updatedCourseSeed = {
-    ...currentSeed,
-    course: {
-      ...currentSeed.course,
-      description: 'Curso Completo (Niveles 1 a 5) · Integración de la Inteligencia Artificial Generativa en la Gestión de Proyectos Informáticos (PMBOK® 8va Edición, Formulación, Ejecución, Laboratorio de Prompts y Gobernanza de IA).'
-    },
-    modules: allModules,
-  }
-
-  await writeFile(SEED_FILE_PATH, JSON.stringify(updatedCourseSeed, null, 2), 'utf-8')
-  console.log(`✓ Successfully updated ${SEED_FILE_PATH} with Nivel 5 (Módulo 15)!`)
+  await mergeModulesIntoSeed(modules, 'Nivel 5 (Módulo 15)')
 }
 
 main().catch((err) => {

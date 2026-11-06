@@ -1,25 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-import { parseBlockData, type BlockType } from '../src/types/content-blocks.ts'
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const SEED_FILE_PATH = path.join(__dirname, '../content/seeds/ia-gestion-proyectos.json')
-
-type BlockSeed = {
-  type: BlockType
-  order: number
-  blockData: Record<string, unknown>
-}
-
-type ModuleSeed = {
-  title: string
-  order: number
-  level: number
-  levelTitle: string
-  blocks: BlockSeed[]
-}
+import { buildModule, mergeModulesIntoSeed, type BlockSeed } from './lib/seed-builder.ts'
 
 const module6Blocks: BlockSeed[] = [
   {
@@ -1048,64 +1027,37 @@ const module8Blocks: BlockSeed[] = [
 ]
 
 async function main() {
-  console.log('Reading current seed file to merge Level 1 and Level 2...')
-  const fileContent = await readFile(SEED_FILE_PATH, 'utf-8')
-  const currentSeed = JSON.parse(fileContent)
-
-  const level1Modules = currentSeed.modules.filter((m: ModuleSeed) => (m.level ?? 1) === 1)
-
-  const newModule6: ModuleSeed = {
-    title: 'Problema, Oportunidad, Objetivos y Viabilidad',
-    order: 6,
-    level: 2,
-    levelTitle: 'Nivel 2: Formulación y planeación',
-    blocks: module6Blocks,
-  }
-
-  const newModule7: ModuleSeed = {
-    title: 'Interesados (Stakeholders), Requisitos, Alcance y Entregables',
-    order: 7,
-    level: 2,
-    levelTitle: 'Nivel 2: Formulación y planeación',
-    blocks: module7Blocks,
-  }
-
-  const newModule8: ModuleSeed = {
-    title: 'Cronograma, Recursos y Costos',
-    order: 8,
-    level: 2,
-    levelTitle: 'Nivel 2: Formulación y planeación',
-    blocks: module8Blocks,
-  }
-
-  const otherModules = currentSeed.modules.filter((m: ModuleSeed) => m.order > 8)
-
-  const allModules: ModuleSeed[] = [
-    ...level1Modules,
-    newModule6,
-    newModule7,
-    newModule8,
-    ...otherModules,
+  const modules = [
+    buildModule(
+      {
+        title: 'Problema, Oportunidad, Objetivos y Viabilidad',
+        order: 6,
+        level: 2,
+        levelTitle: 'Nivel 2: Formulación y planeación',
+      },
+      module6Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Interesados (Stakeholders), Requisitos, Alcance y Entregables',
+        order: 7,
+        level: 2,
+        levelTitle: 'Nivel 2: Formulación y planeación',
+      },
+      module7Blocks,
+    ),
+    buildModule(
+      {
+        title: 'Cronograma, Recursos y Costos',
+        order: 8,
+        level: 2,
+        levelTitle: 'Nivel 2: Formulación y planeación',
+      },
+      module8Blocks,
+    ),
   ]
 
-  console.log(`Validating all blocks across ${allModules.length} modules...`)
-  let totalBlocks = 0
-  for (const mod of allModules) {
-    for (const b of mod.blocks) {
-      parseBlockData(b.type, b.blockData)
-      totalBlocks++
-    }
-  }
-
-  console.log(`✓ All ${totalBlocks} blocks validated successfully against Zod schemas!`)
-
-  const updatedCourseSeed = {
-    ...currentSeed,
-    modules: allModules,
-  }
-
-  await writeFile(SEED_FILE_PATH, JSON.stringify(updatedCourseSeed, null, 2), 'utf-8')
-  console.log(`✓ Successfully updated ${SEED_FILE_PATH} with Nivel 1 & Nivel 2!`)
+  await mergeModulesIntoSeed(modules, 'Nivel 2 (Módulos 6-8)')
 }
 
 main().catch((err) => {
