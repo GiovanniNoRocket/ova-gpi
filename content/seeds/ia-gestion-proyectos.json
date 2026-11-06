@@ -8281,12 +8281,12 @@
           "type": "AI_PROMPT_LAB",
           "order": 9,
           "blockData": {
-            "title": "IA Aplicada: Tutor de validación del portafolio",
-            "role": "Tutor de validación de evidencias del portafolio",
-            "prompt": "Actúa como tutor de validación del portafolio. Revisaremos mi evidencia completa. Pregúntame por cada etapa del ciclo y solicita evidencias de mis decisiones. Si falta información, indícame qué debo demostrar mediante preguntas. La validación final debe ser mi justificación; no la redactes por mí.",
+            "title": "IA Aplicada: Identifica los componentes de tu instrucción",
+            "role": "Tutor de ingeniería de prompts",
+            "prompt": "Actúa como tutor de ingeniería de prompts. Te compartiré una instrucción que redacté para un proyecto TIC. No la reescribas. Primero pregúntame qué componentes identifico (rol, contexto, tarea, criterio, restricciones y formato) y en qué fragmento aparece cada uno. Después, mediante preguntas, ayúdame a detectar qué componente falta o no cumple su función y a decidir si realmente es necesario incorporarlo para esta tarea.",
             "reflectionQuestions": [
-              "¿Qué criterios te exigió el tutor para justificar cada componente del prompt?",
-              "¿Por qué es indispensable que la validación final la redacte el estudiante y no el modelo?"
+              "¿Qué componente te costó más identificar en tu instrucción y por qué?",
+              "¿Qué componente decidiste no agregar y cómo justificas que no era necesario para esta tarea?"
             ],
             "pointsAwarded": 15
           }
