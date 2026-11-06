@@ -1193,7 +1193,7 @@ Nuevos Recursos disponibles:
     blockData: {
       heading: 'Laboratorio 3: Audita y mejora el resultado (Semana 10)',
       content: `Situación de Auditoría en la Semana 10:
-Durante la semana 10 se analizó la lista de incidencias INC-01 a INC-08. Se ejecutó una instrucción inicial que produjo un resultado con graves sesgos metodológicos.
+Durante la semana 10 se analizó la lista de incidencias INC-01 a INC-08. Se ejecutó una instrucción inicial y se obtuvo el resultado que se presenta a continuación.
 
 Instrucción inicial defectuosa utilizada:
 “Analiza las incidencias del proyecto SIGA-TI y presenta un resumen organizado por módulo. Identifica cuáles son los problemas más importantes, explica qué está ocurriendo y señala qué debería hacer el equipo para solucionarlos.”
@@ -1205,11 +1205,10 @@ Las incidencias de reportes son las más frecuentes. Esto indica que el módulo 
 Se recomienda asignar más desarrolladores a estas áreas y hacer una revisión técnica completa.
 Conclusión: El principal problema es la calidad del desarrollo. Hay alta probabilidad de problemas técnicos adicionales no detectados.
 
-Auditoría requerida:
-1. Afirmación no sustentada: Culpar a la "falta de coordinación de los desarrolladores" sin ningún dato sobre desempeño de equipo.
-2. Error de conteo: Decir que las incidencias de reportes son "las más frecuentes" cuando solicitudes tiene 3 (INC-01, 07, 08) y reportes tiene 2 (INC-03, 06).
-3. Decisiones no autorizadas: Recomendar "asignar más desarrolladores" sin conocer presupuesto ni capacidad.
-4. Vulnerabilidad de seguridad subestimada: Tratar INC-05 (acceso indebido a solicitudes ajenas) como una falla común sin destacar la violación de confidencialidad.`,
+Reto del laboratorio:
+Este es el resultado inicial que debes auditar. No debes asumir que todo lo que aparece en la respuesta es correcto ni que todo es incorrecto.
+La instrucción utilizada también forma parte de la auditoría: analiza si permitió obtener el resultado que realmente se necesitaba o si algunas características de la respuesta pueden estar relacionadas con la forma en que fue construida.
+No se proporciona una lista de errores que debas encontrar. Compara la información de entrada, la instrucción inicial, el resultado inicial y las condiciones establecidas.`,
     },
   },
   {
@@ -1642,75 +1641,95 @@ Este portafolio constituye la evidencia verificable de tu competencia como gesto
         },
         {
           id: 20,
-          question: 'Durante el Laboratorio 2 (SIGA-TI, Semana 9), al evaluar solicitudes de cambio (CAM-01 a CAM-04) y nuevas incidencias en el Registro de aplicación, ¿cómo deben tratarse las estimaciones de impacto?',
+          question: `Durante el Laboratorio 2, un estudiante debe aplicar IA a una situación de SIGA-TI. Dispone del resumen del proyecto, requisitos, historias de usuario, incidencias, solicitudes de cambio, comentarios de reuniones y restricciones. La aplicación que seleccionó requiere únicamente información relacionada con una necesidad específica.
+
+¿Cuál decisión demuestra mejor preparación de la información?`,
           options: [
-            { id: 'a', text: 'Aceptar las estimaciones de días de atraso generadas por la IA como datos fidedignos para modificar el cronograma.' },
-            { id: 'b', text: 'Diferenciar la información sustentada por los registros disponibles de las interpretaciones, señalando como aspecto que requiere verificación cualquier impacto no demostrable con los datos actuales.' },
-            { id: 'c', text: 'Descartar todo uso de IA en cambios porque no se cuenta con métricas históricas de 10 proyectos pasados.' },
-            { id: 'd', text: 'Permitir que la IA decida autónomamente cuáles solicitudes de cambio deben ser aprobadas o rechazadas.' },
+            { id: 'a', text: 'Seleccionar los recursos directamente relacionados con la necesidad, explicar por qué cada uno será utilizado, conservar las restricciones relevantes y excluir información que no aporte a la tarea, evitando completar vacíos con datos inventados.' },
+            { id: 'b', text: 'Incorporar todos los documentos disponibles porque la IA necesita conocer la totalidad del proyecto para producir resultados suficientemente completos, aunque algunos documentos no tengan relación directa con la tarea.' },
+            { id: 'c', text: 'Utilizar exclusivamente las incidencias porque representan problemas concretos del proyecto. Los requisitos, historias y reuniones pueden omitirse para evitar que la información contextual desvíe la atención del modelo.' },
+            { id: 'd', text: 'Completar los registros disponibles con información estimada sobre usuarios, causas, costos o tiempos para que la IA pueda realizar el análisis sin encontrar campos incompletos durante la ejecución.' },
           ],
-          correctOptionId: 'b',
-          explanation: 'El Registro de aplicación exige separar datos observados de estimaciones especulativas que requieren confirmación técnica.',
+          correctOptionId: 'a',
+          explanation: 'Preparar la información implica seleccionar solo los recursos pertinentes para la necesidad, justificar su uso, conservar las restricciones y no completar vacíos con datos inventados.',
         },
         {
           id: 21,
-          question: 'En la auditoría del Laboratorio 3 (Semana 10), la IA afirmó que "los problemas se deben a falta de coordinación de los desarrolladores". Al contrastar con INC-01 a INC-08, ¿cuál es el diagnóstico metodológico?',
+          question: `Durante el Laboratorio 3, una IA genera un análisis de incidencias de un proyecto. El resultado contiene datos que aparecen directamente en los registros, afirmaciones que omiten información disponible, posibles explicaciones causales y una recomendación que contradice una restricción explícita del caso.
+
+El estudiante debe realizar una auditoría antes de construir el refinamiento.
+
+¿Cuál procedimiento resulta más adecuado?`,
           options: [
-            { id: 'a', text: 'Es un hallazgo correcto porque los defectos de software siempre reflejan desorganización humana.' },
-            { id: 'b', text: 'La IA atribuyó una causa no documentada y emitió un juicio sin evidencia, ya que los datos suministrados solo contenían descripción, prioridad, estado y módulo de las fallas.' },
-            { id: 'c', text: 'La respuesta es válida si el director del proyecto sospecha que los desarrolladores no se comunican.' },
-            { id: 'd', text: 'El fallo se debió a que la lista de incidencias era menor a 50 registros.' },
+            { id: 'a', text: 'Clasificar cada afirmación únicamente como correcta o incorrecta para simplificar la revisión. Los detalles sobre interpretaciones y restricciones pueden abordarse después si tienen impacto sobre la decisión final.' },
+            { id: 'b', text: 'Concentrar la auditoría en las afirmaciones que parezcan técnicamente incorrectas y aceptar las restantes como sustentadas, porque una revisión completa podría hacer demasiado extenso el informe.' },
+            { id: 'c', text: 'Solicitar a la misma IA que evalúe su respuesta, determine cuáles afirmaciones son correctas y proponga automáticamente una versión corregida que pueda utilizarse como resultado definitivo.' },
+            { id: 'd', text: 'Revisar el resultado diferenciando información sustentada, información incompleta, interpretaciones, información que requiere verificación, incumplimientos de restricciones y resultados no pertinentes, dejando evidencia de los hallazgos que posteriormente orientarán el refinamiento.' },
           ],
-          correctOptionId: 'b',
-          explanation: 'Atribuir causas interpersonales sin datos de desempeño constituye una alucinación causal no sustentada en la entrada.',
+          correctOptionId: 'd',
+          explanation: 'La auditoría debe diferenciar lo sustentado de lo incompleto, interpretado, no verificado, no pertinente o contrario a las restricciones, y dejar evidencia que oriente el refinamiento.',
         },
         {
           id: 22,
-          question: 'La instrucción inicial del Lab 3 pedía: "Analiza incidencias, explica qué está ocurriendo y señala qué debería hacer el equipo para solucionarlos". ¿Qué deficiencia de diseño provocó los sesgos en la respuesta?',
+          question: `En una aplicación de IA para un proyecto de desarrollo, la primera ejecución identificó correctamente varios problemas, pero mezcló hechos con interpretaciones. Además, generó recomendaciones que no estaban relacionadas directamente con la evidencia suministrada.
+
+El estudiante debe preparar una segunda versión del prompt.
+
+¿Cuál cambio responde mejor a la evidencia obtenida?`,
           options: [
-            { id: 'a', text: 'El prompt era corto y no incluía un rol de gurú de aseguramiento de calidad.' },
-            { id: 'b', text: 'El prompt solicitó "explicar qué está ocurriendo y qué debería hacer el equipo" de forma abierta, sin restringir el análisis a los datos objetivos ni prohibir inferencias causales no fundamentadas.' },
-            { id: 'c', text: 'No se especificó la versión exacta del modelo de lenguaje que procesaba la solicitud.' },
-            { id: 'd', text: 'Se organizó por módulo en lugar de organizar por fecha de creación.' },
+            { id: 'a', text: 'Cambiar el rol de la IA por uno de mayor experiencia y solicitarle que vuelva a analizar el mismo material, suponiendo que un rol más especializado evitará automáticamente las interpretaciones no sustentadas.' },
+            { id: 'b', text: 'Aumentar la cantidad de información contextual agregando antecedentes generales del proyecto y prácticas de otras organizaciones para que la IA tenga más elementos con los cuales explicar las recomendaciones.' },
+            { id: 'c', text: 'Mantener la instrucción original y solicitar varias ejecuciones adicionales. Posteriormente seleccionar la respuesta que parezca más coherente con la interpretación del equipo, sin modificar las condiciones de la tarea.' },
+            { id: 'd', text: 'Incorporar condiciones que obliguen a separar datos de interpretaciones, relacionar cada hallazgo con la evidencia disponible, señalar información insuficiente y presentar como pendiente de verificación cualquier recomendación que no pueda sustentarse directamente.' },
           ],
-          correctOptionId: 'b',
-          explanation: 'Pedir explicaciones y soluciones abiertas sin restricciones instruccionales incita al modelo a especular causas y recomendar acciones no autorizadas.',
+          correctOptionId: 'd',
+          explanation: 'El refinamiento debe responder a los problemas detectados: separar datos de interpretaciones, vincular cada hallazgo con la evidencia y marcar como pendiente lo que no puede sustentarse.',
         },
         {
           id: 23,
-          question: 'En el Reto Integrador (Lab 4, Semana 11), una condición obligatoria es que "la IA no debe sustituir decisiones que correspondan al equipo". ¿Cuál resultado cumple rigurosamente esta condición?',
+          question: `Un estudiante finalizó cuatro aplicaciones de IA durante los laboratorios. Para la primera aplicación conserva únicamente el prompt final y el resultado. Para la segunda conserva el contexto, prompt inicial, resultado, evaluación y refinamiento. Para la tercera conserva todas las etapas, pero no documentó la comparación entre versiones. La cuarta contiene el ciclo completo y una validación fundamentada.
+
+El estudiante debe determinar qué evidencias están suficientemente documentadas para el portafolio.
+
+¿Cuál criterio debe aplicar?`,
           options: [
-            { id: 'a', text: 'Un informe en el que la IA aprueba formalmente el paso a producción del módulo de solicitudes.' },
-            { id: 'b', text: 'Una matriz estructurada que organiza evidencias y clasifica incidencias por severidad, señalando vacíos de información y dejando la priorización y decisión en manos de los líderes del proyecto.' },
-            { id: 'c', text: 'Un plan de contingencia generado automáticamente que reasigna el presupuesto del proyecto sin revisión.' },
-            { id: 'd', text: 'Un documento que determina de forma vinculante qué programadores deben ser reasignados a soporte técnico.' },
+            { id: 'a', text: 'Considerar suficientes las evidencias que contengan el prompt final y un resultado útil, porque el propósito principal del portafolio es mostrar las instrucciones que pueden reutilizarse posteriormente.' },
+            { id: 'b', text: 'Considerar como evidencia completa aquella que permita reconstruir el proceso: necesidad y contexto, instrucción inicial, resultado, evaluación, problemas detectados, refinamiento, nuevo resultado, comparación y validación; las evidencias incompletas deben complementarse antes de incorporarse como aplicaciones validadas.' },
+            { id: 'c', text: 'Considerar suficientes las evidencias que incluyan una evaluación y una conclusión, incluso si no conservan la primera versión de la instrucción, porque la versión final representa el aprendizaje obtenido durante el proceso.' },
+            { id: 'd', text: 'Considerar válidas todas las evidencias siempre que la IA haya producido resultados técnicamente razonables. La documentación del proceso puede simplificarse porque el resultado final representa la calidad alcanzada.' },
           ],
           correctOptionId: 'b',
-          explanation: 'La IA actúa como herramienta de apoyo analítico estructurado; la priorización y la toma de decisiones permanecen bajo el criterio y responsabilidad humana.',
+          explanation: 'Una evidencia es completa cuando permite reconstruir todo el proceso, desde la necesidad hasta la validación; las incompletas deben complementarse antes de incorporarse al portafolio.',
         },
         {
           id: 24,
-          question: 'El Portafolio de aplicaciones de IA validadas consolida la Ficha (Lab 1), Registro (Lab 2), Informe (Lab 3) y Caso integral (Lab 4). ¿Qué demuestra este producto a nivel de competencias profesionales?',
+          question: `En el Laboratorio 4, un estudiante recibe un caso completo de un proyecto tecnológico y debe desarrollar un Caso de aplicación integral de IA. La actividad exige que seleccione una necesidad, prepare la información, construya una instrucción, ejecute la aplicación, evalúe y audite el resultado, realice un refinamiento, compare las versiones y justifique la validación.
+
+¿Cuál secuencia representa de manera más completa el proceso?`,
           options: [
-            { id: 'a', text: 'Que el estudiante puede generar textos extensos rápidamente con herramientas automáticas.' },
-            { id: 'b', text: 'Que el profesional domina el ciclo metodológico completo de formulación, prueba, auditoría crítica, refinamiento y validación ética y verificable de IA en entornos TIC.' },
-            { id: 'c', text: 'Que el estudiante reemplazó la necesidad de contar con analistas de requisitos y evaluadores en el equipo.' },
-            { id: 'd', text: 'Que todas las respuestas de IA son infalibles si el prompt tiene más de tres párrafos.' },
+            { id: 'a', text: 'Contexto del proyecto → definición de la necesidad → aplicación seleccionada → información suministrada → instrucción inicial → resultado inicial → evaluación y auditoría → refinamiento → resultado final → comparación → justificación de la aplicación → validación.' },
+            { id: 'b', text: 'Aplicación seleccionada → construcción del prompt → resultado inicial → selección de la necesidad → auditoría → refinamiento → resultado final. La información utilizada y la validación pueden documentarse al finalizar el proceso.' },
+            { id: 'c', text: 'Contexto → resultado generado → identificación de problemas → definición de la necesidad → prompt inicial → comparación de resultados → validación. La aplicación puede determinarse a partir de lo observado en la primera ejecución.' },
+            { id: 'd', text: 'Necesidad → resultado final → validación → prompt inicial → auditoría → comparación. La IA puede completar automáticamente los elementos que no hayan sido documentados por el estudiante durante el laboratorio.' },
           ],
-          correctOptionId: 'b',
-          explanation: 'El portafolio evidencia competencia en gobernanza, verificación empírica y uso crítico de IA generativa en proyectos.',
+          correctOptionId: 'a',
+          explanation: 'El caso integral sigue la secuencia completa: contexto, necesidad, aplicación, información, instrucción, resultado, auditoría, refinamiento, comparación, justificación y validación.',
         },
         {
           id: 25,
-          question: 'De acuerdo con el PMBOK® Guide y los fundamentos del Nivel 4, ¿cómo se aplica el principio de adaptación (tailoring) al diseño de instrucciones de IA para proyectos tecnológicos?',
+          question: `Un equipo desarrolla un proyecto de transformación digital y utiliza IA para analizar solicitudes de cambio. La aplicación cuenta con una necesidad claramente definida, información de entrada pertinente, una instrucción inicial, un resultado inicial y una auditoría. Después de identificar problemas, el equipo refinó la instrucción y obtuvo una segunda respuesta.
+
+En la comparación se observa que la nueva versión distingue correctamente entre información sustentada e interpretación, cumple los criterios definidos y señala explícitamente los elementos que todavía necesitan revisión. El resultado será utilizado como apoyo durante una reunión de gestión, no como decisión automática.
+
+¿Cuál conclusión representa mejor una validación adecuada?`,
           options: [
-            { id: 'a', text: 'Aplicando siempre la misma plantilla genérica de prompt a cualquier tarea de gestión sin modificar sus componentes.' },
-            { id: 'b', text: 'Ajustando deliberadamente los componentes del prompt (contexto, rol, restricciones, criterios y formato) a la complejidad, etapa del ciclo de vida y necesidad específica del proyecto TIC.' },
-            { id: 'c', text: 'Utilizando únicamente modelos de lenguaje de código abierto para evitar dependencias de proveedores.' },
-            { id: 'd', text: 'Traduciendo todas las instrucciones al idioma inglés para aumentar la velocidad del modelo.' },
+            { id: 'a', text: 'La aplicación puede considerarse completamente autónoma porque la segunda versión cumple los criterios definidos. El equipo puede utilizar directamente sus conclusiones para tomar decisiones sin realizar una revisión adicional.' },
+            { id: 'b', text: 'La aplicación debe descartarse porque la existencia de aspectos que requieren revisión demuestra que la IA no logró producir una respuesta completamente definitiva para el proyecto.' },
+            { id: 'c', text: 'La aplicación puede considerarse validada como apoyo para la situación planteada, porque existe evidencia del proceso, cumplimiento de criterios, refinamiento fundamentado y reconocimiento explícito de las limitaciones y aspectos que requieren revisión humana.' },
+            { id: 'd', text: 'La aplicación puede considerarse válida principalmente porque la segunda respuesta es más completa y organizada que la primera. El cumplimiento de los criterios es secundario mientras el resultado facilite la discusión del equipo.' },
           ],
-          correctOptionId: 'b',
-          explanation: 'Tailoring implica calibrar deliberadamente contexto, restricciones y criterios a la situación específica del proyecto tecnológico.',
+          correctOptionId: 'c',
+          explanation: 'La validación es adecuada cuando existe evidencia del proceso, cumplimiento de criterios, refinamiento fundamentado y reconocimiento explícito de las limitaciones que requieren revisión humana.',
         },
       ],
     },
