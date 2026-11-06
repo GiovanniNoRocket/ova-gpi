@@ -267,7 +267,7 @@ El desarrollador participa en la producción del resultado, pero no determina po
       guidance: 'Comprueba cómo la IA señala la confusión entre verificar (pruebas técnicas) y validar (satisfacción del usuario).',
       reflectionQuestions: [
         '¿Por qué el desarrollador no debe ser quien valide su propio entregable ante el cliente?',
-        '¿Cómo soluciona una matriz RACI los vacíos de responsabilidad en pruebas críticas?',
+        '¿Cómo ayuda una asignación clara de roles y responsabilidades a evitar vacíos en pruebas críticas?',
       ],
       pointsAwarded: 20,
     },

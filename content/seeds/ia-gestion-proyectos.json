@@ -5673,7 +5673,7 @@
             "guidance": "Comprueba cómo la IA señala la confusión entre verificar (pruebas técnicas) y validar (satisfacción del usuario).",
             "reflectionQuestions": [
               "¿Por qué el desarrollador no debe ser quien valide su propio entregable ante el cliente?",
-              "¿Cómo soluciona una matriz RACI los vacíos de responsabilidad en pruebas críticas?"
+              "¿Cómo ayuda una asignación clara de roles y responsabilidades a evitar vacíos en pruebas críticas?"
             ],
             "pointsAwarded": 20
           }
@@ -7248,106 +7248,251 @@
           "order": 19,
           "blockData": {
             "title": "Microevaluación Módulo 11: Seguimiento, Métricas y Gestión de Cambios",
-            "description": "Evalúa tu comprensión de métricas de desempeño, KPI y análisis de impacto en proyectos TIC.",
-            "questionsCount": 4,
-            "passingScore": 75,
-            "pointsAwarded": 50,
+            "description": "Lee cuidadosamente cada situación. Selecciona la alternativa que represente la interpretación o decisión más adecuada de acuerdo con la información disponible. La evaluación busca comprobar tu capacidad para interpretar evidencia, analizar indicadores, reconocer tendencias, evaluar impactos y tomar decisiones sin confundir datos con conclusiones no sustentadas.",
+            "questionsCount": 10,
+            "pointsPerQuestion": 10,
+            "passingScore": 70,
+            "pointsAwarded": 100,
             "questions": [
               {
                 "id": 1,
-                "question": "¿Cuál es la diferencia fundamental entre un dato y un indicador de proyecto?",
+                "question": "Un proyecto TIC desarrolla una plataforma para gestionar solicitudes internas de una organización. Al finalizar el quinto periodo de seguimiento, el tablero muestra:\n\n• 94 % de actividades completadas.\n• 6 actividades pendientes.\n• 2 de las actividades pendientes corresponden a documentación administrativa.\n• 4 actividades pendientes corresponden a pruebas de integración.\n• El siguiente hito requiere que las pruebas de integración estén terminadas.\n• El proyecto conserva cuatro días de margen sobre la fecha del hito.\n\nEl director observa el 94 % de avance y afirma que el proyecto presenta un desempeño satisfactorio.\n\n¿Cuál interpretación es más adecuada?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. No existe diferencia, ambos términos son sinónimos técnicos"
+                    "text": "El proyecto presenta un desempeño satisfactorio porque el porcentaje de actividades completadas supera el 90 %."
                   },
                   {
                     "id": "b",
-                    "text": "B. El dato es una observación aislada sin procesar; el indicador compara la medición contra un objetivo o umbral para orientar decisiones"
+                    "text": "El proyecto presenta un incumplimiento porque existen seis actividades pendientes y toda actividad pendiente representa un retraso."
                   },
                   {
                     "id": "c",
-                    "text": "C. El dato siempre es financiero y el indicador siempre es de calidad"
+                    "text": "El porcentaje general de avance es favorable, pero las actividades pendientes relacionadas con las pruebas de integración requieren análisis debido a su relación con el siguiente hito."
                   },
                   {
                     "id": "d",
-                    "text": "D. El indicador lo genera la IA y el dato lo ingresa el usuario"
+                    "text": "El hito está comprometido porque cuatro actividades necesarias para las pruebas todavía no han terminado."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "El indicador contextualiza una medida frente a una meta para emitir un juicio de valor sobre el desempeño."
+                "correctOptionId": "c",
+                "explanation": "El porcentaje global no es suficiente para interpretar el desempeño. Las cuatro actividades pendientes tienen una relevancia diferente porque están relacionadas directamente con un hito próximo. Sin embargo, tampoco puede afirmarse que el hito esté comprometido, ya que todavía existe margen. La interpretación correcta integra avance, criticidad, dependencias y margen disponible."
               },
               {
                 "id": 2,
-                "question": "¿Qué herramienta permite evitar la corrupción del alcance (scope creep) cuando surgen nuevas solicitudes?",
+                "question": "Un equipo de soporte tecnológico registra durante cuatro semanas la información de atención a incidentes:\n\nSemana | Incidentes críticos | Tiempo promedio de respuesta | SLA cumplido\n1 | 18 | 5,2 h | 96 %\n2 | 21 | 5,8 h | 94 %\n3 | 27 | 6,4 h | 91 %\n4 | 31 | 7,1 h | 87 %\n\nLa organización establece como objetivo mantener al menos el 95 % de los incidentes críticos dentro del SLA.\n\n¿Qué afirmación interpreta correctamente la información?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Prohibir la comunicación entre usuarios y desarrolladores"
+                    "text": "Los 31 incidentes críticos constituyen un KPI porque representan el resultado más reciente."
                   },
                   {
                     "id": "b",
-                    "text": "B. El proceso formal de control integrado de cambios con análisis de impacto"
+                    "text": "El tiempo promedio de respuesta es un dato aislado y no puede utilizarse para evaluar desempeño."
                   },
                   {
                     "id": "c",
-                    "text": "C. Aumentar el presupuesto en un 50 % por defecto"
+                    "text": "El 87 % de cumplimiento del SLA constituye un indicador relevante porque puede compararse con el objetivo establecido del 95 %."
                   },
                   {
                     "id": "d",
-                    "text": "D. Delegar la decisión en un asistente de IA sin revisión"
+                    "text": "El aumento de incidentes demuestra que el equipo perdió capacidad operativa."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "El control integrado de cambios asegura que cada modificación sea evaluada antes de ser aprobada."
+                "correctOptionId": "c",
+                "explanation": "El número de incidentes es un dato, mientras que el tiempo promedio de respuesta es una métrica que permite cuantificar una característica del desempeño. El porcentaje de cumplimiento del SLA adquiere especial utilidad para la gestión porque puede compararse directamente con un objetivo. El aumento de incidentes puede constituir una señal, pero no demuestra por sí mismo una pérdida de capacidad."
               },
               {
                 "id": 3,
-                "question": "¿Por qué no es recomendable monitorear más de 20 o 30 métricas simultáneamente en un equipo de proyecto?",
+                "question": "Una empresa implementa una plataforma de comercio electrónico. Durante seis periodos registra el porcentaje de defectos corregidos dentro del tiempo acordado:\n\n96 % → 95 % → 94 % → 92 % → 90 % → 88 %\n\nDurante los mismos periodos, el volumen de funcionalidades sometidas a prueba también aumenta.\n\nEl líder del equipo afirma:\n\n> “La tendencia demuestra que el equipo está perdiendo capacidad y debemos contratar inmediatamente dos desarrolladores”.\n\n¿Cuál respuesta del gestor es más rigurosa?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Porque las herramientas de software no admiten esa cantidad"
+                    "text": "Aprobar la contratación porque una tendencia descendente demuestra pérdida de capacidad."
                   },
                   {
                     "id": "b",
-                    "text": "B. Porque genera sobrecarga informativa, distrae de los aspectos clave y encarece el seguimiento sin aportar valor proporcional"
+                    "text": "Ignorar la tendencia porque el volumen de funcionalidades también aumentó."
                   },
                   {
                     "id": "c",
-                    "text": "C. Porque el PMBOK® prohíbe usar más de 5 métricas"
+                    "text": "Reconocer la tendencia descendente como una señal que requiere análisis y revisar simultáneamente volumen de trabajo, capacidad, complejidad y otras variables antes de decidir."
                   },
                   {
                     "id": "d",
-                    "text": "D. Porque la IA no puede procesar tablas extensas"
+                    "text": "Concluir que el aumento del volumen de funcionalidades es la causa directa de la disminución."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "Focalizarse en un conjunto balanceado de KPI permite actuar con agilidad sobre lo verdaderamente prioritario."
+                "correctOptionId": "c",
+                "explanation": "La tendencia descendente está sustentada por los datos, pero la causa no. El aumento simultáneo del volumen de trabajo introduce una variable relevante, aunque tampoco demuestra causalidad. Antes de decidir sobre recursos es necesario analizar capacidad, carga, complejidad, productividad y otras condiciones que puedan explicar el comportamiento."
               },
               {
                 "id": 4,
-                "question": "Al utilizar IA generativa para evaluar alternativas de solución ante un retraso crítico, ¿cuál es el rol del gestor?",
+                "question": "En un proyecto de desarrollo de una aplicación móvil se presentan estos resultados durante tres períodos:\n\n• Capacidad utilizada: 82 % → 91 % → 96 %.\n• Retrabajo: 8 % → 13 % → 19 %.\n• Defectos detectados: 11 → 17 → 25.\n• Solicitudes de cambio: 3 → 4 → 4.\n\nEl gerente concluye:\n\n> “El aumento de defectos demuestra que las solicitudes de cambio están provocando problemas de calidad”.\n\n¿Cuál interpretación es más apropiada?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Implementar la primera recomendación generada por el modelo"
+                    "text": "La conclusión es correcta porque los defectos y solicitudes de cambio aumentaron durante el proyecto."
                   },
                   {
                     "id": "b",
-                    "text": "B. Auditar críticamente los supuestos del modelo, verificar viabilidad técnica y asumir la responsabilidad final de la decisión"
+                    "text": "Existe evidencia de una evolución desfavorable en varias métricas, pero no suficiente para atribuir causalidad a las solicitudes de cambio."
                   },
                   {
                     "id": "c",
-                    "text": "C. Trasladar la respuesta del modelo directamente al cliente como justificación"
+                    "text": "Las solicitudes de cambio deben eliminarse inmediatamente para detener el aumento de defectos."
                   },
                   {
                     "id": "d",
-                    "text": "D. Ignorar la IA porque los modelos no comprenden la gestión de proyectos"
+                    "text": "Los defectos son consecuencia directa del aumento de capacidad utilizada."
                   }
                 ],
                 "correctOptionId": "b",
-                "explanation": "La supervisión humana activa y el pensamiento crítico son indispensables al emplear IA en decisiones estratégicas."
+                "explanation": "Los datos muestran un patrón relevante: aumentan capacidad utilizada, retrabajo y defectos. Sin embargo, las solicitudes de cambio permanecen relativamente estables después del segundo periodo. Por tanto, no existe evidencia suficiente para afirmar que sean la causa del deterioro de calidad. El patrón debe investigarse considerando otras variables."
+              },
+              {
+                "id": 5,
+                "question": "Para controlar la capacidad del equipo de un proyecto crítico se establecen estos niveles:\n\n• Verde: hasta 85 %.\n• Amarillo: más de 85 % y hasta 95 %.\n• Rojo: más de 95 %.\n\nDurante dos periodos consecutivos la capacidad utilizada pasa de 92 % a 94 %. El equipo continúa cumpliendo los compromisos principales, pero dos actividades críticas dependen de las mismas personas.\n\n¿Cuál es la interpretación más adecuada?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "La situación es roja porque la capacidad está aumentando."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La situación continúa en amarillo y requiere análisis, especialmente por la concentración de actividades críticas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El equipo está funcionando correctamente porque todavía cumple los compromisos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Deben incorporarse nuevos recursos inmediatamente porque el indicador superó el 90 %."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "El indicador permanece dentro del rango amarillo establecido. Esto significa que requiere atención y análisis, no que exista automáticamente una situación crítica. La concentración de actividades críticas aumenta la relevancia de la señal y justifica revisar capacidad, dependencias y sostenibilidad antes de decidir una acción."
+              },
+              {
+                "id": 6,
+                "question": "Una integración con un sistema externo estaba estimada en 160 horas. Al finalizar, el equipo registra 184 horas. La integración no ha generado retrasos sobre el hito final porque todavía existe margen disponible.\n\nEl líder técnico señala:\n\n> “La estimación fue incorrecta y debemos aumentar permanentemente la capacidad del equipo”.\n\n¿Cuál alternativa representa un análisis más adecuado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "La desviación demuestra que la estimación original fue incorrecta y debe modificarse inmediatamente."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La desviación es de 24 horas, pero todavía debe analizarse su causa y relevancia antes de modificar recursos o referencias futuras."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Como el hito final no está afectado, la desviación puede ignorarse."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El equipo fue menos productivo porque utilizó más horas de las estimadas."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La diferencia absoluta es de 24 horas, equivalente al 15 % sobre las 160 horas previstas. Este resultado constituye una evidencia que debe analizarse, pero no demuestra por sí solo que la estimación haya sido incorrecta ni que el equipo haya perdido productividad. Además, el margen disponible evita concluir automáticamente que existe un impacto sobre el hito."
+              },
+              {
+                "id": 7,
+                "question": "Durante la ejecución de una plataforma educativa ocurre lo siguiente:\n\n• Una funcionalidad presenta un retraso de dos días, pero dispone de siete días de margen.\n• El cliente solicita una nueva funcionalidad no contemplada originalmente.\n• Una nueva regulación modifica los requisitos de seguridad.\n• Un indicador de rendimiento vuelve a su rango normal después de una variación puntual.\n\nEl equipo propone tratar las cuatro situaciones como solicitudes de cambio para mantener una gestión consistente.\n\n¿Cuál respuesta del gestor es más adecuada?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Registrar las cuatro situaciones como cambios porque todas representan una variación respecto a lo esperado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Evaluar como posibles cambios la nueva funcionalidad y la modificación regulatoria, mientras las otras situaciones pueden continuar bajo seguimiento si no generan impactos adicionales."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Convertir únicamente el retraso en cambio porque afecta el cronograma."
+                  },
+                  {
+                    "id": "d",
+                    "text": "No evaluar ningún cambio hasta que exista un incumplimiento definitivo."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "No toda variación constituye un cambio. Una nueva funcionalidad modifica potencialmente el trabajo autorizado y una regulación puede alterar condiciones técnicas o de cumplimiento. En cambio, una variación temporal con suficiente margen puede gestionarse mediante seguimiento, mientras una fluctuación puntual que vuelve a la normalidad no necesariamente requiere modificación."
+              },
+              {
+                "id": 8,
+                "question": "El patrocinador solicita incorporar autenticación biométrica a una aplicación financiera antes de la siguiente liberación. La funcionalidad no estaba contemplada en el alcance actual.\n\nEl equipo estima inicialmente que podría requerir:\n\n• desarrollo adicional;\n• nuevas pruebas de seguridad;\n• actualización de documentación;\n• revisión de riesgos;\n• modificación de la experiencia del usuario.\n\nTambién existe una dependencia con un proveedor especializado.\n\n¿Cuál debería ser el siguiente paso del gestor?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Aprobar la funcionalidad porque fue solicitada directamente por el patrocinador."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Rechazarla porque no estaba incluida en el alcance inicial."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Analizar los impactos, dependencias, esfuerzo, riesgos, restricciones y posibles efectos sobre la liberación antes de decidir."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Incorporarla al backlog inmediatamente y calcular el avance nuevamente."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "Una solicitud del patrocinador no elimina la necesidad de analizar sus consecuencias. El cambio puede afectar múltiples dimensiones del proyecto y además presenta una dependencia externa. El análisis de impacto proporciona información para comparar alternativas y tomar una decisión fundamentada."
+              },
+              {
+                "id": 9,
+                "question": "El gestor proporciona a una herramienta de IA los indicadores de un proyecto. La herramienta responde:\n\n> “El aumento del 30 % en los defectos se debe a la sobrecarga del equipo. Recomiendo contratar dos desarrolladores inmediatamente”.\n\nEl gestor dispone de estos datos:\n\n• Capacidad utilizada: 93 %.\n• Defectos: +30 %.\n• Retrabajo: +18 %.\n• Volumen de funcionalidades: +35 %.\n• No existe información sobre horas efectivamente trabajadas por cada integrante.\n\n¿Qué debería hacer el gestor?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Aceptar la recomendación porque la IA identificó una relación entre capacidad y defectos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Rechazar completamente el análisis de IA porque las herramientas generativas no deben utilizarse en seguimiento."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Utilizar la respuesta como hipótesis de análisis, verificar la relación entre carga, capacidad, retrabajo y defectos y recopilar la información faltante antes de decidir sobre recursos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Contratar primero los desarrolladores y comprobar posteriormente si los defectos disminuyen."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La IA puede identificar patrones útiles, pero su afirmación causal no está demostrada. Los datos disponibles muestran simultáneamente aumento de capacidad, defectos, retrabajo y volumen de trabajo, pero no permiten determinar qué variable explica el deterioro. La IA puede apoyar la investigación, mientras la decisión debe basarse en evidencia validada."
+              },
+              {
+                "id": 10,
+                "question": "Un proyecto de implementación de una plataforma de servicios presenta el siguiente tablero:\n\nIndicador | Resultado\nCumplimiento de cronograma | 86 %\nSPI | 0,88\nDefectos abiertos | 14\nCapacidad utilizada | 94 %\nRiesgos críticos activos | 3\nAlcance completado | 82 %\nCompromisos de comunicación cumplidos | 93 %\n\nAdemás:\n\n• La integración con un proveedor externo está retrasada.\n• Dos de los tres riesgos críticos están relacionados con esa integración.\n• Los defectos aumentaron durante los últimos tres periodos.\n• Una nueva funcionalidad fue solicitada por un usuario clave.\n• El integrante responsable de la integración está utilizando el 98 % de su capacidad.\n\n¿Cuál actuación representa mejor un enfoque basado en evidencia?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Incorporar inmediatamente la nueva funcionalidad porque el alcance está en 82 %."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Contratar nuevos recursos porque la capacidad está por encima del 90 %."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Analizar prioritariamente la integración externa y su relación con los riesgos, cronograma y capacidad, evaluar alternativas y posteriormente decidir una respuesta trazable."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Concentrarse exclusivamente en reducir los defectos porque constituyen el indicador de peor desempeño."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El tablero presenta varias señales simultáneas y algunas están relacionadas: el retraso de la integración coincide con riesgos críticos, desempeño temporal desfavorable y alta utilización del responsable. Esto no significa que todas tengan una única causa, pero sí justifica un análisis integrado. La nueva funcionalidad también requiere evaluación, aunque no debe incorporarse automáticamente. La decisión debe construirse a partir de evidencia, impactos, alternativas y restricciones."
               }
             ]
           }
@@ -7617,106 +7762,251 @@
           "order": 15,
           "blockData": {
             "title": "Microevaluación Módulo 12: Calidad, Aceptación, Transición y Cierre",
-            "description": "Evalúa tus conocimientos sobre verificación, aceptación formal y lecciones aprendidas.",
-            "questionsCount": 4,
-            "passingScore": 75,
-            "pointsAwarded": 50,
+            "description": "Analiza cuidadosamente cada situación antes de responder. Las preguntas presentan escenarios propios de proyectos TIC en los que puede existir más de una alternativa aparentemente razonable. Selecciona la opción más adecuada considerando las evidencias y condiciones descritas en cada caso.",
+            "questionsCount": 10,
+            "pointsPerQuestion": 10,
+            "passingScore": 70,
+            "pointsAwarded": 100,
             "questions": [
               {
                 "id": 1,
-                "question": "¿Cuál es la diferencia entre verificación y validación en el contexto de entregables TIC?",
+                "question": "Una empresa de servicios financieros finaliza un proyecto para implementar un nuevo sistema de conciliación bancaria. Durante las pruebas finales, el equipo demuestra mediante registros que las operaciones se procesan correctamente y que los reportes cumplen los requisitos técnicos definidos. El área usuaria también revisó algunos casos reales y manifestó que el sistema resulta adecuado para su operación.\n\nSin embargo, el responsable designado para aceptar formalmente el entregable todavía no ha firmado el acta correspondiente. La dirección del proyecto propone cerrar inmediatamente porque considera que las pruebas y la revisión de los usuarios son suficientes.\n\n¿Cuál es la interpretación más adecuada de la situación?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. No hay diferencia, ambos términos son equivalentes en gestión de proyectos"
+                    "text": "El proyecto ya está cerrado porque las pruebas técnicas fueron satisfactorias."
                   },
                   {
                     "id": "b",
-                    "text": "B. La verificación comprueba el cumplimiento de especificaciones técnicas; la validación confirma que la solución satisface la necesidad real del usuario en su contexto operativo"
+                    "text": "La validación de los usuarios reemplaza la aceptación formal del responsable."
                   },
                   {
                     "id": "c",
-                    "text": "C. La verificación la hace el cliente y la validación la hace el programador"
+                    "text": "Existen evidencias de verificación y validación, pero la aceptación formal todavía está pendiente."
                   },
                   {
                     "id": "d",
-                    "text": "D. La verificación es financiera y la validación es legal"
+                    "text": "El sistema debe volver a pruebas porque todavía no existe aceptación formal."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "Verificar evalúa si el producto se construyó conforme al diseño; validar confirma si resuelve eficazmente la necesidad del usuario."
+                "correctOptionId": "c",
+                "explanation": "Las pruebas proporcionan evidencia de verificación y la revisión de los usuarios aporta elementos de validación, pero ninguna de las dos sustituye automáticamente la aceptación formal cuando esta corresponde a una autoridad definida. El hecho de que el resultado funcione y sea considerado adecuado no significa que todas las condiciones de cierre estén completadas. Por ello, debe gestionarse la aceptación antes de formalizar el cierre."
               },
               {
                 "id": 2,
-                "question": "¿Por qué es riesgoso cerrar un proyecto inmediatamente después de terminar el desarrollo sin un periodo de transición?",
+                "question": "Una compañía implementó una plataforma de comercio electrónico y definió varios criterios para su salida. Al finalizar las pruebas, se obtiene el siguiente resultado:\n\nCriterio | Condición esperada | Resultado\nDisponibilidad | ≥ 99,5% | 99,8%\nTransacciones correctas | ≥ 98% | 99,1%\nTiempo de respuesta | ≤ 2 segundos | 2,8 segundos\nVulnerabilidades críticas | 0 | 0\n\nEl equipo sostiene que el resultado debe considerarse completamente conforme porque tres de los cuatro criterios presentan resultados satisfactorios y la plataforma puede utilizarse normalmente.\n\n¿Cuál decisión refleja mejor una gestión responsable de la calidad?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Porque el equipo de soporte y los usuarios no contarán con la preparación ni el conocimiento para mantener la solución operativa"
+                    "text": "Aceptar sin observaciones porque la mayoría de los criterios fueron cumplidos."
                   },
                   {
                     "id": "b",
-                    "text": "B. Porque el servidor se desconfigura automáticamente"
+                    "text": "Rechazar todo el resultado porque existe una desviación."
                   },
                   {
                     "id": "c",
-                    "text": "C. Porque la metodología ágil no lo permite"
+                    "text": "Registrar la desviación de rendimiento y analizar su impacto antes de concluir sobre la conformidad total."
                   },
                   {
                     "id": "d",
-                    "text": "D. Porque los proveedores externos no cobran hasta que termine la transición"
+                    "text": "Eliminar el criterio de tiempo porque no afecta la funcionalidad principal."
                   }
                 ],
-                "correctOptionId": "a",
-                "explanation": "La transición asegura la transferencia de conocimiento y garantiza la sostenibilidad y continuidad del servicio."
+                "correctOptionId": "c",
+                "explanation": "El cumplimiento de varios criterios no elimina una desviación identificada en otro criterio acordado. El tiempo de respuesta supera la condición establecida y, por tanto, debe analizarse su impacto y determinarse la acción correspondiente. Esto no implica rechazar automáticamente todo el resultado, pero tampoco permite afirmar que existe cumplimiento total sin considerar la desviación."
               },
               {
                 "id": 3,
-                "question": "¿Cuál es el propósito principal de documentar las lecciones aprendidas en el cierre?",
+                "question": "Un proyecto de implementación de un sistema de gestión de expedientes se encuentra próximo a la aceptación. El equipo registra cinco asuntos abiertos: una mejora visual solicitada después del desarrollo, un error que impide generar un reporte obligatorio, una recomendación de capacitación adicional, una funcionalidad futura que no pertenece al alcance y una vulnerabilidad crítica aún sin resolver.\n\nEl patrocinador solicita que todos los asuntos se incluyan como bloqueos porque desea que el cierre no deje ningún elemento abierto.\n\n¿Cuál clasificación representa mejor la situación?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Asignar culpas a los integrantes del equipo por errores cometidos"
+                    "text": "Todos son bloqueos porque cualquier pendiente impide cerrar."
                   },
                   {
                     "id": "b",
-                    "text": "B. Convertir la experiencia del proyecto en conocimiento organizacional útil para evitar errores y replicar éxitos futuros"
+                    "text": "Solo la mejora visual y la funcionalidad futura son bloqueos porque fueron solicitadas recientemente."
                   },
                   {
                     "id": "c",
-                    "text": "C. Cumplir un trámite burocrático que no se vuelve a consultar"
+                    "text": "El reporte obligatorio y la vulnerabilidad crítica requieren atención crítica; los demás deben evaluarse según su impacto y condiciones acordadas."
                   },
                   {
                     "id": "d",
-                    "text": "D. Aumentar el tamaño del archivo final de bitácora"
+                    "text": "Ningún elemento es relevante porque los entregables principales ya están terminados."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "Las lecciones aprendidas enriquecen el capital intelectual y la madurez de gestión de la organización."
+                "correctOptionId": "c",
+                "explanation": "No todos los pendientes tienen automáticamente el mismo nivel de impacto. Un error que afecta una función obligatoria y una vulnerabilidad crítica pueden comprometer condiciones esenciales de aceptación o seguridad. Los demás elementos deben analizarse según su relación con los criterios, el alcance y los acuerdos establecidos, evitando convertir cualquier asunto abierto en un bloqueo."
               },
               {
                 "id": 4,
-                "question": "¿Cuándo se considera que un entregable ha sido formalmente aceptado?",
+                "question": "Una empresa termina un proyecto para implementar una plataforma de monitoreo de infraestructura. El sistema funciona correctamente y los usuarios han recibido una demostración general. No obstante, durante la reunión de transición se descubre que el equipo de operaciones no tiene documentado el procedimiento para responder ante una caída del servicio y que nadie ha sido designado formalmente para coordinar la recuperación.\n\nEl director considera que estos aspectos pueden resolverse después porque el sistema ya fue entregado.\n\n¿Qué debería hacer el gestor antes de considerar completada la transición?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Cuando el desarrollador afirma en el chat que el código está listo"
+                    "text": "Cerrar el proyecto porque el sistema ya funciona."
                   },
                   {
                     "id": "b",
-                    "text": "B. Cuando los interesados autorizados revisan las evidencias frente a criterios de aceptación y firman o documentan formalmente su conformidad"
+                    "text": "Entregar el sistema al primer miembro disponible del equipo operativo."
                   },
                   {
                     "id": "c",
-                    "text": "C. Cuando se agota el tiempo del cronograma previsto"
+                    "text": "Asegurar el procedimiento de recuperación y definir la responsabilidad correspondiente antes de finalizar la transición."
                   },
                   {
                     "id": "d",
-                    "text": "D. Cuando el modelo de IA evalúa que el entregable es correcto"
+                    "text": "Solicitar al proveedor que continúe indefinidamente con la operación."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La transición no consiste solamente en poner una solución a disposición de los usuarios. El equipo receptor necesita contar con conocimientos, procedimientos y responsabilidades suficientes para asumir la operación. La ausencia de un procedimiento crítico y de un responsable definido representa una brecha de preparación que debe gestionarse antes de considerar completa la transición."
+              },
+              {
+                "id": 5,
+                "question": "Durante el cierre de un proyecto de infraestructura tecnológica, el principal especialista del proveedor conoce detalles importantes de una configuración que no están completamente documentados. El contrato del especialista finaliza en cinco días y el equipo interno afirma que podrá consultar la documentación existente cuando sea necesario.\n\nEl gestor revisa los documentos y descubre que estos describen la configuración general, pero no contienen los procedimientos específicos para resolver dos escenarios críticos de recuperación.\n\n¿Cuál acción debería priorizar el gestor?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Liberar al especialista porque existe documentación general."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Solicitar que el especialista transfiera el conocimiento crítico y documentar evidencias de la transferencia."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mantener al especialista indefinidamente para evitar cualquier riesgo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Esperar a que ocurra una incidencia para comprobar si el equipo interno puede resolverla."
                   }
                 ],
                 "correctOptionId": "b",
-                "explanation": "La aceptación formal exige evidencia verificable y la conformidad documentada de los interesados autorizados."
+                "explanation": "La existencia de documentación general no garantiza que se haya transferido todo el conocimiento necesario para la continuidad. Si existen conocimientos críticos que solo posee una persona, deben identificarse y transferirse antes de su liberación. La transferencia debe quedar respaldada mediante documentación, sesiones, demostraciones u otras evidencias que permitan comprobar que el equipo receptor puede asumir la responsabilidad."
+              },
+              {
+                "id": 6,
+                "question": "Una organización implementa una plataforma de automatización de compras. El proyecto tenía como resultado esperado reducir en 25% el tiempo dedicado a gestionar solicitudes. Al cierre se observa una reducción del 21%. El sistema fue aceptado y está funcionando, pero el área financiera espera que durante los siguientes seis meses se produzca una reducción adicional de costos administrativos.\n\nEl informe preliminar del proyecto afirma que “el beneficio económico fue alcanzado porque la solución fue aceptada”.\n\n¿Cuál corrección debería realizarse en el informe?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Eliminar el beneficio porque todavía no existe evidencia completa."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Registrar el resultado observado, diferenciarlo del beneficio esperado y establecer seguimiento para el beneficio futuro."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mantener la afirmación porque la aceptación demuestra el valor generado."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Registrar automáticamente una reducción del 25% porque era la meta inicial."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La aceptación confirma una condición relacionada con el resultado entregado, pero no demuestra automáticamente que todos los beneficios esperados se hayan materializado. El 21% es un resultado observado que debe compararse con la meta del 25%, mientras que la reducción futura de costos debe registrarse como beneficio sujeto a seguimiento. Esta diferenciación permite presentar el cierre con mayor precisión."
+              },
+              {
+                "id": 7,
+                "question": "Una entidad implementa una solución digital para gestionar solicitudes de ciudadanos. El proyecto termina dentro del presupuesto y la solución supera las pruebas técnicas. Sin embargo, durante la revisión final se descubre que no existe presupuesto asignado para mantenimiento después del primer año y tampoco se ha definido quién actualizará los componentes de la solución.\n\nLa dirección considera que estos asuntos no son responsabilidad del proyecto porque corresponden a la etapa posterior.\n\n¿Cuál interpretación es más adecuada?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "No existe ningún problema porque la solución cumplió los criterios técnicos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La sostenibilidad debe considerarse porque la continuidad del resultado depende de responsabilidades y recursos posteriores."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El proyecto debe continuar indefinidamente hasta garantizar la operación durante varios años."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los asuntos de mantenimiento deben eliminarse del reporte para evitar ampliar el alcance."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La sostenibilidad requiere considerar las condiciones que permitirán mantener el resultado después del cierre, incluyendo responsabilidades y recursos cuando sean relevantes. Esto no significa prolongar indefinidamente el proyecto, sino identificar y documentar las condiciones necesarias para la continuidad. Las brechas encontradas deben quedar visibles y asignadas a quienes correspondan."
+              },
+              {
+                "id": 8,
+                "question": "Un proyecto de migración de información tuvo retrasos porque varias fuentes externas no estaban disponibles cuando comenzaron las pruebas. Durante la reunión final aparecen cuatro propuestas para registrar una lección aprendida:",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "“La migración tuvo muchos retrasos.”"
+                  },
+                  {
+                    "id": "b",
+                    "text": "“Las fuentes externas fueron difíciles de manejar.”"
+                  },
+                  {
+                    "id": "c",
+                    "text": "“Debe mejorarse la comunicación con terceros.”"
+                  },
+                  {
+                    "id": "d",
+                    "text": "“Las fuentes externas críticas deben confirmar disponibilidad y condiciones de acceso antes de programar pruebas dependientes de ellas.”"
+                  }
+                ],
+                "correctOptionId": "d",
+                "explanation": "Una lección aprendida debe transformar una experiencia concreta en conocimiento aplicable a futuros proyectos. La opción D identifica una condición específica que puede prevenir una situación similar y propone una práctica concreta para futuras iniciativas. Las demás opciones describen el problema de forma demasiado general y no proporcionan una orientación suficientemente accionable."
+              },
+              {
+                "id": 9,
+                "question": "El gestor utiliza IA generativa para analizar el cierre de un proyecto de atención al cliente. Proporciona una tabla con defectos, tiempos de respuesta, estado de aceptación y resultados de satisfacción. La IA responde:\n\n1. “Los defectos disminuyeron durante las últimas tres mediciones.”\n2. “La reducción de defectos fue causada por una mayor capacidad del equipo.”\n3. “El nivel de satisfacción alcanzó la meta definida.”\n4. “La relación entre capacidad y defectos debería investigarse.”\n\nAl revisar los datos, el gestor confirma la tendencia de defectos y el cumplimiento de satisfacción, pero la tabla no contiene información suficiente para establecer una relación causal con la capacidad del equipo.\n\n¿Cuál clasificación es correcta?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "1 Sustentada / 2 Sustentada / 3 Sustentada / 4 No sustentada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "1 Sustentada / 2 Requiere verificación / 3 Sustentada / 4 Sustentada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "1 Requiere verificación / 2 No sustentada / 3 Requiere verificación / 4 No sustentada"
+                  },
+                  {
+                    "id": "d",
+                    "text": "1 Sustentada / 2 No sustentada / 3 No sustentada / 4 Requiere verificación"
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La primera afirmación está respaldada por los datos y la tercera también, según la información proporcionada. La segunda introduce una relación causal que no está demostrada, por lo que requiere verificación antes de aceptarla. La cuarta es una propuesta de investigación coherente con la incertidumbre existente y no afirma que la relación causal ya esté demostrada."
+              },
+              {
+                "id": 10,
+                "question": "Una empresa finaliza un proyecto para implementar una plataforma de gestión de proveedores. El gestor presenta el siguiente estado:\n\n• Los entregables principales fueron completados.\n• Las pruebas finales fueron documentadas.\n• Los criterios técnicos críticos fueron cumplidos.\n• El área usuaria confirmó que la solución satisface sus necesidades.\n• El acta de aceptación está pendiente de firma.\n• La documentación operativa fue transferida.\n• El equipo receptor tiene responsables definidos.\n• Existe una factura final del proveedor pendiente de conciliación.\n• La reducción de tiempos esperada comenzó a observarse, pero todavía debe medirse durante tres meses.\n• Las lecciones aprendidas fueron documentadas.\n\nEl patrocinador propone cerrar inmediatamente porque considera que “el producto está terminado y los usuarios están satisfechos”.\n\n¿Cuál actuación representa mejor una revisión integral antes de formalizar el cierre?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Cerrar inmediatamente porque los aspectos técnicos y funcionales están completos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Esperar tres meses hasta confirmar todos los beneficios antes de cerrar."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Gestionar la aceptación formal y revisar el compromiso contractual pendiente, mientras se documenta el seguimiento posterior de los beneficios."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Mantener abierto el proyecto hasta que no exista ningún indicador que requiera seguimiento."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "El proyecto presenta condiciones avanzadas para el cierre, pero todavía existen elementos que requieren atención, especialmente la aceptación formal y la conciliación contractual. Los beneficios que necesitan medición posterior no obligan necesariamente a mantener abierto el proyecto si existe un mecanismo claro de seguimiento y responsabilidad posterior. La decisión de cierre debe integrar evidencias técnicas, aceptación, compromisos, transición y seguimiento de beneficios."
               }
             ]
           }
@@ -7739,7 +8029,7 @@
             "passingScore": 70,
             "badgeKey": "graduado-nivel-3",
             "pointsAwarded": 300,
-            "pointsPerQuestion": 12,
+            "pointsPerQuestion": 4,
             "questions": [
               {
                 "id": 1,
