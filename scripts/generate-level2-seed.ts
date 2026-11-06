@@ -157,7 +157,7 @@ const module6Blocks: BlockSeed[] = [
     order: 12,
     blockData: {
       heading: 'Pantalla 4: Evidencias y Necesidades',
-      content: 'La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar "los usuarios están inconformes"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como "Pendiente de validación" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran más de 450 consultas mensuales repetitivas.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes.',
+      content: 'La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar "los usuarios están inconformes"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como "Pendiente de validación" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran numerosas consultas repetitivas sobre el estado de las solicitudes.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes.',
     },
   },
   {
@@ -316,7 +316,7 @@ const module6Blocks: BlockSeed[] = [
     order: 24,
     blockData: {
       heading: 'Pantalla 11-16: Justificación y Viabilidad 5D (Técnica, Económica, Operativa, Legal, Temporal)',
-      content: 'Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Cumple con protección de datos personales (Habeas Data), licencias y regulaciones?\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica',
+      content: 'Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Puede desarrollarse respetando las normas, políticas y obligaciones aplicables (por ejemplo, protección de datos)? Identifica qué debe validarse sin inventar obligaciones legales específicas.\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica',
     },
   },
   {
@@ -331,7 +331,7 @@ const module6Blocks: BlockSeed[] = [
         { key: 'viabilidad_tecnica', label: 'Viabilidad Técnica (Estado: Favorable / Condicionada / Crítica y situación):', fieldType: 'textarea', maxWords: 80 },
         { key: 'viabilidad_economica', label: 'Viabilidad Económica (Presupuesto vs costos estimados):', fieldType: 'textarea', maxWords: 80 },
         { key: 'viabilidad_operativa', label: 'Viabilidad Operativa (Capacidad de adopción y capacitación):', fieldType: 'textarea', maxWords: 80 },
-        { key: 'viabilidad_legal', label: 'Viabilidad Legal (Habeas Data, privacidad, términos):', fieldType: 'textarea', maxWords: 80 },
+        { key: 'viabilidad_legal', label: 'Viabilidad Legal (normas, políticas y obligaciones aplicables por validar):', fieldType: 'textarea', maxWords: 80 },
         { key: 'viabilidad_temporal', label: 'Viabilidad Temporal (Fecha límite y tiempo estimado):', fieldType: 'textarea', maxWords: 80 },
       ],
       pointsAwarded: 40,
@@ -600,7 +600,7 @@ const module7Blocks: BlockSeed[] = [
     order: 7,
     blockData: {
       heading: 'Pantallas 6-10: Requisitos Funcionales, No Funcionales y MoSCoW',
-      content: 'Secuencia fundamental: Necesidad ➔ Requisito ➔ Solución\n\n• Requisitos Funcionales (RF): Qué debe hacer el sistema (ej. permitir registro de solicitudes, enviar alertas por correo).\n• Requisitos No Funcionales (RNF): Criterios de calidad, seguridad, rendimiento y disponibilidad (ej. tiempo de respuesta < 2s, cifrado TLS 1.3, disponibilidad 99.5%).\n\nPriorización MoSCoW:\n- Must have: Indispensable para que la solución funcione y aporte valor mínimo.\n- Should have: Importante pero no crítico para el lanzamiento inicial.\n- Could have: Deseable si sobran recursos o tiempo.\n- Won’t have: Explícitamente fuera del alcance de la versión actual.',
+      content: 'Secuencia fundamental: Necesidad ➔ Requisito ➔ Solución\n\n• Requisitos Funcionales (RF): Qué debe hacer el sistema (ej. permitir registro de solicitudes, enviar alertas por correo).\n• Requisitos No Funcionales (RNF): Criterios de calidad, seguridad, rendimiento y disponibilidad (ej. el sistema deberá responder en menos de tres segundos para una carga de 500 usuarios concurrentes).\n\nPriorización MoSCoW:\n- Must have: Indispensable para que la solución funcione y aporte valor mínimo.\n- Should have: Importante pero no crítico para el lanzamiento inicial.\n- Could have: Deseable si sobran recursos o tiempo.\n- Won’t have: Explícitamente fuera del alcance de la versión actual.',
     },
   },
   {
@@ -612,9 +612,9 @@ const module7Blocks: BlockSeed[] = [
         { id: 'a', text: 'Permitir que los usuarios creen una cuenta con correo y contraseña', isCorrect: false },
         { id: 'b', text: 'Permitir que los administradores generen reportes mensuales', isCorrect: false },
         { id: 'c', text: 'Permitir consultar el estado de la solicitud ingresando el número de radicado', isCorrect: false },
-        { id: 'd', text: 'Garantizar que la información sensible almacenada esté protegida mediante cifrado AES-256', isCorrect: true },
+        { id: 'd', text: 'Garantizar que la información sensible almacenada y transmitida por la plataforma sea protegida mediante mecanismos de cifrado', isCorrect: true },
       ],
-      explanation: 'El cifrado AES-256 define una condición de seguridad y calidad técnica, mientras que las otras son funcionalidades del sistema.',
+      explanation: 'La protección mediante cifrado define una condición de seguridad y calidad que debe cumplir la plataforma, mientras que las otras opciones describen funcionalidades del sistema.',
       pointsAwarded: 15,
     },
   },
@@ -1006,6 +1006,76 @@ const module8Blocks: BlockSeed[] = [
         { key: 'presupuesto_total_resumen', label: 'Presupuesto Total Consolidado y Supuestos Económicos:', fieldType: 'textarea', maxWords: 100 },
       ],
       pointsAwarded: 40,
+    },
+  },
+  {
+    type: 'EXAM',
+    order: 17,
+    blockData: {
+      title: 'Microevaluación Módulo 8: Cronograma, Recursos y Costos',
+      description: 'Has llegado a la evaluación de cierre del Módulo 8. Cronograma, recursos y costos. Las siguientes situaciones integran los conceptos trabajados y requieren relacionar diferentes elementos de la planificación.',
+      questionsCount: 4,
+      pointsPerQuestion: 25,
+      passingScore: 75,
+      pointsAwarded: 50,
+      questions: [
+        {
+          id: 1,
+          question: `Un equipo de desarrollo estima que una funcionalidad tardará 8 días. Sin embargo, nunca ha trabajado con la tecnología requerida y no existen datos históricos.
+
+¿Qué debería hacer el equipo?`,
+          options: [
+            { id: 'a', text: 'Mantener exactamente 8 días porque ya fue estimado.' },
+            { id: 'b', text: 'Eliminar la funcionalidad.' },
+            { id: 'c', text: 'Reconocer la incertidumbre, documentar supuestos y mejorar progresivamente la estimación.' },
+            { id: 'd', text: 'Utilizar automáticamente la estimación generada por IA.' },
+          ],
+          correctOptionId: 'c',
+          explanation: 'La falta de experiencia genera incertidumbre sobre la duración. El equipo debe documentarla y buscar información que permita mejorar la estimación sin asumir que una cifra inicial es completamente exacta.',
+        },
+        {
+          id: 2,
+          question: `Un proyecto contempla desarrollar una aplicación móvil, pero el presupuesto no incluye recursos para realizar las pruebas de seguridad requeridas.
+
+¿Qué debería identificar el equipo?`,
+          options: [
+            { id: 'a', text: 'Una inconsistencia entre alcance, recursos y costos.' },
+            { id: 'b', text: 'Únicamente un problema del cronograma.' },
+            { id: 'c', text: 'Un problema exclusivamente de comunicación.' },
+            { id: 'd', text: 'Ningún problema mientras exista presupuesto total.' },
+          ],
+          correctOptionId: 'a',
+          explanation: 'Si las pruebas forman parte del trabajo necesario para entregar el producto, deben reflejarse en las actividades, recursos y costos. La planificación debe representar el trabajo real del proyecto.',
+        },
+        {
+          id: 3,
+          question: `Una organización tiene un proyecto con presupuesto limitado, pocos recursos disponibles y una fecha máxima de entrega.
+
+¿Qué debería hacer el equipo al adaptar su planificación?`,
+          options: [
+            { id: 'a', text: 'Ignorar las restricciones.' },
+            { id: 'b', text: 'Ajustar la planificación considerando las condiciones reales del proyecto.' },
+            { id: 'c', text: 'Eliminar todas las actividades complejas.' },
+            { id: 'd', text: 'Dejar que la IA determine automáticamente el plan.' },
+          ],
+          correctOptionId: 'b',
+          explanation: 'La adaptación debe considerar restricciones, disponibilidad de recursos, cronograma y costos. El objetivo es construir una planificación viable dentro del contexto existente.',
+        },
+        {
+          id: 4,
+          question: `Un estudiante utiliza IA para revisar su planificación y recibe una recomendación que contradice la información proporcionada por el proveedor del proyecto.
+
+¿Qué debería hacer?`,
+          options: [
+            { id: 'a', text: 'Aplicar inmediatamente la recomendación de IA.' },
+            { id: 'b', text: 'Ignorar siempre a la IA.' },
+            { id: 'c', text: 'Comparar ambas fuentes y validar la información antes de modificar el proyecto.' },
+            { id: 'd', text: 'Pedir a la IA que decida cuál información es correcta.' },
+          ],
+          correctOptionId: 'c',
+          explanation: 'La IA funciona como herramienta de contraste. Cuando existe información real del proyecto, el estudiante debe validarla y utilizar su criterio para determinar qué decisión corresponde.',
+        },
+      ],
     },
   },
   {

@@ -2304,7 +2304,7 @@
           "order": 15,
           "blockData": {
             "heading": "Pantalla 4: Evidencias y Necesidades",
-            "content": "La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar \"los usuarios están inconformes\"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como \"Pendiente de validación\" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran más de 450 consultas mensuales repetitivas.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes."
+            "content": "La evidencia permite sustentar que un problema existe. Puede provenir de datos, registros, entrevistas, encuestas, observaciones o indicadores.\n\nLas necesidades representan aquello que las personas, procesos u organizaciones requieren para mejorar la situación actual.\n\nNo es suficiente afirmar \"los usuarios están inconformes\"; debemos identificar cómo podemos comprobarlo objetivamente. Cuando aún no contamos con información suficiente, debemos declararlo como \"Pendiente de validación\" en lugar de inventar datos.\n\nEjemplo del caso:\n• Problema: Los estudiantes tienen dificultades para conocer el estado de sus solicitudes.\n• Evidencia: Los registros de atención muestran numerosas consultas repetitivas sobre el estado de las solicitudes.\n• Necesidad: Los estudiantes necesitan acceder oportunamente al estado trazable de sus solicitudes."
           }
         },
         {
@@ -2598,7 +2598,7 @@
           "order": 27,
           "blockData": {
             "heading": "Pantalla 11-16: Justificación y Viabilidad 5D (Técnica, Económica, Operativa, Legal, Temporal)",
-            "content": "Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Cumple con protección de datos personales (Habeas Data), licencias y regulaciones?\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica"
+            "content": "Una iniciativa puede responder a un problema válido y aún así no ser viable bajo las condiciones actuales. Por ello evaluamos 5 dimensiones críticas:\n\n1. Viabilidad Técnica: ¿Se cuenta con las capacidades, arquitectura, integraciones y APIs alcanzables?\n2. Viabilidad Económica: ¿Los costos requeridos son compatibles con el presupuesto y el valor generado?\n3. Viabilidad Operativa: ¿Los usuarios y la organización tienen la capacidad y disposición para adoptar la solución?\n4. Viabilidad Legal: ¿Puede desarrollarse respetando las normas, políticas y obligaciones aplicables (por ejemplo, protección de datos)? Identifica qué debe validarse sin inventar obligaciones legales específicas.\n5. Viabilidad Temporal: ¿El trabajo necesario puede completarse dentro del plazo y fechas límites disponibles?\n\nSemáforo de viabilidad:\n🟢 Favorable | 🟡 Condicionada | 🔴 Crítica"
           }
         },
         {
@@ -2635,7 +2635,7 @@
               },
               {
                 "key": "viabilidad_legal",
-                "label": "Viabilidad Legal (Habeas Data, privacidad, términos):",
+                "label": "Viabilidad Legal (normas, políticas y obligaciones aplicables por validar):",
                 "fieldType": "textarea",
                 "maxWords": 80
               },
@@ -3158,7 +3158,7 @@
           "order": 10,
           "blockData": {
             "heading": "Pantallas 6-10: Requisitos Funcionales, No Funcionales y MoSCoW",
-            "content": "Secuencia fundamental: Necesidad ➔ Requisito ➔ Solución\n\n• Requisitos Funcionales (RF): Qué debe hacer el sistema (ej. permitir registro de solicitudes, enviar alertas por correo).\n• Requisitos No Funcionales (RNF): Criterios de calidad, seguridad, rendimiento y disponibilidad (ej. tiempo de respuesta < 2s, cifrado TLS 1.3, disponibilidad 99.5%).\n\nPriorización MoSCoW:\n- Must have: Indispensable para que la solución funcione y aporte valor mínimo.\n- Should have: Importante pero no crítico para el lanzamiento inicial.\n- Could have: Deseable si sobran recursos o tiempo.\n- Won’t have: Explícitamente fuera del alcance de la versión actual."
+            "content": "Secuencia fundamental: Necesidad ➔ Requisito ➔ Solución\n\n• Requisitos Funcionales (RF): Qué debe hacer el sistema (ej. permitir registro de solicitudes, enviar alertas por correo).\n• Requisitos No Funcionales (RNF): Criterios de calidad, seguridad, rendimiento y disponibilidad (ej. el sistema deberá responder en menos de tres segundos para una carga de 500 usuarios concurrentes).\n\nPriorización MoSCoW:\n- Must have: Indispensable para que la solución funcione y aporte valor mínimo.\n- Should have: Importante pero no crítico para el lanzamiento inicial.\n- Could have: Deseable si sobran recursos o tiempo.\n- Won’t have: Explícitamente fuera del alcance de la versión actual."
           }
         },
         {
@@ -3184,11 +3184,11 @@
               },
               {
                 "id": "d",
-                "text": "Garantizar que la información sensible almacenada esté protegida mediante cifrado AES-256",
+                "text": "Garantizar que la información sensible almacenada y transmitida por la plataforma sea protegida mediante mecanismos de cifrado",
                 "isCorrect": true
               }
             ],
-            "explanation": "El cifrado AES-256 define una condición de seguridad y calidad técnica, mientras que las otras son funcionalidades del sistema.",
+            "explanation": "La protección mediante cifrado define una condición de seguridad y calidad que debe cumplir la plataforma, mientras que las otras opciones describen funcionalidades del sistema.",
             "pointsAwarded": 15
           }
         },
@@ -3945,8 +3945,118 @@
           }
         },
         {
-          "type": "CHECKPOINT",
+          "type": "EXAM",
           "order": 20,
+          "blockData": {
+            "title": "Microevaluación Módulo 8: Cronograma, Recursos y Costos",
+            "description": "Has llegado a la evaluación de cierre del Módulo 8. Cronograma, recursos y costos. Las siguientes situaciones integran los conceptos trabajados y requieren relacionar diferentes elementos de la planificación.",
+            "questionsCount": 4,
+            "pointsPerQuestion": 25,
+            "passingScore": 75,
+            "pointsAwarded": 50,
+            "questions": [
+              {
+                "id": 1,
+                "question": "Un equipo de desarrollo estima que una funcionalidad tardará 8 días. Sin embargo, nunca ha trabajado con la tecnología requerida y no existen datos históricos.\n\n¿Qué debería hacer el equipo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Mantener exactamente 8 días porque ya fue estimado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Eliminar la funcionalidad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Reconocer la incertidumbre, documentar supuestos y mejorar progresivamente la estimación."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Utilizar automáticamente la estimación generada por IA."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La falta de experiencia genera incertidumbre sobre la duración. El equipo debe documentarla y buscar información que permita mejorar la estimación sin asumir que una cifra inicial es completamente exacta."
+              },
+              {
+                "id": 2,
+                "question": "Un proyecto contempla desarrollar una aplicación móvil, pero el presupuesto no incluye recursos para realizar las pruebas de seguridad requeridas.\n\n¿Qué debería identificar el equipo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Una inconsistencia entre alcance, recursos y costos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Únicamente un problema del cronograma."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un problema exclusivamente de comunicación."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ningún problema mientras exista presupuesto total."
+                  }
+                ],
+                "correctOptionId": "a",
+                "explanation": "Si las pruebas forman parte del trabajo necesario para entregar el producto, deben reflejarse en las actividades, recursos y costos. La planificación debe representar el trabajo real del proyecto."
+              },
+              {
+                "id": 3,
+                "question": "Una organización tiene un proyecto con presupuesto limitado, pocos recursos disponibles y una fecha máxima de entrega.\n\n¿Qué debería hacer el equipo al adaptar su planificación?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Ignorar las restricciones."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ajustar la planificación considerando las condiciones reales del proyecto."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Eliminar todas las actividades complejas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Dejar que la IA determine automáticamente el plan."
+                  }
+                ],
+                "correctOptionId": "b",
+                "explanation": "La adaptación debe considerar restricciones, disponibilidad de recursos, cronograma y costos. El objetivo es construir una planificación viable dentro del contexto existente."
+              },
+              {
+                "id": 4,
+                "question": "Un estudiante utiliza IA para revisar su planificación y recibe una recomendación que contradice la información proporcionada por el proveedor del proyecto.\n\n¿Qué debería hacer?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Aplicar inmediatamente la recomendación de IA."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ignorar siempre a la IA."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Comparar ambas fuentes y validar la información antes de modificar el proyecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pedir a la IA que decida cuál información es correcta."
+                  }
+                ],
+                "correctOptionId": "c",
+                "explanation": "La IA funciona como herramienta de contraste. Cuando existe información real del proyecto, el estudiante debe validarla y utilizar su criterio para determinar qué decisión corresponde."
+              }
+            ]
+          }
+        },
+        {
+          "type": "CHECKPOINT",
+          "order": 21,
           "blockData": {
             "title": "¡Felicitaciones! Has completado el Módulo 8 (Cronograma, Recursos y Costos)",
             "description": "Has dominado la estimación temporal, dependencias, ruta crítica, diagramas de Gantt, gestión de recursos humanos y tecnológicos, y estructuración de presupuestos con reservas.",
@@ -4175,7 +4285,7 @@
           "type": "QUIZ",
           "order": 12,
           "blockData": {
-            "question": "Un equipo descubre que la integración de pagos en línea es muy compleja y riesgosa para desarrollar internamente. Decide contratar a una pasarela especializada que asume contractualmente la seguridad PCI-DSS y las transacciones. ¿Qué estrategia de respuesta se aplicó?",
+            "question": "Un equipo descubre que la integración de pagos en línea es muy compleja y riesgosa para desarrollar internamente. Decide contratar a una pasarela especializada que asume contractualmente la seguridad de las transacciones. ¿Qué estrategia de respuesta se aplicó?",
             "options": [
               {
                 "id": "a",
@@ -4206,13 +4316,13 @@
           "type": "AI_PROMPT_LAB",
           "order": 13,
           "blockData": {
-            "title": "Laboratorio de IA: Identificación y Análisis de Riesgos TIC",
-            "role": "Actúa como especialista en gestión de riesgos de proyectos tecnológicos (PMBOK® 8va Edición).",
-            "prompt": "Actúa como especialista en gestión de riesgos de proyectos tecnológicos. Analiza el siguiente proyecto TIC y genera una matriz de 4 riesgos potenciales organizados por categoría (Técnico, Gestión, Organizacional, Externo). Para cada riesgo especifica: Causa, Evento, Consecuencia, Probabilidad (1-3), Impacto (1-3) y Estrategia de respuesta sugerida (Evitar, Mitigar, Transferir, Aceptar).\n\nProyecto TIC: [Escribe el nombre y alcance resumido de tu proyecto integrador]\nArquitectura tecnológica: [Menciona brevemente las tecnologías o servicios involucrados]",
-            "guidance": "Ejecuta este prompt en ChatGPT, Claude o Gemini. Examina críticamente si los riesgos propuestos se ajustan a la realidad de tu proyecto o si la IA generó escenarios genéricos.",
+            "title": "Laboratorio de IA: Revisión crítica del Registro de Riesgos",
+            "role": "Revisor crítico del Registro de Riesgos",
+            "prompt": "Actúa como revisor crítico de mi Registro de Riesgos. Analiza todos los riesgos registrados y revisa, para cada uno, la relación entre causa, evento y consecuencia; categoría; probabilidad; impacto; prioridad; estrategia de respuesta; acción propuesta; contingencia, cuando corresponda; estado y señal de alerta. Identifica información incompleta, formulaciones ambiguas, posibles inconsistencias, prioridades que no parezcan coherentes y respuestas que no estén claramente relacionadas con el riesgo. No inventes información, no agregues riesgos nuevos y no modifiques mi registro. Presenta tus observaciones organizadas por ID de riesgo y explica qué debería verificar antes de decidir si realizo algún cambio. Yo tomaré la decisión final sobre qué observaciones incorporar.",
+            "guidance": "La IA es un revisor crítico, no la autoridad que decide qué riesgos debe tener el proyecto. Proceso recomendado: registro propio, revisión con IA, contraste, validación y actualización. Actualiza únicamente la información que hayas validado como necesaria.",
             "reflectionQuestions": [
-              "¿Qué riesgo relevante identificó la IA que no habías considerado en tu análisis inicial?",
-              "¿Qué respuestas de la IA requerirían ajuste para ser viables con el presupuesto y tiempo real de tu proyecto?"
+              "¿Qué observaciones de la IA resultaron pertinentes después de contrastarlas con el contexto real de tu proyecto?",
+              "¿Qué observaciones descartaste y por qué?"
             ],
             "pointsAwarded": 30
           }
@@ -4229,30 +4339,30 @@
           "type": "QUIZ",
           "order": 15,
           "blockData": {
-            "question": "Un cliente solicita como criterio de calidad: “La aplicación debe ser segura”. ¿Cuál formulación convierte este requisito en un criterio de calidad objetivo y verificable?",
+            "question": "Observa el siguiente criterio: “El sistema debe ser rápido.” Selecciona la opción que lo convierte en una condición más verificable:",
             "options": [
               {
                 "id": "a",
-                "text": "La aplicación debe contar con un diseño visual moderno que transmita confianza",
+                "text": "El sistema debe tener un buen rendimiento.",
                 "isCorrect": false
               },
               {
                 "id": "b",
-                "text": "La aplicación debe implementar cifrado TLS 1.3 en tránsito, hash bcrypt en contraseñas y superar una auditoría OWASP Top 10 sin vulnerabilidades de severidad alta",
-                "isCorrect": true
+                "text": "El sistema debe responder rápidamente para todos los usuarios.",
+                "isCorrect": false
               },
               {
                 "id": "c",
-                "text": "Los desarrolladores deben tener cuidado con los datos de los usuarios durante el proyecto",
-                "isCorrect": false
+                "text": "El sistema deberá responder en un máximo de 3 segundos bajo las condiciones de carga definidas.",
+                "isCorrect": true
               },
               {
                 "id": "d",
-                "text": "La aplicación debe funcionar sin errores en la mayoría de los dispositivos",
+                "text": "El sistema debe funcionar sin demoras.",
                 "isCorrect": false
               }
             ],
-            "explanation": "Un criterio verificable define estándares técnicos específicos, medibles e independientes del juicio subjetivo de las partes.",
+            "explanation": "La opción C establece una condición concreta que puede medirse y verificarse mediante una prueba de rendimiento.",
             "pointsAwarded": 20
           }
         },
@@ -4261,7 +4371,7 @@
           "order": 16,
           "blockData": {
             "heading": "Pantalla 18-20: Métricas de Calidad y Estándares TIC",
-            "content": "Las **métricas de calidad** son atributos medibles de los procesos y productos del proyecto:\n\n• **Métricas de producto:** Tiempo de respuesta, tasa de disponibilidad (99.9%), densidad de defectos por mil líneas de código, usabilidad SUS.\n• **Métricas de proceso:** Porcentaje de reprocesos, adherencia al cronograma de revisiones, tiempo medio de resolución de incidencias (MTTR).\n\n**Estándares y Marcos de Referencia:**\n• **ISO/IEC 25010 (SQuaRE):** Modelo de calidad del producto software (funcionalidad, rendimiento, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad, portabilidad).\n• **IEEE 829 / ISO 29119:** Estándares para documentación y procesos de pruebas de software.\n• **Prevención sobre inspección:** Cuesta significativamente menos prevenir defectos en el diseño que corregirlos en producción."
+            "content": "Las **métricas de calidad** son medidas que permiten obtener datos sobre una característica específica de un producto, entregable o proceso. Su propósito es proporcionar **evidencia objetiva** para determinar si se cumplen los criterios de calidad definidos. No es necesario medir todo: deben seleccionarse métricas útiles, comprensibles y posibles de obtener.\n\nPara definir una métrica, primero debe existir algo que se quiera comprobar:\n• **Criterio:** el sistema debe responder en un máximo de 3 segundos. **Métrica:** tiempo promedio de respuesta en segundos.\n• **Criterio:** el módulo debe funcionar correctamente. **Métrica:** porcentaje de pruebas funcionales aprobadas.\n• **Criterio:** presentar pocos errores. **Métrica:** número de defectos encontrados.\n\n**Estándares y normas:**\nLos estándares, normas, regulaciones y políticas proporcionan referencias para establecer condiciones de calidad, seguridad, gestión y cumplimiento. No todos los proyectos están sujetos a los mismos requisitos: su aplicación depende del contexto, el sector, la organización, los contratos y las obligaciones que correspondan.\n\nAntes de incorporar una norma o estándar, determina **si realmente aplica** y qué parte del proyecto afecta. Por ejemplo, un proyecto que maneja datos personales puede necesitar revisar requisitos de protección de datos, mientras que un prototipo que no almacena información personal podría estar sujeto a otras condiciones. Pueden existir:\n• **Regulación:** requisitos legales, por ejemplo, de protección de datos.\n• **Política organizacional:** por ejemplo, la política interna de seguridad de la información.\n• **Requisito contractual:** condiciones establecidas por el cliente.\n\nNo asumas que una norma aplica únicamente porque pertenece al área de tecnología: primero debe existir una razón o requisito que justifique su consideración."
           }
         },
         {
@@ -4478,7 +4588,7 @@
               "Los entregables cuentan con criterios de calidad y aceptación verificables.",
               "La matriz de comunicación y el plan de adquisiciones están documentados y alineados a los interesados."
             ],
-            "badgeKey": "planificador-costos",
+            "badgeKey": "estratega-proyecto-nivel-2",
             "pointsAwarded": 50
           }
         },
@@ -4489,108 +4599,107 @@
             "title": "Microevaluación Módulo 9: Riesgos, Calidad, Comunicaciones y Compras",
             "description": "Comprueba tu comprensión sobre la gestión de riesgos, calidad, comunicaciones y adquisiciones en proyectos TIC.",
             "questionsCount": 4,
-            "pointsPerQuestion: 25": null,
+            "pointsPerQuestion": 25,
             "passingScore": 75,
+            "pointsAwarded": 100,
             "questions": [
               {
                 "id": 1,
-                "question": "¿Cuál es la diferencia fundamental entre un riesgo y un problema en la dirección de proyectos?",
+                "question": "Un equipo identifica que existe una posibilidad de que un proveedor entregue tarde una API necesaria para una integración. La fecha todavía no ha sido incumplida.\n\n¿Qué debería registrar inicialmente?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. No existe diferencia, ambos términos son sinónimos técnicos"
+                    "text": "Un problema."
                   },
                   {
                     "id": "b",
-                    "text": "B. El riesgo es una posibilidad incierta futura; el problema es una situación que ya ocurrió en el presente"
+                    "text": "Un riesgo."
                   },
                   {
                     "id": "c",
-                    "text": "C. El problema se anticipa con reservas; el riesgo solo se atiende cuando paraliza el proyecto"
+                    "text": "Un defecto."
                   },
                   {
                     "id": "d",
-                    "text": "D. Los riesgos solo afectan el presupuesto y los problemas solo al personal"
+                    "text": "Una lección aprendida."
                   }
                 ],
                 "correctOptionId": "b",
-                "explanation": "El riesgo es un evento incierto futuro; el problema es una realidad presente que requiere solución correctiva."
+                "explanation": "La situación todavía es incierta porque el retraso no ha ocurrido. Por ello debe gestionarse como un riesgo y analizarse su probabilidad, impacto y respuesta."
               },
               {
                 "id": 2,
-                "question": "¿Qué característica distingue a un criterio de calidad adecuado para un entregable de software?",
+                "question": "Un proyecto identifica un riesgo con probabilidad alta e impacto alto. El equipo decide establecer una acción preventiva para reducir la posibilidad de que ocurra.\n\n¿Qué estrategia está utilizando?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Que sea redactado de forma general para permitir interpretaciones flexibles"
+                    "text": "Aceptación."
                   },
                   {
                     "id": "b",
-                    "text": "B. Que sea medible, verificable objetivamente y alineado con los requisitos del cliente"
+                    "text": "Transferencia."
                   },
                   {
                     "id": "c",
-                    "text": "C. Que dependa exclusivamente de la opinión estética del desarrollador"
+                    "text": "Mitigación."
                   },
                   {
                     "id": "d",
-                    "text": "D. Que exija cero horas de pruebas para ahorrar presupuesto"
+                    "text": "Escalamiento."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "Los criterios de calidad deben ser medibles y objetivos para validar de forma transparente la conformidad del entregable."
+                "correctOptionId": "c",
+                "explanation": "La mitigación busca reducir la probabilidad o el impacto de un riesgo. La acción preventiva debe estar relacionada con la causa o con las consecuencias potenciales del riesgo."
               },
               {
                 "id": 3,
-                "question": "¿Por qué es necesario diseñar una estrategia de comunicación diferenciada para cada grupo de interesados?",
+                "question": "Un proyecto define que su aplicación debe cumplir determinadas condiciones de rendimiento, pero no establece cómo verificar esas condiciones.\n\n¿Qué elemento necesita fortalecerse?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Porque enviar toda la información a todos los participantes satura los canales y dificulta la toma de decisiones oportunas"
+                    "text": "El criterio de calidad."
                   },
                   {
                     "id": "b",
-                    "text": "B. Porque los clientes nunca deben enterarse del estado del proyecto"
+                    "text": "El presupuesto."
                   },
                   {
                     "id": "c",
-                    "text": "C. Porque la ley prohíbe comunicar el presupuesto al equipo técnico"
+                    "text": "El proveedor."
                   },
                   {
                     "id": "d",
-                    "text": "D. Para evitar registrar actas de reunión"
+                    "text": "El registro de interesados."
                   }
                 ],
                 "correctOptionId": "a",
-                "explanation": "Cada interesado necesita información con propósitos, formatos y frecuencias distintas para tomar decisiones eficaces sin sobrecarga informativa."
+                "explanation": "Un criterio de calidad debe ser suficientemente claro y verificable para determinar posteriormente si la condición establecida se cumple. Sin un mecanismo de verificación, el criterio puede resultar ambiguo."
               },
               {
                 "id": 4,
-                "question": "En un análisis Fabricar vs. Comprar (Make or Buy), ¿cuándo es más recomendable comprar o contratar un servicio externo?",
+                "question": "El director del proyecto necesita información ejecutiva sobre riesgos y decisiones importantes, mientras que el equipo técnico necesita información detallada sobre dependencias y problemas técnicos.\n\n¿Qué debería hacer el equipo?",
                 "options": [
                   {
                     "id": "a",
-                    "text": "A. Cuando el componente es el núcleo secreto del negocio que nadie más debe conocer"
+                    "text": "Enviar exactamente la misma información a todos."
                   },
                   {
                     "id": "b",
-                    "text": "B. Cuando existe una solución estándar madura en el mercado y desarrollarla internamente sería costoso y tardado"
+                    "text": "Eliminar la comunicación con el director."
                   },
                   {
                     "id": "c",
-                    "text": "C. Siempre, porque nunca se debe desarrollar internamente en un proyecto TIC"
+                    "text": "Adaptar la información a las necesidades de cada destinatario."
                   },
                   {
                     "id": "d",
-                    "text": "D. Solo cuando el proveedor trabaje sin contrato formal"
+                    "text": "Permitir que la IA determine quién debe recibir información."
                   }
                 ],
-                "correctOptionId": "b",
-                "explanation": "Comprar o contratar externamente aprovecha economías de escala y experiencia de proveedores especializados para componentes no diferenciadores."
+                "correctOptionId": "c",
+                "explanation": "Las necesidades de información dependen del rol y responsabilidad de cada participante. La comunicación debe adaptarse al destinatario, propósito y nivel de detalle requerido."
               }
-            ],
-            "pointsAwarded": 100,
-            "pointsPerQuestion": 25
+            ]
           }
         },
         {
